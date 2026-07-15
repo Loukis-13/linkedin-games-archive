@@ -1,0 +1,59 @@
+{
+  "game": "minisudoku",
+  "number": null,
+  "date": "2026-07-15",
+  "grid_size": [
+    6,
+    6
+  ],
+  "cells": [
+    [
+      1,
+      2,
+      3,
+      null,
+      null,
+      null
+    ],
+    [
+      4,
+      null,
+      5,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      1,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      3,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      2,
+      null,
+      3
+    ],
+    [
+      null,
+      null,
+      null,
+      4,
+      1,
+      6
+    ]
+  ]
+}
