@@ -1,201 +1,79 @@
 # LinkedIn Games Extractor
 
 Extract the daily LinkedIn Games puzzle definitions into per-day JSON files so
-the puzzles can be replicated offline. Eight games are targeted; six are fully
-implemented, two are deferred (see below).
+the puzzles can be replicated offline. All **eight** games are implemented and
+captured with **Playwright** (PC / CI).
+
+> The legacy Termux Browser Pilot (tbp) capture flow lives on the
+> `termux-pilot-browser` branch (kept for reference). This `master` branch is
+> the Playwright-only flow.
 
 ## How it works
 
-**One capture strategy: Termux Browser Pilot (tbp).** `src/tbp_capture.py`
-drives the real Firefox daemon via the tbp Python client (`send_command`),
-navigates to each game, clicks "Iniciar jogo"/"Start game" where needed, and
-dumps the board HTML to `cache/<date>/<game>.html`. It also saves the daily
-puzzle `number` to `cache/<date>/<game>_meta.json`.
+**One capture strategy: Playwright.** `extract.py` launches a single Chromium
+(locale `en-US`) and, for each game, calls that game's `scraper.capture(page)`
+to drive the real browser (navigate, click "Start game", reveal, read live
+state) and get the board data. It then hands that data straight to the game's
+`parser.parse(date, raw)` which writes `outputs/<date>/<game>.json`. No HTML is
+cached by default — the scraper result flows to the parser **in memory**. The
+`--save-html` flag additionally dumps `cache/<date>/<game>.html` for debugging.
 
-Two URL forms are required (LinkedIn renders boards differently per game):
-- **Grid games** (zip, tango, queens, minisudoku) embed the board inside an
-  `<iframe src="/games/view/<slug>/desktop">`, so `tbp_capture.py` navigates
-  straight to that URL — the board then sits in the top document.
-- **wend, patches** render the board directly in the top document, but only
-  after the start button is clicked (the click transition is flaky, so it
-  retries in a loop).
+The daily puzzle **number** is computed by each game's parser from a date anchor
+(`_ANCHOR_DATE` / `_ANCHOR_NUM` in `games/<game>/parser.py`) — never scraped.
 
-> Note: the `browser_navigate` / `browser_snapshot` MCP tools are NOT usable on
-> this platform (Termux arm64 — "Unsupported platform: android-arm64"). Use the
-> `tbp` CLI / Python client. The old headless `--dump-dom` path
-> (`scrape_games.py`) is kept only for extraction (it reads the cached HTML);
-> HTML capture goes through tbp exclusively.
+LinkedIn Games are guest-launched, so no login / session / credentials.
 
 ## Layout
 
-    linkedin_games_extractor/
-      src/
-        tbp_capture.py     -- SINGLE HTML getter for all games (tbp browser)
-        run_all.py         -- one-command daily pipeline (capture + extract)
-        scrape_games.py    -- extractors for zip/tango/queens/minisudoku
-                            -- (reads cached HTML; --force re-dumps headless)
-        extract_zip.py      -- legacy screenshot-based Zip extractor (see note)
-        build_legend.py     -- legacy Zip digit-template legend builder
-        extract_wend.py     -- Wend extractor -> outputs/<date>/wend.json
-        extract_patches.py  -- Patches extractor -> outputs/<date>/patches.json
-        view_json.py        -- pretty-print any game's JSON in the terminal
-      cache/<date>/<game>.html        -- raw captured board DOM (via tbp)
-      cache/<date>/<game>_meta.json   -- puzzle number (tbp games only)
-      outputs/<date>/<game>.json      -- extracted puzzle definition
+```
+linkedin_games_extractor/
+  extract.py              # ROOT: capture + parse all games (today only)
+  render.py               # ROOT: render outputs/<date>[/<game>] for inspection
+  games/
+    _common.py            # shared helpers (paths, grid parsing, render header)
+    __init__.py           # dispatch: scraper()/parser()/renderer() per game
+    <game>/               # one dir per game, each with:
+      scraper.py          #   capture(page, date, save_html=False) -> raw
+      parser.py           #   parse(date, raw) -> dict (writes the JSON)
+      renderer.py         #   render(date) -> list[str] (monospace block)
+  cache/<date>/<game>.html   # optional debug dump (gitignored)
+  outputs/<date>/<game>.json # extracted puzzle (committed by CI)
+```
+
+`raw` is the HTML string for 7/8 games; for **crossclimb** it is a dict
+(`{words, clues}`) because the solved 7-word ladder is read live from the
+browser via `page.input_value()` after a real-mouse drag — it isn't in the
+saved HTML.
 
 ## Usage
 
-    # one command for the whole day (capture + extract all 6 games)
-    python src/run_all.py
-    python src/run_all.py --date 2026-07-15
+```
+# capture + parse today's games (writes outputs/<today>/<game>.json)
+python extract.py
+python extract.py --games zip,pinpoint,crossclimb
+python extract.py --headless        # no browser window
+python extract.py --save-html       # also dump cache/<date>/<game>.html
 
-    # or step by step:
-    # capture ALL games' HTML for today via tbp (no args; today's date)
-    python src/tbp_capture.py
+# inspect extracted puzzles (reads outputs/, not the browser)
+python render.py 2026-07-19              # every game that day
+python render.py 2026-07-19 crossclimb   # one game
+```
 
-    # extract the 4 grid games from the cached HTML (no re-dump)
-    python src/scrape_games.py --date 2026-07-15 \
-        --games zip,tango,queens,minisudoku
-
-    # extract wend + patches
-    python src/extract_wend.py    --date 2026-07-15 \
-        --meta cache/2026-07-15/wend_meta.json
-    python src/extract_patches.py --date 2026-07-15 \
-        --meta cache/2026-07-15/patches_meta.json
-
-    # inspect any extracted puzzle
-    python src/view_json.py all --date 2026-07-15
-    python src/view_json.py wend --date 2026-07-15
-
-`--date` defaults to **today**; pass it explicitly to capture a specific day.
-One JSON file is written per game per day under `outputs/<date>/`.
-
-Wend's `words` key is only written when you pass `--words "ICY,OVAL,..."`
-(the solution words are not in the board DOM); otherwise it is omitted.
+`extract.py` has **no `--date`** — it always captures the current day.
 
 ## Output schema — every game
 
-All files share the common fields `game`, `date`, and `grid_size`
-(`[n_cols, n_rows]`).
-
-### zip  (`outputs/<date>/zip.json`)
-Numbered nodes on a lattice + wall barriers between cells.
-
-    {
-      "game": "zip",
-      "date": "2026-07-13",
-      "grid_size": [n_cols, n_rows],   # dynamic, recovered from the lattice
-      "nodes": [                       # numbered cells (1-indexed id)
-        {"id": <digit>, "row": <r>, "col": <c>}, ...
-      ],
-      "walls": [                       # each wall = the two adjacent cells it
-        [[r1, c1], [r2, c2]], ...      # separates (blocks movement between)
-      ]
-    }
-
-### tango  (`outputs/<date>/tango.json`)
-Moon/Sun grid + equality/X divisors between adjacent cells.
-
-    {
-      "game": "tango",
-      "date": "2026-07-13",
-      "grid_size": [n_cols, n_rows],
-      "symbols": [                     # given tiles only
-        [<row>, <col>, "<M|S>"], ...  # M = Moon (given), S = Sun (given)
-      ],
-      "walls": [                       # divisors between two cells
-        [[r1, c1], [r2, c2], "<=|x>"], ...   # = equality, x not-equal
-      ]
-    }
-
-### queens  (`outputs/<date>/queens.json`)
-Colored regions (region id per cell). Placed queens are intentionally ignored.
-
-    {
-      "game": "queens",
-      "date": "2026-07-13",
-      "grid_size": [n_cols, n_rows],
-      "board": [                       # board[row][col] = region id
-        [<region_id>, ...], ...
-      ]
-    }
-
-### minisudoku  (`outputs/<date>/minisudoku.json`)
-Prefilled 6x6 grid; `null` = blank.
-
-    {
-      "game": "minisudoku",
-      "number": null,                    # NOT in the unauthenticated HTML
-      "date": "2026-07-13",              # (fetched via a voyager API that 401s
-      "grid_size": [n_cols, n_rows],     #  without a session) -> left null
-      "cells": [ [<digit|null>, ...], ... ]
-    }
-      ]
-    }
-
-### wend  (`outputs/<date>/wend.json`)
-5x5 letter grid with holes ("weave with words").
-
-    {
-      "game": "wend",
-      "number": <int>,                 # daily puzzle number (from start screen)
-      "date": "2026-07-13",
-      "grid_size": [5, 5],
-      "grid": [                        # '.' = hole, otherwise a letter tile
-        ["N", "T", ".", "O", "V"], ...
-      ],
-      "words": [ "ICY", "OVAL", ... ]  # solution words (NOT in board DOM;
-                                       # supply via --words after in-game reveal)
-    }
-
-### patches  (`outputs/<date>/patches.json`)
-7x7 grid of patch clues. Coordinates are **0-indexed** (`x` = column,
-`y` = row).
-
-    {
-      "game": "patches",
-      "number": <int>,                 # daily puzzle number (from start screen)
-      "date": "2026-07-13",
-      "grid_size": [7, 7],
-      "clues": [
-        {"x": <col>, "y": <row>,       # 0-indexed
-         "type": "square"|"free"|"V_rect"|"H_rect",
-         "size": <int|null>},          # null for fixed shapes (square/V/H_rect);
-                                       # N for "free" (tile length in cells)
-        ...
-      ]
-    }
-    # type counts for the daily puzzle: 2 square, 10 free, 1 V_rect, 1 H_rect
-
-### pinpoint  (`outputs/<date>/pinpoint.json`) — DEFERRED
-Word-association game. The board content (clue words) is fetched via LinkedIn's
-voyager API after the game starts and only renders after interaction / reveal;
-not captured by the current pipeline.
-
-### crossclimb  (`outputs/<date>/crossclimb.json`) — DEFERRED
-Ladder word game. Same limitation as Pinpoint: the letters load from voyager
-after start and require the in-game reveal. Deferred.
+All files share `game`, `number` (date-math), `date`, and `grid_size`
+(`[cols, rows]`). See `games/<game>/parser.py` for the exact fields.
 
 ## Conventions
 
 - **Dates**: files are organised `outputs/<YYYY-MM-DD>/`. Daily puzzles change
-  each day, so always capture the target date.
-- **Coordinates**: Patches `x`/`y` are 0-indexed (x = column, y = row). Queens/
-  miniSudoku use `board[row][col]` (0-indexed). Zip nodes use `row`/`col`
-  (0-indexed). Wend uses a 2D `grid[row][col]`.
-- **Puzzle number**: auto-captured for zip/tango/queens (from `NO.xxx` in the
-  board-page launch footer), wend/patches (from the start screen). Mini-sudoku's
-  number is served by a voyager API that 401s without a session, so it is left
-  `null`. The number is saved to `cache/<date>/<game>_meta.json` by
-  `tbp_capture.py` and read by the extractors.
-- **Locale flips**: LinkedIn serves the UI in PT-BR or EN intermittently. The
-  start button is "Iniciar jogo" / "Start game" and Patches clue aria-labels
-  are "Dica de linha R, coluna C, pista ..." / "Row R, column C, ... clue".
-  Both `tbp_capture.py` and `extract_patches.py` handle either language.
-
-## Legacy
-
-`extract_zip.py` / `build_legend.py` are the original screenshot-based Zip
-extractor (digit templates from `zip_legend.json`). The current headless
-`scrape_games.py` captures Zip from the live DOM instead; the screenshot path is
-kept for reference.
+  each day, so always capture the target date (today, via `extract.py`).
+- **Coordinates**: Patches `x`/`y` are 0-indexed (x = column, y = row). Queens /
+  miniSudoku use `board[row][col]`. Zip nodes use `row`/`col`. Wend uses
+  `grid[row][col]`.
+- **Puzzle number**: date-math in each `parser.py` (`_ANCHOR_DATE` +
+  days since anchor) — always present, never scraped.
+- **Locale**: forced to `en-US` in the Playwright context, so all selectors /
+  button text are English.

@@ -1,5 +1,6 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+# captured board DOM (debug only, written by extract.py --save-html)
+cache/
 
+# python caches
+__pycache__/
+*.pyc
