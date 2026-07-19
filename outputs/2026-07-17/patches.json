@@ -1,0 +1,83 @@
+{
+  "game": "patches",
+  "number": 122,
+  "grid_size": [
+    7,
+    7
+  ],
+  "clues": [
+    {
+      "x": 2,
+      "y": 0,
+      "type": "square",
+      "size": 4
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "type": "free",
+      "size": 2
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "type": "free",
+      "size": 5
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "type": "free",
+      "size": 3
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "type": "free",
+      "size": 6
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "type": "free",
+      "size": null
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "type": "free",
+      "size": null
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "type": "free",
+      "size": 5
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "type": "free",
+      "size": 3
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "type": "free",
+      "size": 4
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "type": "free",
+      "size": 2
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "type": "H_rect",
+      "size": 3
+    }
+  ],
+  "date": "2026-07-17"
+}

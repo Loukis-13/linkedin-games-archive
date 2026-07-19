@@ -38,17 +38,21 @@ FREE_RE = re.compile(r"(\d+)\s*(?:c[ée]lulas|cells)", re.IGNORECASE)
 
 
 def classify(al):
-    """Return (type, size) from an aria-label, handling PT and EN."""
+    """Return (type, size) from an aria-label, handling PT and EN.
+
+    Size ("N cells"/"N celulas") can appear on any shape, not just free, so we
+    parse it uniformly and attach it to whatever type we detect."""
     low = al.lower()
+    sm = FREE_RE.search(al)
+    size = int(sm.group(1)) if sm else None
     if "quadrado" in low or "square" in low:
-        return "square", None
+        return "square", size
     if "retângulo vertical" in low or "tall rectangle" in low:
-        return "V_rect", None
+        return "V_rect", size
     if "retângulo horizontal" in low or "wide rectangle" in low:
-        return "H_rect", None
+        return "H_rect", size
     if "forma livre" in low or "freeform" in low:
-        sm = FREE_RE.search(al)
-        return "free", int(sm.group(1)) if sm else None
+        return "free", size
     return None, None
 
 

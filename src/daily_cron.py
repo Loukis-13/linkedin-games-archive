@@ -25,7 +25,7 @@ from datetime import date
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 SEND_CMD = "hermes"          # on PATH; `hermes send -t telegram "<msg>"`
-TARGET = "telegram"          # home channel -> this chat
+TARGET = "telegram:-1004403987384:3"   # Hermes workspace group -> "linkedin-games" topic
 
 # Games rendered + sent, in order. Append new ones here as they're scripted.
 GAMES = [

@@ -9,7 +9,8 @@ Supports all eight games:
   * minisudoku  -- prefilled 6x6 grid (Mini Sudoku)
   * wend        -- 5x5 letter grid + holes (Wend)
   * patches      -- 7x7 initial grid + clue tile lengths (Patches)
-  * pinpoint / crossclimb -- captured via tbp browser; extractors TBD
+  * pinpoint     -- 5 clue words + revealed category (Pinpoint)
+  * crossclimb   -- solved live in-browser via Playwright; answer saved as JSON (clues + 7-word ladder)
 
 Usage:
   python src/view_json.py                       # latest date, zip
@@ -26,7 +27,7 @@ ROOT = os.path.dirname(HERE)
 OUT = os.path.join(ROOT, "outputs")
 
 # game names this viewer knows how to draw
-KNOWN = ("zip", "tango", "queens", "minisudoku", "wend", "patches")
+KNOWN = ("zip", "tango", "queens", "minisudoku", "wend", "patches", "pinpoint", "crossclimb")
 
 
 def latest_date():
@@ -122,36 +123,85 @@ def render_tango(puz):
 
 
 def render_queens(puz):
-    """New format: board=[[region_id]] (placed queens ignored)."""
+    """New format: board=[[region_id]] (placed queens ignored).
+    Shows an emoji-square view (region id -> colour) then the ASCII view."""
     n_cols, n_rows = puz["grid_size"]
     board = puz["board"]
-    rows = []
+    # palette indexed by region id (0..8) -> colour square
+    PALETTE = ["🟥", "🟧", "🟨", "🟩", "🟦", "🟪", "🟫", "⬛", "⬜"]
+    # emoji grid
+    emoji = []
     for r in range(n_rows):
-        row = []
-        for c in range(n_cols):
-            row.append(f" {board[r][c]:>1} ")
-        rows.append("|" + "|".join(row) + "|")
+        emoji.append("".join(
+            PALETTE[board[r][c]] if 0 <= board[r][c] < len(PALETTE)
+            else "❓" for c in range(n_cols)))
+    # ascii grid (kept)
+    ascii_rows = []
+    for r in range(n_rows):
+        row = [f" {board[r][c]:>1} " for c in range(n_cols)]
+        ascii_rows.append("|" + "|".join(row) + "|")
     head = "+" + "+".join(["---"] * n_cols) + "+"
-    return [head] + sum(([ln, head] for ln in rows), [])
+    ascii_block = [head] + sum(([ln, head] for ln in ascii_rows), [])
+    return emoji + [""] + ascii_block
 
 
 def render_minisudoku(puz):
-    """New format: cells=[[digit|null]]."""
+    """New format: cells=[[digit|null]].
+    Shows a unicode box-drawing view (thick lines on box borders) then ASCII."""
     n_cols, n_rows = puz["grid_size"]
     board = puz["cells"]
-    rows = []
-    for r in range(n_rows):
-        row = []
+    # box dimensions (rows x cols per sub-box); 6x6 mini-sudoku = 2x3
+    BOX = {6: (2, 3), 4: (2, 2), 9: (3, 3)}
+    bh, bw = BOX.get(n_cols, (1, 1))
+
+    def cell(r, c):
+        v = board[r][c]
+        return f" {v} " if v is not None else " . "
+
+    def ucell(r, c):
+        # unicode view leaves empty cells blank (no dots)
+        v = board[r][c]
+        return f" {v} " if v is not None else "   "
+
+    # --- unicode box view ---
+    def hline(left, boxsep, right, thick):
+        seg = "━" if thick else "─"
+        # intra-box separator: continuous on thick lines, ┼ on thin lines
+        midcell = "━" if thick else "┼"
+        parts = []
         for c in range(n_cols):
-            v = board[r][c]
-            row.append(f" {v:>1} " if v is not None else " . ")
-        rows.append("|" + "|".join(row) + "|")
+            parts.append(seg * 3)
+            if c < n_cols - 1:
+                parts.append(boxsep if (c + 1) % bw == 0 else midcell)
+        return left + "".join(parts) + right
+
+    uni = [hline("┏", "┳", "┓", True)]
+    for r in range(n_rows):
+        row = "┃"
+        for c in range(n_cols):
+            row += ucell(r, c)
+            row += "┃" if (c + 1) % bw == 0 else "│"
+        uni.append(row)
+        if r < n_rows - 1:
+            if (r + 1) % bh == 0:
+                uni.append(hline("┣", "╋", "┫", True))
+            else:
+                uni.append(hline("┃", "┃", "┃", False))
+    uni.append(hline("┗", "┻", "┛", True))
+
+    # --- ascii view (kept) ---
+    ascii_rows = []
+    for r in range(n_rows):
+        ascii_rows.append("|" + "|".join(cell(r, c) for c in range(n_cols)) + "|")
     head = "+" + "+".join(["---"] * n_cols) + "+"
-    return [head] + sum(([ln, head] for ln in rows), [])
+    ascii_block = [head] + sum(([ln, head] for ln in ascii_rows), [])
+    return uni + [""] + ascii_block
 
 
 def render_wend(puz):
-    """Wend: grid=[[letter|'.'(hole)]]. Holes shown as '#'."""
+    """Wend: grid=[[letter|'.'(hole)]]. Holes shown as '#'.
+    Solution words are listed below the grid when present (they only exist in
+    reveal-captured JSON; tbp pre-reveal captures omit the key)."""
     n_cols, n_rows = puz["grid_size"]
     grid = puz["grid"]
     rows = []
@@ -162,34 +212,79 @@ def render_wend(puz):
             row.append(" # " if v == "." else f" {v:>1} ")
         rows.append("|" + "|".join(row) + "|")
     head = "+" + "+".join(["---"] * n_cols) + "+"
-    return [head] + sum(([ln, head] for ln in rows), [])
+    out = [head] + sum(([ln, head] for ln in rows), [])
+    words = puz.get("words")
+    if words:
+        out.append("")
+        out.append("Words:")
+        for w in words:
+            out.append(f"  {w}")
+    return out
 
 
 def render_patches(puz):
-    """Patches: clues=[{x=col, y=row, type, size}]. Mark clue cells."""
+    """Patches: clues=[{x=col, y=row, type, size}]. Each cell = 2 chars:
+    shape glyph + size digit (space when size is null)."""
+    GLYPH = {"free": "╋", "square": "◼", "H_rect": "▬", "V_rect": "▌"}
     n_cols, n_rows = puz["grid_size"]
-    # cell -> short label: size for free, letter for fixed shapes
+    # cell -> (glyph, size-or-space)
     mark = {}
     for cl in puz.get("clues", []):
-        x, y = cl["x"], cl["y"]          # 0-indexed
-        c, r = x, y
-        if cl["type"] == "free":
-            mark[(r, c)] = str(cl["size"])
-        elif cl["type"] == "square":
-            mark[(r, c)] = "SQ"
-        elif cl["type"] == "V_rect":
-            mark[(r, c)] = "VR"
-        elif cl["type"] == "H_rect":
-            mark[(r, c)] = "HR"
+        c, r = cl["x"], cl["y"]          # 0-indexed x=col, y=row
+        glyph = GLYPH.get(cl["type"], "?")
+        size = cl.get("size")
+        mark[(r, c)] = glyph + (str(size) if size is not None else " ")
     rows = []
     for r in range(n_rows):
         row = []
         for c in range(n_cols):
-            v = mark.get((r, c))
-            row.append(f" {v:>1} " if v else " . ")
+            v = mark.get((r, c), "..")
+            row.append(f" {v} ")
         rows.append("|" + "|".join(row) + "|")
-    head = "+" + "+".join(["---"] * n_cols) + "+"
+    head = "+" + "+".join(["----"] * n_cols) + "+"
     return [head] + sum(([ln, head] for ln in rows), [])
+
+
+def render_pinpoint(puz):
+    """Pinpoint: 5 clue words + the revealed category/answer phrase.
+
+    No grid -- render the clues as an ordered list and the answer below.
+    """
+    clues = puz.get("clues", [])
+    answer = puz.get("answer")
+    blanks = puz.get("blanks")
+    out = []
+    for i, c in enumerate(clues, 1):
+        out.append(f"  {i}. {c}")
+    out.append("")
+    if answer is not None:
+        blanks_s = f" ({blanks} blanks)" if blanks else ""
+        out.append(f"  answer{blanks_s}: {answer}")
+    return out
+
+
+def render_crossclimb(puz):
+    """Crossclimb: no grid — the answer is the solved 7-word ladder, top→bottom.
+    The 5 middle clues are captured during the reveal (before the reorder), so
+    they are NOT reliably aligned to a solved row; show them as a separate
+    block alongside the shared top/bottom phrase (clue key 0)."""
+    clues = {int(k): v for k, v in puz.get("clues", {}).items()}
+    words = {int(k): v for k, v in puz.get("words", {}).items()}
+    out = []
+    # The ladder is the definitive answer — word per board row (1=top .. 7=bottom)
+    for row in range(1, 8):
+        out.append(f"  {words.get(row, '?'):<8}")
+    # Clues: 1..5 are the middle rows (reveal-captured), 0 is the shared phrase
+    middles = [clues[k] for k in sorted(clues) if k != 0]
+    if middles:
+        out.append("")
+        out.append("Clues (middle rows):")
+        for c in middles:
+            out.append(f"  - {c}")
+    if clues.get(0):
+        out.append("")
+        out.append(f"Phrase (top+bottom): {clues[0]}")
+    return out
 
 
 RENDERERS = {
@@ -199,6 +294,8 @@ RENDERERS = {
     "minisudoku": render_minisudoku,
     "wend": render_wend,
     "patches": render_patches,
+    "pinpoint": render_pinpoint,
+    "crossclimb": render_crossclimb,
 }
 
 
@@ -208,7 +305,8 @@ def show(puz, path, verbose):
     print(f"game      : {g}")
     print(f"number    : {puz.get('number')}")
     print(f"date      : {puz.get('date')}")
-    print(f"grid_size : {puz['grid_size']}  (cols x rows)")
+    gs = puz.get("grid_size")
+    print(f"grid_size : {gs}  (cols x rows)" if isinstance(gs, (list, tuple)) else "grid_size : — (no grid)")
     if g == "zip":
         print(f"nodes     : {len(puz['nodes'])}")
         print(f"walls     : {len(puz['walls'])}")
@@ -227,11 +325,17 @@ def show(puz, path, verbose):
     elif g == "wend":
         holes = sum(1 for row in puz["grid"] for v in row if v == ".")
         print(f"holes     : {holes}")
+        if puz.get("words"):
+            print(f"words     : {len(puz['words'])}")
     elif g == "patches":
         types = {}
         for cl in puz.get("clues", []):
             types[cl["type"]] = types.get(cl["type"], 0) + 1
         print(f"clues    : {len(puz.get('clues', []))}  {types}")
+    elif g == "pinpoint":
+        print(f"clues    : {len(puz.get('clues', []))}")
+        print(f"blanks   : {puz.get('blanks')}")
+        print(f"answer   : {puz.get('answer')}")
     print()
     fn = RENDERERS.get(g)
     if not fn:
@@ -243,7 +347,8 @@ def show(puz, path, verbose):
             "queens": "digit = region id",
             "minisudoku": "digit = given, . = blank",
             "wend": "# = hole, letter = tile",
-            "patches": "digit = free-tile size, SQ=square, VR=V-rect, HR=H-rect, . = empty",
+            "patches": "cell = shape+size (space if null); ╋=free ◼=square ▬=H-rect ▌=V-rect, .. = empty",
+            "pinpoint": "clues lead to one shared category; answer = the revealed category phrase",
         }.get(g, "")
         print(f"Grid ({legend}):")
         for ln in fn(puz):

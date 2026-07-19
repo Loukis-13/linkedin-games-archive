@@ -1,0 +1,22 @@
+{
+  "clues": {
+    "1": "Ends of a magnetic field, such as Earth's North and South",
+    "2": "Electricity, for example",
+    "3": "Bluffing game played around a table at a casino",
+    "4": "One who makes a commitment, as a bride or groom on their wedding day",
+    "5": "Prods, as with a stick or finger",
+    "0": "The top + bottom rows = Two words: the first a person in the electorate, and the second the surveys that sample opinions from the electorate before an election. Keep in mind: The first word may be at the bottom."
+  },
+  "words": {
+    "1": "polls",
+    "2": "poles",
+    "3": "pokes",
+    "4": "poker",
+    "5": "power",
+    "6": "vower",
+    "7": "voter"
+  },
+  "game": "crossclimb",
+  "number": 810,
+  "date": "2026-07-19"
+}

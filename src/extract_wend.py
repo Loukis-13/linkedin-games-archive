@@ -21,12 +21,26 @@ Usage:
                               [--number N] [--words ICY,OVAL,QUICK,LANTERN]
                               [--meta cache/.../wend_meta.json]
 """
-import os, sys, json, argparse
+import os, sys, json, argparse, re
 from datetime import date
 from bs4 import BeautifulSoup
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
+
+
+def extract_words(soup):
+    """Read the solution words from the revealed word-list DOM. Each letter is a
+    div with data-testid="wend-word-list-slot-<word>-<letter>". Returns the list
+    of words, or None if the slots aren't present (board captured pre-reveal)."""
+    slots = {}
+    for el in soup.select('[data-testid^="wend-word-list-slot-"]'):
+        w, l = map(int, re.match(r"wend-word-list-slot-(\d+)-(\d+)",
+                                 el["data-testid"]).groups())
+        slots.setdefault(w, {})[l] = el.get_text(strip=True)
+    if not slots:
+        return None
+    return ["".join(c[i] for i in sorted(c)) for w, c in sorted(slots.items())]
 
 
 def extract(path, number=None, words=None):
@@ -47,8 +61,9 @@ def extract(path, number=None, words=None):
         grid[r][col] = "." if is_hole else letter
     data = {"game": "wend", "number": number, "grid_size": [cols, cols],
             "grid": grid}
-    # Only include "words" when the user actually supplies them (they are NOT
-    # in the board DOM). No placeholder is written when omitted.
+    # Words: prefer the revealed word-list DOM; fall back to an explicit --words
+    # override. Omit the key entirely when neither is available (no placeholder).
+    words = words if words is not None else extract_words(s)
     if words is not None:
         data["words"] = words
     return data
