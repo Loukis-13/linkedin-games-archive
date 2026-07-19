@@ -22,7 +22,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
 from games import GAMES, scraper as _scraper, parser as _parser
-from games import _common
+from games import common as _common
 
 
 def main():
