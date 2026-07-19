@@ -1,0 +1,55 @@
+name: daily-games
+
+on:
+  schedule:
+    - cron: "17 5 * * *"        # 05:17 UTC daily (after LinkedIn refreshes)
+  workflow_dispatch: {}          # allow manual runs from the Actions tab
+
+permissions:
+  contents: write               # needed to commit outputs/ back to the repo
+
+concurrency:
+  group: daily-games
+  cancel-in-progress: false
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install Python deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .
+
+      - name: Cache Playwright browsers
+        id: pw
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: pw-${{ runner.os }}-${{ hashFiles('pyproject.toml') }}
+
+      - name: Install Chromium
+        run: python -m playwright install --with-deps chromium
+
+      - name: Extract today's games
+        run: python extract.py --headless
+
+      - name: Commit outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add outputs/
+          if git diff --cached --quiet; then
+            echo "no new outputs"
+          else
+            git commit -m "auto: outputs for $(date -u +%F)"
+            git push
+          fi
