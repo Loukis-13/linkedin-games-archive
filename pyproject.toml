@@ -1,10 +1,13 @@
 [project]
 name = "linkedin-games-extractor"
 version = "0.1.0"
-description = "Add your description here"
+description = "Capture daily LinkedIn Games puzzles via Playwright into per-day JSON."
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "playwright>=1.61.0",
     "beautifulsoup4>=4.12.0",
 ]
+
+[tool.setuptools]
+packages = ["games"]
