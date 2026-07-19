@@ -1,6 +1,7 @@
 {
   "game": "wend",
   "number": 41,
+  "date": "2026-07-19",
   "grid_size": [
     7,
     7
@@ -71,12 +72,11 @@
     ]
   ],
   "words": [
-    "",
-    "",
-    "",
-    "",
-    "",
-    ""
-  ],
-  "date": "2026-07-19"
+    "EXIT",
+    "STEPS",
+    "OVERLAP",
+    "CLIMBING",
+    "STAIRCASE",
+    "UNDERSTAND"
+  ]
 }

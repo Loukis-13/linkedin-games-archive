@@ -1,6 +1,7 @@
 {
   "game": "patches",
   "number": 124,
+  "date": "2026-07-19",
   "grid_size": [
     8,
     8
@@ -90,6 +91,5 @@
       "type": "V_rect",
       "size": null
     }
-  ],
-  "date": "2026-07-19"
+  ]
 }
