@@ -45,6 +45,18 @@ def load(date_str, game):
         return json.load(f)
 
 
+def start_game(page, gate):
+    """Click 'Start game' (locale-tolerant) and wait for the board to mount.
+
+    Used by games whose board only appears after the landing 'Start game'
+    click. `gate` is the CSS selector for the mounted board (e.g. the grid div
+    the parser expects). Without this click the board is never in the DOM and
+    parse() raises "no <prefix>-grid in DOM (board likely not mounted)".
+    """
+    page.get_by_text(re.compile(r"Start game|Iniciar jogo")).first.click()
+    page.wait_for_selector(gate)
+
+
 # --------------------------------------------------------------------------
 # Grid parsing primitives (zip / tango / queens / minisudoku share DOM shape)
 # --------------------------------------------------------------------------
