@@ -117,16 +117,17 @@ the parser uses `BeautifulSoup` to read the board.
 - Rely on Playwright auto-waiting; `wait_for_selector` is used only as a mount
   gate. The single deliberate exception: `page.wait_for_timeout(2000)` after the
   crossclimb drag (lets the reorder settle).
-- **Board-mount rule**: some games (zip, tango, queens, minisudoku) only render
-  their board **after** the landing "Start game" click — the grid is absent from
-  the DOM on first load, so parsing fails with `no <prefix>-grid in DOM (board
-  likely not mounted)`. Those 4 scrapers call the shared
-  `common.start_game(page, gate)` (clicks "Start game"/"Iniciar jogo" then
-  `wait_for_selector` on the grid) *before* reading HTML. The other 4
-  (patches, wend, pinpoint, crossclimb) already clicked "Start game" for their
-  own reveal flow, so they don't need the helper. **When adding a game: if the
-  board isn't in the pre-click DOM, call `common.start_game` with that game's
-  grid selector as the gate.**
+- **Board-mount rule**: some games only render their board **after** the
+  landing button click — the grid is absent from the DOM on first load, so
+  parsing fails with `no <prefix>-grid in DOM (board likely not mounted)`.
+  Each affected scraper clicks its own landing button (locale-tolerant regex)
+  and `wait_for_selector`s its grid *before* reading HTML, inlined in the
+  scraper (no shared helper). Button text differs by game:
+  - zip / tango / queens / patches / wend / pinpoint / crossclimb:
+    "Start game" / "Iniciar jogo"
+  - **minisudoku**: "Solve now" / "Resolver agora" (different label!)
+  When adding a game, check the actual landing-button label; if the board
+  isn't in the pre-click DOM, click that button then wait for the grid.
 - **crossclimb** is the only game needing real interaction: a solver + real-mouse
   drag (`page.mouse`) + convergent reorder, all inlined in
   `games/crossclimb/scraper.py`. The 7-word ladder is read via
