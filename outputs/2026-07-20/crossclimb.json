@@ -1,0 +1,22 @@
+{
+  "game": "crossclimb",
+  "number": 811,
+  "date": "2026-07-20",
+  "clues": {
+    "1": "Tiny pieces, or 0s and 1s in computing",
+    "2": "Financial institution where checks can be deposited",
+    "3": "Containers, as for recycling or dirty laundry",
+    "4": "Makes a wager in a casino",
+    "5": "Declares to be illegal",
+    "0": "The top + bottom rows = A two-word phrase describing pieces of furniture that can be stacked to allow two people to sleep above and below each other. Keep in mind: The first word may be at the bottom."
+  },
+  "words": {
+    "1": "bunk",
+    "2": "bank",
+    "3": "bans",
+    "4": "bins",
+    "5": "bits",
+    "6": "bets",
+    "7": ""
+  }
+}
