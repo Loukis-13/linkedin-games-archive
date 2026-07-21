@@ -21,6 +21,19 @@ def capture(page: Page, date_str, save_html=False):
             letters.setdefault(row, {})[idx] = e.input_value()
         return {r: "".join(c[i] for i in sorted(c)) for r, c in letters.items()}
 
+    def _wait_filled(n):
+        # Reveal populates each row's <input> asynchronously. On fast/headless
+        # CI the value (or even the element) isn't present right after the
+        # click, so read_words() returned the bottom word blank. Wait until
+        # `n` guess inputs exist and are non-empty before reading.
+        page.wait_for_function(
+            "() => { const ins = Array.from(document.querySelectorAll("
+            "'input[data-crossclimb-guess-input-idx]')); "
+            "const filled = ins.filter(i => (i.value || '').trim() !== '').length; "
+            "return ins.length >= %d && filled >= %d; }" % (n, n),
+            timeout=15000,
+        )
+
     def middle_rows():
         return [(r, "".join(c.input_value() for c in
                 r.locator("input[data-crossclimb-guess-input-idx]").all()))
@@ -70,6 +83,7 @@ def capture(page: Page, date_str, save_html=False):
     for i in range(1, 6):
         game["clues"][i] = page.locator(f"#crossclimb-clue-section-{i}").inner_text()
         page.get_by_text("Reveal row").first.click()
+    _wait_filled(5)  # ensure the 5 middle rows are read before solving
 
     game["words"] = read_words()
 
@@ -85,6 +99,7 @@ def capture(page: Page, date_str, save_html=False):
     game["clues"][0] = page.locator("#crossclimb-clue-section-0").inner_text()
     for _ in range(2):
         page.get_by_text("Reveal row").first.click()
+    _wait_filled(7)  # the 7th (bottom) input is async -- wait before reading
 
     game["words"] = read_words()
 
