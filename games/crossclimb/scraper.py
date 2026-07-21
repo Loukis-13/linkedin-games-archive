@@ -94,12 +94,9 @@ def capture(page: Page, date_str, save_html=False):
 
     page.wait_for_timeout(2000)
 
-    # the last two rows (top + bottom) unlock once the ladder is correct;
-    # their clue is a single shared two-word-phrase clue (id 0)
-    game["clues"][0] = page.locator("#crossclimb-clue-section-0").inner_text()
     for _ in range(2):
         page.get_by_text("Reveal row").first.click()
-    _wait_filled(7)  # the 7th (bottom) input is async -- wait before reading
+        page.wait_for_timeout(1000)
 
     game["words"] = read_words()
 
