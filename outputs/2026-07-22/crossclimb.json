@@ -1,0 +1,22 @@
+{
+  "game": "crossclimb",
+  "number": 813,
+  "date": "2026-07-22",
+  "clues": {
+    "1": "Apollo 11’s destination",
+    "2": "Basketball attempt or espresso unit",
+    "3": "Cut, like a well-manicured lawn",
+    "4": "Happening in the near future",
+    "5": "Black residue from a fire",
+    "0": "The top + bottom rows = A compound word for either a decisive contest between two parties or the final part of a poker hand when cards are revealed. Keep in mind: The first word may be at the bottom."
+  },
+  "words": {
+    "1": "show",
+    "2": "shot",
+    "3": "soot",
+    "4": "soon",
+    "5": "moon",
+    "6": "mown",
+    "7": "down"
+  }
+}
