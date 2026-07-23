@@ -1,0 +1,22 @@
+{
+  "game": "crossclimb",
+  "number": 814,
+  "date": "2026-07-23",
+  "clues": {
+    "1": "Money that’s borrowed from a bank",
+    "2": "Wailing sound, perhaps heard from a ghost in a horror movie",
+    "3": "Common amount of bread to purchase",
+    "4": "Struggling to decide between two choices",
+    "5": "Start of the day, poetically",
+    "0": "The top + bottom rows = Two words that complete the idiom “___ over a new ___,” meaning to make a fresh start. Keep in mind: The first word may be at the bottom."
+  },
+  "words": {
+    "1": "leaf",
+    "2": "loaf",
+    "3": "loan",
+    "4": "moan",
+    "5": "morn",
+    "6": "torn",
+    "7": "turn"
+  }
+}
