@@ -1,0 +1,22 @@
+{
+  "game": "crossclimb",
+  "number": 816,
+  "date": "2026-07-25",
+  "clues": {
+    "1": "Begin",
+    "2": "Hammerhead or great white, for example",
+    "3": "Parts of a constellation",
+    "4": "It may light a fire",
+    "5": "Practices for a boxing match",
+    "0": "The top + bottom rows = Two words to describe someone intelligent."
+  },
+  "words": {
+    "1": "smart",
+    "2": "start",
+    "3": "stars",
+    "4": "spars",
+    "5": "spark",
+    "6": "shark",
+    "7": "sharp"
+  }
+}
