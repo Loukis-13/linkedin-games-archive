@@ -201,6 +201,12 @@ Daily headless capture that **commits** the day's `outputs/`.
 - **Extract**: `python extract.py --headless` → writes `outputs/<today>/`.
 - **Commit**: if `outputs/` changed, commits + pushes (needs
   `permissions: contents: write`; uses the built-in `GITHUB_TOKEN`).
+- **README daily games**: before committing outputs, `python scripts/update_readme.py`
+  regenerates the `## Today's games (YYYY-MM-DD)` block between the
+  `<!-- DAILY-GAMES-START -->` / `<!-- DAILY-GAMES-END -->` markers in
+  `README.md` from today's 8 JSON files (grids only, no header). The section is
+  idempotent and exists only for quick eyeballing on GitHub; the authoritative
+  data is `outputs/`.
 
 First runs surfaced two real bugs that are now fixed:
 1. `pip install -e .` failed on setuptools auto-discovery → `packages = ["games"]`.
