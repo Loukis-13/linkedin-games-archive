@@ -14,6 +14,7 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 ## Today's games (2026-07-26)
 
 ### zip
+```
 +----+----+----+----+----+----+----+----+
 | ..   ..   ..   ..   ..   ..   ..   .. |
 +                                       +
@@ -31,8 +32,10 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 +                                       +
 | ..   ..   ..   ..   ..   ..   ..   .. |
 +---- ---- ---- ---- ---- ---- ---- ----+
+```
 
 ### tango
+```
 +---+---+---+---+---+---+
 | . | . | . | . | M | M |
 +---+---+---+---+---+---+
@@ -46,8 +49,10 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 +---+---+---+---+---+---+
 | . | S | . | . | . | . |
 +---+---+---+---+---+---+
+```
 
 ### queens
+```
 🟩🟩🟦🟦🟦🟦🟦🟦🟦
 🟩🟥🟥🟥⬜⬜⬜⬜🟦
 🟩🟩🟩🟥⬜⬜⬜⬜🟪
@@ -57,8 +62,10 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 🟩⬜⬜⬜⬜🟧🟨🟧🟫
 🟩⬜⬜⬜⬜🟧🟧🟧🟫
 🟩🟩⬛⬛⬛⬛⬛🟫🟫
+```
 
 ### minisudoku
+```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
 ┃   │   │ 3 ┃   │ 5 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
@@ -72,8 +79,10 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 ┃───┼───┼───┃───┼───┼───┃
 ┃   │ 3 │   ┃ 2 │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
+```
 
 ### patches
+```
 +----+----+----+----+----+----+----+----+
 | .. | .. | .. | .. | +4 | .. | +4 | .. |
 +----+----+----+----+----+----+----+----+
@@ -91,8 +100,10 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 +----+----+----+----+----+----+----+----+
 | .. | +4 | .. | +4 | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+----+
+```
 
 ### wend
+```
 +---+---+---+---+---+---+---+
 | O | K | H | # | K | S | T |
 +---+---+---+---+---+---+---+
@@ -116,8 +127,10 @@ Words:
   COOKBOOK
   ARTICHOKE
   BACKSTROKE
+```
 
 ### pinpoint
+```
   1. Bell
   2. Valves
   3. Tuning slide
@@ -125,8 +138,10 @@ Words:
   5. Metal tubing (muted gold/yellow)
 
   answer (5 blanks): Parts of a brass instrument (like a trumpet)!
+```
 
 ### crossclimb
+```
   cold    
   told    
   toed    
@@ -143,4 +158,5 @@ Clues (middle rows):
   - Ready to be hit, as a golf ball
 
 Phrase (top+bottom): The top + bottom rows = A two-word phrase meaning "to refrigerate." Keep in mind: The first word may be at the bottom.
+```
 <!-- DAILY-GAMES-END -->

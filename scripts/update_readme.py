@@ -32,7 +32,9 @@ def build_block(date_str):
         fmt = "unicode" if g in _UNICODE_GAMES else "ascii"
         grid = r.render(date_str, fmt=fmt)  # grids only, no _header
         out.append(f"### {g}")
+        out.append("```")
         out.extend(grid)
+        out.append("```")
         out.append("")
     return "\n".join(out).rstrip("\n")
 
