@@ -11,136 +11,137 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-07-27)
+## Today's games (2026-07-28)
 
 ### zip
 ```
 +----+----+----+----+----+----+
-| ..    1   ..   ..   ..   .. |
+| ..   ..   ..   ..   ..   .. |
 +                             +
-| ..    8   ..   ..   ..   .. |
-+                             +
-|  2   ..   ..   .. | ..    7 |
-+---- ----          +---- ----+
-|  3   .. | ..   ..   ..    5 |
-+         +                   +
-| ..   ..   ..   ..    6   .. |
-+                             +
-| ..   ..   ..   ..    4   .. |
+|  8   ..    9 |  2    1   10 |
++              +              +
+| ..   ..   .. | ..   ..   .. |
++     ---- ----+---- ----     +
+| ..   ..   .. | ..   ..   .. |
++              +              +
+|  7    6    5 |  3   ..    4 |
++              +              +
+| ..   ..   ..   ..   ..   .. |
 +---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| M | S | . | . | S | S |
+| . | . | . | . x . | . |
 +---+---+---+---+---+---+
-| M | S | . | . | M | S |
+| . | . | . | S | S | . |
++---+---+---+---+---+-=-+
+| . | . | . | S | M | . |
 +---+---+---+---+---+---+
-| . | . | . = . | . | . |
+| . | S | S | . | . | . |
++-x-+---+---+---+---+---+
+| . | M | S | . | . | . |
 +---+---+---+---+---+---+
-| . | . | . = . | . | . |
-+---+---+---+---+---+---+
-| S | . | . | . | . | M |
-+---+---+---+---+---+---+
-| . | M | M | S | S | . |
+| . | . x . | . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟥🟧🟧🟧
-🟥🟨🟩🟩🟧🟧🟧
-🟥🟩🟩🟩🟧🟧🟧
-🟦🟩🟩🟩🟩🟩🟪
-🟦🟩🟩🟩🟩🟩🟪
-🟦🟩🟩🟩🟩🟫🟪
-🟦🟦🟦🟪🟪🟪🟪
+⬛🟥🟨🟨🟨🟩🟩🟩
+🟥🟥🟨🟩🟩🟩🟦🟦
+🟥🟨🟨🟩🟦🟦🟦🟪
+🟥🟨🟩🟩🟦🟪🟪🟪
+🟥🟨🟩🟦🟦🟪🟫🟫
+🟥🟨🟩🟦🟪🟪🟧🟧
+🟥🟨🟩🟦🟦🟪🟪🟧
+🟥🟥🟩🟩🟦🟦🟪🟪
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │ 1 │ 2 ┃ 3 │ 4 │   ┃
+┃   │   │ 1 ┃ 2 │ 3 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 5 │   │   ┃   │   │ 6 ┃
+┃   │   │   ┃   │   │ 1 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
 ┃ 1 │   │   ┃   │   │ 2 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 3 │   │   ┃   │   │ 4 ┃
+┃ 4 │   │   ┃   │   │ 3 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 2 │   │   ┃   │   │ 3 ┃
+┃ 5 │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 3 │ 5 ┃ 2 │ 6 │   ┃
+┃   │ 2 │ 6 ┃ 4 │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+
-| |6 | .. | +4 | .. | .. | .. |
+| +5 | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | |5 | .. | +3 | .. | .. |
+| .. | .. | .. | +5 | .. | +5 |
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
+| .. | +5 | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
+| .. | .. | .. | .. | =  | .. |
 +----+----+----+----+----+----+
-| .. | .. | +6 | .. | |4 | .. |
+| |  | .. | =  | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | +3 | .. | |5 |
+| .. | .. | .. | .. | .. | +5 |
 +----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+
-| H | T | M | R | A |
+| H | D | D | X | O |
 +---+---+---+---+---+
-| O | O | M | C | I |
+| C | E | O | # | D |
 +---+---+---+---+---+
-| M | # | M | # | M |
+| P | E | # | R | A |
 +---+---+---+---+---+
-| E | # | A | # | I |
+| S | # | P | A | S |
 +---+---+---+---+---+
-| M | # | M | # | M |
+| # | A | T | L | A |
 +---+---+---+---+---+
 
 Words:
-  ARM
-  MEMO
-  MIMIC
-  MAMMOTH
+  ODD
+  ATLAS
+  SPEECH
+  PARADOX
 ```
 
 ### pinpoint
 ```
-  1. Sat
-  2. Wed
-  3. Sun
-  4. Fri
-  5. Mon
+  1. Batman
+  2. Samsun
+  3. Antalya
+  4. Ankara
+  5. Istanbul
 
-  answer (5 blanks): Abbreviations for days of the week!
+  answer (5 blanks): Cities in Türkiye!
 ```
 
 ### crossclimb
 ```
-  chin    
-  coin    
-  corn    
-  core    
-  cone    
-  none    
-  nose    
+  fore    
+  fork    
+  pork    
+  port    
+  post    
+  cost    
+  cast    
 
 Clues (middle rows):
-  - Edible holder for ice cream
-  - Piece of metal currency that may be flipped
-  - Part of an apple that contains its seeds
-  - “A friend to all is a friend to ___” (Aristotle)
-  - Cereal crop that might appear at breakfast in “flake” form
+  - Common piece of tableware, or a branch in the road
+  - Place to plug in a USB device on a laptop
+  - Price to pay
+  - Ham or bacon
+  - Share an update on social media
 
-Phrase (top+bottom): The top + bottom rows = Two parts of the face.
+Phrase (top+bottom): The top + bottom rows = A compound word for a prediction made ahead of time, such as what the weather will be tomorrow. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
