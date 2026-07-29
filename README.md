@@ -11,137 +11,137 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-07-28)
+## Today's games (2026-07-29)
 
 ### zip
 ```
 +----+----+----+----+----+----+
+| 10   ..    9    8   ..    6 |
++                             +
 | ..   ..   ..   ..   ..   .. |
 +                             +
-|  8   ..    9 |  2    1   10 |
-+              +              +
-| ..   ..   .. | ..   ..   .. |
-+     ---- ----+---- ----     +
-| ..   ..   .. | ..   ..   .. |
-+              +              +
-|  7    6    5 |  3   ..    4 |
-+              +              +
+|  7   ..   ..   ..   ..   .. |
++                             +
+| ..   ..   ..   ..   ..    5 |
++                             +
 | ..   ..   ..   ..   ..   .. |
++                             +
+|  4   ..    1    2   ..    3 |
 +---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . | . | . x . | . |
+| . x . | . | . | . | . |
++---+---+---+---+-=-+-x-+
+| . = . | . | . | . | . |
 +---+---+---+---+---+---+
-| . | . | . | S | S | . |
-+---+---+---+---+---+-=-+
-| . | . | . | S | M | . |
+| . | M | . | . | M | . |
 +---+---+---+---+---+---+
-| . | S | S | . | . | . |
-+-x-+---+---+---+---+---+
-| . | M | S | . | . | . |
+| . | M | . | . | S | . |
 +---+---+---+---+---+---+
-| . | . x . | . | . | . |
+| . | . | . | . | . = . |
++-=-+-x-+---+---+---+---+
+| . | . | . | . | . = . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-⬛🟥🟨🟨🟨🟩🟩🟩
-🟥🟥🟨🟩🟩🟩🟦🟦
-🟥🟨🟨🟩🟦🟦🟦🟪
-🟥🟨🟩🟩🟦🟪🟪🟪
-🟥🟨🟩🟦🟦🟪🟫🟫
-🟥🟨🟩🟦🟪🟪🟧🟧
-🟥🟨🟩🟦🟦🟪🟪🟧
-🟥🟥🟩🟩🟦🟦🟪🟪
+🟨🟨🟨🟨🟨🟨🟨🟨
+🟨🟨🟧🟧🟪🟪🟨🟨
+🟨🟧🟧🟪🟪🟪🟨🟨
+🟨🟫🟫🟨🟨🟨🟦🟦
+🟨🟨🟫🟨🟨🟨🟦🟦
+🟨🟨🟫🟨🟨🟨🟦🟩
+🟨🟨🟨🟨🟥🟥🟩🟩
+⬛⬛⬛🟥🟥🟥🟥🟩
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │ 1 ┃ 2 │ 3 │   ┃
+┃   │ 4 │   ┃   │ 1 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │   │ 1 ┃
+┃ 2 │   │   ┃   │   │ 5 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 1 │   │   ┃   │   │ 2 ┃
+┃   │   │ 6 ┃ 3 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 4 │   │   ┃   │   │ 3 ┃
+┃ 1 │   │   ┃   │   │ 4 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 5 │   │   ┃   │   │   ┃
+┃   │ 2 │   ┃   │ 5 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 2 │ 6 ┃ 4 │   │   ┃
+┃ 6 │   │   ┃   │   │ 3 ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+
-| +5 | .. | .. | .. | .. | .. |
+| .. | .. | +4 | +3 | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | +5 | .. | +5 |
+| .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | +5 | .. | .. | .. | .. |
+| .. | |  | .. | .. | +4 | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | =  | .. |
+| .. | -  | .. | .. | +6 | .. |
 +----+----+----+----+----+----+
-| |  | .. | =  | .. | .. | .. |
+| .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | +5 |
+| .. | .. | +6 | +5 | .. | .. |
 +----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+
-| H | D | D | X | O |
+| H | I | L | M | N |
 +---+---+---+---+---+
-| C | E | O | # | D |
+| G | F | # | # | O |
 +---+---+---+---+---+
-| P | E | # | R | A |
+| U | O | D | # | P |
 +---+---+---+---+---+
-| S | # | P | A | S |
+| A | B | C | O | U |
 +---+---+---+---+---+
-| # | A | T | L | A |
+| H | I | T | A | T |
 +---+---+---+---+---+
 
 Words:
-  ODD
-  ATLAS
-  SPEECH
-  PARADOX
+  FILM
+  DOUGH
+  COUPON
+  HABITAT
 ```
 
 ### pinpoint
 ```
-  1. Batman
-  2. Samsun
-  3. Antalya
-  4. Ankara
-  5. Istanbul
+  1. Merry
+  2. Sam
+  3. Boromir
+  4. Frodo
+  5. Gandalf the Grey
 
-  answer (5 blanks): Cities in Türkiye!
+  answer (5 blanks): Members of the Fellowship of the Ring (J.R.R. Tolkien)!
 ```
 
 ### crossclimb
 ```
-  fore    
-  fork    
-  pork    
-  port    
-  post    
-  cost    
-  cast    
+  foot    
+  boot    
+  boos    
+  bots    
+  both    
+  bath    
+  path    
 
 Clues (middle rows):
-  - Common piece of tableware, or a branch in the road
-  - Place to plug in a USB device on a laptop
-  - Price to pay
-  - Ham or bacon
-  - Share an update on social media
+  - Best of ___ worlds (enjoy two things simultaneously)
+  - Type of shoe that extends up the lower leg to offer more protection
+  - Software programs that crawl the web to analyze web pages
+  - Protesting sounds heard after a controversial sports call
+  - Relaxing soak in a tub
 
-Phrase (top+bottom): The top + bottom rows = A compound word for a prediction made ahead of time, such as what the weather will be tomorrow. Keep in mind: The first word may be at the bottom.
+Phrase (top+bottom): The top + bottom rows = A compound word for a narrow walkway used by pedestrians and not vehicles. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
