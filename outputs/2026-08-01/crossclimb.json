@@ -1,0 +1,22 @@
+{
+  "game": "crossclimb",
+  "number": 823,
+  "date": "2026-08-01",
+  "clues": {
+    "1": "Potential customers who are interested in a company’s services",
+    "2": "___ a hand (helps out)",
+    "3": "Urges on with a stick",
+    "4": "Lots and lots",
+    "5": "Alumni of a university, for short",
+    "0": "The top + bottom rows = A compound word describing biomes like prairies, steppes, and savannas. Keep in mind: The first word may be at the bottom."
+  },
+  "words": {
+    "1": "lands",
+    "2": "lends",
+    "3": "leads",
+    "4": "loads",
+    "5": "goads",
+    "6": "grads",
+    "7": "grass"
+  }
+}
