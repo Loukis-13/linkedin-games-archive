@@ -1,0 +1,22 @@
+{
+  "game": "crossclimb",
+  "number": 824,
+  "date": "2026-08-02",
+  "clues": {
+    "1": "___-goose chase (lengthy and usually fruitless pursuit)",
+    "2": "Breathing organ used by a fish to get oxygen from water",
+    "3": "Gentle or moderate",
+    "4": "Cunning and shrewd",
+    "5": "Place where grain is ground into flour",
+    "0": "The top + bottom rows = Two words that complete the saying “___ the ___” meaning to embellish or overdecorate something that is already beautiful. Keep in mind: The first word may be at the bottom."
+  },
+  "words": {
+    "1": "gild",
+    "2": "gill",
+    "3": "mill",
+    "4": "mild",
+    "5": "wild",
+    "6": "wily",
+    "7": "lily"
+  }
+}
