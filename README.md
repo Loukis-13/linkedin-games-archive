@@ -11,22 +11,22 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-08-03)
+## Today's games (2026-08-04)
 
 ### zip
 ```
 +----+----+----+----+----+----+
-| ..    9   ..   ..    2   .. |
-+                             +
-| ..   10    1   12   11   .. |
-+                             +
-| ..   ..   ..   ..   ..   .. |
-+     ---- ---- ---- ----     +
 | ..   ..   ..   ..   ..   .. |
 +                             +
-| ..    6    7    4    5   .. |
-+                             +
-| ..    8   ..   ..    3   .. |
+| ..   ..    7 | ..    4 | .. |
++              +         +    +
+| ..   ..    8 | ..    3 | .. |
++              +         +    +
+| .. |  6   .. |  2   ..   .. |
++    +         +              +
+| .. |  1   .. |  5   ..   .. |
++    +         +              +
+| ..   ..   ..   ..   ..   .. |
 +---- ---- ---- ---- ---- ----+
 ```
 
@@ -35,43 +35,43 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 +---+---+---+---+---+---+
 | . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . | M | M | S | M | . |
+| M | . | . | . = . | . |
++---+---+---+-=-+-=-+---+
+| . | M | . | . = . | . |
 +---+---+---+---+---+---+
-| . | M | . | . | M | . |
-+---+---+-=-+-x-+---+---+
-| . | S | . | . | S | . |
+| M | . | M | . | . | . |
 +---+---+---+---+---+---+
-| . | M | M | S | S | . |
+| . | S | . | M | . | . |
 +---+---+---+---+---+---+
-| . | . | . | . | . | . |
+| M | . | S | . | M | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟧🟧🟧🟨🟨
-🟥🟥🟧🟩🟧🟧🟨
-🟥🟥🟩🟩🟩🟧🟧
-🟦🟩🟩🟪🟩🟩🟩
-🟦🟦🟩🟩🟩🟦🟩
-🟫🟦🟦🟩🟦🟦🟦
-🟫🟫🟦🟦🟦🟦🟦
+🟥🟥🟥🟥🟥🟥🟥
+🟥🟧🟧🟧🟨🟥🟨
+🟩🟧🟦🟧🟨🟥🟨
+🟩🟧🟧🟧🟨🟨🟨
+🟩🟩🟩🟧🟪🟪🟪
+🟩🟩🟩🟧🟧🟫🟫
+🟩🟩🟩🟩🟩🟩🟫
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │ 1 ┃ 2 │   │   ┃
+┃   │   │   ┃ 1 │ 2 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 3 ┃ 4 │   │   ┃
+┃   │ 1 │ 2 ┃   │   │ 3 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 3 │ 4 │   ┃   │ 1 │ 2 ┃
+┃   │ 2 │   ┃   │   │ 4 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 1 │ 5 │   ┃   │ 3 │ 4 ┃
+┃ 1 │   │   ┃   │ 5 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │ 4 ┃ 3 │   │   ┃
+┃ 2 │   │   ┃ 4 │ 6 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 5 ┃ 1 │   │   ┃
+┃   │ 4 │ 6 ┃   │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
@@ -80,13 +80,13 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 +----+----+----+----+----+----+
 | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| +3 | +8 | .. | .. | .. | .. |
+| .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | +8 | +3 |
+| .. | .. | |  | =  | .. | .. |
 +----+----+----+----+----+----+
-| +3 | +8 | .. | .. | .. | .. |
+| .. | +8 | .. | .. | +4 | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | |  |
+| +4 | .. | .. | .. | .. | +8 |
 +----+----+----+----+----+----+
 | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+
@@ -95,52 +95,51 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 ### wend
 ```
 +---+---+---+---+---+
-| I | M | I | L | H |
+| A | # | A | # | A |
 +---+---+---+---+---+
-| T | # | # | # | C |
+| L | G | R | C | C |
 +---+---+---+---+---+
-| N | I | # | I | T |
+| # | E | B | E | # |
 +---+---+---+---+---+
-| S | # | # | # | B |
+| G | E | S | S | L |
 +---+---+---+---+---+
-| I | S | T | T | I |
+| A | U | G | N | A |
 +---+---+---+---+---+
 
 Words:
-  BIT
-  ITCH
-  LIMIT
-  INSIST
+  ACCESS
+  ALGEBRA
+  LANGUAGE
 ```
 
 ### pinpoint
 ```
-  1. Date
-  2. Lychee
-  3. Apricot
-  4. Peach
-  5. Cherry
+  1. Ghosts in Pac-Man
+  2. Grand Slams in tennis
+  3. Bases in DNA
+  4. Nations in the United Kingdom
+  5. Train spaces in Monopoly (1/side)
 
-  answer (5 blanks): Names of stone fruits (drupes)!
+  answer (5 blanks): Things that come in groups of four!
 ```
 
 ### crossclimb
 ```
-  road    
-  toad    
-  told    
-  toll    
-  tall    
-  tail    
-  rail    
+  sets    
+  sees    
+  fees    
+  feel    
+  heel    
+  heal    
+  head    
 
 Clues (middle rows):
-  - Amphibian creature similar to a frog
-  - Opposite of short
-  - “I ___ you so!” (expression when someone didn’t listen to a prior warning)
-  - Part of a dog that might wag
-  - Payment to cross a bridge
+  - Touch with one’s hand
+  - Observes with one’s eyes
+  - Part of the foot, and a homophone of another answer in this ladder
+  - Get better, and a homophone of another answer in this ladder
+  - Fixed prices for a service
 
-Phrase (top+bottom): The top + bottom rows = A compound word for a system of transportation by train, or one of the physical tracks used for it. Keep in mind: The first word may be at the bottom.
+Phrase (top+bottom): The top + bottom rows = A compound word for devices that might be worn during videos calls to both hear and be heard. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
