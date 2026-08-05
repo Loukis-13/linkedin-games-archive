@@ -11,135 +11,143 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-08-04)
+## Today's games (2026-08-05)
 
 ### zip
 ```
 +----+----+----+----+----+----+
-| ..   ..   ..   ..   ..   .. |
+| ..   ..    1    2   ..   .. |
 +                             +
-| ..   ..    7 | ..    4 | .. |
-+              +         +    +
-| ..   ..    8 | ..    3 | .. |
-+              +         +    +
-| .. |  6   .. |  2   ..   .. |
-+    +         +              +
-| .. |  1   .. |  5   ..   .. |
-+    +         +              +
-| ..   ..   ..   ..   ..   .. |
+| ..   ..   ..   ..   10   .. |
++                             +
+| ..   ..    9   ..    4   .. |
++                             +
+| ..    6   ..    5   ..   .. |
++                             +
+| ..    7   ..   ..   ..   .. |
++                             +
+| ..   ..    8    3   ..   .. |
 +---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . | . | . | . | . |
+| . | . | S | M | . | . |
 +---+---+---+---+---+---+
-| M | . | . | . = . | . |
-+---+---+---+-=-+-=-+---+
-| . | M | . | . = . | . |
+| . | . | M | S | . | . |
 +---+---+---+---+---+---+
-| M | . | M | . | . | . |
+| S | S | . | . | . = . |
 +---+---+---+---+---+---+
-| . | S | . | M | . | . |
+| M | S | . | . | . x . |
 +---+---+---+---+---+---+
-| M | . | S | . | M | . |
+| . | . | . = . | . | . |
++---+---+---+---+---+---+
+| . | . | . = . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟥🟥🟥🟥
-🟥🟧🟧🟧🟨🟥🟨
-🟩🟧🟦🟧🟨🟥🟨
-🟩🟧🟧🟧🟨🟨🟨
-🟩🟩🟩🟧🟪🟪🟪
-🟩🟩🟩🟧🟧🟫🟫
-🟩🟩🟩🟩🟩🟩🟫
+🟥🟥🟥🟧🟨🟨🟨🟩
+🟥🟦🟥🟧🟨🟪🟨🟩
+🟥🟦🟥🟧🟨🟪🟨🟩
+🟥🟥🟥🟧🟨🟨🟨🟩
+🟥🟥🟥🟧🟥🟥🟫🟫
+🟥🟥🟥🟧🟥🟥🟥🟥
+🟥🟥🟥🟥🟥🟥🟥⬛
+⬛⬛⬛⬛⬛⬛⬛⬛
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │   ┃ 1 │ 2 │   ┃
+┃ 1 │   │ 2 ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 1 │ 2 ┃   │   │ 3 ┃
+┃   │   │   ┃ 5 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 2 │   ┃   │   │ 4 ┃
+┃ 2 │   │   ┃   │ 1 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 1 │   │   ┃   │ 5 │   ┃
+┃   │ 3 │   ┃   │   │ 4 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 2 │   │   ┃ 4 │ 6 │   ┃
+┃   │   │ 4 ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 4 │ 6 ┃   │   │   ┃
+┃   │   │   ┃ 3 │   │ 2 ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | |  | =  | .. | .. |
-+----+----+----+----+----+----+
-| .. | +8 | .. | .. | +4 | .. |
-+----+----+----+----+----+----+
-| +4 | .. | .. | .. | .. | +8 |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | =  | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | +15 | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | +25 | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | |  | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+
-| A | # | A | # | A |
-+---+---+---+---+---+
-| L | G | R | C | C |
-+---+---+---+---+---+
-| # | E | B | E | # |
-+---+---+---+---+---+
-| G | E | S | S | L |
-+---+---+---+---+---+
-| A | U | G | N | A |
-+---+---+---+---+---+
++---+---+---+---+---+---+
+| # | E | E | # | # | # |
++---+---+---+---+---+---+
+| A | T | X | A | # | # |
++---+---+---+---+---+---+
+| U | Q | K | M | E | # |
++---+---+---+---+---+---+
+| # | E | N | P | L | A |
++---+---+---+---+---+---+
+| # | # | I | F | R | E |
++---+---+---+---+---+---+
+| # | # | # | E | A | # |
++---+---+---+---+---+---+
 
 Words:
-  ACCESS
-  ALGEBRA
-  LANGUAGE
+  AREA
+  KNIFE
+  EQUATE
+  EXAMPLE
 ```
 
 ### pinpoint
 ```
-  1. Ghosts in Pac-Man
-  2. Grand Slams in tennis
-  3. Bases in DNA
-  4. Nations in the United Kingdom
-  5. Train spaces in Monopoly (1/side)
+  1. Drill
+  2. Marmoset
+  3. Capuchin
+  4. Macaque
+  5. Baboon
 
-  answer (5 blanks): Things that come in groups of four!
+  answer (5 blanks): Types of monkey!
 ```
 
 ### crossclimb
 ```
-  sets    
-  sees    
-  fees    
-  feel    
-  heel    
-  heal    
-  head    
+  cape    
+  tape    
+  taps    
+  tans    
+  tons    
+  tows    
+  town    
 
 Clues (middle rows):
-  - Touch with one’s hand
-  - Observes with one’s eyes
-  - Part of the foot, and a homophone of another answer in this ladder
-  - Get better, and a homophone of another answer in this ladder
-  - Fixed prices for a service
+  - Sticky strip that can be used instead of glue
+  - Gets a lot of rays at the beach
+  - Pulls an automobile to a repair shop
+  - A great amount, or units to describe something weighing 10,000 pounds
+  - Light hits
 
-Phrase (top+bottom): The top + bottom rows = A compound word for devices that might be worn during videos calls to both hear and be heard. Keep in mind: The first word may be at the bottom.
+Phrase (top+bottom): The top + bottom rows = A two-word name for a port city that is the legislative capital of South Africa. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->

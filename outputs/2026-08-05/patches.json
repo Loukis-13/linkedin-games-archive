@@ -1,0 +1,35 @@
+{
+  "game": "patches",
+  "number": 141,
+  "date": "2026-08-05",
+  "grid_size": [
+    8,
+    8
+  ],
+  "clues": [
+    {
+      "x": 6,
+      "y": 0,
+      "type": "square",
+      "size": null
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "type": "free",
+      "size": 15
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "type": "free",
+      "size": 25
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "type": "V_rect",
+      "size": null
+    }
+  ]
+}
