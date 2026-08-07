@@ -2,7 +2,7 @@ name: daily-games
 
 on:
   schedule:
-    - cron: "17 5 * * *"        # 05:17 UTC daily (after LinkedIn refreshes)
+    - cron: "20 8 * * *"        # 08:20 UTC daily — after LinkedIn's midnight-PT refresh (~07:00 UTC summer PDT / 08:00 UTC winter PST); year-round safe
   workflow_dispatch: {}          # allow manual runs from the Actions tab
 
 permissions:
