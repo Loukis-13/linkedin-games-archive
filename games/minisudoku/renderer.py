@@ -19,6 +19,7 @@ def _header(puz):
         f"date      : {puz.get('date')}",
         f"grid_size : {puz['grid_size']}  (cols x rows)",
         f"givens    : {filled}",
+    ] + ([f"title     : {puz['title']}"] if puz.get("title") else []) + [
         "",
         "Grid (digit = given, . = blank):",
     ]
