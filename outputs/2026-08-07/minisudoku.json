@@ -1,0 +1,60 @@
+{
+  "game": "minisudoku",
+  "number": 361,
+  "date": "2026-08-07",
+  "grid_size": [
+    6,
+    6
+  ],
+  "cells": [
+    [
+      1,
+      null,
+      null,
+      null,
+      4,
+      null
+    ],
+    [
+      null,
+      2,
+      null,
+      null,
+      null,
+      1
+    ],
+    [
+      null,
+      null,
+      3,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      4,
+      null,
+      null
+    ],
+    [
+      2,
+      null,
+      null,
+      null,
+      5,
+      null
+    ],
+    [
+      null,
+      3,
+      null,
+      null,
+      null,
+      6
+    ]
+  ],
+  "title": "Backslash"
+}
