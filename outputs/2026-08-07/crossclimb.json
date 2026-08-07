@@ -3,20 +3,20 @@
   "number": 829,
   "date": "2026-08-07",
   "clues": {
-    "1": "“All is fair in ___ and war”",
-    "2": "Word a golfer may shout when a ball is hit off course",
-    "3": "Stories passed down between generations that may or may not be true",
-    "4": "As it happens, like a news event being broadcast",
-    "5": "Major automobile manufacturer based in the US in Michigan",
-    "0": "The top + bottom rows = A compound word that describes how much something has increased after it has quintupled. Keep in mind: The first word may be at the bottom."
+    "1": "Burrowing animal, or a unit of measurement in chemistry",
+    "2": "A system to encrypt words to send a secret message",
+    "3": "Sharpen, as one’s skills",
+    "4": "The most frequently appearing value in a data set",
+    "5": "Something that can be dug in the ground",
+    "0": "The top + bottom rows = Two words with opposite meanings that often appear together idiomatically, as in the sentence “The opportunity has ___ and ___.” Keep in mind: The first word may be at the bottom."
   },
   "words": {
-    "1": "five",
-    "2": "live",
-    "3": "love",
-    "4": "lore",
-    "5": "fore",
-    "6": "ford",
-    "7": "fold"
+    "1": "come",
+    "2": "code",
+    "3": "mode",
+    "4": "mole",
+    "5": "hole",
+    "6": "hone",
+    "7": "gone"
   }
 }

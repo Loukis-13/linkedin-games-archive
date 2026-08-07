@@ -18,15 +18,15 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 +----+----+----+----+----+----+----+
 | ..   ..   ..   ..   ..   ..   .. |
 +                                  +
-| ..   11   ..   12    7    8   .. |
+| ..   12    5    4   10   11   .. |
 +                                  +
-| ..   10   ..    9   ..   ..   .. |
+| ..   13   ..   ..   ..    9   .. |
 +                                  +
-| ..   13   ..   14    4    3   .. |
+| ..   16   ..   ..   ..    1   .. |
 +                                  +
-| ..    6   ..    5   ..   ..   .. |
+| ..   15   ..   ..   ..    8   .. |
 +                                  +
-| ..    1   ..    2   ..   ..   .. |
+| ..   14    6    3    2    7   .. |
 +                                  +
 | ..   ..   ..   ..   ..   ..   .. |
 +---- ---- ---- ---- ---- ---- ----+
@@ -35,120 +35,120 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . x . | M | . | . |
+| M | . | S | . | . | . |
++---+-x-+---+-x-+---+---+
+| . x . | M | . | . | . |
 +---+---+---+---+---+---+
-| . | . | M | . | . | . |
-+-x-+---+---+---+---+---+
-| . | S | . | . | . | S |
+| M | M | S | . | . | . |
++---+---+---+-x-+---+---+
+| . x . | . x . | . | . |
 +---+---+---+---+---+---+
-| M | . | . | . | S | . |
-+---+---+---+---+---+-=-+
-| . | . | . | M | . | . |
+| . | . | . | . | M | . |
 +---+---+---+---+---+---+
-| . | . | S | . x . | . |
+| . | . | . | . | . | S |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟧🟧🟨🟨🟨
-🟥🟥🟧🟧🟧🟨🟨🟨
-🟩🟩🟧🟧🟦🟦🟨🟨
-🟩🟩🟩🟪🟦🟦🟦🟨
-🟨🟩🟩🟫🟫🟦🟦🟨
-🟨🟨🟫🟫🟫⬛⬛🟨
-🟨🟨🟫🟫🟨🟨🟨🟨
-🟨🟨🟨🟨🟨🟨🟨🟨
+⬜⬜⬜⬜🟧🟧🟧🟨🟨
+⬜🟩🟩🟩🟩🟩🟧🟩🟨
+⬜🟩🟪🟪🟪🟩🟦🟩🟨
+⬜🟩🟪🟩🟪🟩🟦🟩🟫
+⬜🟩🟪🟩🟪🟩🟦🟩🟫
+⬛🟩🟥🟩🟩🟩🟦🟩🟫
+⬛🟩🟥🟥🟥🟦🟦🟩🟫
+⬛🟩🟩🟩🟩🟩🟩🟩🟫
+⬛⬛⬛⬛⬛⬛🟫🟫🟫
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃ 1 │   │   ┃   │ 4 │   ┃
+┃ 1 │ 2 │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 2 │   ┃   │   │ 1 ┃
+┃   │   │ 3 ┃ 1 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │ 3 ┃   │   │   ┃
+┃   │   │   ┃   │ 3 │ 2 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃ 4 │   │   ┃
+┃ 2 │ 3 │   ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 2 │   │   ┃   │ 5 │   ┃
+┃   │   │ 4 ┃ 2 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 3 │   ┃   │   │ 6 ┃
+┃   │   │   ┃   │ 1 │ 5 ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+----+
-| .. | .. | .. | +8 | .. | .. | .. |
+| .. | +7 | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | +6 | .. | .. |
+| .. | .. | .. | .. | +7 | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | +5 | +2 | .. |
+| +7 | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| +2 | .. | .. | .. | .. | .. | +8 |
+| .. | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | |  | -  | .. | .. | .. | .. |
+| .. | .. | .. | .. | .. | .. | +  |
 +----+----+----+----+----+----+----+
-| .. | .. | |  | .. | .. | .. | .. |
+| .. | .. | =  | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | +4 | .. | .. | .. |
+| .. | .. | .. | .. | .. | +7 | .. |
 +----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+---+
-| T | C | A | J | O | B |
+| R | O | # | # | U | X |
 +---+---+---+---+---+---+
-| E | K | # | # | C | W |
+| C | S | D | E | L | E |
 +---+---+---+---+---+---+
-| U | X | A | R | D | E |
+| # | S | R | N | W | # |
 +---+---+---+---+---+---+
-| L | # | Z | I | # | B |
+| # | T | O | S | O | # |
 +---+---+---+---+---+---+
-| F | # | Q | L | # | M |
+| E | C | A | D | N | U |
 +---+---+---+---+---+---+
-| N | I | U | O | R | U |
+| X | A | # | # | K | N |
 +---+---+---+---+---+---+
 
 Words:
-  JACKET
-  COBWEB
-  QUORUM
-  LIZARD
-  INFLUX
+  EXACT
+  DELUXE
+  UNKNOWN
+  CROSSROADS
 ```
 
 ### pinpoint
 ```
-  1. Balance
-  2. Limits
-  3. The wall
-  4. The record
-  5. The cuff
+  1. Hook
+  2. Jaws
+  3. War Horse
+  4. Jurassic Park
+  5. Schindler’s List
 
-  answer (5 blanks): Words that come after "off"!
+  answer (5 blanks): Films directed by Steven Spielberg!
 ```
 
 ### crossclimb
 ```
-  five    
-  live    
-  love    
-  lore    
-  fore    
-  ford    
-  fold    
+  come    
+  code    
+  mode    
+  mole    
+  hole    
+  hone    
+  gone    
 
 Clues (middle rows):
-  - “All is fair in ___ and war”
-  - Word a golfer may shout when a ball is hit off course
-  - Stories passed down between generations that may or may not be true
-  - As it happens, like a news event being broadcast
-  - Major automobile manufacturer based in the US in Michigan
+  - Burrowing animal, or a unit of measurement in chemistry
+  - A system to encrypt words to send a secret message
+  - Sharpen, as one’s skills
+  - The most frequently appearing value in a data set
+  - Something that can be dug in the ground
 
-Phrase (top+bottom): The top + bottom rows = A compound word that describes how much something has increased after it has quintupled. Keep in mind: The first word may be at the bottom.
+Phrase (top+bottom): The top + bottom rows = Two words with opposite meanings that often appear together idiomatically, as in the sentence “The opportunity has ___ and ___.” Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
