@@ -14,6 +14,7 @@ def _header(puz):
         f"grid_size : {puz['grid_size']}  (cols x rows)",
         f"symbols   : {len(syms)}  (Moon={moons}, Sun={suns})",
         f"divisors  : {len(puz.get('walls', []))} (= / x)",
+        f"difficulty: {puz.get('difficulty')}",
         "",
         "Grid (M = given Moon, . = blank (fill Sun/Moon)):",
     ]

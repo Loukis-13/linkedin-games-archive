@@ -35,7 +35,8 @@ def parse(date_str, html):
                 walls.append([[r, col], [r + 1, col]])
     data = {"game": "zip", "number": number(), "date": date_str,
             "grid_size": [cols, rows],
-            "nodes": nodes, "walls": _c.dedupe_walls(walls)}
+            "nodes": nodes, "walls": _c.dedupe_walls(walls),
+            "difficulty": _c.difficulty_from_pill(soup)}
     out = _c.write_json(date_str, "zip", data)
     print(f"wrote {out}")
     return data

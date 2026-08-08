@@ -20,6 +20,7 @@ def parse(date_str, game):
         "date": date_str,
         "clues": {int(k): v for k, v in game.get("clues", {}).items()},
         "words": {int(k): v for k, v in game.get("words", {}).items()},
+        "difficulty": _c.difficulty_from_pill(soup),
     }
     out = _c.write_json(date_str, "crossclimb", data)
     print(f"wrote {out}")

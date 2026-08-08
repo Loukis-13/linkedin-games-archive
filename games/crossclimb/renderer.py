@@ -8,6 +8,7 @@ def _header(puz):
         f"game      : {puz['game']}",
         f"number    : {puz.get('number')}",
         f"date      : {puz.get('date')}",
+        f"difficulty: {puz.get('difficulty', '')}",
         "",
         "Grid (word per board row (1 = top .. 7 = bottom)):",
     ]

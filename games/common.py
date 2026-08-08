@@ -76,3 +76,30 @@ def dedupe_walls(walls):
             seen.add(key)
             out.append(w)
     return out
+
+
+# --------------------------------------------------------------------------
+# Daily difficulty -- only shown on harder puzzles, absent on normal days.
+# LinkedIn flips the label between EN ("Difficulty HARD") and PT
+# ("Dificuldade DIFÍCIL"); we keep the bare level token ("HARD").
+# --------------------------------------------------------------------------
+_DIFF_LABEL_RE = re.compile(
+    r"(?:difficulty|dificuldade)\s*:?\s*([A-Za-zÀ-ÿ]+)", re.IGNORECASE)
+
+
+def difficulty_from_pill(soup):
+    """zip / tango / queens: span.pill-label inside .pr-game-overboard-label."""
+    el = soup.select_one(".pr-game-overboard-label .pill-label")
+    if el is None:
+        return None
+    m = _DIFF_LABEL_RE.search(el.get_text(" ", strip=True))
+    return m.group(1) if m else None
+
+
+def difficulty_from_text(soup):
+    """patches: a <p> (random hashed classes) whose text carries the label."""
+    for p in soup.find_all("p"):
+        m = _DIFF_LABEL_RE.search(p.get_text(" ", strip=True))
+        if m:
+            return m.group(1)
+    return None

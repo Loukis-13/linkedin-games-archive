@@ -19,6 +19,7 @@ def _header(puz):
         f"date      : {puz.get('date')}",
         f"grid_size : {puz['grid_size']}  (cols x rows)",
         f"regions   : {len(regions)}",
+        f"difficulty: {puz.get('difficulty')}",
         "",
         "Grid (digit = region id):",
     ]

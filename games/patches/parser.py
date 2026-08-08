@@ -58,7 +58,8 @@ def parse(date_str, html):
             continue
         clues.append({"x": x, "y": y, "type": t, "size": size})
     data = {"game": "patches", "number": number(), "date": date_str,
-            "grid_size": [cols, cols], "clues": clues}
+            "grid_size": [cols, cols], "clues": clues,
+            "difficulty": _c.difficulty_from_text(soup)}
     out = _c.write_json(date_str, "patches", data)
     print(f"wrote {out}")
     return data

@@ -88,5 +88,6 @@
       "col": 5
     }
   ],
-  "walls": []
+  "walls": [],
+  "difficulty": "HARD"
 }

@@ -43,7 +43,8 @@ def parse(date_str, html):
             if "lotka-cell-edge--down" in ecls and r + 1 < rows:
                 walls.append([[r, col], [r + 1, col], sym])
     data = {"game": "tango", "number": number(), "date": date_str,
-            "grid_size": [cols, rows], "symbols": symbols, "walls": walls}
+            "grid_size": [cols, rows], "symbols": symbols, "walls": walls,
+            "difficulty": _c.difficulty_from_pill(soup)}
     out = _c.write_json(date_str, "tango", data)
     print(f"wrote {out}")
     return data

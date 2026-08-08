@@ -15,6 +15,7 @@ def _header(puz):
         f"date      : {puz.get('date')}",
         f"grid_size : {puz['grid_size']}  (cols x rows)",
         f"clues    : {len(puz.get('clues', []))}  {types}",
+        f"difficulty: {puz.get('difficulty')}",
         "",
         "Grid (cell = shape+size (space if null); "
         "+=free =square -=H-rect |=V-rect, .. = empty):",

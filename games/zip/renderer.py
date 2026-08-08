@@ -11,6 +11,7 @@ def _header(puz):
         f"grid_size : {puz['grid_size']}  (cols x rows)",
         f"nodes     : {len(puz['nodes'])}",
         f"walls     : {len(puz['walls'])}",
+        f"difficulty: {puz.get('difficulty')}",
         "",
         "Grid (numbers = nodes, | and - = walls, . = empty cell):",
     ]

@@ -32,7 +32,8 @@ def parse(date_str, html):
                 region = int(m.group(1))
         board[r][col] = region
     data = {"game": "queens", "number": number(), "date": date_str,
-            "grid_size": [cols, rows], "board": board}
+            "grid_size": [cols, rows], "board": board,
+            "difficulty": _c.difficulty_from_pill(soup)}
     out = _c.write_json(date_str, "queens", data)
     print(f"wrote {out}")
     return data
