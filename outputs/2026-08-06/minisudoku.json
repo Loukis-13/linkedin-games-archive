@@ -1,6 +1,5 @@
 {
   "game": "minisudoku",
-  "number": 360,
   "date": "2026-08-06",
   "grid_size": [
     6,
@@ -56,5 +55,7 @@
       6
     ]
   ],
-  "title": "Backslash"
+  "number": "360",
+  "title": "Backslash",
+  "difficulty": null
 }

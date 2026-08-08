@@ -1,6 +1,5 @@
 {
   "game": "minisudoku",
-  "number": 361,
   "date": "2026-08-07",
   "grid_size": [
     6,
@@ -56,6 +55,7 @@
       5
     ]
   ],
-  "difficulty": "Hard",
-  "title": "Domino Set"
+  "number": "361",
+  "title": "Domino Set",
+  "difficulty": "Hard"
 }

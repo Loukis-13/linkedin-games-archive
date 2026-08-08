@@ -89,17 +89,13 @@ _DIFF_LABEL_RE = re.compile(
 
 def difficulty_from_pill(soup):
     """zip / tango / queens: span.pill-label inside .pr-game-overboard-label."""
-    el = soup.select_one(".pr-game-overboard-label .pill-label")
-    if el is None:
-        return None
-    m = _DIFF_LABEL_RE.search(el.get_text(" ", strip=True))
-    return m.group(1) if m else None
+    if el := soup.select_one(".pr-game-overboard-label .pill-label"):
+        if m := _DIFF_LABEL_RE.search(el.get_text(" ", strip=True)):
+            return m.group(1)
 
 
 def difficulty_from_text(soup):
     """patches: a <p> (random hashed classes) whose text carries the label."""
     for p in soup.find_all("p"):
-        m = _DIFF_LABEL_RE.search(p.get_text(" ", strip=True))
-        if m:
+        if m := _DIFF_LABEL_RE.search(p.get_text(" ", strip=True)):
             return m.group(1)
-    return None
