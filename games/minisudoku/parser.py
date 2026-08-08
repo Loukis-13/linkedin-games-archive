@@ -35,7 +35,6 @@ def parse(date_str, html):
     # Example: "#361  Domino Set\n (Hard)"
     if title_el := soup.select_one('div[class*="pr-game-overboard-label__sudoku"]'):
         raw = title_el.get_text(" ", strip=True)
-        print(raw)
         if m := re.match(r"#(?P<number>\d+)\s*(?P<title>[^\n]*)(\s*\((?P<difficulty>.+)\))?$", raw, re.DOTALL):
             data["number"] = m["number"]
             data["title"] = m["title"]
