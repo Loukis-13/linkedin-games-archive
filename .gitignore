@@ -1,6 +1,3 @@
-# captured board DOM (debug only, written by extract.py --save-html)
-cache/
-
 # python caches
 __pycache__/
 *.pyc

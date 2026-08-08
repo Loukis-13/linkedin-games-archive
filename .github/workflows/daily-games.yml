@@ -40,16 +40,19 @@ jobs:
         run: python -m playwright install --with-deps chromium
 
       - name: Extract today's games
-        run: python extract.py --headless
+        run: python extract.py --headless --save-html
 
       - name: Update README daily games
         run: python scripts/update_readme.py
+
+      - name: Prune .html-cache older than 5 days
+        run: rm -r ".html-cache/$(date -d "5 days ago" -u +%F)"
 
       - name: Commit outputs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add outputs/ README.md
+          git add outputs/ README.md .html-cache/
           if git diff --cached --quiet; then
             echo "no new outputs"
           else

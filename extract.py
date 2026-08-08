@@ -8,10 +8,10 @@ Usage:
   python extract.py                          # all 8 games
   python extract.py --games zip,pinpoint,crossclimb
   python extract.py --headless              # no browser window
-  python extract.py --save-html             # dump cache/<date>/<game>.html for debug
+  python extract.py --save-html             # dump .html-cache/<date>/<game>.html for debug
 
 No scraping of stale HTML: the scraper hands its result straight to the parser
-in memory.  --save-html only writes the HTML to cache/ for debugging.
+in memory.  --save-html only writes the HTML to .html-cache/ for debugging.
 """
 import argparse
 import sys
@@ -32,7 +32,7 @@ def main():
     ap.add_argument("--headless", action="store_true",
                     help="run without a browser window")
     ap.add_argument("--save-html", action="store_true",
-                    help="also dump cache/<date>/<game>.html for debugging")
+                    help="also dump .html-cache/<date>/<game>.html for debugging")
     args = ap.parse_args()
 
     sel = [g.strip() for g in args.games.split(",") if g.strip()]

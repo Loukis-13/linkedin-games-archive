@@ -13,7 +13,7 @@ from datetime import date
 
 HERE = os.path.dirname(os.path.abspath(__file__))      # .../games
 ROOT = os.path.dirname(HERE)                            # repo root
-CACHE = os.path.join(ROOT, "cache")
+CACHE = os.path.join(ROOT, ".html-cache")
 OUT = os.path.join(ROOT, "outputs")
 
 

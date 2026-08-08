@@ -79,7 +79,7 @@ renderer's `_header`).
   (locale `en-US`), runs every selected scraper, then every parser. Flags:
   - `--games zip,pinpoint,crossclimb` (default: all)
   - `--headless` (no browser window)
-  - `--save-html` (also dump `cache/<date>/<game>.html` for debugging)
+  - `--save-html` (also dump `.html-cache/<date>/<game>.html` for debugging)
   - **No `--date`** — it always captures the current day. This is intentional.
 - **`render.py <date> [<game>] [--header] [--format ascii|unicode]`** —
   reads `outputs/`, never the browser. `--header` adds the per-game summary;
@@ -100,8 +100,8 @@ extract.py
         raw (html str | crossclimb dict)  ──in memory──▶  parser.parse(date, raw)
                                                         └─ writes outputs/<date>/<game>.json
 ```
-`--save-html` is the *only* thing that writes `cache/`; the parser never reads
-`cache/`. The 7 HTML-string scrapers hand their HTML straight to the parser;
+`--save-html` is the *only* thing that writes `.html-cache/`; the parser never reads
+`.html-cache/`. The 7 HTML-string scrapers hand their HTML straight to the parser;
 the parser uses `BeautifulSoup` to read the board.
 
 ---
@@ -168,8 +168,7 @@ minisudoku 342, pinpoint 489, crossclimb 810.
 `game`, `number` (date-math), `date`, `grid_size` (`[cols, rows]`).
 Game-specific fields live in each `parser.py` (e.g. zip `nodes`/`walls`,
 queens `regions`, wend `words`, pinpoint `clues`/`answer`, crossclimb
-`ladder`/`clues`/`phrase`). `cache/` is gitignored; `outputs/` is committed by
-CI (§8).
+`ladder`/`clues`/`phrase`). CI (§8).
 
 ---
 
@@ -249,7 +248,7 @@ CI commits; a **local Hermes cron** pulls and posts to Telegram.
   `origin`). `termux-pilot-browser` = the legacy Termux Browser Pilot (tbp)
   capture flow, preserved untouched for reference. Don't merge tbp back.
 - **Remote**: `origin` = `Loukis-13/linkedin-games-archive`.
-- **Commits**: `outputs/` is committed by CI; `cache/` is gitignored.
+- **Commits**: `outputs/` and `.html-cache/` are committed by CI (§8).
 - **NEVER `git commit`/`git push` without explicit user approval** — even for
   obvious fixes or a clean tree. Present the diff/plan and wait for a go-ahead.
 - **Dates** in file paths: `outputs/<YYYY-MM-DD>/`. Daily puzzles change each
