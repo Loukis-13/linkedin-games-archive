@@ -1,0 +1,60 @@
+{
+  "game": "minisudoku",
+  "number": 362,
+  "date": "2026-08-08",
+  "grid_size": [
+    6,
+    6
+  ],
+  "cells": [
+    [
+      1,
+      null,
+      2,
+      null,
+      null,
+      3
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      2,
+      null,
+      4,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      4,
+      null,
+      5
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      3,
+      null,
+      null,
+      5,
+      null,
+      1
+    ]
+  ],
+  "title": "#362  Distanced\n                          (Hard)"
+}

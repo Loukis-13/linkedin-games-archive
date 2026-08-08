@@ -1,0 +1,22 @@
+{
+  "game": "crossclimb",
+  "number": 830,
+  "date": "2026-08-08",
+  "clues": {
+    "1": "People from the same country as Neils Bohr and Hans Christian Andersen",
+    "2": "Pieces of pottery that may hold flowers",
+    "3": "Foundation of an argument",
+    "4": "Military installations",
+    "5": "Parts of windmills",
+    "0": "The top + bottom rows = Two words associated with the desert; the first word describes things made from blowing sand while the second word describes a welcome, if rare, sight. Keep in mind: The first word may be at the bottom."
+  },
+  "words": {
+    "1": "dunes",
+    "2": "danes",
+    "3": "vanes",
+    "4": "vases",
+    "5": "bases",
+    "6": "basis",
+    "7": "oasis"
+  }
+}
