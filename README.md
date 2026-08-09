@@ -139,6 +139,21 @@ Words:
 
 ### crossclimb
 ```
-(no crossclimb.json for 2026-08-09)
+  train   
+  brain   
+  brawn   
+  brown   
+  crown   
+  crows   
+  cross   
+
+Clues (middle rows):
+  - Human organ that takes up only 2% of a body’s weight but uses about 20% of its energy
+  - Cook until the color changes, as onions
+  - Black birds that collectively form a “murder”
+  - The top part of the head, or something one might put there
+  - Muscular strength
+
+Phrase (top+bottom): The top + bottom rows = A hyphenated word meaning to engage in different sporting activities to balance health and muscular development. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->

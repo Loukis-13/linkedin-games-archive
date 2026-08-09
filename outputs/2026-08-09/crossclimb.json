@@ -1,0 +1,23 @@
+{
+  "game": "crossclimb",
+  "number": 831,
+  "date": "2026-08-09",
+  "clues": {
+    "1": "Human organ that takes up only 2% of a body’s weight but uses about 20% of its energy",
+    "2": "Cook until the color changes, as onions",
+    "3": "Black birds that collectively form a “murder”",
+    "4": "The top part of the head, or something one might put there",
+    "5": "Muscular strength",
+    "0": "The top + bottom rows = A hyphenated word meaning to engage in different sporting activities to balance health and muscular development. Keep in mind: The first word may be at the bottom."
+  },
+  "words": {
+    "1": "train",
+    "2": "brain",
+    "3": "brawn",
+    "4": "brown",
+    "5": "crown",
+    "6": "crows",
+    "7": "cross"
+  },
+  "difficulty": null
+}
