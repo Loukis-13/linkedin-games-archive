@@ -8,6 +8,7 @@ when --save-html is set, for debugging.
 """
 from itertools import permutations
 import re
+from bs4 import BeautifulSoup
 from playwright.sync_api import Page
 from games import common as _c
 
@@ -86,8 +87,12 @@ def capture(page: Page, date_str, save_html=False):
 
     game["words"] = read_words(page)
 
+    html = page.content()
+    soup = BeautifulSoup(html, "html.parser")
+    game["difficulty"] = _c.difficulty_from_pill(soup)
+
     # Capture the board HTML for debugging only.
     if save_html:
-        _c.save_html(date_str, "crossclimb", page.content())
+        _c.save_html(date_str, "crossclimb", html)
 
     return game
