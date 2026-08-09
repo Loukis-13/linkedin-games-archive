@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """crossclimb parser -- solved-game dict to JSON. Number is date-math (local anchor)."""
+from bs4 import BeautifulSoup
 from datetime import date
 from games import common as _c
 
@@ -13,6 +14,7 @@ def number(d=None):
 
 
 def parse(date_str, game):
+    soup = BeautifulSoup(html, "html.parser")
     # `game` is the dict returned by the scraper (words + clues), NOT html.
     data = {
         "game": "crossclimb",
