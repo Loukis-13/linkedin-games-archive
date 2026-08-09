@@ -46,7 +46,7 @@ jobs:
         run: python scripts/update_readme.py
 
       - name: Prune .html-cache older than 5 days
-        run: rm -r ".html-cache/$(date -d "5 days ago" -u +%F)"
+        run: rm -rf ".html-cache/$(date -d "5 days ago" -u +%F)"
 
       - name: Commit outputs
         run: |
