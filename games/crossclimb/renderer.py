@@ -6,29 +6,18 @@ from games import common as _c
 def _header(puz):
     return [
         f"game      : {puz['game']}",
-        f"number    : {puz.get('number')}",
-        f"date      : {puz.get('date')}",
+        f"number    : {puz['number']}",
+        f"date      : {puz['date']}",
         f"difficulty: {puz.get('difficulty', '')}",
-        "",
-        "Grid (word per board row (1 = top .. 7 = bottom)):",
     ]
 
 
 def render(date_str, fmt="unicode"):
-    puz = _c.load(date_str, "crossclimb")
-    if puz is None:
-        return [f"(no crossclimb.json for {date_str})"]
-    clues = {int(k): v for k, v in puz.get("clues", {}).items()}
-    words = {int(k): v for k, v in puz.get("words", {}).items()}
-    out = []
-    for row in range(1, 8):
-        out.append(f"  {words.get(row, '?'):<8}")
-    middles = [clues[k] for k in sorted(clues) if k != 0]
-    if middles:
-        out.append("")
-        out.append("Clues (middle rows):")
-        out += [f"  - {c}" for c in middles]
-    if clues.get(0):
-        out.append("")
-        out.append(f"Phrase (top+bottom): {clues[0]}")
-    return out
+    if puz := _c.load(date_str, "crossclimb"):
+        rows = puz["words"]
+        out = _header(puz)
+        out.append("Ladder (word : clue, top -> bottom):")
+        for word, clue in rows:
+            out.append(f"  {word} : {clue}")
+        return out
+    return [f"(no crossclimb.json for {date_str})"]

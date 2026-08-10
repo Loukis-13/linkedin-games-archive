@@ -7,19 +7,10 @@ which page.content() / BeautifulSoup cannot see). The board HTML is only saved
 when --save-html is set, for debugging.
 """
 from itertools import permutations
-import re
 from bs4 import BeautifulSoup
 from playwright.sync_api import Page
 from games import common as _c
 
-
-def read_words(page):
-    letters = {}
-    for e in page.locator("input[data-crossclimb-guess-input-idx]").all():
-        row = int(re.search(r"row (\d+)", e.get_attribute("aria-label"))[1])
-        idx = int(e.get_attribute("data-crossclimb-guess-input-idx"))
-        letters.setdefault(row, {})[idx] = e.input_value()
-    return {r: "".join(c[i] for i in sorted(c)) for r, c in letters.items()}
 
 def middle_rows(page):
     return [(r, "".join(c.input_value() for c in
@@ -61,35 +52,35 @@ def reorder(page, target_order, max_passes=6):
         raise RuntimeError(f"reorder failed: got {words}, wanted {target_order}")
 
 def capture(page: Page, date_str, save_html=False):
-    game = {"clues": {}, "words": {}}
+    game = []
 
     page.goto("https://www.linkedin.com/games/view/crossclimb/desktop", wait_until="domcontentloaded")
     page.get_by_text("Start game").first.click()
     page.get_by_label("Dismiss").click()
     page.wait_for_selector("div.crossclimb__grid")
     for i in range(1, 6):
-        game["clues"][i] = page.locator(f"#crossclimb-clue-section-{i}").inner_text()
+        clue = page.locator(f"#crossclimb-clue-section-{i}").inner_text()
         page.get_by_text("Reveal row").first.click()
+        word = "".join(e.input_value() for e in page.locator(f"input[aria-label*='row {i+1}']").all())
+        game.append([word, clue])
 
-    game["words"] = read_words(page)
-
-    for perm in permutations(game["words"].values()):
-        if all(sum(x != y for x, y in zip(perm[i], perm[i + 1])) == 1
-               for i in range(len(perm) - 1)):
+    for perm in permutations(map(lambda x: x[0], game)):
+        if all(sum(x != y for x, y in zip(perm[i], perm[i + 1])) == 1 for i in range(len(perm) - 1)):
             reorder(page, list(perm))
+            game.sort(key=lambda x: perm.index(x[0]), reverse=True)
 
     page.wait_for_timeout(2000)
 
-    game["clues"][0] = page.locator(f"#crossclimb-clue-section-0").inner_text()
-    for _ in range(2):
+    for i in [0, 6]:
+        clue = page.locator(f"#crossclimb-clue-section-{i}").inner_text()
         page.get_by_text("Reveal row").first.click()
         page.wait_for_timeout(1000)
-
-    game["words"] = read_words(page)
+        word = "".join(e.input_value() for e in page.locator(f"input[aria-label*='row {i+1}']").all())
+        game.insert(i, [word, clue])
 
     html = page.content()
     soup = BeautifulSoup(html, "html.parser")
-    game["difficulty"] = _c.difficulty_from_pill(soup)
+    game = {"words": game, "difficulty": _c.difficulty_from_pill(soup)}
 
     # Capture the board HTML for debugging only.
     if save_html:

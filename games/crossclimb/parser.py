@@ -13,14 +13,14 @@ def number(d=None):
 
 
 def parse(date_str, game):
-    # `game` is the dict returned by the scraper (words + clues), NOT html.
+    # `game` is the dict returned by the scraper: {"words": [[w, clue], ...],
+    # "difficulty": ...}. `words` is an ordered top->bottom list, NOT html.
     data = {
         "game": "crossclimb",
         "number": number(),
         "date": date_str,
-        "clues": {int(k): v for k, v in game.get("clues", {}).items()},
-        "words": {int(k): v for k, v in game.get("words", {}).items()},
         "difficulty": game.get("difficulty"),
+        "words": game["words"],
     }
     out = _c.write_json(date_str, "crossclimb", data)
     print(f"wrote {out}")
