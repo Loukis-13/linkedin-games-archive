@@ -69,7 +69,7 @@ def capture(page: Page, date_str, save_html=False):
             reorder(page, list(perm))
             game.sort(key=lambda x: perm.index(x[0]), reverse=True)
 
-    page.wait_for_timeout(2000)
+    page.wait_for_timeout(4000)
 
     for i in [0, 6]:
         clue = page.locator(f"#crossclimb-clue-section-{i}").inner_text()
