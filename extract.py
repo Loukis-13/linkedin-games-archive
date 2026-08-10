@@ -16,6 +16,7 @@ in memory.  --save-html only writes the HTML to .html-cache/ for debugging.
 import argparse
 import sys
 import os
+from playwright.sync_api import sync_playwright
 
 # allow `import games` from the repo root
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -39,8 +40,6 @@ def main():
     sel = [g for g in sel if g in GAMES]
     date_str = _common.today_str()
 
-    from playwright.sync_api import sync_playwright
-
     raw = {}
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=args.headless)
@@ -53,6 +52,7 @@ def main():
                 print("  ok", flush=True)
             except Exception as e:
                 print(f"  capture error: {e}", flush=True)
+                _common.save_html(date_str, g, page.content())
         browser.close()
 
     for g in sel:
