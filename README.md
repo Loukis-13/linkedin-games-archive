@@ -11,132 +11,121 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-08-10)
+## Today's games (2026-08-11)
 
 ### zip
 ```
 +----+----+----+----+----+----+
-| ..   ..   ..    1   ..   .. |
-+     ----      ---- ----     +
-| .. |  4   .. | ..   .. | .. |
-+    +         +         +    +
-| .. | .. | ..   ..   .. | .. |
-+    +    +              +    +
-| .. | ..   ..   .. | .. | .. |
-+    +              +    +    +
-| .. | ..   .. | ..    3 | .. |
-+    +---- ----+     ----+    +
-| ..   ..    2   ..   ..   .. |
+| ..   ..   ..    3    1    2 |
++                             +
+| ..   ..    9   ..   ..   .. |
++                             +
+| ..   10   ..   ..   ..   .. |
++                             +
+| ..   ..   ..   ..    6   .. |
++                             +
+| ..   ..   ..    7   ..   .. |
++                             +
+|  4    5    8   ..   ..   .. |
 +---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . = . | . x . | . = . |
+| M | . | . | . | . | . |
++---+---+---+-=-+---+---+
+| M | M | . = . | . | . |
++---+---+---+-x-+---+---+
+| S | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . | M | . | . | M | . |
-+---+---+---+---+---+---+
-| . | S | . | . | S | . |
-+-=-+---+---+---+---+-x-+
-| . | S | . | . | M | . |
-+---+---+---+---+---+---+
-| . | M | M | S | M | . |
-+---+---+---+---+---+---+
-| . = . | . = . | . x . |
+| . | . | M | . | . | . |
++---+---+---+---+---+-x-+
+| . | . | M | M | . = . |
++---+---+---+---+---+-=-+
+| . | . | S | . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟪🟧🟧🟧🟩🟦🟦
-🟪🟧🟨🟧🟨🟦🟦
-🟪🟧🟨🟧🟨🟨🟦
-🟪🟥🟨🟨🟨🟦🟦
-🟪🟪🟨🟪🟨🟫🟫
-🟪🟨🟨🟪🟨🟨🟫
-🟪🟪🟪🟪🟪🟪🟫
+🟥🟥🟧🟧🟧🟨🟨
+🟥🟧🟧🟧🟧🟧🟨
+🟥🟧🟧🟧🟧🟧🟨
+🟥🟩🟥🟦🟨🟨🟨
+🟥🟥🟥🟦🟨🟨🟨
+🟥🟥🟥🟦🟨🟨🟪
+🟥🟥🟫🟫🟫🟪🟪
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │ 2 │   ┃   │   │   ┃
+┃   │   │   ┃   │ 5 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 1 │ 3 │   ┃   │ 5 │   ┃
+┃   │   │   ┃ 4 │ 6 │ 1 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 4 │   ┃ 5 │   │ 6 ┃
+┃   │   │ 3 ┃ 5 │ 2 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 5 │   ┃ 1 │   │ 3 ┃
+┃   │ 2 │ 4 ┃ 1 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 5 │ 6 │ 4 ┃ 3 │   │ 2 ┃
+┃ 1 │ 3 │ 6 ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │ 6 │   ┃
+┃   │ 4 │   ┃   │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+
-| +2 | +6 | .. | .. | .. | .. |
+| +5 | .. | .. | +4 | .. | +3 |
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | |5 | .. |
+| .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | |3 | .. | .. |
+| .. | .. | +8 | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | |4 | .. | .. | .. |
+| .. | .. | .. | +10 | .. | .. |
 +----+----+----+----+----+----+
-| .. | |8 | .. | .. | .. | .. |
+| .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | +2 | +6 |
+| -  | .. | -  | .. | .. | -  |
 +----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+
-| # | L | # | R | # |
+| U | E | E | Z | E |
 +---+---+---+---+---+
-| # | L | # | R | # |
+| Q | S | # | # | Y |
 +---+---+---+---+---+
-| Y | A | # | U | W |
+| U | S | # | S | K |
 +---+---+---+---+---+
-| E | U | P | P | O |
+| R | # | # | S | I |
 +---+---+---+---+---+
-| L | L | A | R | R |
+| E | E | L | P | M |
 +---+---+---+---+---+
 
 Words:
-  ALL
-  PURR
-  ARROW
-  PULLEY
+  SKY
+  SURE
+  SIMPLE
+  SQUEEZE
 ```
 
 ### pinpoint
 ```
-  1. Brick
-  2. Maroon
-  3. Tomato
-  4. Scarlet
-  5. Cherry
+  1. Wedge
+  2. Lever
+  3. Pulley
+  4. Inclined plane
+  5. Wheel and axle
 
-  answer (5 blanks): Shades of red!
+  answer (5 blanks): Types of simple machine!
 ```
 
 ### crossclimb
 ```
-game      : crossclimb
-number    : 832
-date      : 2026-08-10
-difficulty: None
-Ladder (word : clue, top -> bottom):
-  book : The top + bottom rows = A compound word for where a student might write down info for their classes. Keep in mind: The first word may be at the bottom.
-  hook : Curved item at the end of a fishing line
-  hoot : Make a sound like an owl
-  host : Emcee of a television show
-  hose : Attachment to a fire hydrant
-  nose : Where eyeglasses might rest
-  note : The top + bottom rows = A compound word for where a student might write down info for their classes. Keep in mind: The first word may be at the bottom.
+(no crossclimb.json for 2026-08-11)
 ```
 <!-- DAILY-GAMES-END -->
