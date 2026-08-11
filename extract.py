@@ -43,7 +43,7 @@ def main():
     raw = {}
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=args.headless)
-        context = browser.new_context(locale="en-US")
+        context = browser.new_context(locale="en-US", record_video_dir=f".html-cache/{date_str}/")
         page = context.new_page()
         for g in sel:
             print(f"--- {g} (capture) ---", flush=True)
@@ -53,6 +53,7 @@ def main():
             except Exception as e:
                 print(f"  capture error: {e}", flush=True)
                 _common.save_html(date_str, g, page.content())
+        context.close()
         browser.close()
 
     for g in sel:
