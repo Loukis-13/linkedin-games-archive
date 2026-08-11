@@ -64,12 +64,17 @@ def capture(page: Page, date_str, save_html=False):
         word = "".join(e.input_value() for e in page.locator(f"input[aria-label*='row {i+1}']").all())
         game.append([word, clue])
 
-    print("mapping:", map(lambda x: x[0], game))
+    print("REORDER")
+    print("game:", game)
+    print("mapping:", [*map(lambda x: x[0], game)])
+    print("permutations:", len(permutations(map(lambda x: x[0], game))))
     for perm in permutations(map(lambda x: x[0], game)):
         if all(sum(x != y for x, y in zip(perm[i], perm[i + 1])) == 1 for i in range(len(perm) - 1)):
-            print("perm:", perm)
+            print("perm:", list(perm))
             reorder(page, list(perm))
             game.sort(key=lambda x: perm.index(x[0]), reverse=True)
+
+    print("REORDERED")
 
     page.wait_for_timeout(2000)
 
