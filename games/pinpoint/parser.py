@@ -25,16 +25,9 @@ def parse(date_str, html):
         if txt:
             clues.append(txt)
     ans_el = soup.select_one(".pinpoint__card__answer_text")
-    answer = " ".join(ans_el.get_text(" ", strip=True).split()) if ans_el else None
-    bottom = soup.select_one(".pinpoint__bottom-section")
-    blanks = None
-    if bottom:
-        btxt = bottom.get_text(" ", strip=True)
-        blanks = len([c for c in btxt.split() if set(c) == {"_"}])
-        if blanks == 0:
-            blanks = btxt.count("_")
+    answer = " ".join(ans_el.get_text(" ", strip=True).split())
     data = {"game": "pinpoint", "number": number(), "date": date_str,
-            "answer": answer, "blanks": blanks, "clues": clues}
+            "answer": answer, "clues": clues}
     out = _c.write_json(date_str, "pinpoint", data)
     print(f"wrote {out}")
     return data

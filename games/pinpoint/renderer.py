@@ -17,17 +17,10 @@ def _header(puz):
 
 
 def render(date_str, fmt="unicode"):
-    puz = _c.load(date_str, "pinpoint")
-    if puz is None:
-        return [f"(no pinpoint.json for {date_str})"]
-    clues = puz.get("clues", [])
-    answer = puz.get("answer")
-    blanks = puz.get("blanks")
-    out = []
-    for i, c in enumerate(clues, 1):
-        out.append(f"  {i}. {c}")
-    out.append("")
-    if answer is not None:
-        blanks_s = f" ({blanks} blanks)" if blanks else ""
-        out.append(f"  answer{blanks_s}: {answer}")
-    return out
+    if puz := _c.load(date_str, "pinpoint"):
+        return [
+            *(f"  {i}. {c}" for i, c in enumerate(puz['clues'], 1)),
+            "",
+            f"  answer: {puz['answer']}",
+        ]
+    return [f"(no pinpoint.json for {date_str})"]
