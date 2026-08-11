@@ -61,13 +61,15 @@ def capture(page: Page, date_str, save_html=False):
     for i in range(1, 6):
         clue = page.locator(f"#crossclimb-clue-section-{i}").inner_text()
         page.get_by_text("Reveal row").first.click()
+        page.wait_for_timeout(1000)
+        print(f"word {i}:", page.locator(f"input[aria-label*='row {i+1}']").all())
         word = "".join(e.input_value() for e in page.locator(f"input[aria-label*='row {i+1}']").all())
         game.append([word, clue])
 
     print("REORDER")
     print("game:", game)
     print("mapping:", [*map(lambda x: x[0], game)])
-    print("permutations:", len(permutations(map(lambda x: x[0], game))))
+    print("permutations:", len([*permutations(map(lambda x: x[0], game))]))
     for perm in permutations(map(lambda x: x[0], game)):
         if all(sum(x != y for x, y in zip(perm[i], perm[i + 1])) == 1 for i in range(len(perm) - 1)):
             print("perm:", list(perm))
