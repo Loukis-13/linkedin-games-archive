@@ -11,132 +11,135 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-08-11)
+## Today's games (2026-08-12)
 
 ### zip
 ```
 +----+----+----+----+----+----+
-| ..   ..   ..    3    1    2 |
+| ..   ..   ..   ..   ..    3 |
 +                             +
-| ..   ..    9   ..   ..   .. |
+| ..   12   11    5    4   .. |
 +                             +
-| ..   10   ..   ..   ..   .. |
+| ..   ..   .. | ..    6   .. |
++          ----+----          +
+| ..   10   .. | ..   ..   .. |
++              +              +
+| ..    1    9    7    8   .. |
 +                             +
-| ..   ..   ..   ..    6   .. |
-+                             +
-| ..   ..   ..    7   ..   .. |
-+                             +
-|  4    5    8   ..   ..   .. |
+|  2   ..   ..   ..   ..   .. |
 +---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| M | . | . | . | . | . |
-+---+---+---+-=-+---+---+
-| M | M | . = . | . | . |
-+---+---+---+-x-+---+---+
-| S | . | . | . | . | . |
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . | . | M | . | . | . |
-+---+---+---+---+---+-x-+
-| . | . | M | M | . = . |
-+---+---+---+---+---+-=-+
-| . | . | S | . | . | . |
+| . | M | . = . | M | . |
++---+---+---+---+---+---+
+| . | . | M | S | . | . |
++---+-x-+---+---+-x-+---+
+| . | . | M | M | . | . |
++---+---+---+---+---+---+
+| . | S | . x . | M | . |
++---+---+---+---+---+---+
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟧🟧🟧🟨🟨
-🟥🟧🟧🟧🟧🟧🟨
-🟥🟧🟧🟧🟧🟧🟨
-🟥🟩🟥🟦🟨🟨🟨
-🟥🟥🟥🟦🟨🟨🟨
-🟥🟥🟥🟦🟨🟨🟪
-🟥🟥🟫🟫🟫🟪🟪
+🟥🟥🟧🟧🟧🟧🟧🟨
+🟥🟧🟧🟧🟧🟧🟧🟨
+🟥🟧🟧🟧🟧🟧🟨🟨
+🟩🟧🟧🟧🟧🟦🟦🟦
+🟩🟩🟩🟧🟧🟧🟧🟦
+🟪🟫🟫🟫🟧🟧🟧⬛
+🟪🟧🟧🟫🟧🟧🟧⬛
+🟪🟪🟧🟧🟧🟧⬛⬛
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │   ┃   │ 5 │   ┃
+┃ 1 │   │   ┃ 2 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃ 4 │ 6 │ 1 ┃
+┃   │ 3 │ 4 ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │ 3 ┃ 5 │ 2 │   ┃
+┃   │ 5 │ 6 ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 2 │ 4 ┃ 1 │   │   ┃
+┃   │   │   ┃ 3 │ 5 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 1 │ 3 │ 6 ┃   │   │   ┃
+┃   │   │   ┃ 1 │ 2 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 4 │   ┃   │   │   ┃
+┃   │   │ 1 ┃   │   │ 3 ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+
-| +5 | .. | .. | +4 | .. | +3 |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | +8 | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | +10 | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| -  | .. | -  | .. | .. | -  |
-+----+----+----+----+----+----+
++----+----+----+----+----+----+----+
+| +  | .. | +  | .. | +  | .. | +  |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | +7 | .. | +10 | .. | +5 | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| +3 | .. | +5 | .. | +3 | .. | +3 |
++----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+
-| U | E | E | Z | E |
+| J | U | N | A | J |
 +---+---+---+---+---+
-| Q | S | # | # | Y |
+| R | A | G | L | A |
 +---+---+---+---+---+
-| U | S | # | S | K |
+| T | F | # | E | R |
 +---+---+---+---+---+
-| R | # | # | S | I |
+| I | F | A | S | I |
 +---+---+---+---+---+
-| E | E | L | P | M |
+| C | # | B | # | C |
 +---+---+---+---+---+
 
 Words:
-  SKY
-  SURE
-  SIMPLE
-  SQUEEZE
+  AJAR
+  BASIC
+  JUNGLE
+  TRAFFIC
 ```
 
 ### pinpoint
 ```
-  1. Wedge
-  2. Lever
-  3. Pulley
-  4. Inclined plane
-  5. Wheel and axle
+  1. Electric current
+  2. Personal pronoun
+  3. Square root of -1
+  4. Iodine
+  5. Roman numeral for 1
 
-  answer (5 blanks): Types of simple machine!
+  answer: Different meanings of the letter “I”!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 833
-date      : 2026-08-11
+number    : 834
+date      : 2026-08-12
 difficulty: None
 Ladder (word : clue, top -> bottom):
-  camp : The top + bottom rows = A compound word for where you might pitch a tent. Keep in mind: The first word may be at the bottom.
-  came : Showed up, as to a party
-  game : Word after "word," "board," or "video"
-  gate : Entryway in a fence
-  kate : Diminutive name for "Catherine" used by the Princess of Wales (___ Middleton)
-  kite : Toy on a string that’s brought out on a windy day
-  site : The top + bottom rows = A compound word for where you might pitch a tent. Keep in mind: The first word may be at the bottom.
+  back : The top + bottom rows = A two-word phrase for what you might do after you get a telephone message. Keep in mind: The first word may be at the bottom.
+  bask : Loll in the sun
+  base : Something used to neutralize an acid
+  bale : Bundle of straw or hay
+  tale : Something Hans Christian Andersen wrote
+  tall : Having above-average height
+  call : The top + bottom rows = A two-word phrase for what you might do after you get a telephone message. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
