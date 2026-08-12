@@ -2,21 +2,35 @@
   "game": "crossclimb",
   "number": 818,
   "date": "2026-07-27",
-  "clues": {
-    "1": "Edible holder for ice cream",
-    "2": "Piece of metal currency that may be flipped",
-    "3": "Part of an apple that contains its seeds",
-    "4": "“A friend to all is a friend to ___” (Aristotle)",
-    "5": "Cereal crop that might appear at breakfast in “flake” form",
-    "0": "The top + bottom rows = Two parts of the face."
-  },
-  "words": {
-    "1": "chin",
-    "2": "coin",
-    "3": "corn",
-    "4": "core",
-    "5": "cone",
-    "6": "none",
-    "7": "nose"
-  }
+  "difficulty": null,
+  "words": [
+    [
+      "chin",
+      "The top + bottom rows = Two parts of the face."
+    ],
+    [
+      "coin",
+      "Piece of metal currency that may be flipped"
+    ],
+    [
+      "corn",
+      "Cereal crop that might appear at breakfast in “flake” form"
+    ],
+    [
+      "core",
+      "Part of an apple that contains its seeds"
+    ],
+    [
+      "cone",
+      "Edible holder for ice cream"
+    ],
+    [
+      "none",
+      "“A friend to all is a friend to ___” (Aristotle)"
+    ],
+    [
+      "nose",
+      "The top + bottom rows = Two parts of the face."
+    ]
+  ]
 }

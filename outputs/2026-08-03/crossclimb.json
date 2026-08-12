@@ -2,21 +2,35 @@
   "game": "crossclimb",
   "number": 825,
   "date": "2026-08-03",
-  "clues": {
-    "1": "Amphibian creature similar to a frog",
-    "2": "Opposite of short",
-    "3": "“I ___ you so!” (expression when someone didn’t listen to a prior warning)",
-    "4": "Part of a dog that might wag",
-    "5": "Payment to cross a bridge",
-    "0": "The top + bottom rows = A compound word for a system of transportation by train, or one of the physical tracks used for it. Keep in mind: The first word may be at the bottom."
-  },
-  "words": {
-    "1": "road",
-    "2": "toad",
-    "3": "told",
-    "4": "toll",
-    "5": "tall",
-    "6": "tail",
-    "7": "rail"
-  }
+  "difficulty": null,
+  "words": [
+    [
+      "road",
+      "The top + bottom rows = A compound word for a system of transportation by train, or one of the physical tracks used for it. Keep in mind: The first word may be at the bottom."
+    ],
+    [
+      "toad",
+      "Amphibian creature similar to a frog"
+    ],
+    [
+      "told",
+      "“I ___ you so!” (expression when someone didn’t listen to a prior warning)"
+    ],
+    [
+      "toll",
+      "Payment to cross a bridge"
+    ],
+    [
+      "tall",
+      "Opposite of short"
+    ],
+    [
+      "tail",
+      "Part of a dog that might wag"
+    ],
+    [
+      "rail",
+      "The top + bottom rows = A compound word for a system of transportation by train, or one of the physical tracks used for it. Keep in mind: The first word may be at the bottom."
+    ]
+  ]
 }

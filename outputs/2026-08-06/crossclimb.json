@@ -2,21 +2,35 @@
   "game": "crossclimb",
   "number": 828,
   "date": "2026-08-06",
-  "clues": {
-    "1": "“All is fair in ___ and war”",
-    "2": "Word a golfer may shout when a ball is hit off course",
-    "3": "Stories passed down between generations that may or may not be true",
-    "4": "As it happens, like a news event being broadcast",
-    "5": "Major automobile manufacturer based in the US in Michigan",
-    "0": "The top + bottom rows = A compound word that describes how much something has increased after it has quintupled. Keep in mind: The first word may be at the bottom."
-  },
-  "words": {
-    "1": "five",
-    "2": "live",
-    "3": "love",
-    "4": "lore",
-    "5": "fore",
-    "6": "ford",
-    "7": "fold"
-  }
+  "difficulty": null,
+  "words": [
+    [
+      "five",
+      "The top + bottom rows = A compound word that describes how much something has increased after it has quintupled. Keep in mind: The first word may be at the bottom."
+    ],
+    [
+      "live",
+      "As it happens, like a news event being broadcast"
+    ],
+    [
+      "love",
+      "“All is fair in ___ and war”"
+    ],
+    [
+      "lore",
+      "Stories passed down between generations that may or may not be true"
+    ],
+    [
+      "fore",
+      "Word a golfer may shout when a ball is hit off course"
+    ],
+    [
+      "ford",
+      "Major automobile manufacturer based in the US in Michigan"
+    ],
+    [
+      "fold",
+      "The top + bottom rows = A compound word that describes how much something has increased after it has quintupled. Keep in mind: The first word may be at the bottom."
+    ]
+  ]
 }

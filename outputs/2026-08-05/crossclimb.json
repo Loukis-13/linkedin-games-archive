@@ -2,21 +2,35 @@
   "game": "crossclimb",
   "number": 827,
   "date": "2026-08-05",
-  "clues": {
-    "1": "Sticky strip that can be used instead of glue",
-    "2": "Gets a lot of rays at the beach",
-    "3": "Pulls an automobile to a repair shop",
-    "4": "A great amount, or units to describe something weighing 10,000 pounds",
-    "5": "Light hits",
-    "0": "The top + bottom rows = A two-word name for a port city that is the legislative capital of South Africa. Keep in mind: The first word may be at the bottom."
-  },
-  "words": {
-    "1": "cape",
-    "2": "tape",
-    "3": "taps",
-    "4": "tans",
-    "5": "tons",
-    "6": "tows",
-    "7": "town"
-  }
+  "difficulty": null,
+  "words": [
+    [
+      "cape",
+      "The top + bottom rows = A two-word name for a port city that is the legislative capital of South Africa. Keep in mind: The first word may be at the bottom."
+    ],
+    [
+      "tape",
+      "Sticky strip that can be used instead of glue"
+    ],
+    [
+      "taps",
+      "Light hits"
+    ],
+    [
+      "tans",
+      "Gets a lot of rays at the beach"
+    ],
+    [
+      "tons",
+      "A great amount, or units to describe something weighing 10,000 pounds"
+    ],
+    [
+      "tows",
+      "Pulls an automobile to a repair shop"
+    ],
+    [
+      "town",
+      "The top + bottom rows = A two-word name for a port city that is the legislative capital of South Africa. Keep in mind: The first word may be at the bottom."
+    ]
+  ]
 }

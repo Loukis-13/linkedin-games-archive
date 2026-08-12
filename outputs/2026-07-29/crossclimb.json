@@ -2,21 +2,35 @@
   "game": "crossclimb",
   "number": 820,
   "date": "2026-07-29",
-  "clues": {
-    "1": "Best of ___ worlds (enjoy two things simultaneously)",
-    "2": "Type of shoe that extends up the lower leg to offer more protection",
-    "3": "Software programs that crawl the web to analyze web pages",
-    "4": "Protesting sounds heard after a controversial sports call",
-    "5": "Relaxing soak in a tub",
-    "0": "The top + bottom rows = A compound word for a narrow walkway used by pedestrians and not vehicles. Keep in mind: The first word may be at the bottom."
-  },
-  "words": {
-    "1": "foot",
-    "2": "boot",
-    "3": "boos",
-    "4": "bots",
-    "5": "both",
-    "6": "bath",
-    "7": "path"
-  }
+  "difficulty": null,
+  "words": [
+    [
+      "foot",
+      "The top + bottom rows = A compound word for a narrow walkway used by pedestrians and not vehicles. Keep in mind: The first word may be at the bottom."
+    ],
+    [
+      "boot",
+      "Type of shoe that extends up the lower leg to offer more protection"
+    ],
+    [
+      "boos",
+      "Protesting sounds heard after a controversial sports call"
+    ],
+    [
+      "bots",
+      "Software programs that crawl the web to analyze web pages"
+    ],
+    [
+      "both",
+      "Best of ___ worlds (enjoy two things simultaneously)"
+    ],
+    [
+      "bath",
+      "Relaxing soak in a tub"
+    ],
+    [
+      "path",
+      "The top + bottom rows = A compound word for a narrow walkway used by pedestrians and not vehicles. Keep in mind: The first word may be at the bottom."
+    ]
+  ]
 }

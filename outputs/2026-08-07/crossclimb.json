@@ -2,21 +2,35 @@
   "game": "crossclimb",
   "number": 829,
   "date": "2026-08-07",
-  "clues": {
-    "1": "Burrowing animal, or a unit of measurement in chemistry",
-    "2": "A system to encrypt words to send a secret message",
-    "3": "Sharpen, as one’s skills",
-    "4": "The most frequently appearing value in a data set",
-    "5": "Something that can be dug in the ground",
-    "0": "The top + bottom rows = Two words with opposite meanings that often appear together idiomatically, as in the sentence “The opportunity has ___ and ___.” Keep in mind: The first word may be at the bottom."
-  },
-  "words": {
-    "1": "come",
-    "2": "code",
-    "3": "mode",
-    "4": "mole",
-    "5": "hole",
-    "6": "hone",
-    "7": "gone"
-  }
+  "difficulty": null,
+  "words": [
+    [
+      "come",
+      "The top + bottom rows = Two words with opposite meanings that often appear together idiomatically, as in the sentence “The opportunity has ___ and ___.” Keep in mind: The first word may be at the bottom."
+    ],
+    [
+      "code",
+      "A system to encrypt words to send a secret message"
+    ],
+    [
+      "mode",
+      "The most frequently appearing value in a data set"
+    ],
+    [
+      "mole",
+      "Burrowing animal, or a unit of measurement in chemistry"
+    ],
+    [
+      "hole",
+      "Something that can be dug in the ground"
+    ],
+    [
+      "hone",
+      "Sharpen, as one’s skills"
+    ],
+    [
+      "gone",
+      "The top + bottom rows = Two words with opposite meanings that often appear together idiomatically, as in the sentence “The opportunity has ___ and ___.” Keep in mind: The first word may be at the bottom."
+    ]
+  ]
 }

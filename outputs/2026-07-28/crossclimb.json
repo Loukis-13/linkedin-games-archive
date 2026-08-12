@@ -2,21 +2,35 @@
   "game": "crossclimb",
   "number": 819,
   "date": "2026-07-28",
-  "clues": {
-    "1": "Common piece of tableware, or a branch in the road",
-    "2": "Place to plug in a USB device on a laptop",
-    "3": "Price to pay",
-    "4": "Ham or bacon",
-    "5": "Share an update on social media",
-    "0": "The top + bottom rows = A compound word for a prediction made ahead of time, such as what the weather will be tomorrow. Keep in mind: The first word may be at the bottom."
-  },
-  "words": {
-    "1": "fore",
-    "2": "fork",
-    "3": "pork",
-    "4": "port",
-    "5": "post",
-    "6": "cost",
-    "7": "cast"
-  }
+  "difficulty": null,
+  "words": [
+    [
+      "fore",
+      "The top + bottom rows = A compound word for a prediction made ahead of time, such as what the weather will be tomorrow. Keep in mind: The first word may be at the bottom."
+    ],
+    [
+      "fork",
+      "Common piece of tableware, or a branch in the road"
+    ],
+    [
+      "pork",
+      "Ham or bacon"
+    ],
+    [
+      "port",
+      "Place to plug in a USB device on a laptop"
+    ],
+    [
+      "post",
+      "Share an update on social media"
+    ],
+    [
+      "cost",
+      "Price to pay"
+    ],
+    [
+      "cast",
+      "The top + bottom rows = A compound word for a prediction made ahead of time, such as what the weather will be tomorrow. Keep in mind: The first word may be at the bottom."
+    ]
+  ]
 }

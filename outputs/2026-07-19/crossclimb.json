@@ -2,21 +2,35 @@
   "game": "crossclimb",
   "number": 810,
   "date": "2026-07-19",
-  "clues": {
-    "1": "Change in musical pitch indicated by ♭",
-    "2": "“Go with the ___”",
-    "3": "Boxer’s weapon",
-    "4": "Imperfection",
-    "5": "Authoritative action made by decree, or an Italian automaker",
-    "0": "The top + bottom rows = A compound word for an aquatic animal that inflates its stomach to protect itself from predators. Keep in mind: The first word may be at the bottom."
-  },
-  "words": {
-    "1": "blow",
-    "2": "flow",
-    "3": "flaw",
-    "4": "flat",
-    "5": "fiat",
-    "6": "fist",
-    "7": ""
-  }
+  "difficulty": null,
+  "words": [
+    [
+      "blow",
+      "The top + bottom rows = A compound word for an aquatic animal that inflates its stomach to protect itself from predators. Keep in mind: The first word may be at the bottom."
+    ],
+    [
+      "flow",
+      "“Go with the ___”"
+    ],
+    [
+      "flaw",
+      "Imperfection"
+    ],
+    [
+      "flat",
+      "Change in musical pitch indicated by ♭"
+    ],
+    [
+      "fiat",
+      "Authoritative action made by decree, or an Italian automaker"
+    ],
+    [
+      "fist",
+      "Boxer’s weapon"
+    ],
+    [
+      "fish",
+      "The top + bottom rows = A compound word for an aquatic animal that inflates its stomach to protect itself from predators. Keep in mind: The first word may be at the bottom."
+    ]
+  ]
 }

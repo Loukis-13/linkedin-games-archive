@@ -2,21 +2,35 @@
   "game": "crossclimb",
   "number": 817,
   "date": "2026-07-26",
-  "clues": {
-    "1": "Open-___ shoes",
-    "2": "Someone older than twelve but younger than twenty",
-    "3": "Relayed, as a story",
-    "4": "Very interested in something",
-    "5": "Ready to be hit, as a golf ball",
-    "0": "The top + bottom rows = A two-word phrase meaning \"to refrigerate.\" Keep in mind: The first word may be at the bottom."
-  },
-  "words": {
-    "1": "cold",
-    "2": "told",
-    "3": "toed",
-    "4": "teed",
-    "5": "teen",
-    "6": "keen",
-    "7": "keep"
-  }
+  "difficulty": null,
+  "words": [
+    [
+      "cold",
+      "The top + bottom rows = A two-word phrase meaning \"to refrigerate.\" Keep in mind: The first word may be at the bottom."
+    ],
+    [
+      "told",
+      "Relayed, as a story"
+    ],
+    [
+      "toed",
+      "Open-___ shoes"
+    ],
+    [
+      "teed",
+      "Ready to be hit, as a golf ball"
+    ],
+    [
+      "teen",
+      "Someone older than twelve but younger than twenty"
+    ],
+    [
+      "keen",
+      "Very interested in something"
+    ],
+    [
+      "keep",
+      "The top + bottom rows = A two-word phrase meaning \"to refrigerate.\" Keep in mind: The first word may be at the bottom."
+    ]
+  ]
 }

@@ -2,21 +2,35 @@
   "game": "crossclimb",
   "number": 821,
   "date": "2026-07-30",
-  "clues": {
-    "1": "Extremely serious, like some consequences",
-    "2": "Large group of animals like cows or sheep",
-    "3": "Employ for a job",
-    "4": "Challenge someone to complete a task",
-    "5": "In this location",
-    "0": "The top + bottom rows = A compound word for the physical components of a computer. Keep in mind: The first word may be at the bottom."
-  },
-  "words": {
-    "1": "hard",
-    "2": "herd",
-    "3": "here",
-    "4": "hire",
-    "5": "dire",
-    "6": "dare",
-    "7": "ware"
-  }
+  "difficulty": null,
+  "words": [
+    [
+      "hard",
+      "The top + bottom rows = A compound word for the physical components of a computer. Keep in mind: The first word may be at the bottom."
+    ],
+    [
+      "herd",
+      "Large group of animals like cows or sheep"
+    ],
+    [
+      "here",
+      "In this location"
+    ],
+    [
+      "hire",
+      "Employ for a job"
+    ],
+    [
+      "dire",
+      "Extremely serious, like some consequences"
+    ],
+    [
+      "dare",
+      "Challenge someone to complete a task"
+    ],
+    [
+      "ware",
+      "The top + bottom rows = A compound word for the physical components of a computer. Keep in mind: The first word may be at the bottom."
+    ]
+  ]
 }

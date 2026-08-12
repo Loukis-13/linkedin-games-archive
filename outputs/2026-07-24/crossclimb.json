@@ -2,21 +2,35 @@
   "game": "crossclimb",
   "number": 815,
   "date": "2026-07-24",
-  "clues": {
-    "1": "Tall grass that grows in a marsh, or the vibrating part of a woodwind instrument that creates sound",
-    "2": "500 sheets of paper",
-    "3": "Short film, or the spool on which film is stored",
-    "4": "Wander around without a set destination",
-    "5": "Genuine",
-    "0": "The top + bottom rows = Two words that complete the idiom “___ the ___” meaning to get a sense of the mood of a group of people before acting or speaking. Keep in mind: The first word may be at the bottom."
-  },
-  "words": {
-    "1": "read",
-    "2": "reed",
-    "3": "reel",
-    "4": "real",
-    "5": "ream",
-    "6": "roam",
-    "7": "room"
-  }
+  "difficulty": null,
+  "words": [
+    [
+      "read",
+      "The top + bottom rows = Two words that complete the idiom “___ the ___” meaning to get a sense of the mood of a group of people before acting or speaking. Keep in mind: The first word may be at the bottom."
+    ],
+    [
+      "reed",
+      "Tall grass that grows in a marsh, or the vibrating part of a woodwind instrument that creates sound"
+    ],
+    [
+      "reel",
+      "Short film, or the spool on which film is stored"
+    ],
+    [
+      "real",
+      "Genuine"
+    ],
+    [
+      "ream",
+      "500 sheets of paper"
+    ],
+    [
+      "roam",
+      "Wander around without a set destination"
+    ],
+    [
+      "room",
+      "The top + bottom rows = Two words that complete the idiom “___ the ___” meaning to get a sense of the mood of a group of people before acting or speaking. Keep in mind: The first word may be at the bottom."
+    ]
+  ]
 }
