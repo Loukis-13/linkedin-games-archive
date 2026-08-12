@@ -9,6 +9,7 @@ def _header(puz):
         f"number    : {puz['number']}",
         f"date      : {puz['date']}",
         f"difficulty: {puz.get('difficulty', '')}",
+        "",
     ]
 
 

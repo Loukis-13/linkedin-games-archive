@@ -5,12 +5,10 @@ from games import common as _c
 
 def _header(puz):
     return [
-        f"game      : {puz['game']}",
-        f"number    : {puz.get('number')}",
-        f"date      : {puz.get('date')}",
+        f"game     : {puz['game']}",
+        f"number   : {puz.get('number')}",
+        f"date     : {puz.get('date')}",
         f"clues    : {len(puz.get('clues', []))}",
-        f"blanks   : {puz.get('blanks')}",
-        f"answer   : {puz.get('answer')}",
         "",
         "Grid (clues lead to one shared category; answer = the revealed category phrase):",
     ]
