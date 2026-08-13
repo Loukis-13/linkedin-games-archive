@@ -11,135 +11,144 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-08-12)
+## Today's games (2026-08-13)
 
 ### zip
 ```
-+----+----+----+----+----+----+
-| ..   ..   ..   ..   ..    3 |
-+                             +
-| ..   12   11    5    4   .. |
-+                             +
-| ..   ..   .. | ..    6   .. |
-+          ----+----          +
-| ..   10   .. | ..   ..   .. |
-+              +              +
-| ..    1    9    7    8   .. |
-+                             +
-|  2   ..   ..   ..   ..   .. |
-+---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+----+----+
+| ..   ..   ..   ..   ..   ..   ..   .. |
++                                       +
+| ..    8   ..    7   ..    6    4   .. |
++          ---- ---- ---- ----          +
+| ..    9 | ..   ..   ..   .. | ..   .. |
++         +     ---- ----     +         +
+| ..   .. | ..   ..   ..   .. | ..   .. |
++         +          ---- ----+         +
+| ..   .. | ..   .. | ..   ..   ..   .. |
++         +         +                   +
+| ..   .. | ..   .. | ..   ..    2   .. |
++         +         +                   +
+| ..   10    5   ..    3   ..    1   .. |
++                                       +
+| ..   ..   ..   ..   ..   ..   ..   .. |
++---- ---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . | . | . | . | . |
+| . | M | M | . | . | . |
 +---+---+---+---+---+---+
-| . | M | . = . | M | . |
+| . | . | . x . | . | . |
 +---+---+---+---+---+---+
-| . | . | M | S | . | . |
-+---+-x-+---+---+-x-+---+
+| M | M | . | M | S | . |
++---+---+---+---+---+---+
+| . | . x . | . | . x . |
++---+---+---+---+---+---+
 | . | . | M | M | . | . |
 +---+---+---+---+---+---+
-| . | S | . x . | M | . |
-+---+---+---+---+---+---+
-| . | . | . | . | . | . |
+| . | . | . | . x . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟧🟧🟧🟧🟧🟨
-🟥🟧🟧🟧🟧🟧🟧🟨
-🟥🟧🟧🟧🟧🟧🟨🟨
-🟩🟧🟧🟧🟧🟦🟦🟦
-🟩🟩🟩🟧🟧🟧🟧🟦
-🟪🟫🟫🟫🟧🟧🟧⬛
-🟪🟧🟧🟫🟧🟧🟧⬛
-🟪🟪🟧🟧🟧🟧⬛⬛
+🟥🟥🟥🟧🟧🟧🟧🟧🟧
+🟥🟨🟨🟧🟧🟧🟧🟧🟧
+🟥🟥🟥🟧🟩🟩🟧🟧🟧
+🟦🟦🟧🟧🟩🟩🟧🟧🟧
+🟦🟧🟧🟧🟧🟧🟧🟧🟧
+🟦🟧🟧🟧🟪🟧🟧🟫🟧
+🟦🟧🟧🟪🟪🟧🟧🟫🟫
+🟦🟧🟧🟪⬛🟧⬜⬜⬜
+🟦🟧🟧⬛⬛🟧⬜⬜⬜
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃ 1 │   │   ┃ 2 │   │   ┃
+┃   │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 3 │ 4 ┃   │   │   ┃
+┃ 1 │ 2 │ 3 ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 5 │ 6 ┃   │   │   ┃
+┃ 2 │ 3 │ 4 ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃ 3 │ 5 │   ┃
+┃   │   │   ┃ 2 │ 3 │ 4 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃ 1 │ 2 │   ┃
+┃   │   │   ┃ 3 │ 4 │ 5 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 1 ┃   │   │ 3 ┃
+┃   │   │   ┃   │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+----+
-| +  | .. | +  | .. | +  | .. | +  |
+| .. | |2 | .. | .. | |6 | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | |2 | .. | .. | .. | |  |
 +----+----+----+----+----+----+----+
 | .. | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
 | .. | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | +7 | .. | +10 | .. | +5 | .. |
-+----+----+----+----+----+----+----+
 | .. | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
+| |  | .. | .. | .. | |8 | .. | .. |
 +----+----+----+----+----+----+----+
-| +3 | .. | +5 | .. | +3 | .. | +3 |
+| .. | .. | |10 | .. | .. | |6 | .. |
 +----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+
-| J | U | N | A | J |
-+---+---+---+---+---+
-| R | A | G | L | A |
-+---+---+---+---+---+
-| T | F | # | E | R |
-+---+---+---+---+---+
-| I | F | A | S | I |
-+---+---+---+---+---+
-| C | # | B | # | C |
-+---+---+---+---+---+
++---+---+---+---+---+---+
+| L | A | A | L | U | M |
++---+---+---+---+---+---+
+| E | C | # | # | # | R |
++---+---+---+---+---+---+
+| N | M | E | L | C | O |
++---+---+---+---+---+---+
+| D | I | D | D | H | F |
++---+---+---+---+---+---+
+| A | # | # | # | O | R |
++---+---+---+---+---+---+
+| R | P | L | U | M | D |
++---+---+---+---+---+---+
 
 Words:
-  AJAR
-  BASIC
-  JUNGLE
-  TRAFFIC
+  PLUM
+  CHORD
+  MIDDLE
+  FORMULA
+  CALENDAR
 ```
 
 ### pinpoint
 ```
-  1. Electric current
-  2. Personal pronoun
-  3. Square root of -1
-  4. Iodine
-  5. Roman numeral for 1
+  1. The Sun
+  2. Dominoes
+  3. Leopards
+  4. Dalmations
+  5. Ladybirds / ladybugs (🐞)
 
-  answer: Different meanings of the letter “I”!
+  answer: Things that have spots!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 834
-date      : 2026-08-12
+number    : 835
+date      : 2026-08-13
 difficulty: None
+
 Ladder (word : clue, top -> bottom):
-  back : The top + bottom rows = A two-word phrase for what you might do after you get a telephone message. Keep in mind: The first word may be at the bottom.
-  bask : Loll in the sun
-  base : Something used to neutralize an acid
-  bale : Bundle of straw or hay
-  tale : Something Hans Christian Andersen wrote
-  tall : Having above-average height
-  call : The top + bottom rows = A two-word phrase for what you might do after you get a telephone message. Keep in mind: The first word may be at the bottom.
+  time : The top + bottom rows = A compound word describing a type of membership that never needs to be renewed. Keep in mind: The first word may be at the bottom.
+  tame : Domesticated, like a household pet
+  same : “In the ___ boat” (sharing a difficult situation)
+  sake : Japanese rice wine
+  lake : A large body of water surrounded by land
+  like : Thumbs-up response on social media
+  life : The top + bottom rows = A compound word describing a type of membership that never needs to be renewed. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
