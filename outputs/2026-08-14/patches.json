@@ -1,0 +1,72 @@
+{
+  "game": "patches",
+  "number": 150,
+  "date": "2026-08-14",
+  "grid_size": [
+    7,
+    7
+  ],
+  "clues": [
+    {
+      "x": 0,
+      "y": 0,
+      "type": "H_rect",
+      "size": null
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "type": "H_rect",
+      "size": 3
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "type": "H_rect",
+      "size": 6
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "type": "H_rect",
+      "size": null
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "type": "H_rect",
+      "size": null
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "type": "H_rect",
+      "size": null
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "type": "H_rect",
+      "size": 4
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "type": "H_rect",
+      "size": null
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "type": "H_rect",
+      "size": 6
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "type": "H_rect",
+      "size": null
+    }
+  ],
+  "difficulty": "HARD"
+}

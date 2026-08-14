@@ -11,144 +11,142 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-08-13)
+## Today's games (2026-08-14)
 
 ### zip
 ```
-+----+----+----+----+----+----+----+----+
-| ..   ..   ..   ..   ..   ..   ..   .. |
-+                                       +
-| ..    8   ..    7   ..    6    4   .. |
-+          ---- ---- ---- ----          +
-| ..    9 | ..   ..   ..   .. | ..   .. |
-+         +     ---- ----     +         +
-| ..   .. | ..   ..   ..   .. | ..   .. |
-+         +          ---- ----+         +
-| ..   .. | ..   .. | ..   ..   ..   .. |
-+         +         +                   +
-| ..   .. | ..   .. | ..   ..    2   .. |
-+         +         +                   +
-| ..   10    5   ..    3   ..    1   .. |
-+                                       +
-| ..   ..   ..   ..   ..   ..   ..   .. |
-+---- ---- ---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+----+
+| 13   ..   ..   ..   ..   ..    1 |
++                                  +
+| ..    2   .. | ..   ..    8   .. |
++              +----               +
+| ..   ..    3   ..    7   ..   .. |
++                         ----     +
+| ..   .. | ..    6   .. | ..   .. |
++     ----+              +         +
+| ..   ..    4   ..    5   ..   .. |
++               ----               +
+| ..   12   ..   .. | ..   10   .. |
++                   +              +
+| 11   ..   ..   ..   ..   ..    9 |
++---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | M | M | . | . | . |
+| S | . | . | . = . | . |
++---+---+---+---+---+-=-+
+| S | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . | . | . x . | . | . |
+| M | . | . | . | . | . |
++---+---+---+---+---+-=-+
+| S | . | . | . | . | . |
 +---+---+---+---+---+---+
-| M | M | . | M | S | . |
-+---+---+---+---+---+---+
-| . | . x . | . | . x . |
-+---+---+---+---+---+---+
-| . | . | M | M | . | . |
-+---+---+---+---+---+---+
-| . | . | . | . x . | . |
+| M | . | . | . | . | . |
++---+---+---+---+---+-x-+
+| M | M | S | . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟧🟧🟧🟧🟧🟧
-🟥🟨🟨🟧🟧🟧🟧🟧🟧
-🟥🟥🟥🟧🟩🟩🟧🟧🟧
-🟦🟦🟧🟧🟩🟩🟧🟧🟧
-🟦🟧🟧🟧🟧🟧🟧🟧🟧
-🟦🟧🟧🟧🟪🟧🟧🟫🟧
-🟦🟧🟧🟪🟪🟧🟧🟫🟫
-🟦🟧🟧🟪⬛🟧⬜⬜⬜
-🟦🟧🟧⬛⬛🟧⬜⬜⬜
+⬜⬜⬛⬛⬛⬛⬛⬛⬛
+⬜⬛⬛⬛🟧⬛⬛⬛⬛
+⬜⬛🟥🟧🟧🟧🟫⬛⬛
+⬜🟥🟥🟥🟧🟫🟫🟨⬛
+⬜⬜🟥🟪🟪🟫🟨🟨🟨
+⬜⬜⬜🟦🟪🟪🟩🟨⬜
+⬜⬜🟦🟦🟦🟩🟩🟩⬜
+⬜⬜⬜🟦⬜⬜🟩⬜⬜
+⬜⬜⬜⬜⬜⬜⬜⬜⬜
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │   ┃   │   │   ┃
+┃ 1 │   │   ┃ 2 │   │ 3 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 1 │ 2 │ 3 ┃   │   │   ┃
+┃   │   │ 2 ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 2 │ 3 │ 4 ┃   │   │   ┃
+┃   │   │ 1 ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃ 2 │ 3 │ 4 ┃
+┃   │   │   ┃ 6 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃ 3 │ 4 │ 5 ┃
+┃   │   │   ┃ 3 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │   │   ┃
+┃ 5 │   │ 4 ┃   │   │ 2 ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+----+
-| .. | |2 | .. | .. | |6 | .. | .. |
+| -  | .. | .. | .. | .. | -3 | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | |2 | .. | .. | .. | |  |
+| .. | .. | -6 | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
+| .. | .. | .. | .. | -  | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
+| -  | .. | .. | .. | .. | .. | -  |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
+| .. | .. | -4 | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| |  | .. | .. | .. | |8 | .. | .. |
+| .. | .. | .. | .. | -  | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | |10 | .. | .. | |6 | .. |
+| .. | -6 | .. | .. | .. | .. | -  |
 +----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+---+
-| L | A | A | L | U | M |
+| A | # | O | C | # | # |
 +---+---+---+---+---+---+
-| E | C | # | # | # | R |
+| E | N | R | R | I | M |
 +---+---+---+---+---+---+
-| N | M | E | L | C | O |
+| I | N | T | E | O | D |
 +---+---+---+---+---+---+
-| D | I | D | D | H | F |
+| O | H | T | W | O | F |
 +---+---+---+---+---+---+
-| A | # | # | # | O | R |
+| U | S | A | E | I | G |
 +---+---+---+---+---+---+
-| R | P | L | U | M | D |
+| # | # | N | D | # | H |
 +---+---+---+---+---+---+
 
 Words:
-  PLUM
-  CHORD
-  MIDDLE
-  FORMULA
-  CALENDAR
+  FOOD
+  WEIGH
+  CORNEA
+  INTERIM
+  THOUSAND
 ```
 
 ### pinpoint
 ```
-  1. The Sun
-  2. Dominoes
-  3. Leopards
-  4. Dalmations
-  5. Ladybirds / ladybugs (🐞)
+  1. Odyssey
+  2. Galaxy
+  3. Kart
+  4. 64
+  5. Bros. 3
 
-  answer: Things that have spots!
+  answer: Terms that come after “Super Mario” in video game titles!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 835
-date      : 2026-08-13
+number    : 836
+date      : 2026-08-14
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  time : The top + bottom rows = A compound word describing a type of membership that never needs to be renewed. Keep in mind: The first word may be at the bottom.
-  tame : Domesticated, like a household pet
-  same : “In the ___ boat” (sharing a difficult situation)
-  sake : Japanese rice wine
-  lake : A large body of water surrounded by land
-  like : Thumbs-up response on social media
-  life : The top + bottom rows = A compound word describing a type of membership that never needs to be renewed. Keep in mind: The first word may be at the bottom.
+  gasp : The top + bottom rows = Two words meaning to breathe quickly and loudly.
+  wasp : Outdoor pest that has a powerful sting
+  warp : Become misshapen, often under heat
+  carp : To complain, or a type of fish like koi
+  cart : Vehicle used for hauling
+  part : Component of a larger whole
+  pant : The top + bottom rows = Two words meaning to breathe quickly and loudly.
 ```
 <!-- DAILY-GAMES-END -->
