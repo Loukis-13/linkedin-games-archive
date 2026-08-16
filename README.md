@@ -11,149 +11,148 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-08-15)
+## Today's games (2026-08-16)
 
 ### zip
 ```
 +----+----+----+----+----+----+----+----+
-| ..   ..   ..   ..   ..   ..   ..   .. |
+| ..   ..   ..    4   ..   ..   ..   .. |
 +                                       +
-| 12   11   ..   ..   ..   ..   13   14 |
-+               ---- ----               +
-| ..    7   10   ..   ..    9    8   .. |
+| ..    7   ..   ..   ..   ..    9   .. |
 +                                       +
-| ..   ..   ..   ..   ..   ..   ..   .. |
+| ..   ..   ..   ..    5   ..   ..   .. |
 +                                       +
-| ..   ..   ..   ..   ..   ..   ..   .. |
+| ..   ..    8   ..   ..   ..   ..    6 |
 +                                       +
-| ..   15    2   ..   ..    3    4   .. |
-+               ---- ----               +
-|  6   16   ..   ..   ..   ..    1    5 |
+|  3   ..   ..   ..   ..   10   ..   .. |
 +                                       +
-| ..   ..   ..   ..   ..   ..   ..   .. |
+| ..   ..   ..   11   ..   ..   ..   .. |
++                                       +
+| ..    2   ..   ..   ..   ..   12   .. |
++                                       +
+| ..   ..   ..   ..    1   ..   ..   .. |
 +---- ---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . | . = . | . | . |
-+---+---+-=-+-x-+---+---+
-| . | M | . | . | M | . |
+| S | S | . | . | . | . |
 +---+---+---+---+---+---+
-| . = . | . | M | . x . |
+| S | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . x . | M | . | . x . |
+| M | . | . | . | . = . |
 +---+---+---+---+---+---+
-| . | M | . | . | M | . |
-+---+---+-x-+-x-+---+---+
-| . | . | . x . | . | . |
+| S | S | . | . | . | . |
++---+---+---+---+---+-=-+
+| . | . | . | . | . | . |
++---+---+---+---+---+---+
+| . | . | . | . | . x . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟫🟫🟦🟦🟦🟦🟥🟥🟥
-🟫🟦🟦🟪🟪🟪🟪🟪🟥
-🟧🟧🟧⬜⬜⬜⬜🟪🟥
-🟨🟨🟧⬜⬜⬜🟥🟥🟥
-🟨🟨🟧⬜⬜⬜🟥🟩🟩
-🟧🟧🟧⬜⬜⬜🟥🟩🟩
-🟧⬜⬜⬜⬜⬜🟥🟥🟥
-🟧⬜⬜⬜⬜⬜⬛⬛⬛
-🟧🟧🟧⬛⬛⬛⬛⬛⬛
+🟨⬜⬜⬜⬜⬜⬜⬜⬜
+🟨🟨⬜⬜🟧⬜⬜⬛⬛
+🟨⬜⬜🟥🟧🟧⬜⬜⬛
+⬜⬜🟥🟥🟦🟧🟩⬛⬛
+⬜🟥🟥🟦🟦🟦🟩🟩⬛
+⬜⬜🟥🟫🟦🟪🟩⬛⬛
+⬜⬜🟥🟫🟫🟪🟪⬛⬛
+⬜⬜🟫🟫🟪🟪🟪⬛⬛
+⬜⬜⬜🟪🟪🟪⬛⬛⬛
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │ 4 │   ┃ 1 │ 3 │   ┃
+┃   │ 1 │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 1 │   │   ┃   │   │ 2 ┃
+┃   │   │ 2 ┃   │ 1 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃   │   │ 5 ┃
+┃   │ 2 │   ┃   │   │ 3 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 3 │   │   ┃   │   │   ┃
+┃ 5 │   │   ┃   │ 4 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 4 │   │   ┃   │   │ 1 ┃
+┃   │ 3 │   ┃ 6 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 1 │ 5 ┃   │ 2 │   ┃
+┃   │   │   ┃   │ 5 │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+----+----+
-| .. | .. | +  | +  | .. | .. | .. | |  |
+| .. | .. | +4 | .. | .. | =  | .. | .. |
 +----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | -  | .. | .. |
+| .. | +3 | .. | .. | .. | .. | |3 | .. |
 +----+----+----+----+----+----+----+----+
-| .. | +  | .. | .. | +  | .. | +  | +  |
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. | .. |
+| +2 | .. | +6 | .. | .. | -  | .. | |  |
 +----+----+----+----+----+----+----+----+
 | .. | .. | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+----+
-| +2 | +2 | .. | +2 | .. | .. | +2 | .. |
+| .. | .. | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+----+
-| .. | .. | |2 | .. | .. | .. | .. | .. |
+| |  | .. | -  | .. | .. | +12 | .. | +2 |
 +----+----+----+----+----+----+----+----+
-| -2 | .. | .. | .. | +2 | +2 | .. | .. |
+| .. | -5 | .. | .. | .. | .. | +3 | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | -  | .. | .. | +4 | .. | .. |
 +----+----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+---+---+
-| I | M | A | T | R | U | G |
+| O | N | A | D | E | N | O |
 +---+---+---+---+---+---+---+
-| T | L | M | U | U | L | A |
+| I | Q | L | # | E | N | M |
 +---+---+---+---+---+---+---+
-| # | U | # | U | M | S | U |
+| T | U | O | T | I | T | I |
 +---+---+---+---+---+---+---+
-| # | # | # | U | # | U | # |
+| C | # | # | # | # | # | N |
 +---+---+---+---+---+---+---+
-| L | A | A | C | # | # | # |
+| A | R | I | V | I | D | A |
 +---+---+---+---+---+---+---+
-| C | C | V | U | R | A | N |
+| P | F | D | # | N | E | T |
 +---+---+---+---+---+---+---+
-| U | L | U | S | M | U | I |
+| O | R | T | I | O | R | O |
 +---+---+---+---+---+---+---+
 
 Words:
-  GURU
-  USUAL
-  VACUUM
-  URANIUM
-  CALCULUS
-  ULTIMATUM
+  DIVIDE
+  PORTION
+  QUOTIENT
+  FRACTIONAL
+  DENOMINATOR
 ```
 
 ### pinpoint
 ```
-  1. A speech
-  2. The daily newspaper
-  3. The mail
-  4. A knockout blow
-  5. Restaurant food brought to you
+  1. Freeze
+  2. Time
+  3. Bed
+  4. Door
+  5. Picture (🖼️)
 
-  answer: Things that are delivered!
+  answer: Words that come before “frame”!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 837
-date      : 2026-08-15
+number    : 838
+date      : 2026-08-16
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  step : The top + bottom rows = A compound word meaning to go beyond one's authority or boundaries. Keep in mind: The first word may be at the bottom.
-  stem : Part of a plant, or an acronym for four evidence-based fields of study
-  seem : Appear (to be)
-  seen : Perceived
-  sven : Common Swedish boy's name that means "young man"
-  oven : Appliance for roasting a turkey
-  over : The top + bottom rows = A compound word meaning to go beyond one's authority or boundaries. Keep in mind: The first word may be at the bottom.
+  fillet : The top + bottom rows = Two options at a seafood restaurant: one a type of shellfish, the other a cut of fish. Keep in mind: The first word may be at the bottom.
+  filled : Like these blanks, when you're done with them
+  milled : Fed through a grinding machine, as wheat
+  misled : Gave false information to
+  missed : Didn't hit the target
+  mussed : Made untidy or disheveled, as someone's hair
+  mussel : The top + bottom rows = Two options at a seafood restaurant: one a type of shellfish, the other a cut of fish. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
