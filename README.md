@@ -11,148 +11,132 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-08-16)
+## Today's games (2026-08-17)
 
 ### zip
 ```
-+----+----+----+----+----+----+----+----+
-| ..   ..   ..    4   ..   ..   ..   .. |
-+                                       +
-| ..    7   ..   ..   ..   ..    9   .. |
-+                                       +
-| ..   ..   ..   ..    5   ..   ..   .. |
-+                                       +
-| ..   ..    8   ..   ..   ..   ..    6 |
-+                                       +
-|  3   ..   ..   ..   ..   10   ..   .. |
-+                                       +
-| ..   ..   ..   11   ..   ..   ..   .. |
-+                                       +
-| ..    2   ..   ..   ..   ..   12   .. |
-+                                       +
-| ..   ..   ..   ..    1   ..   ..   .. |
-+---- ---- ---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+
+| ..   ..   ..   ..   ..   .. |
++                             +
+| ..   ..   10    5   ..   .. |
++                             +
+| ..   ..   11    4   ..   .. |
++                             +
+|  8    9   ..   ..    6    7 |
++                             +
+|  1   12   ..   ..    3    2 |
++                             +
+| ..   ..   ..   ..   ..   .. |
++---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| S | S | . | . | . | . |
+| . | . | S | . | . | . |
 +---+---+---+---+---+---+
-| S | . | . | . | . | . |
+| . | S | S | M | . | . |
 +---+---+---+---+---+---+
-| M | . | . | . | . = . |
+| . x . x . x . = . | . |
 +---+---+---+---+---+---+
-| S | S | . | . | . | . |
-+---+---+---+---+---+-=-+
-| . | . | . | . | . | . |
+| . | . x . x . x . x . |
 +---+---+---+---+---+---+
-| . | . | . | . | . x . |
+| . | . | M | S | M | . |
++---+---+---+---+---+---+
+| . | . | . | M | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟨⬜⬜⬜⬜⬜⬜⬜⬜
-🟨🟨⬜⬜🟧⬜⬜⬛⬛
-🟨⬜⬜🟥🟧🟧⬜⬜⬛
-⬜⬜🟥🟥🟦🟧🟩⬛⬛
-⬜🟥🟥🟦🟦🟦🟩🟩⬛
-⬜⬜🟥🟫🟦🟪🟩⬛⬛
-⬜⬜🟥🟫🟫🟪🟪⬛⬛
-⬜⬜🟫🟫🟪🟪🟪⬛⬛
-⬜⬜⬜🟪🟪🟪⬛⬛⬛
+🟫🟫🟫🟫🟫🟫🟫
+🟫🟧🟪🟪🟪🟨🟫
+🟫🟧🟧🟪🟨🟨🟫
+🟫🟧🟩🟦🟩🟨🟫
+🟫🟧🟩🟩🟩🟨🟫
+🟫🟧🟥🟥🟩🟨🟥
+🟫🟫🟫🟥🟥🟥🟥
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │ 1 │   ┃   │   │   ┃
+┃ 2 │ 3 │ 6 ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 2 ┃   │ 1 │   ┃
+┃ 4 │   │ 5 ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 2 │   ┃   │   │ 3 ┃
+┃ 1 │ 6 │ 3 ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 5 │   │   ┃   │ 4 │   ┃
+┃   │   │   ┃ 1 │ 3 │ 6 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 3 │   ┃ 6 │   │   ┃
+┃   │   │   ┃ 6 │   │ 4 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │ 5 │   ┃
+┃   │   │   ┃ 2 │ 5 │ 3 ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+----+----+
-| .. | .. | +4 | .. | .. | =  | .. | .. |
-+----+----+----+----+----+----+----+----+
-| .. | +3 | .. | .. | .. | .. | |3 | .. |
-+----+----+----+----+----+----+----+----+
-| +2 | .. | +6 | .. | .. | -  | .. | |  |
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
-| |  | .. | -  | .. | .. | +12 | .. | +2 |
-+----+----+----+----+----+----+----+----+
-| .. | -5 | .. | .. | .. | .. | +3 | .. |
-+----+----+----+----+----+----+----+----+
-| .. | .. | -  | .. | .. | +4 | .. | .. |
-+----+----+----+----+----+----+----+----+
++----+----+----+----+----+----+
+| |3 | +4 | .. | .. | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | =4 | +2 | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | +9 | |3 | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | .. | .. | +5 | |6 |
++----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+---+---+
-| O | N | A | D | E | N | O |
-+---+---+---+---+---+---+---+
-| I | Q | L | # | E | N | M |
-+---+---+---+---+---+---+---+
-| T | U | O | T | I | T | I |
-+---+---+---+---+---+---+---+
-| C | # | # | # | # | # | N |
-+---+---+---+---+---+---+---+
-| A | R | I | V | I | D | A |
-+---+---+---+---+---+---+---+
-| P | F | D | # | N | E | T |
-+---+---+---+---+---+---+---+
-| O | R | T | I | O | R | O |
-+---+---+---+---+---+---+---+
++---+---+---+---+---+
+| Y | # | # | # | J |
++---+---+---+---+---+
+| R | O | W | A | I |
++---+---+---+---+---+
+| C | T | # | S | G |
++---+---+---+---+---+
+| I | E | T | O | U |
++---+---+---+---+---+
+| V | # | # | # | Q |
++---+---+---+---+---+
 
 Words:
-  DIVIDE
-  PORTION
-  QUOTIENT
-  FRACTIONAL
-  DENOMINATOR
+  QUOTE
+  JIGSAW
+  VICTORY
 ```
 
 ### pinpoint
 ```
-  1. Freeze
-  2. Time
-  3. Bed
-  4. Door
-  5. Picture (🖼️)
+  1. Dram
+  2. Krone
+  3. Rupee
+  4. Peso
+  5. Euro (€)
 
-  answer: Words that come before “frame”!
+  answer: Names of world currencies!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 838
-date      : 2026-08-16
+number    : 839
+date      : 2026-08-17
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  fillet : The top + bottom rows = Two options at a seafood restaurant: one a type of shellfish, the other a cut of fish. Keep in mind: The first word may be at the bottom.
-  filled : Like these blanks, when you're done with them
-  milled : Fed through a grinding machine, as wheat
-  misled : Gave false information to
-  missed : Didn't hit the target
-  mussed : Made untidy or disheveled, as someone's hair
-  mussel : The top + bottom rows = Two options at a seafood restaurant: one a type of shellfish, the other a cut of fish. Keep in mind: The first word may be at the bottom.
+  miss : The top + bottom rows = Two words that complete the expression “___ the ___” meaning to lose out on an opportunity (i.e., the ship’s already left!). Keep in mind: The first word may be at the bottom.
+  mass : Physical property measured in grams
+  mast : Tall pole used to support a sail
+  cast : Fiberglass bandage used to immobilize a broken bone
+  cost : It’s listed on a price tag
+  coat : Outerwear to protect from the cold and rain
+  boat : The top + bottom rows = Two words that complete the expression “___ the ___” meaning to lose out on an opportunity (i.e., the ship’s already left!). Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
