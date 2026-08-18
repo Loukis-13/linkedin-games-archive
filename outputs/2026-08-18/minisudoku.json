@@ -1,0 +1,61 @@
+{
+  "game": "minisudoku",
+  "date": "2026-08-18",
+  "grid_size": [
+    6,
+    6
+  ],
+  "cells": [
+    [
+      1,
+      null,
+      null,
+      null,
+      6,
+      null
+    ],
+    [
+      4,
+      null,
+      3,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      5,
+      1
+    ],
+    [
+      5,
+      2,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      3,
+      null,
+      6
+    ],
+    [
+      null,
+      1,
+      null,
+      null,
+      null,
+      2
+    ]
+  ],
+  "number": "372",
+  "title": "Confetti",
+  "difficulty": null
+}

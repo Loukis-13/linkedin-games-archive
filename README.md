@@ -11,132 +11,135 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-08-17)
+## Today's games (2026-08-18)
 
 ### zip
 ```
-+----+----+----+----+----+----+
-| ..   ..   ..   ..   ..   .. |
-+                             +
-| ..   ..   10    5   ..   .. |
-+                             +
-| ..   ..   11    4   ..   .. |
-+                             +
-|  8    9   ..   ..    6    7 |
-+                             +
-|  1   12   ..   ..    3    2 |
-+                             +
-| ..   ..   ..   ..   ..   .. |
-+---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+----+
+| ..   ..    5   ..   ..   ..   .. |
++                    ---- ----     +
+| ..    6   ..   ..   ..   .. | .. |
++     ---- ----               +    +
+| ..   ..   .. | ..   ..    3 | .. |
++              +     ---- ----+    +
+| ..   ..   .. | .. | ..   ..   .. |
++     ---- ----+    +              +
+| .. |  2   ..   .. | ..   ..   .. |
++    +              +---- ----     +
+| .. | ..   ..   ..   ..    1   .. |
++    +---- ----                    +
+| ..   ..   ..   ..    4   ..   .. |
++---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . | S | . | . | . |
+| S | M | . | . | M | M |
 +---+---+---+---+---+---+
-| . | S | S | M | . | . |
+| M | . x . x . x . | S |
 +---+---+---+---+---+---+
-| . x . x . x . = . | . |
+| . | . | . | . | . | . |
++---+-x-+---+---+-x-+---+
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . | . x . x . x . x . |
+| M | . = . x . x . | M |
 +---+---+---+---+---+---+
-| . | . | M | S | M | . |
-+---+---+---+---+---+---+
-| . | . | . | M | . | . |
+| M | S | . | . | M | S |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟫🟫🟫🟫🟫🟫🟫
-🟫🟧🟪🟪🟪🟨🟫
-🟫🟧🟧🟪🟨🟨🟫
-🟫🟧🟩🟦🟩🟨🟫
-🟫🟧🟩🟩🟩🟨🟫
-🟫🟧🟥🟥🟩🟨🟥
-🟫🟫🟫🟥🟥🟥🟥
+🟥🟥🟥🟥🟧🟧🟧
+🟥🟥🟨🟩🟩🟦🟦
+🟥🟥🟨🟦🟦🟦🟦
+🟪🟥🟫🟫🟫🟦🟦
+🟪🟥🟥🟥🟫🟦🟦
+🟪🟥🟫🟫🟫🟦🟦
+🟪🟪🟪🟦🟦🟦🟦
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃ 2 │ 3 │ 6 ┃   │   │   ┃
+┃ 1 │   │   ┃   │ 6 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 4 │   │ 5 ┃   │   │   ┃
+┃ 4 │   │ 3 ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 1 │ 6 │ 3 ┃   │   │   ┃
+┃   │   │   ┃   │ 5 │ 1 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃ 1 │ 3 │ 6 ┃
+┃ 5 │ 2 │   ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃ 6 │   │ 4 ┃
+┃   │   │   ┃ 3 │   │ 6 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃ 2 │ 5 │ 3 ┃
+┃   │ 1 │   ┃   │   │ 2 ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+
-| |3 | +4 | .. | .. | .. | .. |
+| -3 | .. | .. | +2 | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
+| .. | .. | .. | +6 | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | =4 | +2 | .. | .. |
+| .. | =  | .. | .. | .. | +4 |
 +----+----+----+----+----+----+
-| .. | .. | +9 | |3 | .. | .. |
+| +6 | .. | .. | .. | |  | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
+| .. | .. | +4 | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | +5 | |6 |
+| .. | .. | +2 | .. | .. | -2 |
 +----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+
-| Y | # | # | # | J |
+| A | # | U | # | G |
 +---+---+---+---+---+
-| R | O | W | A | I |
+| C | T | S | I | N |
 +---+---+---+---+---+
-| C | T | # | S | G |
+| # | T | B | J | # |
 +---+---+---+---+---+
-| I | E | T | O | U |
+| N | I | U | E | C |
 +---+---+---+---+---+
-| V | # | # | # | Q |
+| U | # | S | # | T |
 +---+---+---+---+---+
 
 Words:
-  QUOTE
-  JIGSAW
-  VICTORY
+  ACT
+  UNIT
+  USING
+  SUBJECT
 ```
 
 ### pinpoint
 ```
-  1. Dram
-  2. Krone
-  3. Rupee
-  4. Peso
-  5. Euro (€)
+  1. The Muppets
+  2. Star Wars
+  3. Marvel
+  4. Pixar
+  5. Mickey Mouse
 
-  answer: Names of world currencies!
+  answer: Properties of The Walt Disney Company!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 839
-date      : 2026-08-17
+number    : 840
+date      : 2026-08-18
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  miss : The top + bottom rows = Two words that complete the expression “___ the ___” meaning to lose out on an opportunity (i.e., the ship’s already left!). Keep in mind: The first word may be at the bottom.
-  mass : Physical property measured in grams
-  mast : Tall pole used to support a sail
-  cast : Fiberglass bandage used to immobilize a broken bone
-  cost : It’s listed on a price tag
-  coat : Outerwear to protect from the cold and rain
-  boat : The top + bottom rows = Two words that complete the expression “___ the ___” meaning to lose out on an opportunity (i.e., the ship’s already left!). Keep in mind: The first word may be at the bottom.
+  fuel : The top + bottom rows = A two-word phrase for what may power an electric car by converting hydrogen into electricity. Keep in mind: The first word may be at the bottom.
+  full : Stuffed
+  bull : Animal that symbolizes a rising stock market
+  bill : It may become a law
+  will : Opposite of "won't"
+  well : Source of drinking water
+  cell : The top + bottom rows = A two-word phrase for what may power an electric car by converting hydrogen into electricity. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
