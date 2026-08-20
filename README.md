@@ -11,136 +11,141 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-08-19)
+## Today's games (2026-08-20)
 
 ### zip
 ```
 +----+----+----+----+----+----+----+
-| ..   ..    4   ..    6   ..   .. |
-+          ----           ----     +
-| .. |  1   .. | .. | ..    8 | .. |
-+    +         +    +         +    +
-| .. | ..   .. | .. | ..   .. | .. |
-+    +         +    +         +    +
 | ..   ..   ..   ..   ..   ..   .. |
 +                                  +
-| .. | ..   .. | .. | ..   .. | .. |
-+    +         +    +         +    +
-| .. |  2   .. | .. | ..    7 | .. |
-+    +----     +    +----     +    +
-| ..   ..    3   ..    5   ..   .. |
+| ..   ..    8    7   10   ..   .. |
++                                  +
+| ..    9   ..   ..   ..    2   .. |
++               ----               +
+| ..   12   .. | ..   ..    1   .. |
++              +                   +
+| ..    6   ..   ..   ..   11   .. |
++                                  +
+| ..   ..    5    4    3   ..   .. |
++                                  +
+| ..   ..   ..   ..   ..   ..   .. |
 +---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| M | . | . | M | . | M |
+| . = . | . | . | . | M |
++-=-+-=-+---+---+---+---+
+| . = . | . | . | M | . |
 +---+---+---+---+---+---+
-| . | . | . | . | . | . |
-+---+---+---+---+-=-+---+
-| M | . | . | . | . | . |
+| . | . | . | M | . | . |
 +---+---+---+---+---+---+
-| . | . | . | . | . | M |
-+---+-x-+---+---+---+---+
-| . | . | . | . | . | . |
+| . | . | M | . | . | . |
 +---+---+---+---+---+---+
-| M | . | M | . | . | M |
+| . | M | . | . | . = . |
++---+---+---+---+-x-+-=-+
+| M | . | . | . | . x . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟧🟧🟧🟧🟧🟧🟨
-🟥🟧🟥🟥🟥🟧🟨🟨
-🟥🟥🟥🟫🟥🟥🟥🟨
-🟥🟫🟫🟫🟫🟫🟥🟨
-🟥🟥🟫🟦🟫🟪🟪🟪
-🟥🟫🟫🟩🟫🟫⬛🟪
-🟥🟫🟩🟩🟩🟫⬛🟪
-🟩🟩🟩⬛⬛⬛⬛⬛
+🟥🟧🟧🟧🟥🟥🟪🟥🟥
+🟥🟥🟧🟥🟥🟪🟪🟥🟥
+🟥🟥🟥🟥🟥🟥🟪🟥🟥
+⬜⬜⬜🟥🟥🟥🟥🟥🟥
+🟥⬜🟥🟥🟥🟥🟥🟦🟥
+🟥🟥🟥🟥🟨🟨🟦🟦🟦
+🟥🟥🟫⬛⬛🟨🟨🟨🟨
+🟥🟥🟫🟫⬛⬛🟩🟨🟨
+🟥🟥🟫⬛⬛🟩🟩🟩🟨
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃ 1 │ 5 │   ┃   │   │   ┃
+┃   │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 3 │ 4 │   ┃ 1 │   │   ┃
+┃   │   │ 1 ┃ 6 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │ 1 ┃ 5 │   │   ┃
+┃   │ 1 │   ┃   │ 5 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 5 ┃ 3 │   │ 1 ┃
+┃   │ 3 │ 6 ┃ 1 │ 4 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃   │ 2 │ 5 ┃
+┃   │ 5 │   ┃   │ 3 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │ 1 │ 3 ┃
+┃   │   │   ┃   │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+
-| .. | +5 | .. | +9 | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | +4 | .. | .. | .. |
-+----+----+----+----+----+----+
-| |6 | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | -3 |
-+----+----+----+----+----+----+
-| .. | .. | .. | +2 | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | +3 | .. | +4 | .. |
-+----+----+----+----+----+----+
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | +  | +  | .. |
++----+----+----+----+----+----+----+
+| .. | -  | +2 | .. | +4 | |  | .. |
++----+----+----+----+----+----+----+
+| .. | +  | +  | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+
-| O | L | I | A | O |
-+---+---+---+---+---+
-| C | N | C | # | C |
-+---+---+---+---+---+
-| C | U | # | C | O |
-+---+---+---+---+---+
-| U | O | C | # | C |
-+---+---+---+---+---+
-| P | Y | C | I | H |
-+---+---+---+---+---+
++---+---+---+---+---+---+
+| # | W | W | O | R | # |
++---+---+---+---+---+---+
+| R | O | # | # | K | M |
++---+---+---+---+---+---+
+| R | O | # | # | T | O |
++---+---+---+---+---+---+
+| O | M | # | # | O | R |
++---+---+---+---+---+---+
+| T | B | # | # | O | M |
++---+---+---+---+---+---+
+| # | L | O | S | S | # |
++---+---+---+---+---+---+
 
 Words:
-  CHIC
-  COCOA
-  OCCUPY
-  COUNCIL
+  WORK
+  MOTOR
+  BLOSSOM
+  TOMORROW
 ```
 
 ### pinpoint
 ```
-  1. William and Caroline Herschel
-  2. Tycho Brahe
-  3. Carl Sagan
-  4. Nicolaus Copernicus
-  5. Galileo Galilei
+  1. Nori
+  2. Jerky
+  3. Instant coffee
+  4. Prunes
+  5. Raisins
 
-  answer: Famous astronomers!
+  answer: Food items that are dehydrated!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 841
-date      : 2026-08-19
+number    : 842
+date      : 2026-08-20
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  mini : The top + bottom rows = A compound word for a downscaled version of a sport where one only uses a putter to get a ball in a hole. Keep in mind: The first word may be at the bottom.
-  mind : “___ over matter” (mental focus can overcome physical obstacles)
-  find : Locate a lost item by searching
-  fond : Enamored, with “of”
-  fold : Common step in origami
-  gold : Top medal at the Olympics
-  golf : The top + bottom rows = A compound word for a downscaled version of a sport where one only uses a putter to get a ball in a hole. Keep in mind: The first word may be at the bottom.
+  case : The top + bottom rows = A compound word for what a detective or government employee takes on. Keep in mind: The first word may be at the bottom.
+  cask : Large barrel-shaped container for wine or other liquids
+  mask : What a superhero wears to protect their other identity
+  mark : “You're way off the ___” (far from accurate)
+  park : Grassy area for public enjoyment
+  pork : Type of meat served at a pig roast
+  work : The top + bottom rows = A compound word for what a detective or government employee takes on. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
