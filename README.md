@@ -11,23 +11,23 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-08-20)
+## Today's games (2026-08-21)
 
 ### zip
 ```
 +----+----+----+----+----+----+----+
 | ..   ..   ..   ..   ..   ..   .. |
-+                                  +
-| ..   ..    8    7   10   ..   .. |
-+                                  +
-| ..    9   ..   ..   ..    2   .. |
-+               ----               +
-| ..   12   .. | ..   ..    1   .. |
-+              +                   +
-| ..    6   ..   ..   ..   11   .. |
-+                                  +
-| ..   ..    5    4    3   ..   .. |
-+                                  +
++     ----           ---- ----     +
+| ..    2   .. |  7   ..    9 | .. |
++              +              +    +
+| .. | ..   ..   ..   ..   .. | .. |
++    +     ----               +    +
+| ..    5   ..    1   ..    8   .. |
++                    ----          +
+| .. | ..   ..   ..   ..   .. | .. |
++    +                        +    +
+| .. |  4   ..    3 | ..    6   .. |
++    +---- ----     +     ----     +
 | ..   ..   ..   ..   ..   ..   .. |
 +---- ---- ---- ---- ---- ---- ----+
 ```
@@ -35,31 +35,30 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 ### tango
 ```
 +---+---+---+---+---+---+
-| . = . | . | . | . | M |
-+-=-+-=-+---+---+---+---+
-| . = . | . | . | M | . |
+| S | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . | . | . | M | . | . |
+| S | . | . | . | . | . |
++---+-=-+---+---+---+---+
+| . | . x . | S | . | . |
 +---+---+---+---+---+---+
-| . | . | M | . | . | . |
+| . | . | S | . = . | . |
++---+---+---+---+-=-+---+
+| . | . | . | . | . | S |
 +---+---+---+---+---+---+
-| . | M | . | . | . = . |
-+---+---+---+---+-x-+-=-+
-| M | . | . | . | . x . |
+| . | . | . | . | . | M |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟧🟧🟧🟥🟥🟪🟥🟥
-🟥🟥🟧🟥🟥🟪🟪🟥🟥
-🟥🟥🟥🟥🟥🟥🟪🟥🟥
-⬜⬜⬜🟥🟥🟥🟥🟥🟥
-🟥⬜🟥🟥🟥🟥🟥🟦🟥
-🟥🟥🟥🟥🟨🟨🟦🟦🟦
-🟥🟥🟫⬛⬛🟨🟨🟨🟨
-🟥🟥🟫🟫⬛⬛🟩🟨🟨
-🟥🟥🟫⬛⬛🟩🟩🟩🟨
+🟥🟥🟥🟧🟧🟧🟨🟨
+🟩🟥🟧🟧🟧🟧🟨🟨
+🟩🟥🟦🟧🟧🟨🟨🟨
+🟩🟩🟦🟦🟧🟨🟨🟨
+🟩🟩🟩🟦🟦🟨🟨🟨
+🟩🟪🟩🟩🟩🟫🟫🟫
+⬛🟪🟪🟩🟩🟫🟫🟫
+⬛🟪🟪🟪🟩🟫🟫🟫
 ```
 
 ### minisudoku
@@ -67,13 +66,13 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
 ┃   │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 1 ┃ 6 │   │   ┃
+┃   │ 1 │ 2 ┃ 3 │ 4 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 1 │   ┃   │ 5 │   ┃
+┃   │   │   ┃ 1 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 3 │ 6 ┃ 1 │ 4 │   ┃
+┃   │   │ 4 ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 5 │   ┃   │ 3 │   ┃
+┃   │ 5 │ 3 ┃ 2 │ 1 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
 ┃   │   │   ┃   │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -82,70 +81,70 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 ### patches
 ```
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
+| .. | .. | .. | =4 | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
+| .. | .. | +4 | .. | .. | |  | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | +  | +  | .. |
+| .. | .. | .. | +4 | .. | .. | +3 |
 +----+----+----+----+----+----+----+
-| .. | -  | +2 | .. | +4 | |  | .. |
+| .. | .. | +4 | .. | +4 | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | +  | +  | .. | .. | .. | .. |
+| +5 | .. | .. | +4 | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
+| .. | -  | .. | .. | +4 | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
+| .. | .. | .. | -4 | .. | .. | .. |
 +----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+---+
-| # | W | W | O | R | # |
+| N | D | E | A | S | T |
 +---+---+---+---+---+---+
-| R | O | # | # | K | M |
+| A | E | R | C | # | # |
 +---+---+---+---+---+---+
-| R | O | # | # | T | O |
+| Y | M | # | D | A | T |
 +---+---+---+---+---+---+
-| O | M | # | # | O | R |
+| G | E | T | # | O | C |
 +---+---+---+---+---+---+
-| T | B | # | # | O | M |
+| # | # | A | B | R | A |
 +---+---+---+---+---+---+
-| # | L | O | S | S | # |
+| S | T | R | I | M | P |
 +---+---+---+---+---+---+
 
 Words:
-  WORK
-  MOTOR
-  BLOSSOM
-  TOMORROW
+  IMPACT
+  MEANDER
+  STRATEGY
+  BROADCAST
 ```
 
 ### pinpoint
 ```
-  1. Nori
-  2. Jerky
-  3. Instant coffee
-  4. Prunes
-  5. Raisins
+  1. A video
+  2. A glance
+  3. The messenger
+  4. Fish in a barrel
+  5. Oneself in the foot
 
-  answer: Food items that are dehydrated!
+  answer: Things you might “shoot”!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 842
-date      : 2026-08-20
+number    : 843
+date      : 2026-08-21
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  case : The top + bottom rows = A compound word for what a detective or government employee takes on. Keep in mind: The first word may be at the bottom.
-  cask : Large barrel-shaped container for wine or other liquids
-  mask : What a superhero wears to protect their other identity
-  mark : “You're way off the ___” (far from accurate)
-  park : Grassy area for public enjoyment
-  pork : Type of meat served at a pig roast
-  work : The top + bottom rows = A compound word for what a detective or government employee takes on. Keep in mind: The first word may be at the bottom.
+  fire : The top + bottom rows = A two-word phrase for a retail event in which everything must go, no matter the price. Keep in mind: The first word may be at the bottom.
+  five : What a V stood for, in ancient Rome
+  dive : Emulate an Olympian who starts on a board
+  dime : American currency that is roughly equivalent to a ten-pence coin
+  dame : Title bestowed on a woman in Britain
+  same : Identical
+  sale : The top + bottom rows = A two-word phrase for a retail event in which everything must go, no matter the price. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
