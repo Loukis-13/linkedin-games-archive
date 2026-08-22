@@ -11,68 +11,71 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-08-21)
+## Today's games (2026-08-22)
 
 ### zip
 ```
-+----+----+----+----+----+----+----+
-| ..   ..   ..   ..   ..   ..   .. |
-+     ----           ---- ----     +
-| ..    2   .. |  7   ..    9 | .. |
-+              +              +    +
-| .. | ..   ..   ..   ..   .. | .. |
-+    +     ----               +    +
-| ..    5   ..    1   ..    8   .. |
-+                    ----          +
-| .. | ..   ..   ..   ..   .. | .. |
-+    +                        +    +
-| .. |  4   ..    3 | ..    6   .. |
-+    +---- ----     +     ----     +
-| ..   ..   ..   ..   ..   ..   .. |
-+---- ---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+----+----+
+| ..   ..   ..   ..   ..   ..   ..   .. |
++                                       +
+| ..    4    3    8   ..   ..    9   .. |
++                                       +
+| ..    5    6   ..   ..    7   ..   .. |
++                                       +
+| ..    1   ..   ..   ..   ..   ..   .. |
++                                       +
+| ..   ..   ..   ..   ..   ..    2   .. |
++                                       +
+| ..   ..   12   ..   ..   13   10   .. |
++                                       +
+| ..   16   ..   ..   15   14   11   .. |
++                                       +
+| ..   ..   ..   ..   ..   ..   ..   .. |
++---- ---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| S | . | . | . | . | . |
+| . x . | M | M | . = . |
 +---+---+---+---+---+---+
-| S | . | . | . | . | . |
-+---+-=-+---+---+---+---+
-| . | . x . | S | . | . |
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . | . | S | . = . | . |
-+---+---+---+---+-=-+---+
-| . | . | . | . | . | S |
+| . x . = . | . | . | . |
 +---+---+---+---+---+---+
-| . | . | . | . | . | M |
+| . | . | . | M | S | S |
++---+---+---+---+---+---+
+| . | . | . | . | . | . |
++---+---+---+---+---+---+
+| M | S | . x . | M | S |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟧🟧🟧🟨🟨
-🟩🟥🟧🟧🟧🟧🟨🟨
-🟩🟥🟦🟧🟧🟨🟨🟨
-🟩🟩🟦🟦🟧🟨🟨🟨
-🟩🟩🟩🟦🟦🟨🟨🟨
-🟩🟪🟩🟩🟩🟫🟫🟫
-⬛🟪🟪🟩🟩🟫🟫🟫
-⬛🟪🟪🟪🟩🟫🟫🟫
+🟪🟪🟪🟪🟦🟦⬛⬛🟦
+🟪🟪🟪🟪🟦🟫🟫🟦🟦
+🟪🟪🟪🟪🟦🟫🟫🟦🟦
+🟪🟪🟪🟪🟦🟦🟦🟦🟦
+🟦🟥🟥🟩🟩🟦🟦🟦🟦
+🟦🟥🟥🟩🟩🟦🟧🟧🟦
+🟦🟦🟨🟨🟦🟦🟧🟧🟦
+🟦🟦🟨🟨🟦🟦🟦⬜⬜
+🟦🟦🟦🟦🟦🟦🟦⬜⬜
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │   ┃   │   │   ┃
+┃   │ 1 │   ┃   │ 2 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 1 │ 2 ┃ 3 │ 4 │   ┃
+┃   │   │ 4 ┃ 1 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃ 1 │   │   ┃
+┃   │ 2 │   ┃   │ 3 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 4 ┃   │   │   ┃
+┃   │ 6 │   ┃   │ 5 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 5 │ 3 ┃ 2 │ 1 │   ┃
+┃   │   │ 3 ┃ 5 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
 ┃   │   │   ┃   │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -81,70 +84,73 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 ### patches
 ```
 +----+----+----+----+----+----+----+
-| .. | .. | .. | =4 | .. | .. | .. |
+| .. | .. | +2 | +2 | +2 | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | +4 | .. | .. | |  | .. |
+| .. | +6 | .. | .. | .. | +4 | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | +4 | .. | .. | +3 |
+| |6 | .. | .. | .. | .. | .. | |6 |
 +----+----+----+----+----+----+----+
-| .. | .. | +4 | .. | +4 | .. | .. |
+| .. | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| +5 | .. | .. | +4 | .. | .. | .. |
+| .. | .. | +3 | +3 | +3 | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | -  | .. | .. | +4 | .. | .. |
+| .. | +2 | .. | .. | .. | +6 | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | -4 | .. | .. | .. |
+| +2 | .. | .. | .. | .. | .. | +2 |
 +----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+---+
-| N | D | E | A | S | T |
-+---+---+---+---+---+---+
-| A | E | R | C | # | # |
-+---+---+---+---+---+---+
-| Y | M | # | D | A | T |
-+---+---+---+---+---+---+
-| G | E | T | # | O | C |
-+---+---+---+---+---+---+
-| # | # | A | B | R | A |
-+---+---+---+---+---+---+
-| S | T | R | I | M | P |
-+---+---+---+---+---+---+
++---+---+---+---+---+---+---+
+| U | M | N | G | R | Y | T |
++---+---+---+---+---+---+---+
+| L | Y | R | # | A | V | I |
++---+---+---+---+---+---+---+
+| O | C | R | # | S | A | R |
++---+---+---+---+---+---+---+
+| # | # | E | B | P | # | # |
++---+---+---+---+---+---+---+
+| N | A | R | # | I | O | L |
++---+---+---+---+---+---+---+
+| T | A | D | # | V | A | E |
++---+---+---+---+---+---+---+
+| Q | U | U | L | T | R | T |
++---+---+---+---+---+---+---+
 
 Words:
-  IMPACT
-  MEANDER
-  STRATEGY
-  BROADCAST
+  COLUMN
+  GRAVITY
+  QUADRANT
+  RASPBERRY
+  ULTRAVIOLET
 ```
 
 ### pinpoint
 ```
-  1. A video
-  2. A glance
-  3. The messenger
-  4. Fish in a barrel
-  5. Oneself in the foot
+  1. Crushing ice
+  2. Removing nails
+  3. Tenderizing meat
+  4. Shaping metal (over an anvil)
+  5. Chiseling stone (hit with this)
 
-  answer: Things you might “shoot”!
+  answer: Different ways to use a hammer (besides the most common one)!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 843
-date      : 2026-08-21
+number    : 844
+date      : 2026-08-22
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  fire : The top + bottom rows = A two-word phrase for a retail event in which everything must go, no matter the price. Keep in mind: The first word may be at the bottom.
-  five : What a V stood for, in ancient Rome
-  dive : Emulate an Olympian who starts on a board
-  dime : American currency that is roughly equivalent to a ten-pence coin
-  dame : Title bestowed on a woman in Britain
-  same : Identical
-  sale : The top + bottom rows = A two-word phrase for a retail event in which everything must go, no matter the price. Keep in mind: The first word may be at the bottom.
+  sword : The top + bottom rows = A medieval weapon, and an adjective describing it. Keep in mind: The first word may be at the bottom.
+  sworn : Like some testimony and enemies
+  scorn : Open disrespect
+  score : Total of how many goals each team has
+  scare : Frightening moment
+  share : Pass along to your followers, as a social media post
+  sharp : The top + bottom rows = A medieval weapon, and an adjective describing it. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
