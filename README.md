@@ -11,24 +11,24 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-08-22)
+## Today's games (2026-08-23)
 
 ### zip
 ```
 +----+----+----+----+----+----+----+----+
 | ..   ..   ..   ..   ..   ..   ..   .. |
 +                                       +
-| ..    4    3    8   ..   ..    9   .. |
+| ..   13   ..   12   ..   10   ..   .. |
 +                                       +
-| ..    5    6   ..   ..    7   ..   .. |
+| ..    3    4   ..   11   ..    9   .. |
++     ----      ----           ----     +
+| ..   ..   ..   ..   ..   ..   ..   .. |
++----      ----           ----      ----+
+| ..   ..   ..   ..   ..   ..   ..   .. |
++     ----           ----      ----     +
+| ..    1   ..    5   ..    8   14   .. |
 +                                       +
-| ..    1   ..   ..   ..   ..   ..   .. |
-+                                       +
-| ..   ..   ..   ..   ..   ..    2   .. |
-+                                       +
-| ..   ..   12   ..   ..   13   10   .. |
-+                                       +
-| ..   16   ..   ..   15   14   11   .. |
+| ..   ..    2   ..    7   ..    6   .. |
 +                                       +
 | ..   ..   ..   ..   ..   ..   ..   .. |
 +---- ---- ---- ---- ---- ---- ---- ----+
@@ -37,120 +37,123 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 ### tango
 ```
 +---+---+---+---+---+---+
-| . x . | M | M | . = . |
+| S | . x . = . x . | . |
++---+---+---+---+-=-+---+
+| . | . | . | . | . | . |
++-x-+---+---+---+-x-+---+
+| . | . | . | . | . | . |
++-x-+---+---+---+-=-+---+
+| . | . | . | . | . | . |
++-=-+---+---+---+-x-+---+
+| . x . x . x . = . | . |
 +---+---+---+---+---+---+
 | . | . | . | . | . | . |
-+---+---+---+---+---+---+
-| . x . = . | . | . | . |
-+---+---+---+---+---+---+
-| . | . | . | M | S | S |
-+---+---+---+---+---+---+
-| . | . | . | . | . | . |
-+---+---+---+---+---+---+
-| M | S | . x . | M | S |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟪🟪🟪🟪🟦🟦⬛⬛🟦
-🟪🟪🟪🟪🟦🟫🟫🟦🟦
-🟪🟪🟪🟪🟦🟫🟫🟦🟦
-🟪🟪🟪🟪🟦🟦🟦🟦🟦
-🟦🟥🟥🟩🟩🟦🟦🟦🟦
-🟦🟥🟥🟩🟩🟦🟧🟧🟦
-🟦🟦🟨🟨🟦🟦🟧🟧🟦
-🟦🟦🟨🟨🟦🟦🟦⬜⬜
-🟦🟦🟦🟦🟦🟦🟦⬜⬜
+🟩🟩🟩🟨🟨🟨🟧🟧🟧
+🟩🟩🟩🟩🟩🟨🟨🟨🟧
+🟩🟦⬛⬛⬛⬛🟨🟧🟧
+🟩🟦⬛⬛🟫⬛⬛🟧🟥
+🟩🟦⬛🟫🟫🟫⬛🟥🟥
+🟩🟩⬛⬛🟫⬛⬛🟥⬜
+🟩🟩🟩⬛⬛⬛⬛🟥⬜
+🟩🟩🟩🟩❓❓❓🟥⬜
+❓❓❓❓❓⬜⬜⬜⬜
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │ 1 │   ┃   │ 2 │   ┃
+┃   │   │   ┃   │ 1 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 4 ┃ 1 │   │   ┃
+┃   │   │   ┃ 2 │   │ 3 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 2 │   ┃   │ 3 │   ┃
+┃   │   │ 1 ┃   │ 2 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 6 │   ┃   │ 5 │   ┃
+┃   │ 3 │   ┃ 4 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │ 3 ┃ 5 │   │   ┃
+┃ 6 │   │ 5 ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │   │   ┃
+┃   │ 2 │   ┃   │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+----+
-| .. | .. | +2 | +2 | +2 | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | +6 | .. | .. | .. | +4 | .. |
-+----+----+----+----+----+----+----+
-| |6 | .. | .. | .. | .. | .. | |6 |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | +3 | +3 | +3 | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | +2 | .. | .. | .. | +6 | .. |
-+----+----+----+----+----+----+----+
-| +2 | .. | .. | .. | .. | .. | +2 |
-+----+----+----+----+----+----+----+
++----+----+----+----+----+----+----+----+
+| .. | .. | +8 | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | -6 | .. |
++----+----+----+----+----+----+----+----+
+| .. | +4 | .. | .. | -5 | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. | +7 |
++----+----+----+----+----+----+----+----+
+| +5 | .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | -12 | .. | .. | +4 | .. |
++----+----+----+----+----+----+----+----+
+| .. | -6 | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | +7 | .. | .. |
++----+----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+---+---+
-| U | M | N | G | R | Y | T |
+| E | # | # | T | Y | P | E |
 +---+---+---+---+---+---+---+
-| L | Y | R | # | A | V | I |
+| Q | U | I | T | E | T | W |
 +---+---+---+---+---+---+---+
-| O | C | R | # | S | A | R |
+| R | P | R | Y | R | I | R |
 +---+---+---+---+---+---+---+
-| # | # | E | B | P | # | # |
+| O | Y | E | P | R | I | U |
 +---+---+---+---+---+---+---+
-| N | A | R | # | I | O | L |
+| T | T | W | O | E | P | Q |
 +---+---+---+---+---+---+---+
-| T | A | D | # | V | A | E |
+| O | I | R | O | I | R | E |
 +---+---+---+---+---+---+---+
-| Q | U | U | L | T | R | T |
+| T | Y | P | E | # | # | R |
 +---+---+---+---+---+---+---+
 
 Words:
-  COLUMN
-  GRAVITY
-  QUADRANT
-  RASPBERRY
-  ULTRAVIOLET
+  POWER
+  EQUITY
+  REQUIRE
+  PRIORITY
+  PROTOTYPE
+  TYPEWRITER
 ```
 
 ### pinpoint
 ```
-  1. Crushing ice
-  2. Removing nails
-  3. Tenderizing meat
-  4. Shaping metal (over an anvil)
-  5. Chiseling stone (hit with this)
+  1. Tank
+  2. Piece
+  3. Twice
+  4. Out loud
+  5. Outside the box
 
-  answer: Different ways to use a hammer (besides the most common one)!
+  answer: Words that come after “think”!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 844
-date      : 2026-08-22
+number    : 845
+date      : 2026-08-23
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  sword : The top + bottom rows = A medieval weapon, and an adjective describing it. Keep in mind: The first word may be at the bottom.
-  sworn : Like some testimony and enemies
-  scorn : Open disrespect
-  score : Total of how many goals each team has
-  scare : Frightening moment
-  share : Pass along to your followers, as a social media post
-  sharp : The top + bottom rows = A medieval weapon, and an adjective describing it. Keep in mind: The first word may be at the bottom.
+  buses : The top + bottom rows = Two plural nouns for types of vehicles you could pay to go across town.
+  ruses : Deceptive tricks
+  runes : Letters a Norse god might use
+  tunes : Catchy ditties
+  tuxes : Men's formalwear options, for short
+  taxes : Charges added at the end of a sales receipt
+  taxis : The top + bottom rows = Two plural nouns for types of vehicles you could pay to go across town.
 ```
 <!-- DAILY-GAMES-END -->
