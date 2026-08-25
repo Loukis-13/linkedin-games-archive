@@ -11,23 +11,27 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-08-24)
+## Today's games (2026-08-25)
 
 ### zip
 ```
-+----+----+----+----+----+----+
-|  2   ..   ..   ..   ..   .. |
-+                             +
-| .. | 10    1    8    9 | .. |
-+    +     ---- ----     +    +
-| .. | ..   ..   ..   .. | .. |
-+    +                   +    +
-| .. | ..   ..   ..   .. | .. |
-+    +     ---- ----     +    +
-| .. |  3    6    5    4 | .. |
-+    +                   +    +
-| ..   ..   ..   ..   ..    7 |
-+---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+----+----+
+| ..   ..   ..   ..   ..    6   ..   .. |
++     ---- ----           ---- ----     +
+| .. | ..   .. |  1    4 | ..   .. | .. |
++    +         +         +         +    +
+| ..   .. | .. | ..   .. | .. | ..   .. |
++         +    +         +    +         +
+| ..   ..   .. | ..   .. | ..   ..   .. |
++     ---- ----+         +---- ----     +
+| .. | ..   ..   ..   ..   ..   .. | .. |
++    +                             +    +
+| .. | .. | ..   ..   ..   .. | .. | .. |
++    +    +                   +    +    +
+| .. | ..   .. |  2    5 | ..   .. | .. |
++    +---- ----+         +---- ----+    +
+| ..   ..    3   ..   ..   ..   ..   .. |
++---- ---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
@@ -35,13 +39,13 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 +---+---+---+---+---+---+
 | . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| M | M | S | . x . | . |
-+---+---+---+---+---+-=-+
-| M | . | M | . | . | . |
-+---+---+---+-=-+---+---+
-| S | . | M | . | . | . |
-+---+---+---+---+---+-=-+
-| M | S | S | . x . | . |
+| . | . x . x . = . | . |
++---+---+---+---+---+---+
+| . | M | . | . | S | . |
++---+---+-=-+-x-+---+---+
+| . | S | . | . | S | . |
++---+---+---+---+---+---+
+| . | . = . x . = . | . |
 +---+---+---+---+---+---+
 | . | . | . | . | . | . |
 +---+---+---+---+---+---+
@@ -49,97 +53,95 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 ### queens
 ```
-🟥🟥🟥🟧🟧🟨🟨🟨🟨
-🟥🟩🟩🟩🟩🟩🟩🟩🟨
-🟦🟦🟦🟦🟦🟦🟦🟩🟨
-🟦🟦🟪🟦🟦🟦🟪🟨🟨
-🟦🟪🟪🟪🟦🟪🟪🟪🟨
-🟦🟪🟪🟪🟪🟪🟪🟪🟫
-🟦🟦🟪🟪⬛🟪🟪🟫🟫
-🟦🟦🟦🟪🟪🟪🟫🟫🟫
-🟦🟦⬜⬜🟪🟫🟫🟫🟫
+🟥🟥🟧🟧🟧🟧🟧
+🟥🟥🟨🟨🟨🟨🟨
+🟩🟨🟨🟦🟦🟦🟨
+🟩🟨🟪🟪🟦🟦🟨
+🟩🟨🟪🟦🟦🟦🟨
+🟩🟨🟨🟦🟦🟨🟨
+🟩🟨🟨🟨🟨🟨🟫
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │   ┃ 1 │ 2 │   ┃
+┃   │   │ 1 ┃ 2 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 3 ┃ 4 │ 5 │ 6 ┃
+┃   │ 2 │   ┃   │ 1 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃ 2 │ 3 │   ┃
+┃ 1 │   │   ┃   │   │ 2 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 3 │ 2 ┃   │   │   ┃
+┃ 3 │   │   ┃   │   │ 5 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 1 │ 2 │ 5 ┃ 3 │   │   ┃
+┃   │ 1 │   ┃   │ 3 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 6 │ 4 ┃   │   │   ┃
+┃   │   │ 3 ┃ 4 │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
+| +  | .. | .. | .. | +  | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | +2 | |12 | .. |
+| .. | +6 | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | |12 | .. | .. | .. |
+| .. | .. | .. | +4 | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | |4 | .. | .. |
+| .. | .. | +9 | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | =4 | +2 | .. | .. | .. |
+| .. | .. | .. | .. | +8 | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
+| .. | +  | .. | .. | .. | +  |
 +----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+
-| # | Y | O | R | Y |
+| # | # | F | Y | I |
 +---+---+---+---+---+
-| L | L | L | # | A |
+| O | D | I | N | O |
 +---+---+---+---+---+
-| E | # | L | # | P |
+| M | # | # | # | T |
 +---+---+---+---+---+
-| J | # | L | L | L |
+| E | S | U | I | L |
 +---+---+---+---+---+
-| K | N | I | A | # |
+| F | A | Q | # | # |
 +---+---+---+---+---+
 
 Words:
-  ALL
-  LINK
-  JELLY
-  PAYROLL
+  ION
+  SAFE
+  QUILT
+  MODIFY
 ```
 
 ### pinpoint
 ```
-  1. Krait
-  2. Copperhead
-  3. Python
-  4. Viper
-  5. Boa constrictor
+  1. Impact
+  2. Courier
+  3. Wingdings
+  4. Lucida Handwriting
+  5. Calibri or Aptos (in MS Office)
 
-  answer: Types of snake!
+  answer: Names of fonts!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 846
-date      : 2026-08-24
+number    : 847
+date      : 2026-08-25
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  fish : The top + bottom rows = Two things found at the beach: one in the water, one on land. Keep in mind: The first word may be at the bottom.
-  wish : A genie may grant one
-  wise : Clever and experienced
-  wine : Alcoholic drink made by fermenting grape juice
-  wind : Weather measured on the Beaufort scale (8 means a gale, for example)
-  wand : What a wizard wields
-  sand : The top + bottom rows = Two things found at the beach: one in the water, one on land. Keep in mind: The first word may be at the bottom.
+  read : The top + bottom rows = A hyphenated word describing someone who is highly educated through books. Keep in mind: The first word may be at the bottom.
+  bead : Stone with a hole in it used in jewelry
+  beat : Quality of a danceable song
+  belt : It may hold up your jeans
+  felt : Soft green material on a poker table
+  fell : Plunged
+  well : The top + bottom rows = A hyphenated word describing someone who is highly educated through books. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
