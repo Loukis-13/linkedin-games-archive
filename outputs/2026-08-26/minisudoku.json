@@ -1,0 +1,61 @@
+{
+  "game": "minisudoku",
+  "date": "2026-08-26",
+  "grid_size": [
+    6,
+    6
+  ],
+  "cells": [
+    [
+      null,
+      1,
+      2,
+      3,
+      null,
+      null
+    ],
+    [
+      null,
+      4,
+      5,
+      6,
+      null,
+      null
+    ],
+    [
+      null,
+      6,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      6,
+      null
+    ],
+    [
+      null,
+      null,
+      1,
+      2,
+      3,
+      null
+    ],
+    [
+      null,
+      null,
+      6,
+      5,
+      1,
+      null
+    ]
+  ],
+  "number": "380",
+  "title": "p-uzzle-d",
+  "difficulty": null
+}

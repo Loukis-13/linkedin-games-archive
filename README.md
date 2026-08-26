@@ -11,41 +11,39 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-08-25)
+## Today's games (2026-08-26)
 
 ### zip
 ```
-+----+----+----+----+----+----+----+----+
-| ..   ..   ..   ..   ..    6   ..   .. |
-+     ---- ----           ---- ----     +
-| .. | ..   .. |  1    4 | ..   .. | .. |
-+    +         +         +         +    +
-| ..   .. | .. | ..   .. | .. | ..   .. |
-+         +    +         +    +         +
-| ..   ..   .. | ..   .. | ..   ..   .. |
-+     ---- ----+         +---- ----     +
-| .. | ..   ..   ..   ..   ..   .. | .. |
-+    +                             +    +
-| .. | .. | ..   ..   ..   .. | .. | .. |
-+    +    +                   +    +    +
-| .. | ..   .. |  2    5 | ..   .. | .. |
-+    +---- ----+         +---- ----+    +
-| ..   ..    3   ..   ..   ..   ..   .. |
-+---- ---- ---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+----+
+| ..   ..   ..   13    1    3   .. |
++                                  +
+| ..   ..   ..   ..   ..   ..   .. |
++                                  +
+| ..   14   ..    9   ..    2   .. |
++                                  +
+| ..   15   ..    8   ..    6   .. |
++                                  +
+| ..   12   ..    7   ..    5   .. |
++                                  +
+| ..   ..   ..   ..   ..   ..   .. |
++                                  +
+| ..   11   10    4   ..   ..   .. |
++---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . | . | . | . | . |
+| . | . | . = . | . | . |
 +---+---+---+---+---+---+
-| . | . x . x . = . | . |
+| . | . | M | M | . | . |
 +---+---+---+---+---+---+
-| . | M | . | . | S | . |
-+---+---+-=-+-x-+---+---+
-| . | S | . | . | S | . |
+| . | . | . = . | . | . |
 +---+---+---+---+---+---+
-| . | . = . x . = . | . |
+| . | S | M | S | S | . |
++---+---+---+---+---+---+
+| . = . x . | . x . x . |
 +---+---+---+---+---+---+
 | . | . | . | . | . | . |
 +---+---+---+---+---+---+
@@ -53,95 +51,95 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 ### queens
 ```
-🟥🟥🟧🟧🟧🟧🟧
-🟥🟥🟨🟨🟨🟨🟨
-🟩🟨🟨🟦🟦🟦🟨
-🟩🟨🟪🟪🟦🟦🟨
-🟩🟨🟪🟦🟦🟦🟨
-🟩🟨🟨🟦🟦🟨🟨
-🟩🟨🟨🟨🟨🟨🟫
+🟥🟥🟥🟥🟥🟥🟥
+🟧🟧🟧🟧🟧🟨🟥
+🟧🟩🟩🟨🟨🟨🟥
+🟩🟩🟩🟨🟦🟦🟥
+🟪🟪🟪🟦🟦🟥🟥
+🟫🟫🟪🟦🟥🟥🟥
+🟪🟪🟪🟥🟥🟥🟥
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │ 1 ┃ 2 │   │   ┃
+┃   │ 1 │ 2 ┃ 3 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 2 │   ┃   │ 1 │   ┃
+┃   │ 4 │ 5 ┃ 6 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 1 │   │   ┃   │   │ 2 ┃
+┃   │ 6 │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 3 │   │   ┃   │   │ 5 ┃
+┃   │   │   ┃   │ 6 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 1 │   ┃   │ 3 │   ┃
+┃   │   │ 1 ┃ 2 │ 3 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 3 ┃ 4 │   │   ┃
+┃   │   │ 6 ┃ 5 │ 1 │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+
-| +  | .. | .. | .. | +  | .. |
+| .. | .. | .. | .. | |  | .. |
 +----+----+----+----+----+----+
-| .. | +6 | .. | .. | .. | .. |
+| .. | |6 | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | +4 | .. | .. |
+| .. | .. | |3 | .. | .. | |  |
 +----+----+----+----+----+----+
-| .. | .. | +9 | .. | .. | .. |
+| |  | .. | .. | |3 | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | +8 | .. |
+| .. | .. | .. | .. | |3 | .. |
 +----+----+----+----+----+----+
-| .. | +  | .. | .. | .. | +  |
+| .. | |  | .. | .. | .. | .. |
 +----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+
-| # | # | F | Y | I |
+| E | T | # | E | R |
 +---+---+---+---+---+
-| O | D | I | N | O |
+| L | S | I | S | E |
 +---+---+---+---+---+
-| M | # | # | # | T |
+| T | S | S | S | L |
 +---+---+---+---+---+
-| E | S | U | I | L |
+| # | I | I | I | # |
 +---+---+---+---+---+
-| F | A | Q | # | # |
+| W | H | G | H | T |
 +---+---+---+---+---+
 
 Words:
-  ION
-  SAFE
-  QUILT
-  MODIFY
+  ISLE
+  SIGHT
+  RESIST
+  WHISTLE
 ```
 
 ### pinpoint
 ```
-  1. Impact
-  2. Courier
-  3. Wingdings
-  4. Lucida Handwriting
-  5. Calibri or Aptos (in MS Office)
+  1. Twist
+  2. Floss
+  3. Robot
+  4. Moonwalk
+  5. Macarena
 
-  answer: Names of fonts!
+  answer: Names of dance crazes (with "The")!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 847
-date      : 2026-08-25
+number    : 848
+date      : 2026-08-26
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  read : The top + bottom rows = A hyphenated word describing someone who is highly educated through books. Keep in mind: The first word may be at the bottom.
-  bead : Stone with a hole in it used in jewelry
-  beat : Quality of a danceable song
-  belt : It may hold up your jeans
-  felt : Soft green material on a poker table
-  fell : Plunged
-  well : The top + bottom rows = A hyphenated word describing someone who is highly educated through books. Keep in mind: The first word may be at the bottom.
+  load : The top + bottom rows = A compound word for transferring data from an online source to a local computer. Keep in mind: The first word may be at the bottom.
+  lord : “The ___ of the Rings” (fantasy epic published in three parts)
+  cord : Word after power, spinal, or vocal
+  corn : Vegetable that can be eaten “on the cob”
+  torn : Ripped apart, as scraps of paper
+  town : Human residential area smaller than a city
+  down : The top + bottom rows = A compound word for transferring data from an online source to a local computer. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
