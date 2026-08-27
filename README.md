@@ -11,25 +11,23 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-08-26)
+## Today's games (2026-08-27)
 
 ### zip
 ```
-+----+----+----+----+----+----+----+
-| ..   ..   ..   13    1    3   .. |
-+                                  +
-| ..   ..   ..   ..   ..   ..   .. |
-+                                  +
-| ..   14   ..    9   ..    2   .. |
-+                                  +
-| ..   15   ..    8   ..    6   .. |
-+                                  +
-| ..   12   ..    7   ..    5   .. |
-+                                  +
-| ..   ..   ..   ..   ..   ..   .. |
-+                                  +
-| ..   11   10    4   ..   ..   .. |
-+---- ---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+
+| ..   ..   ..   ..   ..   .. |
++     ---- ---- ---- ----     +
+| ..   ..    1   ..    4   .. |
++                             +
+| ..    5   ..   ..    8   .. |
++                             +
+| ..    6   ..   ..    3   .. |
++                             +
+| ..    7   ..    2   ..   .. |
++     ---- ---- ---- ----     +
+| ..   ..   ..   ..   ..   .. |
++---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
@@ -37,109 +35,112 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 +---+---+---+---+---+---+
 | . | . | . = . | . | . |
 +---+---+---+---+---+---+
-| . | . | M | M | . | . |
+| . | . | M | S | . | . |
 +---+---+---+---+---+---+
-| . | . | . = . | . | . |
+| . | M | . | . | M | . |
++-=-+---+---+---+---+-=-+
+| . | S | . | . | M | . |
 +---+---+---+---+---+---+
-| . | S | M | S | S | . |
+| . | . | M | S | . | . |
 +---+---+---+---+---+---+
-| . = . x . | . x . x . |
-+---+---+---+---+---+---+
-| . | . | . | . | . | . |
+| . | . | . x . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟥🟥🟥🟥
-🟧🟧🟧🟧🟧🟨🟥
-🟧🟩🟩🟨🟨🟨🟥
-🟩🟩🟩🟨🟦🟦🟥
-🟪🟪🟪🟦🟦🟥🟥
-🟫🟫🟪🟦🟥🟥🟥
-🟪🟪🟪🟥🟥🟥🟥
+🟥🟥🟥🟥🟨🟨⬛⬛
+🟥🟥🟧🟥🟥🟩⬛⬛
+🟥🟧🟧🟧🟩🟩🟩⬛
+🟥🟥🟧🟦🟦🟩🟥⬛
+🟥🟥🟪🟦🟦🟫🟥🟥
+🟥🟪🟪🟪🟫🟫🟫🟥
+🟥🟥🟪🟥🟥🟫🟥🟥
+🟥🟥🟥🟥🟥🟥🟥🟥
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │ 1 │ 2 ┃ 3 │   │   ┃
+┃   │ 1 │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 4 │ 5 ┃ 6 │   │   ┃
+┃ 2 │   │ 4 ┃ 1 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 6 │   ┃   │   │   ┃
+┃   │ 6 │   ┃   │ 2 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │ 6 │   ┃
+┃   │ 5 │   ┃   │ 1 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │ 1 ┃ 2 │ 3 │   ┃
+┃ 3 │   │ 5 ┃ 4 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 6 ┃ 5 │ 1 │   ┃
+┃   │ 4 │   ┃   │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | |  | .. |
+| .. | .. | +3 | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | |6 | .. | .. | .. | .. |
+| .. | .. | .. | |4 | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | |3 | .. | .. | |  |
+| -  | .. | .. | .. | +5 | .. |
 +----+----+----+----+----+----+
-| |  | .. | .. | |3 | .. | .. |
+| .. | +3 | .. | .. | .. | |  |
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | |3 | .. |
+| .. | .. | -4 | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | |  | .. | .. | .. | .. |
+| .. | .. | .. | +5 | .. | .. |
 +----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+
-| E | T | # | E | R |
-+---+---+---+---+---+
-| L | S | I | S | E |
-+---+---+---+---+---+
-| T | S | S | S | L |
-+---+---+---+---+---+
-| # | I | I | I | # |
-+---+---+---+---+---+
-| W | H | G | H | T |
-+---+---+---+---+---+
++---+---+---+---+---+---+
+| L | I | C | O | R | # |
++---+---+---+---+---+---+
+| I | S | P | # | N | N |
++---+---+---+---+---+---+
+| C | P | O | # | # | O |
++---+---+---+---+---+---+
+| O | # | # | A | T | I |
++---+---+---+---+---+---+
+| N | R | # | T | S | E |
++---+---+---+---+---+---+
+| # | E | L | I | E | V |
++---+---+---+---+---+---+
 
 Words:
-  ISLE
-  SIGHT
-  RESIST
-  WHISTLE
+  SILICON
+  POPCORN
+  RELIEVE
+  STATION
 ```
 
 ### pinpoint
 ```
-  1. Twist
-  2. Floss
-  3. Robot
-  4. Moonwalk
-  5. Macarena
+  1. Octopuses
+  2. Arctic hares (twice a year)
+  3. Mood rings
+  4. Leaves (in autumn)
+  5. Chameleons
 
-  answer: Names of dance crazes (with "The")!
+  answer: Things that change colors!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 848
-date      : 2026-08-26
+number    : 849
+date      : 2026-08-27
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  load : The top + bottom rows = A compound word for transferring data from an online source to a local computer. Keep in mind: The first word may be at the bottom.
-  lord : “The ___ of the Rings” (fantasy epic published in three parts)
-  cord : Word after power, spinal, or vocal
-  corn : Vegetable that can be eaten “on the cob”
-  torn : Ripped apart, as scraps of paper
-  town : Human residential area smaller than a city
-  down : The top + bottom rows = A compound word for transferring data from an online source to a local computer. Keep in mind: The first word may be at the bottom.
+  said : The top + bottom words = Two words that complete the idiom “Easier ___ than ___.” Keep in mind: The first word may be at the bottom.
+  laid : Produced an egg, as a hen
+  land : Country, or the end of several country names
+  lane : Playing area used for ten-pin bowling
+  cane : Walking aid held in one hand
+  cone : Geometric shape with a circular base that rises to a single vertex
+  done : The top + bottom words = Two words that complete the idiom “Easier ___ than ___.” Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
