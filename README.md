@@ -11,136 +11,140 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-08-27)
+## Today's games (2026-08-28)
 
 ### zip
 ```
 +----+----+----+----+----+----+
-| ..   ..   ..   ..   ..   .. |
-+     ---- ---- ---- ----     +
-| ..   ..    1   ..    4   .. |
+| ..   ..   ..   ..   ..    8 |
 +                             +
-| ..    5   ..   ..    8   .. |
+| ..    6   ..    3   ..   .. |
 +                             +
-| ..    6   ..   ..    3   .. |
+| ..   ..   ..   ..    4   .. |
 +                             +
-| ..    7   ..    2   ..   .. |
-+     ---- ---- ---- ----     +
-| ..   ..   ..   ..   ..   .. |
+| ..    7   ..   ..   ..   .. |
++                             +
+| ..   ..    1   ..    5   .. |
++                             +
+|  2   ..   ..   ..   ..   .. |
 +---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . | . = . | . | . |
+| M | . | M | . | . | M |
++---+-x-+---+---+---+---+
+| . | . | . | . | . x . |
 +---+---+---+---+---+---+
-| . | . | M | S | . | . |
+| . | . | . | . | . | M |
 +---+---+---+---+---+---+
-| . | M | . | . | M | . |
-+-=-+---+---+---+---+-=-+
-| . | S | . | . | M | . |
+| M | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . | . | M | S | . | . |
-+---+---+---+---+---+---+
-| . | . | . x . | . | . |
+| . = . | . | . | . | . |
++---+---+---+---+-x-+---+
+| S | . | . | S | . | S |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟥🟨🟨⬛⬛
-🟥🟥🟧🟥🟥🟩⬛⬛
-🟥🟧🟧🟧🟩🟩🟩⬛
-🟥🟥🟧🟦🟦🟩🟥⬛
-🟥🟥🟪🟦🟦🟫🟥🟥
-🟥🟪🟪🟪🟫🟫🟫🟥
-🟥🟥🟪🟥🟥🟫🟥🟥
-🟥🟥🟥🟥🟥🟥🟥🟥
+🟥🟥🟥🟥🟥🟥🟥🟧🟧
+🟥🟥🟥🟥🟨🟥🟥🟥🟧
+🟥🟥🟩🟥🟨🟥🟥🟥🟥
+🟩🟩🟩🟨🟨🟨🟦🟦🟦
+🟩🟨🟨🟨🟪🟨🟨🟨🟦
+🟩🟩🟩🟨🟪🟨🟦🟦🟦
+🟩🟫🟫🟪🟪🟪⬛⬛🟦
+🟩🟫🟪🟪🟪🟪🟪⬜🟦
+🟩⬜⬜⬜⬜⬜⬜⬜🟦
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │ 1 │   ┃   │   │   ┃
+┃ 1 │   │   ┃ 4 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 2 │   │ 4 ┃ 1 │   │   ┃
+┃ 2 │   │   ┃ 5 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 6 │   ┃   │ 2 │   ┃
+┃ 3 │   │   ┃ 6 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 5 │   ┃   │ 1 │   ┃
+┃   │   │ 1 ┃   │   │ 2 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 3 │   │ 5 ┃ 4 │   │   ┃
+┃   │   │ 2 ┃   │   │ 4 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 4 │   ┃   │   │   ┃
+┃   │   │ 5 ┃   │   │ 3 ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+
-| .. | .. | +3 | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | |4 | .. | .. |
-+----+----+----+----+----+----+
-| -  | .. | .. | .. | +5 | .. |
-+----+----+----+----+----+----+
-| .. | +3 | .. | .. | .. | |  |
-+----+----+----+----+----+----+
-| .. | .. | -4 | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | +5 | .. | .. |
-+----+----+----+----+----+----+
++----+----+----+----+----+----+----+
+| .. | |  | .. | .. | .. | .. | +5 |
++----+----+----+----+----+----+----+
+| .. | .. | .. | +3 | .. | .. | .. |
++----+----+----+----+----+----+----+
+| +6 | .. | -4 | .. | .. | |4 | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | |6 | .. | .. | =4 | .. | +5 |
++----+----+----+----+----+----+----+
+| .. | .. | .. | +3 | .. | .. | .. |
++----+----+----+----+----+----+----+
+| +4 | .. | .. | .. | .. | -  | .. |
++----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+---+
-| L | I | C | O | R | # |
+| W | A | Y | U | A | N |
 +---+---+---+---+---+---+
-| I | S | P | # | N | N |
+| A | # | I | G | # | A |
 +---+---+---+---+---+---+
-| C | P | O | # | # | O |
+| V | A | Y | T | A | N |
 +---+---+---+---+---+---+
-| O | # | # | A | T | I |
+| A | # | M | O | # | A |
 +---+---+---+---+---+---+
-| N | R | # | T | S | E |
+| I | A | C | R | A | C |
 +---+---+---+---+---+---+
-| # | E | L | I | E | V |
+| L | # | C | U | # | Y |
 +---+---+---+---+---+---+
 
 Words:
-  SILICON
-  POPCORN
-  RELIEVE
-  STATION
+  AWAY
+  AVAIL
+  IGUANA
+  ANATOMY
+  ACCURACY
 ```
 
 ### pinpoint
 ```
-  1. Octopuses
-  2. Arctic hares (twice a year)
-  3. Mood rings
-  4. Leaves (in autumn)
-  5. Chameleons
+  1. Will
+  2. Trade
+  3. Rein
+  4. Speech
+  5. As a bird
 
-  answer: Things that change colors!
+  answer: Words that come after “free”!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 849
-date      : 2026-08-27
+number    : 850
+date      : 2026-08-28
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  said : The top + bottom words = Two words that complete the idiom “Easier ___ than ___.” Keep in mind: The first word may be at the bottom.
-  laid : Produced an egg, as a hen
-  land : Country, or the end of several country names
-  lane : Playing area used for ten-pin bowling
-  cane : Walking aid held in one hand
-  cone : Geometric shape with a circular base that rises to a single vertex
-  done : The top + bottom words = Two words that complete the idiom “Easier ___ than ___.” Keep in mind: The first word may be at the bottom.
+  jack : The top + bottom rows = A compound word for what is paid out by slot machines (also known as fruit machines or poker machines). Keep in mind: The first word may be at the bottom.
+  back : Returned from a trip abroad
+  bach : Johann Sebastian ___ (German composer)
+  bath : Alternative to a shower
+  path : Route from one place to another
+  pats : Gently touches, as a pet dog
+  pots : The top + bottom rows = A compound word for what is paid out by slot machines (also known as fruit machines or poker machines). Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->

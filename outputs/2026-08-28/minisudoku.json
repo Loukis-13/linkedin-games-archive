@@ -1,0 +1,61 @@
+{
+  "game": "minisudoku",
+  "date": "2026-08-28",
+  "grid_size": [
+    6,
+    6
+  ],
+  "cells": [
+    [
+      1,
+      null,
+      null,
+      4,
+      null,
+      null
+    ],
+    [
+      2,
+      null,
+      null,
+      5,
+      null,
+      null
+    ],
+    [
+      3,
+      null,
+      null,
+      6,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      1,
+      null,
+      null,
+      2
+    ],
+    [
+      null,
+      null,
+      2,
+      null,
+      null,
+      4
+    ],
+    [
+      null,
+      null,
+      5,
+      null,
+      null,
+      3
+    ]
+  ],
+  "number": "382",
+  "title": "Vertical",
+  "difficulty": "Hard"
+}
