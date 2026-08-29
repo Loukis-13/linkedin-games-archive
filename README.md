@@ -11,140 +11,144 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-08-28)
+## Today's games (2026-08-29)
 
 ### zip
 ```
-+----+----+----+----+----+----+
-| ..   ..   ..   ..   ..    8 |
-+                             +
-| ..    6   ..    3   ..   .. |
-+                             +
-| ..   ..   ..   ..    4   .. |
-+                             +
-| ..    7   ..   ..   ..   .. |
-+                             +
-| ..   ..    1   ..    5   .. |
-+                             +
-|  2   ..   ..   ..   ..   .. |
-+---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+----+
+| ..   ..   ..   ..   ..   ..   .. |
++                                  +
+| ..    9   ..    1    3   ..   .. |
++                                  +
+| 10   ..   ..   ..   ..    4   .. |
++                                  +
+| ..   ..   ..   ..   ..   ..   .. |
++                                  +
+| ..    5   ..   ..   ..   ..    2 |
++                                  +
+| ..   ..    6    7   ..    8   .. |
++                                  +
+| ..   ..   ..   ..   ..   ..   .. |
++---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| M | . | M | . | . | M |
-+---+-x-+---+---+---+---+
-| . | . | . | . | . x . |
+| . | . | . | . | . | . |
++-x-+-=-+-=-+-x-+-x-+-x-+
+| . | . | . = . | . | . |
 +---+---+---+---+---+---+
-| . | . | . | . | . | M |
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| M | . | . | . | . | . |
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . = . | . | . | . | . |
-+---+---+---+---+-x-+---+
-| S | . | . | S | . | S |
+| . = . | . x . | . = . |
++---+---+---+---+---+---+
+| S | M | S | M | M | S |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟥🟥🟥🟥🟧🟧
-🟥🟥🟥🟥🟨🟥🟥🟥🟧
-🟥🟥🟩🟥🟨🟥🟥🟥🟥
-🟩🟩🟩🟨🟨🟨🟦🟦🟦
-🟩🟨🟨🟨🟪🟨🟨🟨🟦
-🟩🟩🟩🟨🟪🟨🟦🟦🟦
-🟩🟫🟫🟪🟪🟪⬛⬛🟦
-🟩🟫🟪🟪🟪🟪🟪⬜🟦
-🟩⬜⬜⬜⬜⬜⬜⬜🟦
+🟨🟨🟨🟨🟥🟪🟪🟫🟫
+🟨🟨🟨🟥🟥🟥🟪🟪🟫
+🟨🟨🟧🟧🟧🟧🟧🟪🟫
+🟨🟨🟨🟦🟦🟦🟫🟫🟫
+🟨🟩🟩🟩🟦🟫🟫⬜⬜
+🟩🟩🟩🟩🟦🟫⬜⬜⬜
+🟩🟩🟩🟩⬛🟫⬜⬜⬜
+🟩🟩🟩🟩⬛🟫🟫⬜⬜
+🟩🟩🟩⬛⬛⬛⬜⬜⬜
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃ 1 │   │   ┃ 4 │   │   ┃
+┃   │ 1 │ 2 ┃ 3 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 2 │   │   ┃ 5 │   │   ┃
+┃   │   │   ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 3 │   │   ┃ 6 │   │   ┃
+┃ 4 │ 5 │ 6 ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 1 ┃   │   │ 2 ┃
+┃   │   │   ┃ 4 │ 6 │ 5 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │ 2 ┃   │   │ 4 ┃
+┃   │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 5 ┃   │   │ 3 ┃
+┃   │   │ 3 ┃ 2 │ 4 │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+----+
-| .. | |  | .. | .. | .. | .. | +5 |
+| -  | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | +3 | .. | .. | .. |
+| .. | -  | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| +6 | .. | -4 | .. | .. | |4 | .. |
+| .. | .. | =  | .. | .. | .. | |6 |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
+| .. | |  | .. | .. | .. | +5 | .. |
 +----+----+----+----+----+----+----+
-| .. | |6 | .. | .. | =4 | .. | +5 |
+| |  | .. | .. | .. | +5 | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | +3 | .. | .. | .. |
+| .. | .. | .. | .. | .. | +5 | .. |
 +----+----+----+----+----+----+----+
-| +4 | .. | .. | .. | .. | -  | .. |
+| .. | .. | .. | .. | .. | .. | -6 |
 +----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+---+
-| W | A | Y | U | A | N |
-+---+---+---+---+---+---+
-| A | # | I | G | # | A |
-+---+---+---+---+---+---+
-| V | A | Y | T | A | N |
-+---+---+---+---+---+---+
-| A | # | M | O | # | A |
-+---+---+---+---+---+---+
-| I | A | C | R | A | C |
-+---+---+---+---+---+---+
-| L | # | C | U | # | Y |
-+---+---+---+---+---+---+
++---+---+---+---+---+---+---+
+| D | N | T | N | E | T | U |
++---+---+---+---+---+---+---+
+| E | U | O | V | I | R | N |
++---+---+---+---+---+---+---+
+| D | N | B | E | # | # | # |
++---+---+---+---+---+---+---+
+| # | U | # | N | # | N | # |
++---+---+---+---+---+---+---+
+| # | # | # | U | E | U | C |
++---+---+---+---+---+---+---+
+| U | O | F | I | O | N | L |
++---+---+---+---+---+---+---+
+| N | D | A | T | S | U | E |
++---+---+---+---+---+---+---+
 
 Words:
-  AWAY
-  AVAIL
-  IGUANA
-  ANATOMY
-  ACCURACY
+  VENUE
+  NUCLEUS
+  NUTRIENT
+  UNBOUNDED
+  FOUNDATION
 ```
 
 ### pinpoint
 ```
-  1. Will
-  2. Trade
-  3. Rein
-  4. Speech
-  5. As a bird
+  1. Tents
+  2. Skiers
+  3. Barber shops
+  4. Olympic vaulters
+  5. Flags (as attached here: 🏁)
 
-  answer: Words that come after “free”!
+  answer: All associated with poles!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 850
-date      : 2026-08-28
+number    : 851
+date      : 2026-08-29
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  jack : The top + bottom rows = A compound word for what is paid out by slot machines (also known as fruit machines or poker machines). Keep in mind: The first word may be at the bottom.
-  back : Returned from a trip abroad
-  bach : Johann Sebastian ___ (German composer)
-  bath : Alternative to a shower
-  path : Route from one place to another
-  pats : Gently touches, as a pet dog
-  pots : The top + bottom rows = A compound word for what is paid out by slot machines (also known as fruit machines or poker machines). Keep in mind: The first word may be at the bottom.
+  mile : The top + bottom rows = A two-word phrase for a running competition that might take about four minutes for elite athletes to complete. Keep in mind: The first word may be at the bottom.
+  milk : Nutrient-rich drink produced by mammals
+  mink : Relative of the weasel
+  rink : Ice skating venue
+  rank : Assign items an order based on their relative quality
+  rack : Where Scrabble tiles may sit before they're played
+  race : The top + bottom rows = A two-word phrase for a running competition that might take about four minutes for elite athletes to complete. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
