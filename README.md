@@ -11,22 +11,22 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-08-29)
+## Today's games (2026-08-30)
 
 ### zip
 ```
 +----+----+----+----+----+----+----+
 | ..   ..   ..   ..   ..   ..   .. |
 +                                  +
-| ..    9   ..    1    3   ..   .. |
-+                                  +
-| 10   ..   ..   ..   ..    4   .. |
+| ..    3    2   ..    6    8   .. |
 +                                  +
 | ..   ..   ..   ..   ..   ..   .. |
 +                                  +
-| ..    5   ..   ..   ..   ..    2 |
+| ..    4   ..    7   ..    1   .. |
 +                                  +
-| ..   ..    6    7   ..    8   .. |
+| ..   ..   ..   ..   ..   ..   .. |
++                                  +
+| ..    5    9   ..   10   11   .. |
 +                                  +
 | ..   ..   ..   ..   ..   ..   .. |
 +---- ---- ---- ---- ---- ---- ----+
@@ -35,120 +35,123 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 ### tango
 ```
 +---+---+---+---+---+---+
+| S | S | . | . | . | . |
++---+---+---+---+---+---+
+| S | M | . | . | . | . |
++---+---+---+---+---+---+
+| M | S | . | . | . | . |
++---+---+---+---+---+---+
+| . | . | . | . | . = . |
++---+---+---+---+-x-+-=-+
 | . | . | . | . | . | . |
-+-x-+-=-+-=-+-x-+-x-+-x-+
-| . | . | . = . | . | . |
-+---+---+---+---+---+---+
-| . | . | . | . | . | . |
-+---+---+---+---+---+---+
-| . | . | . | . | . | . |
-+---+---+---+---+---+---+
-| . = . | . x . | . = . |
-+---+---+---+---+---+---+
-| S | M | S | M | M | S |
++---+---+---+---+-=-+-x-+
+| . | . | . | . | . = . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟨🟨🟨🟨🟥🟪🟪🟫🟫
-🟨🟨🟨🟥🟥🟥🟪🟪🟫
-🟨🟨🟧🟧🟧🟧🟧🟪🟫
-🟨🟨🟨🟦🟦🟦🟫🟫🟫
-🟨🟩🟩🟩🟦🟫🟫⬜⬜
-🟩🟩🟩🟩🟦🟫⬜⬜⬜
-🟩🟩🟩🟩⬛🟫⬜⬜⬜
-🟩🟩🟩🟩⬛🟫🟫⬜⬜
-🟩🟩🟩⬛⬛⬛⬜⬜⬜
+⬜⬜⬜⬜⬜⬜⬜⬜⬜
+⬜⬜⬜🟥🟥🟧⬛⬛⬜
+⬜⬜🟥🟥🟧🟧⬛⬛⬜
+⬜⬜🟥🟧🟧🟨⬛⬛⬜
+⬜🟩🟩🟩🟩🟨🟨⬛⬛
+⬜🟩🟩🟩🟫🟫🟨🟨⬛
+🟩🟩🟦🟦🟪🟫🟫⬛⬛
+🟩🟦🟦🟪🟪⬛🟫⬛⬛
+🟩🟦🟪🟪⬛⬛⬛⬛⬛
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │ 1 │ 2 ┃ 3 │   │   ┃
+┃   │   │   ┃ 1 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │   │   ┃
+┃   │   │ 2 ┃   │ 3 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 4 │ 5 │ 6 ┃   │   │   ┃
+┃   │ 1 │   ┃ 4 │   │ 5 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃ 4 │ 6 │ 5 ┃
+┃ 2 │   │ 5 ┃   │ 6 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃   │   │   ┃
+┃   │ 3 │   ┃ 2 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 3 ┃ 2 │ 4 │   ┃
+┃   │   │ 1 ┃   │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+----+
-| -  | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | -  | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | =  | .. | .. | .. | |6 |
-+----+----+----+----+----+----+----+
-| .. | |  | .. | .. | .. | +5 | .. |
-+----+----+----+----+----+----+----+
-| |  | .. | .. | .. | +5 | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | +5 | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | -6 |
-+----+----+----+----+----+----+----+
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | +4 | +6 | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| +6 | .. | +3 | .. | .. | +3 | .. | +3 |
++----+----+----+----+----+----+----+----+
+| |  | .. | .. | .. | .. | .. | .. | -  |
++----+----+----+----+----+----+----+----+
+| .. | +6 | .. | .. | .. | .. | +9 | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | +4 | +4 | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | +4 | .. | .. | +4 | .. | .. |
++----+----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+---+---+
-| D | N | T | N | E | T | U |
+| G | N | G | T | H | D | S |
 +---+---+---+---+---+---+---+
-| E | U | O | V | I | R | N |
+| A | I | O | U | E | A | E |
 +---+---+---+---+---+---+---+
-| D | N | B | E | # | # | # |
+| U | # | # | O | # | # | T |
 +---+---+---+---+---+---+---+
-| # | U | # | N | # | N | # |
+| D | I | O | U | A | E | R |
 +---+---+---+---+---+---+---+
-| # | # | # | U | E | U | C |
+| R | A | E | I | O | U | U |
 +---+---+---+---+---+---+---+
-| U | O | F | I | O | N | L |
+| A | E | P | C | A | S | B |
 +---+---+---+---+---+---+---+
-| N | D | A | T | S | U | E |
+| N | C | P | A | N | E | T |
 +---+---+---+---+---+---+---+
 
 Words:
-  VENUE
-  NUCLEUS
-  NUTRIENT
-  UNBOUNDED
-  FOUNDATION
+  AUDIO
+  BUREAU
+  HEADSET
+  OUTGOING
+  TENACIOUS
+  APPEARANCE
 ```
 
 ### pinpoint
 ```
-  1. Tents
-  2. Skiers
-  3. Barber shops
-  4. Olympic vaulters
-  5. Flags (as attached here: 🏁)
+  1. Everything
+  2. Anchor
+  3. A hint
+  4. A line
+  5. The ball
 
-  answer: All associated with poles!
+  answer: Words that follow “drop” in common sayings!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 851
-date      : 2026-08-29
+number    : 852
+date      : 2026-08-30
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  mile : The top + bottom rows = A two-word phrase for a running competition that might take about four minutes for elite athletes to complete. Keep in mind: The first word may be at the bottom.
-  milk : Nutrient-rich drink produced by mammals
-  mink : Relative of the weasel
-  rink : Ice skating venue
-  rank : Assign items an order based on their relative quality
-  rack : Where Scrabble tiles may sit before they're played
-  race : The top + bottom rows = A two-word phrase for a running competition that might take about four minutes for elite athletes to complete. Keep in mind: The first word may be at the bottom.
+  rover : The top + bottom rows = What NASA's Perseverance is, and what it photographed from Mars on October 4, 2025. Keep in mind: The first word may be at the bottom.
+  river : Mississippi or Nile, for example
+  diver : Scuba ___
+  dover : City in England with white cliffs
+  cover : Perform a new version of a song originally by another artist
+  covet : Have a strong desire for something that belongs to someone else
+  comet : The top + bottom rows = What NASA's Perseverance is, and what it photographed from Mars on October 4, 2025. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->

@@ -1,0 +1,61 @@
+{
+  "game": "minisudoku",
+  "date": "2026-08-30",
+  "grid_size": [
+    6,
+    6
+  ],
+  "cells": [
+    [
+      null,
+      null,
+      null,
+      1,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      2,
+      null,
+      3,
+      null
+    ],
+    [
+      null,
+      1,
+      null,
+      4,
+      null,
+      5
+    ],
+    [
+      2,
+      null,
+      5,
+      null,
+      6,
+      null
+    ],
+    [
+      null,
+      3,
+      null,
+      2,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      1,
+      null,
+      null,
+      null
+    ]
+  ],
+  "number": "384",
+  "title": "Waffle",
+  "difficulty": "Hard"
+}
