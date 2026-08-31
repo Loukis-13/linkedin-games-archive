@@ -1,0 +1,61 @@
+{
+  "game": "minisudoku",
+  "date": "2026-08-31",
+  "grid_size": [
+    6,
+    6
+  ],
+  "cells": [
+    [
+      null,
+      null,
+      1,
+      2,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      2,
+      3,
+      4,
+      1
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      2,
+      4
+    ],
+    [
+      2,
+      1,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      5,
+      2,
+      6,
+      4,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      3,
+      6,
+      null,
+      null
+    ]
+  ],
+  "number": "385",
+  "title": "Foursquare",
+  "difficulty": null
+}
