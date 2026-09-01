@@ -11,67 +11,67 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-08-31)
+## Today's games (2026-09-01)
 
 ### zip
 ```
 +----+----+----+----+----+----+
-| ..   ..   ..   ..   ..    2 |
+| ..   ..   ..   ..   ..   .. |
 +               ---- ----     +
-| .. | 10    1   ..    4 | .. |
-+    +                   +    +
-| .. | ..    5   ..   .. | .. |
-+    +                   +    +
-| .. | ..   ..    7   .. | .. |
-+    +                   +    +
-| .. |  6   ..    8    3 | .. |
-+    +---- ----          +    +
-|  9   ..   ..   ..   ..   .. |
+|  4   ..   .. | ..   .. | .. |
++              +         +    +
+|  3    5   .. | ..   .. | .. |
++              +         +    +
+| .. | ..   .. | ..    1    6 |
++    +         +              +
+| .. | ..   .. | ..   ..    2 |
++    +---- ----+              +
+| ..   ..   ..   ..   ..   .. |
 +---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . = . | . x . | . = . |
-+---+---+---+---+---+---+
-| M | . | . | . | . | . |
-+---+-=-+-=-+-x-+-x-+-x-+
-| S | . | . | . | . | . |
-+---+---+---+---+---+---+
-| . | . | . | . | . | S |
-+-=-+-=-+-x-+-=-+-x-+---+
-| . | . | . | . | . | S |
-+---+---+---+---+---+---+
-| . x . | . x . | . x . |
+| . | . | . | . | . | . |
++---+-=-+---+---+-x-+---+
+| . | . | S | . | . | . |
++---+-x-+---+---+-x-+---+
+| . | . | S | . | . | . |
++---+-x-+---+---+-x-+---+
+| . | . | . | M | . | . |
++---+-x-+---+---+-=-+---+
+| . | . | . | S | . | . |
++---+-=-+---+---+-x-+---+
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟥🟥🟥🟥
-🟥🟥🟥🟧🟥🟥🟥
-🟨🟥🟧🟧🟧🟥🟥
-🟨🟩🟧🟧🟧🟦🟥
-🟨🟩🟧🟧🟧🟦🟥
-🟨🟩🟩🟪🟪🟦🟥
-🟨🟩🟫🟫🟦🟦🟥
+🟥🟥🟥🟨🟨🟨🟨
+🟥🟧🟧🟦🟨🟨🟨
+🟫🟫🟦🟦🟦🟨🟨
+🟨🟫🟦🟪🟪🟪🟨
+🟨🟨🟦🟪🟪🟩🟨
+🟨🟨🟨🟪🟩🟩🟨
+🟨🟨🟨🟨🟨🟨🟨
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │ 1 ┃ 2 │   │   ┃
+┃ 1 │ 2 │ 3 ┃ 4 │ 5 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 2 ┃ 3 │ 4 │ 1 ┃
+┃   │   │ 6 ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃   │ 2 │ 4 ┃
+┃   │   │ 1 ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 2 │ 1 │   ┃   │   │   ┃
+┃   │   │   ┃ 2 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 5 │ 2 │ 6 ┃ 4 │   │   ┃
+┃   │   │   ┃ 5 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 3 ┃ 6 │   │   ┃
+┃   │ 5 │ 2 ┃ 1 │ 3 │ 4 ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
@@ -80,13 +80,13 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 +----+----+----+----+----+----+
 | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | -8 | .. | .. | +  | .. |
+| =4 | .. | -6 | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
+| |2 | |2 | -2 | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
+| .. | .. | .. | +  | .. | +  |
 +----+----+----+----+----+----+
-| .. | +  | .. | .. | |12 | .. |
+| .. | .. | .. | +  | +  | +  |
 +----+----+----+----+----+----+
 | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+
@@ -95,49 +95,49 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 ### wend
 ```
 +---+---+---+---+---+
-| H | A | O | O | C |
+| B | U | U | T | N |
 +---+---+---+---+---+
-| # | Z | Z | # | I |
+| K | L | M | # | A |
 +---+---+---+---+---+
-| R | A | # | I | T |
+| Y | # | N | # | U |
 +---+---+---+---+---+
-| D | # | Z | Z | # |
+| L | # | O | P | Q |
 +---+---+---+---+---+
-| O | R | E | E | N |
+| A | M | R | U | C |
 +---+---+---+---+---+
 
 Words:
-  ZOO
-  ZERO
-  HAZARD
-  CITIZEN
+  CUP
+  BULKY
+  NORMAL
+  QUANTUM
 ```
 
 ### pinpoint
 ```
-  1. Risk
-  2. Taboo
-  3. Boggle
-  4. Cluedo (Clue in N. America)
-  5. Jenga
+  1. Espresso
+  2. Renaissance art
+  3. Vespa scooters
+  4. Fashion houses (Gucci, Prada, …)
+  5. Pizza and pasta
 
-  answer: Games published by Hasbro!
+  answer: Things associated with Italy (🇮🇹)!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 853
-date      : 2026-08-31
+number    : 854
+date      : 2026-09-01
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  time : The top + bottom rows = A compound word for an organized list of what will happen and when, which may help to track a work project. Keep in mind: The first word may be at the bottom.
-  tire : Grow weary from activity
-  hire : Employ someone to join a work team
-  hive : Home for bees
-  five : Number of stars in many top ratings
-  fine : Satisfactory, or amount paid as a penalty
-  line : The top + bottom rows = A compound word for an organized list of what will happen and when, which may help to track a work project. Keep in mind: The first word may be at the bottom.
+  good : The top + bottom rows = A two-word phrase for information you hope to hear. Keep in mind: The first word may be at the bottom.
+  wood : Lumber
+  woos : Tries to win someone’s affection
+  wows : Really impresses with a performance
+  sows : Female pigs
+  sews : Uses a needle and thread
+  news : The top + bottom rows = A two-word phrase for information you hope to hear. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
