@@ -1,0 +1,61 @@
+{
+  "game": "minisudoku",
+  "date": "2026-09-03",
+  "grid_size": [
+    6,
+    6
+  ],
+  "cells": [
+    [
+      null,
+      null,
+      2,
+      null,
+      null,
+      null
+    ],
+    [
+      4,
+      null,
+      null,
+      1,
+      null,
+      6
+    ],
+    [
+      null,
+      2,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      3,
+      null
+    ],
+    [
+      5,
+      null,
+      3,
+      null,
+      null,
+      4
+    ],
+    [
+      null,
+      null,
+      null,
+      6,
+      null,
+      null
+    ]
+  ],
+  "number": "388",
+  "title": "Misaligned",
+  "difficulty": null
+}
