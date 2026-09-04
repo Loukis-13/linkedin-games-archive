@@ -11,142 +11,143 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-09-03)
+## Today's games (2026-09-04)
 
 ### zip
 ```
-+----+----+----+----+----+----+----+
-| ..   ..   ..   ..   ..   ..   .. |
-+                                  +
-| ..    3   ..    1   ..    2   .. |
-+     ---- ---- ---- ---- ----     +
-| ..   ..   ..   ..   ..   ..   .. |
-+     ----                         +
-| ..    6   ..    5   ..    4   .. |
-+                         ----     +
-| ..   ..   ..   ..   ..   ..   .. |
-+     ---- ---- ---- ---- ----     +
-| ..    7   ..    9   ..    8   .. |
-+                                  +
-| ..   ..   ..   ..   ..   ..   .. |
-+---- ---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+----+----+
+| ..   ..   ..   ..   ..   ..   ..   .. |
++                                       +
+| ..    4   ..    3   ..   ..   ..   .. |
++                                       +
+| ..    5   ..    6 | .. | .. | .. | .. |
++                   +    +    +    +    +
+| ..    1   10    7 | .. | .. | .. | .. |
++                   +    +    +    +    +
+| ..   ..   ..    8 | ..   ..   .. | .. |
++                   +---- ----     +    +
+| ..   ..   ..    9   ..   .. | .. | .. |
++                             +    +    +
+| ..   ..   ..    2   ..   .. | .. | .. |
++                             +    +    +
+| ..   ..   ..   ..   ..   .. | ..   .. |
++---- ---- ---- ---- ---- ----+---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . | M | M | . | . |
+| . | . | . | . | . | . |
++---+-x-+---+-x-+---+---+
+| . | . | . | . | . | S |
 +---+---+---+---+---+---+
-| . | M | . | . | . | . |
+| . | . | . | . | . | S |
 +---+---+---+---+---+---+
-| . | M | . | . | . | . |
-+---+---+-=-+-x-+---+---+
-| . | . | . | . | S | . |
+| . | . | . | . | . | . |
++-=-+---+---+---+---+---+
+| . | . | M | . | M | . |
 +---+---+---+---+---+---+
-| . | . | . | . | S | . |
-+---+---+---+---+---+---+
-| . | . | S | M | . | . |
+| . | . | M | . | M | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟧🟧🟧🟧🟧🟧🟧🟧
-🟥🟨🟧🟧🟧🟩🟩🟩🟩
-🟥🟨🟦🟧🟧🟩🟩🟩🟩
-🟪🟨🟦🟧🟧🟧🟧🟧🟩
-🟪🟪🟦🟧🟧🟧🟧🟧🟧
-🟫🟪🟪🟪🟪🟧⬛🟧🟧
-🟫🟫🟫🟫🟪⬜⬛🟧🟧
-🟫🟫🟫🟫🟪⬜⬛🟧🟧
-🟪🟪🟪🟪🟪⬜🟧🟧🟧
+🟥🟥🟥🟥🟥🟧🟧🟧🟧
+🟥🟨🟨🟨🟥🟩🟩🟩🟧
+🟨🟨🟨🟨🟥🟨🟨🟩🟩
+🟨🟨🟨🟨🟨🟨🟨🟨🟩
+🟨🟨🟨🟨🟦🟩🟩🟩🟩
+🟪🟦🟦🟦🟦🟦🟦🟦🟫
+🟪🟪🟦🟦🟦🟦🟦⬛🟫
+🟪🟪🟪🟦🟦🟦⬛⬛🟫
+🟪⬜⬜⬜🟦⬛⬛🟫🟫
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │ 2 ┃   │   │   ┃
+┃   │ 1 │   ┃   │ 2 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 4 │   │   ┃ 1 │   │ 6 ┃
+┃   │   │ 2 ┃ 1 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 2 │   ┃   │   │   ┃
-┃───┼───┼───┃───┼───┼───┃
 ┃   │   │   ┃   │ 3 │   ┃
-┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 5 │   │ 3 ┃   │   │ 4 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃ 6 │   │   ┃
+┃   │ 5 │   ┃   │   │   ┃
+┣━━━━━━━━━━━╋━━━━━━━━━━━┫
+┃   │   │ 6 ┃ 2 │   │   ┃
+┃───┼───┼───┃───┼───┼───┃
+┃   │ 3 │   ┃   │ 4 │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+----+
-| .. | .. | +4 | .. | -6 | .. | .. |
+| |  | .. | .. | .. | .. | .. | -  |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | +8 | .. | .. | .. |
+| .. | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| =4 | .. | .. | .. | .. | .. | +3 |
+| .. | .. | +2 | +2 | +4 | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | +2 | .. | .. | .. | +4 | .. |
+| .. | .. | +4 | .. | +2 | .. | .. |
 +----+----+----+----+----+----+----+
-| +6 | .. | .. | .. | .. | .. | |3 |
+| .. | .. | +3 | +3 | +6 | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | +4 | .. | .. | .. |
+| .. | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | -2 | .. | +3 | .. | .. |
+| -  | .. | .. | .. | .. | .. | |  |
 +----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+---+
-| N | E | O | N | # | N |
+| A | T | H | R | H | S |
 +---+---+---+---+---+---+
-| T | X | M | A | # | I |
+| E | R | E | I | N | E |
 +---+---+---+---+---+---+
-| U | E | N | N | # | R |
+| F | # | # | # | K | U |
 +---+---+---+---+---+---+
-| R | # | N | N | I | V |
+| O | J | # | # | # | Q |
 +---+---+---+---+---+---+
-| O | # | E | L | C | A |
+| R | A | M | E | T | I |
 +---+---+---+---+---+---+
-| N | # | N | I | A | N |
+| I | T | Y | C | H | N |
 +---+---+---+---+---+---+
 
 Words:
-  NEXT
-  LINEN
-  NEURON
-  NIRVANA
-  CINNAMON
+  SHRINK
+  FEATHER
+  MAJORITY
+  TECHNIQUE
 ```
 
 ### pinpoint
 ```
-  1. Make
-  2. Wrong
-  3. Right of
-  4. Milky
-  5. Look the other
+  1. Trains
+  2. Music albums
+  3. Adjustable ceiling lights
+  4. Olympic stadiums for running
+  5. Mud after animals walk in it
 
-  answer: Words that come before “way”!
+  answer: Things associated with tracks!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 856
-date      : 2026-09-03
+number    : 857
+date      : 2026-09-04
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  hall : The top + bottom rows = A two-word phrase for a municipal government building. Keep in mind: The first word may be at the bottom.
-  hill : Raised bit of land that's smaller than a mountain
-  till : Drawer that stores money in a cash register
-  toll : You may pay it to go over a bridge
-  tool : Screwdriver, chisel, or hammer
-  toon : Colloquial term for an animated TV show
-  town : The top + bottom rows = A two-word phrase for a municipal government building. Keep in mind: The first word may be at the bottom.
+  drop : The top + bottom rows = A two-word phrase for a tennis stroke that lands the ball near the net. Keep in mind: The first word may be at the bottom.
+  crop : Plant grown for human consumption
+  coop : Where chickens live
+  loop : Section of a roller coaster that may be particularly exciting or scary to ride around
+  loot : Treasure found in a dungeon
+  soot : Black powder in a chimney
+  shot : The top + bottom rows = A two-word phrase for a tennis stroke that lands the ball near the net. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->

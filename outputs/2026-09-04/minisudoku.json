@@ -1,0 +1,61 @@
+{
+  "game": "minisudoku",
+  "date": "2026-09-04",
+  "grid_size": [
+    6,
+    6
+  ],
+  "cells": [
+    [
+      null,
+      1,
+      null,
+      null,
+      2,
+      null
+    ],
+    [
+      null,
+      null,
+      2,
+      1,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      3,
+      null
+    ],
+    [
+      null,
+      5,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      6,
+      2,
+      null,
+      null
+    ],
+    [
+      null,
+      3,
+      null,
+      null,
+      4,
+      null
+    ]
+  ],
+  "number": "389",
+  "title": "Rope",
+  "difficulty": "Hard"
+}
