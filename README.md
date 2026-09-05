@@ -11,143 +11,144 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-09-04)
+## Today's games (2026-09-05)
 
 ### zip
 ```
-+----+----+----+----+----+----+----+----+
-| ..   ..   ..   ..   ..   ..   ..   .. |
-+                                       +
-| ..    4   ..    3   ..   ..   ..   .. |
-+                                       +
-| ..    5   ..    6 | .. | .. | .. | .. |
-+                   +    +    +    +    +
-| ..    1   10    7 | .. | .. | .. | .. |
-+                   +    +    +    +    +
-| ..   ..   ..    8 | ..   ..   .. | .. |
-+                   +---- ----     +    +
-| ..   ..   ..    9   ..   .. | .. | .. |
-+                             +    +    +
-| ..   ..   ..    2   ..   .. | .. | .. |
-+                             +    +    +
-| ..   ..   ..   ..   ..   .. | ..   .. |
-+---- ---- ---- ---- ---- ----+---- ----+
++----+----+----+----+----+----+----+
+| ..   ..   ..   ..   ..   ..   .. |
++                                  +
+| ..    4   ..   ..    9   ..   .. |
++                                  +
+| ..    7    5    3   12   ..   .. |
++                                  +
+| ..   ..   ..   ..   ..   ..   .. |
++                                  +
+| ..   ..    6    2   11   10   .. |
++                                  +
+| ..   ..    8   ..   ..    1   .. |
++                                  +
+| ..   ..   ..   ..   ..   ..   .. |
++---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . | . | . | . | . |
-+---+-x-+---+-x-+---+---+
-| . | . | . | . | . | S |
+| . | . | . | S | . = . |
++---+---+---+---+---+-x-+
+| . | . | M | . | . | . |
 +---+---+---+---+---+---+
-| . | . | . | . | . | S |
+| . | S | . | . | . | M |
 +---+---+---+---+---+---+
-| . | . | . | . | . | . |
-+-=-+---+---+---+---+---+
-| . | . | M | . | M | . |
+| S | . | . | . | S | . |
 +---+---+---+---+---+---+
-| . | . | M | . | M | . |
+| . | . | . | S | . | . |
++-x-+---+---+---+---+---+
+| . x . | M | . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟥🟥🟧🟧🟧🟧
-🟥🟨🟨🟨🟥🟩🟩🟩🟧
-🟨🟨🟨🟨🟥🟨🟨🟩🟩
-🟨🟨🟨🟨🟨🟨🟨🟨🟩
-🟨🟨🟨🟨🟦🟩🟩🟩🟩
-🟪🟦🟦🟦🟦🟦🟦🟦🟫
-🟪🟪🟦🟦🟦🟦🟦⬛🟫
-🟪🟪🟪🟦🟦🟦⬛⬛🟫
-🟪⬜⬜⬜🟦⬛⬛🟫🟫
+🟦🟦🟩🟩🟩⬜⬜⬜⬜
+🟦🟨🟨🟨🟩⬜⬛⬛⬜
+🟦🟨🟫🟫🟫⬜⬜⬛⬛
+🟦🟨🟨🟨🟫🟪🟪🟪⬛
+🟥🟥🟥🟨🟫🟪⬛⬛⬛
+🟥🟨🟨🟨🟫🟪🟪🟪⬛
+🟥🟥🟥🟫🟫🟫🟫🟪⬛
+🟧🟧🟥🟫🟫🟪🟪🟪⬛
+🟥🟥🟥⬛⬛⬛⬛⬛⬛
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │ 1 │   ┃   │ 2 │   ┃
+┃   │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 2 ┃ 1 │   │   ┃
+┃ 1 │ 2 │   ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃   │ 3 │   ┃
+┃ 2 │ 3 │   ┃ 1 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 5 │   ┃   │   │   ┃
+┃   │   │ 4 ┃   │ 2 │ 5 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │ 6 ┃ 2 │   │   ┃
+┃   │   │   ┃   │ 3 │ 4 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 3 │   ┃   │ 4 │   ┃
+┃   │   │   ┃   │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+----+
-| |  | .. | .. | .. | .. | .. | -  |
+| +5 | .. | .. | .. | .. | +5 | .. |
++----+----+----+----+----+----+----+
+| .. | +5 | .. | .. | .. | .. | |5 |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | |5 | .. | .. |
 +----+----+----+----+----+----+----+
 | .. | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | +2 | +2 | +4 | .. | .. |
+| .. | .. | =  | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | +4 | .. | +2 | .. | .. |
+| -  | .. | .. | .. | .. | +  | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | +3 | +3 | +6 | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| -  | .. | .. | .. | .. | .. | |  |
+| .. | +  | .. | .. | .. | .. | +  |
 +----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+---+
-| A | T | H | R | H | S |
-+---+---+---+---+---+---+
-| E | R | E | I | N | E |
-+---+---+---+---+---+---+
-| F | # | # | # | K | U |
-+---+---+---+---+---+---+
-| O | J | # | # | # | Q |
-+---+---+---+---+---+---+
-| R | A | M | E | T | I |
-+---+---+---+---+---+---+
-| I | T | Y | C | H | N |
-+---+---+---+---+---+---+
++---+---+---+---+---+---+---+
+| A | U | Q | L | O | O | S |
++---+---+---+---+---+---+---+
+| R | # | A | # | # | H | C |
++---+---+---+---+---+---+---+
+| I | # | # | # | # | # | H |
++---+---+---+---+---+---+---+
+| U | # | S | # | # | I | S |
++---+---+---+---+---+---+---+
+| M | L | L | W | A | F | L |
++---+---+---+---+---+---+---+
+| G | I | S | H | T | A | E |
++---+---+---+---+---+---+---+
+| F | R | E | R | E | N | G |
++---+---+---+---+---+---+---+
 
 Words:
-  SHRINK
-  FEATHER
-  MAJORITY
-  TECHNIQUE
+  GILLS
+  SCHOOL
+  AQUARIUM
+  ANGELFISH
+  FRESHWATER
 ```
 
 ### pinpoint
 ```
-  1. Trains
-  2. Music albums
-  3. Adjustable ceiling lights
-  4. Olympic stadiums for running
-  5. Mud after animals walk in it
+  1. Race
+  2. Cable
+  3. Muscle
+  4. Rental
+  5. Plug-in hybrid
 
-  answer: Things associated with tracks!
+  answer: Words that come before “car”!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 857
-date      : 2026-09-04
+number    : 858
+date      : 2026-09-05
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  drop : The top + bottom rows = A two-word phrase for a tennis stroke that lands the ball near the net. Keep in mind: The first word may be at the bottom.
-  crop : Plant grown for human consumption
-  coop : Where chickens live
-  loop : Section of a roller coaster that may be particularly exciting or scary to ride around
-  loot : Treasure found in a dungeon
-  soot : Black powder in a chimney
-  shot : The top + bottom rows = A two-word phrase for a tennis stroke that lands the ball near the net. Keep in mind: The first word may be at the bottom.
+  leia : The top + bottom rows = Two children of Darth Vader.
+  leis : Flowery garlands used in hula dancing
+  lets : Allows, or rents out a property
+  lats : Muscles in the lower back, for short
+  late : Not on time
+  lute : Renaissance string instrument (adding an F to the start forms the name of a wind instrument)
+  luke : The top + bottom rows = Two children of Darth Vader.
 ```
 <!-- DAILY-GAMES-END -->
