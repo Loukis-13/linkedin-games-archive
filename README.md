@@ -11,144 +11,148 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-09-05)
+## Today's games (2026-09-06)
 
 ### zip
 ```
-+----+----+----+----+----+----+----+
-| ..   ..   ..   ..   ..   ..   .. |
-+                                  +
-| ..    4   ..   ..    9   ..   .. |
-+                                  +
-| ..    7    5    3   12   ..   .. |
-+                                  +
-| ..   ..   ..   ..   ..   ..   .. |
-+                                  +
-| ..   ..    6    2   11   10   .. |
-+                                  +
-| ..   ..    8   ..   ..    1   .. |
-+                                  +
-| ..   ..   ..   ..   ..   ..   .. |
-+---- ---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+----+----+
+| ..   ..   ..   ..   ..   ..   ..   .. |
++                                       +
+| ..   16   ..   15   ..    5   ..   .. |
++                                       +
+| ..   17   ..   18   ..   14   ..   .. |
++                                       +
+| ..    2   ..    1   ..   12   ..   .. |
++                                       +
+| ..   ..   10   ..   11   ..   13   .. |
++                                       +
+| ..   ..    9   ..    8   ..    6   .. |
++                                       +
+| ..   ..    3   ..    4   ..    7   .. |
++                                       +
+| ..   ..   ..   ..   ..   ..   ..   .. |
++---- ---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . | . | S | . = . |
-+---+---+---+---+---+-x-+
-| . | . | M | . | . | . |
+| . | . | . | . = . | . |
++-=-+---+---+---+---+-x-+
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . | S | . | . | . | M |
+| . = . | . | . | . | . |
 +---+---+---+---+---+---+
-| S | . | . | . | S | . |
+| . | . | . | . | . x . |
 +---+---+---+---+---+---+
-| . | . | . | S | . | . |
-+-x-+---+---+---+---+---+
-| . x . | M | . | . | . |
+| M | . | . | . | . | . |
++---+---+---+---+---+-=-+
+| S | M | M | . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟦🟦🟩🟩🟩⬜⬜⬜⬜
-🟦🟨🟨🟨🟩⬜⬛⬛⬜
-🟦🟨🟫🟫🟫⬜⬜⬛⬛
-🟦🟨🟨🟨🟫🟪🟪🟪⬛
-🟥🟥🟥🟨🟫🟪⬛⬛⬛
-🟥🟨🟨🟨🟫🟪🟪🟪⬛
-🟥🟥🟥🟫🟫🟫🟫🟪⬛
-🟧🟧🟥🟫🟫🟪🟪🟪⬛
-🟥🟥🟥⬛⬛⬛⬛⬛⬛
+⬜⬜⬜⬜⬜⬜⬜⬜⬜
+⬜🟥🟥⬜⬜⬜🟧🟧⬜
+⬜🟥🟥🟥🟨🟧🟧🟧⬜
+⬛🟥🟥🟥🟨🟧🟧⬜⬜
+⬛⬛⬛⬛🟨🟪🟪⬜⬜
+⬛🟩⬛🟨🟨🟫🟫🟦⬜
+⬛🟩🟩🟫🟫🟫🟦🟦⬜
+⬛⬛🟩🟩🟦🟦🟦⬛⬜
+⬛⬛⬛⬛⬛⬛⬛⬛⬜
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │   ┃   │   │   ┃
+┃   │   │ 1 ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 1 │ 2 │   ┃   │   │   ┃
+┃ 2 │ 3 │   ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 2 │ 3 │   ┃ 1 │   │   ┃
+┃ 1 │ 4 │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 4 ┃   │ 2 │ 5 ┃
+┃   │   │   ┃   │ 2 │ 4 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃   │ 3 │ 4 ┃
+┃   │   │   ┃   │ 3 │ 5 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │   │   ┃
+┃   │   │   ┃ 6 │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+----+
-| +5 | .. | .. | .. | .. | +5 | .. |
-+----+----+----+----+----+----+----+
-| .. | +5 | .. | .. | .. | .. | |5 |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | |5 | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | =  | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| -  | .. | .. | .. | .. | +  | .. |
-+----+----+----+----+----+----+----+
-| .. | +  | .. | .. | .. | .. | +  |
-+----+----+----+----+----+----+----+
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | -6 | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | |6 | .. | .. | .. | .. | |6 | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | -  | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. | =  |
++----+----+----+----+----+----+----+----+
+| -6 | .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | |6 | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | |6 | .. | .. | .. | .. | |6 | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | |6 | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+---+---+
-| A | U | Q | L | O | O | S |
+| E | M | E | R | C | E | X |
 +---+---+---+---+---+---+---+
-| R | # | A | # | # | H | C |
+| N | # | I | # | N | # | E |
 +---+---+---+---+---+---+---+
-| I | # | # | # | # | # | H |
+| T | T | T | # | I | U | C |
 +---+---+---+---+---+---+---+
-| U | # | S | # | # | I | S |
+| E | E | H | P | S | T | I |
 +---+---+---+---+---+---+---+
-| M | L | L | W | A | F | L |
+| E | G | G | A | I | O | V |
 +---+---+---+---+---+---+---+
-| G | I | S | H | T | A | E |
+| T | U | A | C | T | N | E |
 +---+---+---+---+---+---+---+
-| F | R | E | R | E | N | G |
+| N | A | R | E | J | B | O |
 +---+---+---+---+---+---+---+
 
 Words:
-  GILLS
-  SCHOOL
-  AQUARIUM
-  ANGELFISH
-  FRESHWATER
+  EXECUTIVE
+  INCREMENT
+  SPAGHETTI
+  GUARANTEE
+  OBJECTION
 ```
 
 ### pinpoint
 ```
-  1. Race
-  2. Cable
-  3. Muscle
-  4. Rental
-  5. Plug-in hybrid
+  1. Cardboard
+  2. Leaves
+  3. Banana peels
+  4. Eggshells and egg cartons
+  5. Grass clippings and twigs
 
-  answer: Words that come before “car”!
+  answer: Things that are composted!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 858
-date      : 2026-09-05
+number    : 859
+date      : 2026-09-06
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  leia : The top + bottom rows = Two children of Darth Vader.
-  leis : Flowery garlands used in hula dancing
-  lets : Allows, or rents out a property
-  lats : Muscles in the lower back, for short
-  late : Not on time
-  lute : Renaissance string instrument (adding an F to the start forms the name of a wind instrument)
-  luke : The top + bottom rows = Two children of Darth Vader.
+  poker : The top + bottom rows = A two-word phrase for expressions that don't give any indication of intent. Keep in mind: The first word may be at the bottom.
+  pokes : Gives a hello on Facebook (using an icon like this: 👈)
+  poles : People from Warsaw
+  pales : “That ___ in comparison”
+  pares : Cuts the peel off a potato with a special knife
+  fares : Costs paid to ride buses
+  faces : The top + bottom rows = A two-word phrase for expressions that don't give any indication of intent. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
