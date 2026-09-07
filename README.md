@@ -11,148 +11,133 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-09-06)
+## Today's games (2026-09-07)
 
 ### zip
 ```
-+----+----+----+----+----+----+----+----+
-| ..   ..   ..   ..   ..   ..   ..   .. |
-+                                       +
-| ..   16   ..   15   ..    5   ..   .. |
-+                                       +
-| ..   17   ..   18   ..   14   ..   .. |
-+                                       +
-| ..    2   ..    1   ..   12   ..   .. |
-+                                       +
-| ..   ..   10   ..   11   ..   13   .. |
-+                                       +
-| ..   ..    9   ..    8   ..    6   .. |
-+                                       +
-| ..   ..    3   ..    4   ..    7   .. |
-+                                       +
-| ..   ..   ..   ..   ..   ..   ..   .. |
-+---- ---- ---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+
+| ..   ..   ..   ..   ..    7 |
++     ---- ---- ---- ----     +
+| .. |  9    1    3    4 | .. |
++    +                   +    +
+| ..   ..   ..   ..    5 | .. |
++                        +    +
+| ..   ..   ..    2   .. | .. |
++                        +    +
+| ..   ..   ..    6   .. | .. |
++                        +    +
+| ..   ..    8   ..   ..   .. |
++---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . | . | . = . | . |
-+-=-+---+---+---+---+-x-+
 | . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . = . | . | . | . | . |
+| . | M | M | S | M | . |
 +---+---+---+---+---+---+
-| . | . | . | . | . x . |
+| . | S | S | M | M | . |
 +---+---+---+---+---+---+
-| M | . | . | . | . | . |
-+---+---+---+---+---+-=-+
-| S | M | M | . | . | . |
+| . | . | . | . | . | . |
++---+-=-+-=-+-=-+-=-+---+
+| . | . | . | . | . | . |
++---+---+---+---+---+---+
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-⬜⬜⬜⬜⬜⬜⬜⬜⬜
-⬜🟥🟥⬜⬜⬜🟧🟧⬜
-⬜🟥🟥🟥🟨🟧🟧🟧⬜
-⬛🟥🟥🟥🟨🟧🟧⬜⬜
-⬛⬛⬛⬛🟨🟪🟪⬜⬜
-⬛🟩⬛🟨🟨🟫🟫🟦⬜
-⬛🟩🟩🟫🟫🟫🟦🟦⬜
-⬛⬛🟩🟩🟦🟦🟦⬛⬜
-⬛⬛⬛⬛⬛⬛⬛⬛⬜
+🟥🟥🟥🟥🟥🟥🟥
+🟥🟥🟧🟧🟧🟥🟥
+🟥🟨🟧🟩🟧🟦🟥
+🟥🟨🟨🟩🟦🟦🟥
+🟥🟨🟨🟦🟦🟥🟥
+🟥🟪🟪🟫🟫🟥🟥
+🟪🟪🟪🟫🟫🟫🟥
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │ 1 ┃   │   │   ┃
+┃ 1 │ 2 │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 2 │ 3 │   ┃   │   │   ┃
+┃ 3 │ 4 │   ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 1 │ 4 │   ┃   │   │   ┃
+┃ 5 │ 6 │   ┃   │ 1 │ 2 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │ 2 │ 4 ┃
+┃ 2 │ 1 │   ┃   │ 6 │ 4 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃   │ 3 │ 5 ┃
+┃   │   │   ┃   │ 3 │ 1 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃ 6 │   │   ┃
+┃   │   │   ┃   │ 5 │ 6 ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | -6 | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
-| .. | |6 | .. | .. | .. | .. | |6 | .. |
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | -  | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. | =  |
-+----+----+----+----+----+----+----+----+
-| -6 | .. | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | |6 | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
-| .. | |6 | .. | .. | .. | .. | |6 | .. |
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | |6 | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
++----+----+----+----+----+----+
+| |2 | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+
+| .. | +10 | .. | .. | .. | .. |
++----+----+----+----+----+----+
+| .. | -3 | .. | |  | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | =  | .. | =4 | .. |
++----+----+----+----+----+----+
+| .. | .. | .. | .. | +2 | .. |
++----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | -2 |
++----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+---+---+
-| E | M | E | R | C | E | X |
-+---+---+---+---+---+---+---+
-| N | # | I | # | N | # | E |
-+---+---+---+---+---+---+---+
-| T | T | T | # | I | U | C |
-+---+---+---+---+---+---+---+
-| E | E | H | P | S | T | I |
-+---+---+---+---+---+---+---+
-| E | G | G | A | I | O | V |
-+---+---+---+---+---+---+---+
-| T | U | A | C | T | N | E |
-+---+---+---+---+---+---+---+
-| N | A | R | E | J | B | O |
-+---+---+---+---+---+---+---+
++---+---+---+---+---+
+| S | U | C | X | E |
++---+---+---+---+---+
+| # | G | E | E | # |
++---+---+---+---+---+
+| # | A | # | D | # |
++---+---+---+---+---+
+| # | R | F | L | # |
++---+---+---+---+---+
+| P | O | H | A | T |
++---+---+---+---+---+
 
 Words:
-  EXECUTIVE
-  INCREMENT
-  SPAGHETTI
-  GUARANTEE
-  OBJECTION
+  HOP
+  FLAT
+  SUGAR
+  EXCEED
 ```
 
 ### pinpoint
 ```
-  1. Cardboard
-  2. Leaves
-  3. Banana peels
-  4. Eggshells and egg cartons
-  5. Grass clippings and twigs
+  1. Keycards
+  2. Electric kettles / coffee makers
+  3. Toiletries
+  4. Continental breakfast
+  5. Room service
 
-  answer: Things that are composted!
+  answer: Things associated with hotels!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 859
-date      : 2026-09-06
+number    : 860
+date      : 2026-09-07
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  poker : The top + bottom rows = A two-word phrase for expressions that don't give any indication of intent. Keep in mind: The first word may be at the bottom.
-  pokes : Gives a hello on Facebook (using an icon like this: 👈)
-  poles : People from Warsaw
-  pales : “That ___ in comparison”
-  pares : Cuts the peel off a potato with a special knife
-  fares : Costs paid to ride buses
-  faces : The top + bottom rows = A two-word phrase for expressions that don't give any indication of intent. Keep in mind: The first word may be at the bottom.
+  hide : Two antonyms that form the name of the children’s game “___-and-___” where one person is “it” and looks for the other players. Keep in mind: The first word may be at the bottom.
+  side : One of eight in an octagon
+  site : Page to visit on the internet
+  sits : Uses a chair
+  sets : Drops below the horizon, like the sun at the end of the day
+  sees : Lays eyes upon
+  seek : Two antonyms that form the name of the children’s game “___-and-___” where one person is “it” and looks for the other players. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
