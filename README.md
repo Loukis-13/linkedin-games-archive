@@ -11,37 +11,39 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-09-07)
+## Today's games (2026-09-08)
 
 ### zip
 ```
-+----+----+----+----+----+----+
-| ..   ..   ..   ..   ..    7 |
-+     ---- ---- ---- ----     +
-| .. |  9    1    3    4 | .. |
-+    +                   +    +
-| ..   ..   ..   ..    5 | .. |
-+                        +    +
-| ..   ..   ..    2   .. | .. |
-+                        +    +
-| ..   ..   ..    6   .. | .. |
-+                        +    +
-| ..   ..    8   ..   ..   .. |
-+---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+----+
+|  4   ..   ..   ..   ..   ..    5 |
++          ---- ----               +
+| ..   .. | ..   ..   .. | ..   .. |
++         +     ----     +         +
+|  1   .. | ..   ..   .. | ..    6 |
++         +     ----     +         +
+| ..   .. | ..   ..   .. | ..   .. |
++         +     ----     +         +
+|  2   .. | ..   ..   .. | ..    7 |
++         +     ----     +         +
+| ..   .. | ..   ..   .. | ..   .. |
++         +     ---- ----+         +
+|  3   ..   ..   ..   ..   ..    8 |
++---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . | . | . | . | . |
+| . | . x . | S | S | . |
++---+-x-+---+---+---+---+
+| . | . | . | . | S | . |
 +---+---+---+---+---+---+
-| . | M | M | S | M | . |
+| . | M | . = . | M | . |
 +---+---+---+---+---+---+
-| . | S | S | M | M | . |
-+---+---+---+---+---+---+
-| . | . | . | . | . | . |
-+---+-=-+-=-+-=-+-=-+---+
-| . | . | . | . | . | . |
+| . | S | . | . | . | . |
++---+---+---+---+-x-+---+
+| . | M | M | . x . | . |
 +---+---+---+---+---+---+
 | . | . | . | . | . | . |
 +---+---+---+---+---+---+
@@ -49,95 +51,95 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 ### queens
 ```
-🟥🟥🟥🟥🟥🟥🟥
-🟥🟥🟧🟧🟧🟥🟥
-🟥🟨🟧🟩🟧🟦🟥
-🟥🟨🟨🟩🟦🟦🟥
-🟥🟨🟨🟦🟦🟥🟥
-🟥🟪🟪🟫🟫🟥🟥
-🟪🟪🟪🟫🟫🟫🟥
+🟥🟧🟧🟧🟨🟨🟨
+🟥🟥🟧🟧🟧🟨🟨
+🟥🟥🟥🟧🟧🟧🟨
+🟥🟥🟥🟥🟪🟦🟦
+🟥🟥🟥🟪🟪🟫🟦
+🟥🟥🟩🟩🟩🟫🟦
+🟥🟩🟩🟩🟩🟫🟦
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃ 1 │ 2 │   ┃   │   │   ┃
+┃   │ 1 │ 2 ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 3 │ 4 │   ┃   │   │   ┃
+┃ 3 │   │ 4 ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 5 │ 6 │   ┃   │ 1 │ 2 ┃
+┃ 5 │ 6 │ 1 ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 2 │ 1 │   ┃   │ 6 │ 4 ┃
+┃   │   │   ┃ 1 │ 5 │ 6 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃   │ 3 │ 1 ┃
+┃   │   │   ┃ 2 │   │ 1 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │ 5 │ 6 ┃
+┃   │   │   ┃ 3 │ 4 │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+
+| .. | |6 | +  | .. | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | =4 |
++----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | +8 |
++----+----+----+----+----+----+
+| +4 | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+
 | |2 | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | +10 | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | -3 | .. | |  | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | =  | .. | =4 | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | +2 | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | -2 |
+| .. | .. | .. | +  | =4 | .. |
 +----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+
-| S | U | C | X | E |
+| H | T | C | A | S |
 +---+---+---+---+---+
-| # | G | E | E | # |
+| E | J | # | # | C |
 +---+---+---+---+---+
-| # | A | # | D | # |
+| O | E | T | D | A |
 +---+---+---+---+---+
-| # | R | F | L | # |
+| R | # | # | E | S |
 +---+---+---+---+---+
-| P | O | H | A | T |
+| Y | T | A | U | Q |
 +---+---+---+---+---+
 
 Words:
-  HOP
-  FLAT
-  SUGAR
-  EXCEED
+  JET
+  SQUAT
+  THEORY
+  CASCADE
 ```
 
 ### pinpoint
 ```
-  1. Keycards
-  2. Electric kettles / coffee makers
-  3. Toiletries
-  4. Continental breakfast
-  5. Room service
+  1. Crust
+  2. Mantle
+  3. Core (mostly iron and nickel)
+  4. Tectonic plates
+  5. Magnetic poles (North+South)
 
-  answer: Things associated with hotels!
+  answer: Parts of the Earth!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 860
-date      : 2026-09-07
+number    : 861
+date      : 2026-09-08
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  hide : Two antonyms that form the name of the children’s game “___-and-___” where one person is “it” and looks for the other players. Keep in mind: The first word may be at the bottom.
-  side : One of eight in an octagon
-  site : Page to visit on the internet
-  sits : Uses a chair
-  sets : Drops below the horizon, like the sun at the end of the day
-  sees : Lays eyes upon
-  seek : Two antonyms that form the name of the children’s game “___-and-___” where one person is “it” and looks for the other players. Keep in mind: The first word may be at the bottom.
+  rule : The top + bottom rows = A two-word phrase for something that comes with a complex boardgame to explain how to play. Keep in mind: The first word may be at the bottom.
+  role : Part to play in a project or organization
+  hole : One of eighteen on a typical golf course
+  hold : “Please ___” (don’t hang up the phone)
+  hood : Feature of a raincoat that covers the head
+  hook : Captain ___ (Peter Pan character, whose name is also something attached to his arm)
+  book : The top + bottom rows = A two-word phrase for something that comes with a complex boardgame to explain how to play. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
