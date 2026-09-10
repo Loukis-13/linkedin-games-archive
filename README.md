@@ -11,136 +11,137 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-09-09)
+## Today's games (2026-09-10)
 
 ### zip
 ```
 +----+----+----+----+----+----+
-| ..   ..   ..    7   ..   .. |
+| ..    1   ..   ..   ..   .. |
++               ---- ----     +
+| ..    8   .. | ..   ..   .. |
++              +              +
+|  2    5   ..   ..   ..   .. |
 +                             +
-| .. | ..    8    1   .. | .. |
-+    +                   +    +
-| .. | ..   ..   ..    2 | .. |
-+    +---- ---- ---- ----+    +
-| .. |  5   ..   ..   .. | .. |
-+    +                   +    +
-| .. | ..    4    6   .. | .. |
-+    +                   +    +
-| ..   ..    3   ..   ..   .. |
+| ..   ..   ..   ..    6    7 |
++                             +
+| ..   ..   .. | ..    4   .. |
++     ---- ----+              +
+| ..   ..   ..   ..    3   .. |
 +---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . | . | . | . | . |
+| S | . = . | S | S | M |
 +---+---+---+---+---+---+
-| . | . = . | . = . | . |
+| S | . | . | . | . | M |
 +---+---+---+---+---+---+
-| . | S | M | S | M | . |
-+---+---+---+---+---+---+
-| . | . = . | . x . | . |
-+---+---+---+---+---+---+
-| . | M | S | S | M | . |
+| . | . | . | . | . | S |
++-=-+---+---+---+---+---+
+| . | . | . | . | . | M |
 +---+---+---+---+---+---+
 | . | . | . | . | . | . |
++-x-+---+---+---+---+-=-+
+| . | . x . | M | S | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟧🟧🟨🟨🟨🟨🟨
-🟥🟨🟩🟩🟨🟨🟨🟦
-🟥🟨🟨🟨🟨🟨🟪🟦
-🟥🟨🟨🟨🟨🟨🟪🟦
-🟥🟨🟨🟨🟨🟨🟪🟨
-🟨🟨🟨🟨🟨🟨🟨🟨
-🟨🟨🟫🟫🟫🟫🟨🟨
-🟨🟨🟨⬛⬛⬛⬛🟨
+🟥🟧🟨🟨🟨🟨🟨🟨
+🟥🟧🟨🟨🟨🟩🟨🟨
+🟥🟧🟨🟨🟩🟩🟩🟨
+🟦🟦🟦🟨🟨🟩🟨🟨
+🟨🟨🟨🟨🟨🟨🟪🟨
+🟨🟨🟨🟨🟨🟨🟪🟨
+🟨🟨🟨🟨🟫🟫⬛⬛
+🟨🟨🟨🟨🟫🟫⬛⬛
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │ 2 │   ┃ 5 │   │   ┃
+┃ 1 │   │ 4 ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 5 │   │   ┃   │ 6 │   ┃
+┃ 2 │   │ 6 ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │ 5 ┃   │   │ 6 ┃
+┃ 3 │ 4 │ 5 ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 3 │   │   ┃ 1 │   │   ┃
+┃   │   │   ┃ 3 │ 4 │ 5 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 1 │   ┃   │   │ 2 ┃
+┃   │   │   ┃ 1 │   │ 3 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 4 ┃   │ 1 │   ┃
+┃   │   │   ┃ 4 │   │ 2 ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | +6 | .. | +12 | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | |5 | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | +10 | .. | .. | .. | +4 | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | |4 | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | +4 | .. | +4 | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
++----+----+----+----+----+----+
+| +4 | .. | .. | .. | .. | +6 |
++----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | .. | +  | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | +  | .. | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+
+| +10 | .. | .. | .. | .. | +8 |
++----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+
-| # | # | A | R | # |
-+---+---+---+---+---+
-| S | A | B | C | Y |
-+---+---+---+---+---+
-| T | H | # | D | R |
-+---+---+---+---+---+
-| A | G | F | E | H |
-+---+---+---+---+---+
-| # | Y | T | # | # |
-+---+---+---+---+---+
++---+---+---+---+---+---+
+| W | G | D | I | R | W |
++---+---+---+---+---+---+
+| O | E | # | # | B | O |
++---+---+---+---+---+---+
+| R | # | C | S | # | B |
++---+---+---+---+---+---+
+| B | # | E | E | # | N |
++---+---+---+---+---+---+
+| C | T | N | R | C | I |
++---+---+---+---+---+---+
+| U | R | V | E | R | A |
++---+---+---+---+---+---+
 
 Words:
-  DRY
-  CRAB
-  HEFTY
-  AGHAST
+  BROW
+  CURVE
+  BRIDGE
+  RAINBOW
+  CRESCENT
 ```
 
 ### pinpoint
 ```
-  1. Iron
-  2. Golden
-  3. Middle
-  4. Voting
-  5. Coming of
+  1. Ten
+  2. Timing
+  3. Stranger
+  4. Storm
+  5. Example (no way to show better)
 
-  answer: Words that come before “age”!
+  answer: Words that come after “perfect”!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 862
-date      : 2026-09-09
+number    : 863
+date      : 2026-09-10
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  meat : The top + bottom rows = A two-word phrase for tasty pastries for carnivores. Keep in mind: The first word may be at the bottom.
-  neat : Clean and organized
-  near : Close by
-  pear : Fruit shaped like a teardrop
-  peer : Colleague who is an equal to you in age, job, and/or social status
-  pier : Raised walkway that extends from the shore over water
-  pies : The top + bottom rows = A two-word phrase for tasty pastries for carnivores. Keep in mind: The first word may be at the bottom.
+  rose : The top + bottom rows = A type of flower and what you might put it in. Keep in mind: The first word may be at the bottom.
+  rope : What you use to tie up a boat at a pier
+  ripe : Ready to eat, like fruit
+  wipe : Clean with a rag, as a pane of glass
+  wise : “A word to the ___” (helpful hint)
+  vise : Gripping tool with two jaws
+  vase : The top + bottom rows = A type of flower and what you might put it in. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
