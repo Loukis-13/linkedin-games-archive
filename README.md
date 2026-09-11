@@ -11,137 +11,142 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-09-10)
+## Today's games (2026-09-11)
 
 ### zip
 ```
-+----+----+----+----+----+----+
-| ..    1   ..   ..   ..   .. |
-+               ---- ----     +
-| ..    8   .. | ..   ..   .. |
-+              +              +
-|  2    5   ..   ..   ..   .. |
-+                             +
-| ..   ..   ..   ..    6    7 |
-+                             +
-| ..   ..   .. | ..    4   .. |
-+     ---- ----+              +
-| ..   ..   ..   ..    3   .. |
-+---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+----+----+
+| ..   ..   ..    4   13   ..   ..   .. |
++                                       +
+| ..   ..   ..    5   12   ..   ..   .. |
++          ----           ----          +
+| ..   .. | ..   ..   ..   .. | ..   .. |
++         +                   +         +
+|  3    6   ..    7   10   ..   11   14 |
++                                       +
+|  2   19   ..    8    9   ..   18   15 |
++                                       +
+| ..   .. | ..   ..   ..   .. | ..   .. |
++         +----           ----+         +
+| ..   ..   ..   20   17   ..   ..   .. |
++                                       +
+| ..   ..   ..    1   16   ..   ..   .. |
++---- ---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| S | . = . | S | S | M |
+| . | M | . | S | . | . |
 +---+---+---+---+---+---+
-| S | . | . | . | . | M |
+| . | M | M | S | . | . |
 +---+---+---+---+---+---+
-| . | . | . | . | . | S |
-+-=-+---+---+---+---+---+
-| . | . | . | . | . | M |
+| . | . | M | . | . | . |
 +---+---+---+---+---+---+
 | . | . | . | . | . | . |
-+-x-+---+---+---+---+-=-+
-| . | . x . | M | S | . |
++---+---+---+-x-+---+---+
+| . | . | . x . = . | . |
++---+---+-x-+---+-=-+---+
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟧🟨🟨🟨🟨🟨🟨
-🟥🟧🟨🟨🟨🟩🟨🟨
-🟥🟧🟨🟨🟩🟩🟩🟨
-🟦🟦🟦🟨🟨🟩🟨🟨
-🟨🟨🟨🟨🟨🟨🟪🟨
-🟨🟨🟨🟨🟨🟨🟪🟨
-🟨🟨🟨🟨🟫🟫⬛⬛
-🟨🟨🟨🟨🟫🟫⬛⬛
+⬜⬜⬜⬜⬜⬜⬜⬜⬜
+⬜⬜🟥⬛⬛⬛⬛⬛⬜
+⬜🟥🟥⬛⬛⬛🟧⬛⬜
+⬜⬜🟥⬛⬛🟧🟧🟫⬜
+⬜⬜🟥⬛⬛⬛🟧🟫⬜
+🟪⬜🟥⬛⬛⬛🟧🟫🟫
+🟪🟨🟨🟨🟦🟦🟧🟫🟫
+🟪🟦🟦🟦🟦🟩🟩🟩🟫
+🟪🟪🟪🟪🟦🟦🟦🟫🟫
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃ 1 │   │ 4 ┃   │   │   ┃
+┃   │   │ 4 ┃ 6 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 2 │   │ 6 ┃   │   │   ┃
+┃   │ 1 │   ┃   │ 3 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 3 │ 4 │ 5 ┃   │   │   ┃
+┃   │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃ 3 │ 4 │ 5 ┃
+┃ 6 │   │   ┃   │   │ 1 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃ 1 │   │ 3 ┃
+┃   │ 5 │   ┃   │ 2 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃ 4 │   │ 2 ┃
+┃   │   │ 1 ┃ 4 │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+
-| +4 | .. | .. | .. | .. | +6 |
+| .. | .. | +5 | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
+| .. | +5 | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | +  | .. | .. |
+| |  | .. | .. | +6 | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | +  | .. | .. | .. |
+| .. | .. | |  | .. | .. | +5 |
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
+| .. | .. | .. | .. | |  | .. |
 +----+----+----+----+----+----+
-| +10 | .. | .. | .. | .. | +8 |
+| .. | .. | .. | =  | .. | .. |
 +----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+---+
-| W | G | D | I | R | W |
+| H | S | E | A | R | T |
 +---+---+---+---+---+---+
-| O | E | # | # | B | O |
+| C | # | R | L | # | N |
 +---+---+---+---+---+---+
-| R | # | C | S | # | B |
+| I | L | F | # | C | E |
 +---+---+---+---+---+---+
-| B | # | E | E | # | N |
+| U | B | # | S | K | I |
 +---+---+---+---+---+---+
-| C | T | N | R | C | I |
+| P | # | R | G | # | N |
 +---+---+---+---+---+---+
-| U | R | V | E | R | A |
+| S | S | E | O | R | P |
 +---+---+---+---+---+---+
 
 Words:
-  BROW
-  CURVE
-  BRIDGE
-  RAINBOW
-  CRESCENT
+  SKIN
+  FRESH
+  PUBLIC
+  CENTRAL
+  PROGRESS
 ```
 
 ### pinpoint
 ```
-  1. Ten
-  2. Timing
-  3. Stranger
-  4. Storm
-  5. Example (no way to show better)
+  1. Traps
+  2. Quads
+  3. Lats
+  4. Pecs
+  5. Abs (short for abdominals)
 
-  answer: Words that come after “perfect”!
+  answer: Nicknames for different muscles!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 863
-date      : 2026-09-10
+number    : 864
+date      : 2026-09-11
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  rose : The top + bottom rows = A type of flower and what you might put it in. Keep in mind: The first word may be at the bottom.
-  rope : What you use to tie up a boat at a pier
-  ripe : Ready to eat, like fruit
-  wipe : Clean with a rag, as a pane of glass
-  wise : “A word to the ___” (helpful hint)
-  vise : Gripping tool with two jaws
-  vase : The top + bottom rows = A type of flower and what you might put it in. Keep in mind: The first word may be at the bottom.
+  lego : The top + bottom rows = A two-word phrase for certain collections of toy bricks that can be assembled into intricate designs. Keep in mind: The first word may be at the bottom.
+  logo : Graphic design used to represent a company
+  logs : Cut sections of tree trunks that may be used as firewood
+  jogs : Runs at a relaxed pace
+  jots : Puts down on paper quickly
+  jets : Vehicles like 747’s and 767’s
+  sets : The top + bottom rows = A two-word phrase for certain collections of toy bricks that can be assembled into intricate designs. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
