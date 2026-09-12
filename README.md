@@ -11,142 +11,144 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-09-11)
+## Today's games (2026-09-12)
 
 ### zip
 ```
-+----+----+----+----+----+----+----+----+
-| ..   ..   ..    4   13   ..   ..   .. |
-+                                       +
-| ..   ..   ..    5   12   ..   ..   .. |
-+          ----           ----          +
-| ..   .. | ..   ..   ..   .. | ..   .. |
-+         +                   +         +
-|  3    6   ..    7   10   ..   11   14 |
-+                                       +
-|  2   19   ..    8    9   ..   18   15 |
-+                                       +
-| ..   .. | ..   ..   ..   .. | ..   .. |
-+         +----           ----+         +
-| ..   ..   ..   20   17   ..   ..   .. |
-+                                       +
-| ..   ..   ..    1   16   ..   ..   .. |
-+---- ---- ---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+----+
+| ..   ..   ..   ..   ..   ..    1 |
++                                  +
+| ..    4   ..   ..   ..    6 | .. |
++                         ----+    +
+| ..   ..    3   ..   .. | ..   .. |
++                        +         +
+| ..   ..   ..    5   ..   ..   .. |
++                                  +
+| ..   .. | ..   ..    2   ..   .. |
++     ----+                        +
+| .. |  9   ..   ..   ..    8   .. |
++    +                             +
+|  7   ..   ..   ..   ..   ..   .. |
++---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | M | . | S | . | . |
+| S | M | S | M | . | . |
 +---+---+---+---+---+---+
-| . | M | M | S | . | . |
+| M | . | . | M | . | . |
 +---+---+---+---+---+---+
-| . | . | M | . | . | . |
+| M | . | . | S | . | . |
 +---+---+---+---+---+---+
-| . | . | . | . | . | . |
-+---+---+---+-x-+---+---+
-| . | . | . x . = . | . |
-+---+---+-x-+---+-=-+---+
-| . | . | . | . | . | . |
+| S | M | M | S | . | . |
++---+---+---+---+---+---+
+| . | . | . | . | . x . |
++---+---+---+---+-x-+-=-+
+| . | . | . | . | . = . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-⬜⬜⬜⬜⬜⬜⬜⬜⬜
-⬜⬜🟥⬛⬛⬛⬛⬛⬜
-⬜🟥🟥⬛⬛⬛🟧⬛⬜
-⬜⬜🟥⬛⬛🟧🟧🟫⬜
-⬜⬜🟥⬛⬛⬛🟧🟫⬜
-🟪⬜🟥⬛⬛⬛🟧🟫🟫
-🟪🟨🟨🟨🟦🟦🟧🟫🟫
-🟪🟦🟦🟦🟦🟩🟩🟩🟫
-🟪🟪🟪🟪🟦🟦🟦🟫🟫
+🟥🟥🟥🟦🟦🟦🟦🟦🟦
+🟥🟦🟥🟦🟩🟩🟨🟦🟦
+🟫🟦🟦🟦🟩🟦🟨🟨🟦
+🟫🟦🟧🟧🟧🟦🟦🟨🟦
+🟫🟦🟧🟦🟦🟦🟦🟨🟦
+🟪🟦⬜🟦🟦🟦🟦⬛🟦
+🟪🟦⬜⬜🟦⬛⬛⬛🟦
+🟪🟦🟦⬜🟦⬛🟦🟦🟦
+🟪🟪🟪⬜🟦🟦🟦🟦🟦
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │ 4 ┃ 6 │   │   ┃
+┃   │   │ 6 ┃ 1 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 1 │   ┃   │ 3 │   ┃
+┃   │ 2 │   ┃   │   │ 5 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃   │   │   ┃
+┃   │   │   ┃   │   │ 6 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 6 │   │   ┃   │   │ 1 ┃
+┃ 5 │   │   ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 5 │   ┃   │ 2 │   ┃
+┃ 1 │   │   ┃   │ 4 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 1 ┃ 4 │   │   ┃
+┃   │   │ 2 ┃ 3 │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+
-| .. | .. | +5 | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | +5 | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| |  | .. | .. | +6 | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | |  | .. | .. | +5 |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | |  | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | =  | .. | .. |
-+----+----+----+----+----+----+
++----+----+----+----+----+----+----+
+| +3 | .. | .. | .. | -4 | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | +9 | .. | .. | .. | |6 |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | +3 | .. | .. | .. | +2 | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| |3 | .. | .. | .. | +12 | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | -3 | .. | .. | .. | +4 |
++----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+---+
-| H | S | E | A | R | T |
-+---+---+---+---+---+---+
-| C | # | R | L | # | N |
-+---+---+---+---+---+---+
-| I | L | F | # | C | E |
-+---+---+---+---+---+---+
-| U | B | # | S | K | I |
-+---+---+---+---+---+---+
-| P | # | R | G | # | N |
-+---+---+---+---+---+---+
-| S | S | E | O | R | P |
-+---+---+---+---+---+---+
++---+---+---+---+---+---+---+
+| # | A | # | A | # | A | # |
++---+---+---+---+---+---+---+
+| N | D | D | T | T | C | C |
++---+---+---+---+---+---+---+
+| E | # | E | # | E | # | E |
++---+---+---+---+---+---+---+
+| G | C | T | P | M | T | N |
++---+---+---+---+---+---+---+
+| A | U | # | O | # | U | A |
++---+---+---+---+---+---+---+
+| T | L | L | R | R | L | T |
++---+---+---+---+---+---+---+
+| U | R | A | D | E | Y | E |
++---+---+---+---+---+---+---+
 
 Words:
-  SKIN
-  FRESH
-  PUBLIC
-  CENTRAL
-  PROGRESS
+  AGENDA
+  ORDERLY
+  CULTURAL
+  ATTEMPTED
+  ACCENTUATE
 ```
 
 ### pinpoint
 ```
-  1. Traps
-  2. Quads
-  3. Lats
-  4. Pecs
-  5. Abs (short for abdominals)
+  1. Rain
+  2. Tear
+  3. Name
+  4. Mic
+  5. Drag and
 
-  answer: Nicknames for different muscles!
+  answer: Words that come before “drop”!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 864
-date      : 2026-09-11
+number    : 865
+date      : 2026-09-12
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  lego : The top + bottom rows = A two-word phrase for certain collections of toy bricks that can be assembled into intricate designs. Keep in mind: The first word may be at the bottom.
-  logo : Graphic design used to represent a company
-  logs : Cut sections of tree trunks that may be used as firewood
-  jogs : Runs at a relaxed pace
-  jots : Puts down on paper quickly
-  jets : Vehicles like 747’s and 767’s
-  sets : The top + bottom rows = A two-word phrase for certain collections of toy bricks that can be assembled into intricate designs. Keep in mind: The first word may be at the bottom.
+  ware : The top + bottom rows = A compound word for decorative items given as presents, such as fancy silver for a wedding couple. Keep in mind: The first word may be at the bottom.
+  wane : Wax and ___
+  want : Desire
+  rant : ___ and rave
+  raft : Boat that's simply logs lashed together
+  rift : Fissure, as in nature or a tense relationship
+  gift : The top + bottom rows = A compound word for decorative items given as presents, such as fancy silver for a wedding couple. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->

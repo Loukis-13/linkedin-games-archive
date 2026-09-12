@@ -1,0 +1,61 @@
+{
+  "game": "minisudoku",
+  "date": "2026-09-12",
+  "grid_size": [
+    6,
+    6
+  ],
+  "cells": [
+    [
+      null,
+      null,
+      6,
+      1,
+      null,
+      null
+    ],
+    [
+      null,
+      2,
+      null,
+      null,
+      null,
+      5
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      6
+    ],
+    [
+      5,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      1,
+      null,
+      null,
+      null,
+      4,
+      null
+    ],
+    [
+      null,
+      null,
+      2,
+      3,
+      null,
+      null
+    ]
+  ],
+  "number": "397",
+  "title": "Oval",
+  "difficulty": "Hard"
+}
