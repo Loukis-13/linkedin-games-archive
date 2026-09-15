@@ -11,133 +11,137 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-09-14)
+## Today's games (2026-09-15)
 
 ### zip
 ```
-+----+----+----+----+----+----+
-| 14    6   ..   ..   ..    7 |
-+                             +
-| 13   ..    5   ..   ..   .. |
-+                             +
-| ..    1   ..    2   ..   .. |
-+                             +
-| ..   ..   11   ..    4   .. |
-+                             +
-| ..   ..   ..    3   ..    8 |
-+                             +
-| 12   ..   ..   ..   10    9 |
-+---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+----+----+
+| ..   ..   ..   ..   ..   ..   ..   .. |
++               ---- ----               +
+| .. | ..   .. | ..   .. | ..    8 | .. |
++    +         +         +         +    +
+| .. | ..   .. | ..   .. | ..    1 | .. |
++    +---- ----+         +---- ----+    +
+| ..   ..   ..   ..    6    7   ..   .. |
++                                       +
+| ..   ..    2    5   ..   ..   ..   .. |
++     ---- ----           ---- ----     +
+| .. |  4   .. | ..   .. | ..   .. | .. |
++    +         +         +         +    +
+| .. |  3   .. | ..   .. | ..   .. | .. |
++    +         +---- ----+         +    +
+| ..   ..   ..   ..   ..   ..   ..   .. |
++---- ---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
+| . = . | . | . | . | . |
++-=-+---+---+---+---+---+
 | . | . | S | . | . | . |
 +---+---+---+---+---+---+
-| . | S | . | . | . | . |
-+---+---+-=-+---+---+---+
-| S | . = . | S | . | . |
+| . | M | . | S | . | . |
 +---+---+---+---+---+---+
-| . | . | S | S | . | . |
-+---+---+---+---+-=-+---+
-| . | . | . | . = . | . |
+| . | . | S | . | S | . |
 +---+---+---+---+---+---+
-| . | . | . | . | . | S |
+| . | . | . | M | . | . |
++---+---+---+---+---+-x-+
+| . | . | . | . | . x . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟦🟦🟦🟨🟨🟫🟫
-🟦🟦🟦🟦🟨🟨🟫
-🟩🟨🟨🟨🟨🟨🟨
-🟩🟥🟥🟨🟨🟨🟨
-🟪🟪🟪🟨🟨🟧🟨
-🟪🟪🟪🟨🟨🟨🟨
-🟪🟪🟨🟨🟨🟨🟨
+🟥🟥🟥🟥🟥🟥🟥
+🟥🟧🟧🟧🟧🟧🟥
+🟥🟥🟫🟫🟧🟩🟥
+🟫🟫🟫🟦🟩🟩🟩
+🟨🟫🟪🟩🟩🟩🟩
+🟨🟪🟪🟪🟪🟪🟩
+🟨🟨🟩🟩🟩🟩🟩
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │ 5 │   ┃   │ 1 │ 4 ┃
+┃   │   │ 4 ┃   │ 5 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 4 │ 6 │   ┃   │   │   ┃
+┃   │ 3 │ 2 ┃   │ 6 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 1 │   ┃   │   │ 5 ┃
+┃   │   │   ┃   │ 3 │ 4 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 3 │   ┃   │ 2 │ 6 ┃
+┃ 1 │ 4 │   ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃ 4 │ 3 │ 1 ┃
+┃   │ 6 │   ┃ 2 │ 1 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 1 │ 4 │   ┃   │   │ 2 ┃
+┃   │ 2 │   ┃ 5 │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+
-| .. | +3 | .. | .. | +3 | .. |
+| .. | .. | +  | +  | .. | .. |
 +----+----+----+----+----+----+
-| .. | +  | .. | .. | -6 | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
+| +3 | .. | .. | .. | .. | +15 |
 +----+----+----+----+----+----+
 | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | =9 | .. | .. | +  | .. |
+| .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | +2 | .. | .. | +4 | .. |
+| +3 | .. | .. | .. | .. | +5 |
++----+----+----+----+----+----+
+| .. | .. | +  | +3 | .. | .. |
 +----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+
-| U | B | E | I | G |
+| # | I | P | N | # |
 +---+---+---+---+---+
-| H | # | H | # | H |
+| E | X | # | A | V |
 +---+---+---+---+---+
-| O | # | # | # | T |
+| L | U | Q | U | E |
 +---+---+---+---+---+
-| H | # | H | # | H |
+| B | O | # | D | T |
 +---+---+---+---+---+
-| C | E | C | T | A |
+| # | G | R | I | # |
 +---+---+---+---+---+
 
 Words:
-  HUB
-  ECHO
-  HATCH
-  HEIGHT
+  VAN
+  GRID
+  PIXEL
+  BOUQUET
 ```
 
 ### pinpoint
 ```
-  1. Tweety Bird
-  2. Pac-Man
-  3. SpongeBob SquarePants
-  4. Bart Simpson
-  5. The Minions (rhymes with Bello!)
+  1. Robusta
+  2. Arabica
+  3. Cold brew
+  4. Instant
+  5. Decaf
 
-  answer: Fictional characters that are yellow!
+  answer: Words that come before “coffee”!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 867
-date      : 2026-09-14
+number    : 868
+date      : 2026-09-15
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  kind : The top + bottom rows = Two synonyms of the word "variety."
-  mind : “Make up your ___” (come to a decision)
-  mine : Dig in the earth for precious metals
-  mire : Swampy land
-  more : Opposite of less
-  sore : Aching a bit, as after a run
-  sort : The top + bottom rows = Two synonyms of the word "variety."
+  back : The top + bottom rows = A compound word meaning to go on some adventurous travel with just a bag over your shoulders. Keep in mind: The first word may be at the bottom.
+  bark : Outside covering of a tree
+  lark : Songbird whose name completes the phrase “on a ___”, meaning to do something impulsively or just for fun
+  lack : Shortage or absence of something
+  lick : Short taste, as of a lollipop
+  pick : Choose between a few options
+  pack : The top + bottom rows = A compound word meaning to go on some adventurous travel with just a bag over your shoulders. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->

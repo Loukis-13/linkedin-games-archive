@@ -1,0 +1,61 @@
+{
+  "game": "minisudoku",
+  "date": "2026-09-15",
+  "grid_size": [
+    6,
+    6
+  ],
+  "cells": [
+    [
+      null,
+      null,
+      4,
+      null,
+      5,
+      null
+    ],
+    [
+      null,
+      3,
+      2,
+      null,
+      6,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      3,
+      4
+    ],
+    [
+      1,
+      4,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      6,
+      null,
+      2,
+      1,
+      null
+    ],
+    [
+      null,
+      2,
+      null,
+      5,
+      null,
+      null
+    ]
+  ],
+  "number": "400",
+  "title": "All's L",
+  "difficulty": null
+}
