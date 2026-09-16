@@ -11,137 +11,139 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-09-15)
+## Today's games (2026-09-16)
 
 ### zip
 ```
-+----+----+----+----+----+----+----+----+
-| ..   ..   ..   ..   ..   ..   ..   .. |
-+               ---- ----               +
-| .. | ..   .. | ..   .. | ..    8 | .. |
-+    +         +         +         +    +
-| .. | ..   .. | ..   .. | ..    1 | .. |
-+    +---- ----+         +---- ----+    +
-| ..   ..   ..   ..    6    7   ..   .. |
-+                                       +
-| ..   ..    2    5   ..   ..   ..   .. |
-+     ---- ----           ---- ----     +
-| .. |  4   .. | ..   .. | ..   .. | .. |
-+    +         +         +         +    +
-| .. |  3   .. | ..   .. | ..   .. | .. |
-+    +         +---- ----+         +    +
-| ..   ..   ..   ..   ..   ..   ..   .. |
-+---- ---- ---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+
+| ..   ..    1    2   ..    3 |
++                             +
+|  4   ..   ..   ..   ..   .. |
++                             +
+| ..   ..   ..   ..   ..    5 |
++                             +
+|  6   ..   ..   ..   ..   .. |
++                             +
+| ..   ..   ..   ..   ..    8 |
++                             +
+|  7   ..   10    9   ..   .. |
++---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . = . | . | . | . | . |
-+-=-+---+---+---+---+---+
-| . | . | S | . | . | . |
+| . | . | . | . | . | . |
++---+-x-+-x-+---+---+---+
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . | M | . | S | . | . |
+| . | M | S | . | . | . |
++---+---+---+-x-+-x-+---+
+| . | S | S | . | . | . |
 +---+---+---+---+---+---+
-| . | . | S | . | S | . |
+| . | . | . | S | S | . |
 +---+---+---+---+---+---+
-| . | . | . | M | . | . |
-+---+---+---+---+---+-x-+
-| . | . | . | . | . x . |
+| . | . | . | S | M | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟥🟥🟥🟥
-🟥🟧🟧🟧🟧🟧🟥
-🟥🟥🟫🟫🟧🟩🟥
-🟫🟫🟫🟦🟩🟩🟩
-🟨🟫🟪🟩🟩🟩🟩
-🟨🟪🟪🟪🟪🟪🟩
-🟨🟨🟩🟩🟩🟩🟩
+🟥🟥🟥🟧🟧🟧🟧
+🟥🟥🟧🟧🟧🟩🟩
+🟥🟫🟧🟧🟦🟩🟩
+🟪🟫🟧🟦🟦🟩🟨
+🟪🟪🟧🟦🟦🟨🟨
+🟧🟪🟧🟦🟨🟨🟨
+🟧🟧🟧🟨🟨🟨🟨
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │ 4 ┃   │ 5 │   ┃
+┃   │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 3 │ 2 ┃   │ 6 │   ┃
+┃   │ 1 │ 2 ┃ 3 │ 4 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃   │ 3 │ 4 ┃
+┃ 2 │   │   ┃   │   │ 3 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 1 │ 4 │   ┃   │   │   ┃
+┃ 3 │   │   ┃   │   │ 1 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 6 │   ┃ 2 │ 1 │   ┃
+┃   │ 4 │   ┃   │ 5 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 2 │   ┃ 5 │   │   ┃
+┃   │   │ 5 ┃ 1 │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+
-| .. | .. | +  | +  | .. | .. |
-+----+----+----+----+----+----+
-| +3 | .. | .. | .. | .. | +15 |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| +3 | .. | .. | .. | .. | +5 |
-+----+----+----+----+----+----+
-| .. | .. | +  | +3 | .. | .. |
-+----+----+----+----+----+----+
++----+----+----+----+----+----+----+
+| -8 | .. | .. | .. | +  | .. | |4 |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| +  | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | +16 | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | +  |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| =4 | .. | +  | .. | .. | .. | -2 |
++----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+
-| # | I | P | N | # |
-+---+---+---+---+---+
-| E | X | # | A | V |
-+---+---+---+---+---+
-| L | U | Q | U | E |
-+---+---+---+---+---+
-| B | O | # | D | T |
-+---+---+---+---+---+
-| # | G | R | I | # |
-+---+---+---+---+---+
++---+---+---+---+---+---+---+
+| P | E | R | F | E | C | T |
++---+---+---+---+---+---+---+
+| A | C | I | T | N | # | # |
++---+---+---+---+---+---+---+
+| B | S | # | # | E | # | # |
++---+---+---+---+---+---+---+
+| # | O | # | # | H | # | # |
++---+---+---+---+---+---+---+
+| # | L | # | # | T | S | S |
++---+---+---+---+---+---+---+
+| # | U | T | F | U | A | E |
++---+---+---+---+---+---+---+
+| Y | L | E | L | A | W | L |
++---+---+---+---+---+---+---+
 
 Words:
-  VAN
-  GRID
-  PIXEL
-  BOUQUET
+  PERFECT
+  FLAWLESS
+  AUTHENTIC
+  ABSOLUTELY
 ```
 
 ### pinpoint
 ```
-  1. Robusta
-  2. Arabica
-  3. Cold brew
-  4. Instant
-  5. Decaf
+  1. Prescriptions
+  2. Mechanical pencils
+  3. Fuel tanks
+  4. Empty water bottles
+  5. Printers (with toner + paper)
 
-  answer: Words that come before “coffee”!
+  answer: Things that are refilled!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 868
-date      : 2026-09-15
+number    : 869
+date      : 2026-09-16
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  back : The top + bottom rows = A compound word meaning to go on some adventurous travel with just a bag over your shoulders. Keep in mind: The first word may be at the bottom.
-  bark : Outside covering of a tree
-  lark : Songbird whose name completes the phrase “on a ___”, meaning to do something impulsively or just for fun
-  lack : Shortage or absence of something
-  lick : Short taste, as of a lollipop
-  pick : Choose between a few options
-  pack : The top + bottom rows = A compound word meaning to go on some adventurous travel with just a bag over your shoulders. Keep in mind: The first word may be at the bottom.
+  chat : The top + bottom rows = A two-word phrase for an instant-messaging function in an online meeting app. Keep in mind: The first word may be at the bottom.
+  coat : Garment to protect from chilly weather
+  coal : Burnable form of carbon
+  cool : Hip or trendy
+  coos : Makes a sound like a dove
+  zoos : Places where you can safely see lions
+  zoom : The top + bottom rows = A two-word phrase for an instant-messaging function in an online meeting app. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
