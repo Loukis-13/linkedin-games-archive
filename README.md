@@ -11,139 +11,137 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-09-16)
+## Today's games (2026-09-17)
 
 ### zip
 ```
 +----+----+----+----+----+----+
-| ..   ..    1    2   ..    3 |
-+                             +
-|  4   ..   ..   ..   ..   .. |
-+                             +
-| ..   ..   ..   ..   ..    5 |
-+                             +
-|  6   ..   ..   ..   ..   .. |
-+                             +
-| ..   ..   ..   ..   ..    8 |
-+                             +
-|  7   ..   10    9   ..   .. |
+| ..   ..   ..   ..   ..   .. |
++                    ----     +
+| ..   ..   .. |  1   .. | .. |
++          ----+         +    +
+| .. |  4   ..    6 | ..   .. |
++    +              +         +
+| ..   .. |  5   ..    2 | .. |
++         +     ----     +    +
+| .. | ..    3 | ..   ..   .. |
++    +----     +              +
+| ..   ..   ..   ..   ..   .. |
 +---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
+| M | M | S | . | . | . |
++---+---+---+---+---+---+
+| M | . | M | . | . | . |
++---+---+---+---+---+---+
+| S | M | S | . x . = . |
++---+---+---+-=-+---+-=-+
+| M | . | . | . | . | . |
++---+---+---+-x-+---+-x-+
+| . | . | . | . = . x . |
++---+---+---+-=-+---+---+
 | . | . | . | . | . | . |
-+---+-x-+-x-+---+---+---+
-| . | . | . | . | . | . |
-+---+---+---+---+---+---+
-| . | M | S | . | . | . |
-+---+---+---+-x-+-x-+---+
-| . | S | S | . | . | . |
-+---+---+---+---+---+---+
-| . | . | . | S | S | . |
-+---+---+---+---+---+---+
-| . | . | . | S | M | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟧🟧🟧🟧
-🟥🟥🟧🟧🟧🟩🟩
-🟥🟫🟧🟧🟦🟩🟩
-🟪🟫🟧🟦🟦🟩🟨
-🟪🟪🟧🟦🟦🟨🟨
-🟧🟪🟧🟦🟨🟨🟨
-🟧🟧🟧🟨🟨🟨🟨
+🟥🟥🟧🟧🟧🟧🟧🟧
+🟧🟨🟩🟩🟧🟧🟧🟧
+🟧🟨🟨🟨🟦🟦🟧🟧
+🟧🟨🟨🟨🟨🟨🟪🟧
+🟧🟧🟨🟨🟨🟨🟪🟧
+🟧🟧🟨🟨🟫🟫🟧🟧
+🟧🟧⬛⬛🟧🟧🟧🟧
+🟧🟧🟧🟧🟧🟧🟧🟧
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │   ┃   │   │   ┃
+┃   │   │ 1 ┃ 2 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 1 │ 2 ┃ 3 │ 4 │   ┃
+┃   │   │   ┃   │ 1 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 2 │   │   ┃   │   │ 3 ┃
+┃ 4 │   │   ┃   │   │ 1 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 3 │   │   ┃   │   │ 1 ┃
+┃ 5 │   │   ┃   │   │ 4 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 4 │   ┃   │ 5 │   ┃
+┃   │ 3 │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 5 ┃ 1 │   │   ┃
+┃   │   │ 2 ┃ 3 │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+----+
-| -8 | .. | .. | .. | +  | .. | |4 |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| +  | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | +16 | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | +  |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| =4 | .. | +  | .. | .. | .. | -2 |
-+----+----+----+----+----+----+----+
++----+----+----+----+----+----+
+| .. | .. | |  | .. | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | .. | =  | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | -  | .. | |  | +  |
++----+----+----+----+----+----+
+| +  | |  | .. | -  | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | -  | .. | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | .. | =  | .. | .. |
++----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+---+---+
-| P | E | R | F | E | C | T |
-+---+---+---+---+---+---+---+
-| A | C | I | T | N | # | # |
-+---+---+---+---+---+---+---+
-| B | S | # | # | E | # | # |
-+---+---+---+---+---+---+---+
-| # | O | # | # | H | # | # |
-+---+---+---+---+---+---+---+
-| # | L | # | # | T | S | S |
-+---+---+---+---+---+---+---+
-| # | U | T | F | U | A | E |
-+---+---+---+---+---+---+---+
-| Y | L | E | L | A | W | L |
-+---+---+---+---+---+---+---+
++---+---+---+---+---+---+
+| A | C | T | I | T | Y |
++---+---+---+---+---+---+
+| # | # | I | V | T | Y |
++---+---+---+---+---+---+
+| A | L | L | I | S | # |
++---+---+---+---+---+---+
+| # | T | A | N | E | Z |
++---+---+---+---+---+---+
+| B | I | V | E | # | # |
++---+---+---+---+---+---+
+| B | A | R | N | O | Z |
++---+---+---+---+---+---+
 
 Words:
-  PERFECT
-  FLAWLESS
-  AUTHENTIC
-  ABSOLUTELY
+  ZONE
+  ZESTY
+  RABBIT
+  VANILLA
+  ACTIVITY
 ```
 
 ### pinpoint
 ```
-  1. Prescriptions
-  2. Mechanical pencils
-  3. Fuel tanks
-  4. Empty water bottles
-  5. Printers (with toner + paper)
+  1. Nuts
+  2. Bananas
+  3. Cold turkey
+  4. Viral
+  5. The extra mile
 
-  answer: Things that are refilled!
+  answer: Words that come after “go” in common sayings!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 869
-date      : 2026-09-16
+number    : 870
+date      : 2026-09-17
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  chat : The top + bottom rows = A two-word phrase for an instant-messaging function in an online meeting app. Keep in mind: The first word may be at the bottom.
-  coat : Garment to protect from chilly weather
-  coal : Burnable form of carbon
-  cool : Hip or trendy
-  coos : Makes a sound like a dove
-  zoos : Places where you can safely see lions
-  zoom : The top + bottom rows = A two-word phrase for an instant-messaging function in an online meeting app. Keep in mind: The first word may be at the bottom.
+  fast : The top + bottom rows = Two words that complete the idiom “a ___ and ___ rule” meaning something that is fixed and cannot easily be changed. Keep in mind: The first word may be at the bottom.
+  fest : Gathering or celebration (often used as a suffix, as after Oktober)
+  feat : Impressive achievement requiring a fair amount of skill
+  heat : Make warm
+  head : “Hit the nail on the ___”
+  herd : Group of cattle
+  hard : The top + bottom rows = Two words that complete the idiom “a ___ and ___ rule” meaning something that is fixed and cannot easily be changed. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
