@@ -11,137 +11,138 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-09-17)
+## Today's games (2026-09-18)
 
 ### zip
 ```
 +----+----+----+----+----+----+
-| ..   ..   ..   ..   ..   .. |
-+                    ----     +
-| ..   ..   .. |  1   .. | .. |
-+          ----+         +    +
-| .. |  4   ..    6 | ..   .. |
-+    +              +         +
-| ..   .. |  5   ..    2 | .. |
-+         +     ----     +    +
-| .. | ..    3 | ..   ..   .. |
-+    +----     +              +
-| ..   ..   ..   ..   ..   .. |
+| ..   ..   ..    2   ..   .. |
++                             +
+| ..   ..   ..   ..    5   .. |
++                             +
+| ..   ..    8   ..    4   .. |
++                             +
+| ..    6   ..    7   ..   .. |
++                             +
+| ..    3   ..   ..   ..   .. |
++                             +
+| ..   ..    1   ..   ..   .. |
 +---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| M | M | S | . | . | . |
+| S | . | . | . | . | . |
 +---+---+---+---+---+---+
-| M | . | M | . | . | . |
+| S | . | S | . | . | . |
 +---+---+---+---+---+---+
-| S | M | S | . x . = . |
-+---+---+---+-=-+---+-=-+
-| M | . | . | . | . | . |
-+---+---+---+-x-+---+-x-+
-| . | . | . | . = . x . |
-+---+---+---+-=-+---+---+
+| M | S | S | . | . | . |
++---+---+---+---+---+---+
 | . | . | . | . | . | . |
++---+---+---+-x-+---+---+
+| . | . | . | . | . | . |
++---+---+---+-x-+---+-=-+
+| . | . | . | . x . = . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟧🟧🟧🟧🟧🟧
-🟧🟨🟩🟩🟧🟧🟧🟧
-🟧🟨🟨🟨🟦🟦🟧🟧
-🟧🟨🟨🟨🟨🟨🟪🟧
-🟧🟧🟨🟨🟨🟨🟪🟧
-🟧🟧🟨🟨🟫🟫🟧🟧
-🟧🟧⬛⬛🟧🟧🟧🟧
-🟧🟧🟧🟧🟧🟧🟧🟧
+🟥🟨🟨🟨🟨🟨🟨🟨
+🟥🟨🟨🟨🟨🟨🟧🟧
+🟥🟥🟨🟨🟨🟧🟧🟦
+🟩🟥🟥🟥🟧🟧⬛🟦
+🟩🟩🟪🟪🟪⬛⬛🟦
+🟪🟪🟪🟫⬛⬛🟦🟦
+🟫🟫🟫🟫⬛⬛🟦🟦
+🟫🟫🟫🟫⬛⬛🟦🟦
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │ 1 ┃ 2 │   │   ┃
+┃   │   │ 1 ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │ 1 │   ┃
+┃ 4 │   │   ┃ 2 │   │ 3 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 4 │   │   ┃   │   │ 1 ┃
+┃   │   │ 3 ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 5 │   │   ┃   │   │ 4 ┃
+┃   │   │   ┃ 4 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 3 │   ┃   │   │   ┃
+┃ 6 │   │ 5 ┃   │   │ 1 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 2 ┃ 3 │   │   ┃
+┃   │   │   ┃ 6 │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+
-| .. | .. | |  | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | =  | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | -  | .. | |  | +  |
-+----+----+----+----+----+----+
-| +  | |  | .. | -  | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | -  | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | =  | .. | .. |
-+----+----+----+----+----+----+
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | +  | +4 | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | +4 | .. | .. | +  | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | +8 | .. | .. | +  | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | +  | +3 | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+---+
-| A | C | T | I | T | Y |
+| D | Y | H | C | H | N |
 +---+---+---+---+---+---+
-| # | # | I | V | T | Y |
+| R | # | A | E | # | O |
 +---+---+---+---+---+---+
-| A | L | L | I | S | # |
+| A | T | T | T | O | L |
 +---+---+---+---+---+---+
-| # | T | A | N | E | Z |
+| E | E | T | T | G | Y |
 +---+---+---+---+---+---+
-| B | I | V | E | # | # |
+| T | # | R | H | # | D |
 +---+---+---+---+---+---+
-| B | A | R | N | O | Z |
+| U | B | I | R | E | A |
 +---+---+---+---+---+---+
 
 Words:
-  ZONE
-  ZESTY
-  RABBIT
-  VANILLA
-  ACTIVITY
+  THREAD
+  HYDRATE
+  ATTRIBUTE
+  TECHNOLOGY
 ```
 
 ### pinpoint
 ```
-  1. Nuts
-  2. Bananas
-  3. Cold turkey
-  4. Viral
-  5. The extra mile
+  1. Sandy Desert
+  2. Salt Lake
+  3. Rift Valley
+  4. Barrier Reef
+  5. Britain: England+Scotland+Wales
 
-  answer: Words that come after “go” in common sayings!
+  answer: Geographic place names when preceded by “Great”!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 870
-date      : 2026-09-17
+number    : 871
+date      : 2026-09-18
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  fast : The top + bottom rows = Two words that complete the idiom “a ___ and ___ rule” meaning something that is fixed and cannot easily be changed. Keep in mind: The first word may be at the bottom.
-  fest : Gathering or celebration (often used as a suffix, as after Oktober)
-  feat : Impressive achievement requiring a fair amount of skill
-  heat : Make warm
-  head : “Hit the nail on the ___”
-  herd : Group of cattle
-  hard : The top + bottom rows = Two words that complete the idiom “a ___ and ___ rule” meaning something that is fixed and cannot easily be changed. Keep in mind: The first word may be at the bottom.
+  wind : The top + bottom rows = A two-word phrase for an easterly current considered mild and favorable. Keep in mind: The first word may be at the bottom.
+  rind : Outer part of a lemon
+  rend : Tear apart
+  rent : Monthly apartment payment
+  bent : Out of shape or crooked
+  best : The tops, quality-wise
+  west : The top + bottom rows = A two-word phrase for an easterly current considered mild and favorable. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
