@@ -1,0 +1,61 @@
+{
+  "game": "minisudoku",
+  "date": "2026-09-19",
+  "grid_size": [
+    6,
+    6
+  ],
+  "cells": [
+    [
+      null,
+      null,
+      1,
+      2,
+      null,
+      null
+    ],
+    [
+      null,
+      2,
+      null,
+      null,
+      1,
+      null
+    ],
+    [
+      null,
+      3,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      4,
+      null
+    ],
+    [
+      null,
+      4,
+      null,
+      null,
+      3,
+      null
+    ],
+    [
+      null,
+      null,
+      2,
+      5,
+      null,
+      null
+    ]
+  ],
+  "number": "404",
+  "title": "Open Loop",
+  "difficulty": "Hard"
+}

@@ -11,138 +11,146 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-09-18)
+## Today's games (2026-09-19)
 
 ### zip
 ```
-+----+----+----+----+----+----+
-| ..   ..   ..    2   ..   .. |
-+                             +
-| ..   ..   ..   ..    5   .. |
-+                             +
-| ..   ..    8   ..    4   .. |
-+                             +
-| ..    6   ..    7   ..   .. |
-+                             +
-| ..    3   ..   ..   ..   .. |
-+                             +
-| ..   ..    1   ..   ..   .. |
-+---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+----+
+| ..   10   12   ..   ..   ..   .. |
++                                  +
+|  9   ..   ..   ..   ..   ..   .. |
++                                  +
+| ..   ..   11    2   .. | ..   .. |
++               ----     +         +
+| ..    4   ..   ..   ..    1   .. |
++               ----               +
+| ..   .. | ..    5    3   ..   .. |
++         +                        +
+| ..   ..   ..   ..   ..   ..    6 |
++                                  +
+| ..   ..   ..   ..    8    7   .. |
++---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| S | . | . | . | . | . |
+| M | . | . | . | . | M |
 +---+---+---+---+---+---+
-| S | . | S | . | . | . |
+| . | M | . | . | M | . |
 +---+---+---+---+---+---+
-| M | S | S | . | . | . |
+| . | . | . x . | . | . |
++---+---+-=-+-x-+---+---+
+| . | . | . = . | . | . |
 +---+---+---+---+---+---+
-| . | . | . | . | . | . |
-+---+---+---+-x-+---+---+
-| . | . | . | . | . | . |
-+---+---+---+-x-+---+-=-+
-| . | . | . | . x . = . |
+| . | S | . | . | M | . |
++---+---+---+---+---+---+
+| S | . | . | . | . | S |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟨🟨🟨🟨🟨🟨🟨
-🟥🟨🟨🟨🟨🟨🟧🟧
-🟥🟥🟨🟨🟨🟧🟧🟦
-🟩🟥🟥🟥🟧🟧⬛🟦
-🟩🟩🟪🟪🟪⬛⬛🟦
-🟪🟪🟪🟫⬛⬛🟦🟦
-🟫🟫🟫🟫⬛⬛🟦🟦
-🟫🟫🟫🟫⬛⬛🟦🟦
+⬛⬛⬛⬛🟥🟨🟨🟨🟨
+⬛⬛⬛⬛🟥🟩🟩🟨🟨
+⬛⬛🟥🟥🟥🟩🟧🟧🟨
+⬛⬛🟥🟥🟥🟧🟧🟨🟨
+🟥🟥🟥🟥🟥🟥🟥🟥🟥
+🟦🟦🟫🟫🟥🟥🟥⬜⬜
+🟦🟪🟪🟫🟥🟥🟥⬜⬜
+🟦🟦🟪🟫🟥⬜⬜⬜⬜
+🟦🟦🟦🟦🟥⬜⬜⬜⬜
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │ 1 ┃   │   │   ┃
+┃   │   │ 1 ┃ 2 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 4 │   │   ┃ 2 │   │ 3 ┃
+┃   │ 2 │   ┃   │ 1 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │ 3 ┃   │   │   ┃
+┃   │ 3 │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃ 4 │   │   ┃
+┃   │   │   ┃   │ 4 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 6 │   │ 5 ┃   │   │ 1 ┃
+┃   │ 4 │   ┃   │ 3 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃ 6 │   │   ┃
+┃   │   │ 2 ┃ 5 │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | +  | +4 | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | +4 | .. | .. | +  | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | +8 | .. | .. | +  | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | +  | +3 | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
++----+----+----+----+----+----+----+----+
+| .. | -  | .. | .. | .. | .. | +4 | .. |
++----+----+----+----+----+----+----+----+
+| -  | .. | |  | .. | .. | +4 | .. | +4 |
++----+----+----+----+----+----+----+----+
+| .. | -  | .. | .. | .. | .. | +4 | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | =  | .. | .. | .. | .. | +3 | .. |
++----+----+----+----+----+----+----+----+
+| -  | .. | |  | .. | .. | +9 | .. | +4 |
++----+----+----+----+----+----+----+----+
+| .. | -  | .. | .. | .. | .. | +5 | .. |
++----+----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+---+
-| D | Y | H | C | H | N |
-+---+---+---+---+---+---+
-| R | # | A | E | # | O |
-+---+---+---+---+---+---+
-| A | T | T | T | O | L |
-+---+---+---+---+---+---+
-| E | E | T | T | G | Y |
-+---+---+---+---+---+---+
-| T | # | R | H | # | D |
-+---+---+---+---+---+---+
-| U | B | I | R | E | A |
-+---+---+---+---+---+---+
++---+---+---+---+---+---+---+
+| B | R | E | S | A | K | E |
++---+---+---+---+---+---+---+
+| # | # | V | E | M | # | # |
++---+---+---+---+---+---+---+
+| # | O | D | A | A | N | # |
++---+---+---+---+---+---+---+
+| # | G | S | H | S | W | # |
++---+---+---+---+---+---+---+
+| # | N | A | A | D | O | # |
++---+---+---+---+---+---+---+
+| # | # | M | D | E | # | # |
++---+---+---+---+---+---+---+
+| A | C | C | I | N | T | S |
++---+---+---+---+---+---+---+
 
 Words:
-  THREAD
-  HYDRATE
-  ATTRIBUTE
-  TECHNOLOGY
+  MANGO
+  ADVERB
+  SHADOWS
+  NAMESAKE
+  ACCIDENTS
 ```
 
 ### pinpoint
 ```
-  1. Sandy Desert
-  2. Salt Lake
-  3. Rift Valley
-  4. Barrier Reef
-  5. Britain: England+Scotland+Wales
+  1. Power
+  2. Open
+  3. Reliable
+  4. Anonymous
+  5. Go straight to the
 
-  answer: Geographic place names when preceded by “Great”!
+  answer: Words that come before “source”!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 871
-date      : 2026-09-18
+number    : 872
+date      : 2026-09-19
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  wind : The top + bottom rows = A two-word phrase for an easterly current considered mild and favorable. Keep in mind: The first word may be at the bottom.
-  rind : Outer part of a lemon
-  rend : Tear apart
-  rent : Monthly apartment payment
-  bent : Out of shape or crooked
-  best : The tops, quality-wise
-  west : The top + bottom rows = A two-word phrase for an easterly current considered mild and favorable. Keep in mind: The first word may be at the bottom.
+  life : The top + bottom rows = A compound word for a rescue item on a ship. Keep in mind: The first word may be at the bottom.
+  lift : Another word for what's called an elevator in North America
+  list : You might make one for a shopping trip
+  lust : One of the seven deadly sins
+  bust : Sculpture of the upper part of the body
+  busy : Having lots of things going on
+  buoy : The top + bottom rows = A compound word for a rescue item on a ship. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
