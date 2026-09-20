@@ -11,146 +11,147 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-09-19)
+## Today's games (2026-09-20)
 
 ### zip
 ```
-+----+----+----+----+----+----+----+
-| ..   10   12   ..   ..   ..   .. |
-+                                  +
-|  9   ..   ..   ..   ..   ..   .. |
-+                                  +
-| ..   ..   11    2   .. | ..   .. |
-+               ----     +         +
-| ..    4   ..   ..   ..    1   .. |
-+               ----               +
-| ..   .. | ..    5    3   ..   .. |
-+         +                        +
-| ..   ..   ..   ..   ..   ..    6 |
-+                                  +
-| ..   ..   ..   ..    8    7   .. |
-+---- ---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+----+----+
+| ..   ..   ..   ..   ..   ..   ..   .. |
++     ---- ----           ---- ----     +
+| .. |  3   .. | ..    5 | ..   .. | .. |
++    +         +         +         +    +
+| ..   ..    2   ..   ..    6   ..   .. |
++          ----           ----          +
+| ..   .. | ..   ..    7   .. | 10   .. |
++         +                   +         +
+| ..    4 | ..    1   ..   .. | ..   .. |
++         +----           ----+         +
+| ..   ..    9   ..   ..   11   ..   .. |
++                                       +
+| .. | ..   .. |  8   .. | ..   12 | .. |
++    +---- ----+         +---- ----+    +
+| ..   ..   ..   ..   ..   ..   ..   .. |
++---- ---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| M | . | . | . | . | M |
+| . | . x . | . | . | M |
 +---+---+---+---+---+---+
-| . | M | . | . | M | . |
+| M | S | . | . | . | M |
++---+---+---+---+-x-+---+
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . | . | . x . | . | . |
-+---+---+-=-+-x-+---+---+
-| . | . | . = . | . | . |
+| . | S | . | . | . | . |
 +---+---+---+---+---+---+
-| . | S | . | . | M | . |
-+---+---+---+---+---+---+
-| S | . | . | . | . | S |
+| . | S | . | . | . x . |
++-x-+---+---+---+---+---+
+| . | . | . | M | S | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-⬛⬛⬛⬛🟥🟨🟨🟨🟨
-⬛⬛⬛⬛🟥🟩🟩🟨🟨
-⬛⬛🟥🟥🟥🟩🟧🟧🟨
-⬛⬛🟥🟥🟥🟧🟧🟨🟨
-🟥🟥🟥🟥🟥🟥🟥🟥🟥
-🟦🟦🟫🟫🟥🟥🟥⬜⬜
-🟦🟪🟪🟫🟥🟥🟥⬜⬜
-🟦🟦🟪🟫🟥⬜⬜⬜⬜
-🟦🟦🟦🟦🟥⬜⬜⬜⬜
+⬛⬛⬛⬛⬛⬛⬛⬛⬜
+⬛🟦🟦🟪🟪🟪🟪⬜⬜
+⬛🟥🟦🟦🟦🟨🟪⬜⬜
+⬛🟥🟥🟩🟨🟨🟪⬜⬜
+⬛🟧🟥🟩🟨🟨🟪⬜⬜
+⬛🟧🟥🟩🟩🟨🟨⬜⬜
+⬛🟧🟧🟧🟩🟨🟨⬜⬜
+⬛⬛🟫🟫🟫🟫🟫⬜⬜
+⬛⬛🟫🟫🟫🟫🟫🟫🟫
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │ 1 ┃ 2 │   │   ┃
+┃   │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 2 │   ┃   │ 1 │   ┃
+┃   │ 1 │ 2 ┃   │ 3 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 3 │   ┃   │   │   ┃
+┃   │ 3 │ 4 ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │ 4 │   ┃
+┃   │   │   ┃ 5 │ 4 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 4 │   ┃   │ 3 │   ┃
+┃   │ 2 │   ┃ 4 │ 1 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 2 ┃ 5 │   │   ┃
+┃   │   │   ┃   │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+----+----+
-| .. | -  | .. | .. | .. | .. | +4 | .. |
-+----+----+----+----+----+----+----+----+
-| -  | .. | |  | .. | .. | +4 | .. | +4 |
-+----+----+----+----+----+----+----+----+
-| .. | -  | .. | .. | .. | .. | +4 | .. |
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
-| .. | =  | .. | .. | .. | .. | +3 | .. |
-+----+----+----+----+----+----+----+----+
-| -  | .. | |  | .. | .. | +9 | .. | +4 |
-+----+----+----+----+----+----+----+----+
-| .. | -  | .. | .. | .. | .. | +5 | .. |
-+----+----+----+----+----+----+----+----+
++----+----+----+----+----+----+----+
+| .. | +3 | .. | .. | .. | +3 | .. |
++----+----+----+----+----+----+----+
+| +3 | .. | -3 | .. | |3 | .. | +3 |
++----+----+----+----+----+----+----+
+| .. | .. | .. | +3 | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | =  | .. | .. | .. |
++----+----+----+----+----+----+----+
+| |  | .. | |  | .. | =  | .. | |  |
++----+----+----+----+----+----+----+
+| .. | |  | .. | .. | .. | -  | .. |
++----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+---+---+
-| B | R | E | S | A | K | E |
+| T | W | S | # | # | # | # |
 +---+---+---+---+---+---+---+
-| # | # | V | E | M | # | # |
+| E | E | I | N | G | R | A |
 +---+---+---+---+---+---+---+
-| # | O | D | A | A | N | # |
+| A | B | C | D | E | F | G |
 +---+---+---+---+---+---+---+
-| # | G | S | H | S | W | # |
+| R | # | N | # | N | # | R |
 +---+---+---+---+---+---+---+
-| # | N | A | A | D | O | # |
+| G | F | E | D | C | B | A |
 +---+---+---+---+---+---+---+
-| # | # | M | D | E | # | # |
+| A | I | N | E | O | E | N |
 +---+---+---+---+---+---+---+
-| A | C | C | I | N | T | S |
+| # | # | # | # | B | W | T |
 +---+---+---+---+---+---+---+
 
 Words:
-  MANGO
-  ADVERB
-  SHADOWS
-  NAMESAKE
-  ACCIDENTS
+  DEN
+  SWEET
+  COBWEB
+  FENCING
+  FRAGRANT
+  BARGAINED
 ```
 
 ### pinpoint
 ```
-  1. Power
-  2. Open
-  3. Reliable
-  4. Anonymous
-  5. Go straight to the
+  1. Cargo ships
+  2. Wrestling matches
+  3. Climbing walls
+  4. Bank accounts (after big deposits)
+  5. Phone calls (“please wait!”)
 
-  answer: Words that come before “source”!
+  answer: Things with holds!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 872
-date      : 2026-09-19
+number    : 873
+date      : 2026-09-20
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  life : The top + bottom rows = A compound word for a rescue item on a ship. Keep in mind: The first word may be at the bottom.
-  lift : Another word for what's called an elevator in North America
-  list : You might make one for a shopping trip
-  lust : One of the seven deadly sins
-  bust : Sculpture of the upper part of the body
-  busy : Having lots of things going on
-  buoy : The top + bottom rows = A compound word for a rescue item on a ship. Keep in mind: The first word may be at the bottom.
+  foster : The top + bottom rows = A two-word phrase for a male family member who's not in your bloodline. Keep in mind: The first word may be at the bottom.
+  poster : Large notice or picture hung on a wall
+  pester : Irritate or bother
+  fester : Become more irritating, like a problem you are ignoring
+  faster : At a higher speed
+  fatter : Stouter
+  father : The top + bottom rows = A two-word phrase for a male family member who's not in your bloodline. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
