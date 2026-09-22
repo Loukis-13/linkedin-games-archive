@@ -11,134 +11,133 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-09-21)
+## Today's games (2026-09-22)
 
 ### zip
 ```
 +----+----+----+----+----+----+
-| 10   ..   ..   ..   ..    3 |
-+                             +
-| ..   ..    1 | ..   ..   .. |
-+              +              +
-| ..    2   .. |  4   ..   .. |
-+     ---- ----+---- ----     +
-| ..   ..    8 | ..    5   .. |
-+              +              +
-| ..   ..   .. |  6   ..   .. |
-+              +              +
-|  9   ..   ..   ..   ..    7 |
-+---- ---- ---- ---- ---- ----+
+| ..   .. | ..   ..   ..   .. |
++         +                   +
+| ..    1 | ..   ..    5   .. |
++         +                   +
+| ..    3   ..   .. |  6   .. |
++                   +         +
+| ..    2 | ..   ..    8   .. |
++         +                   +
+| ..    4   ..   .. |  7   .. |
++                   +         +
+| ..   ..   ..   .. | ..   .. |
++---- ---- ---- ----+---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| M | S | . | . | . | . |
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . = . | . | . | . = . |
+| . | M | M | S | S | . |
 +---+---+---+---+---+---+
-| S | S | . | . | M | M |
+| . | . x . | . | . | . |
++---+-=-+---+---+-x-+---+
+| . | . | . | . x . | . |
 +---+---+---+---+---+---+
-| . = . | . | . | . = . |
+| . | M | S | S | M | . |
 +---+---+---+---+---+---+
-| S | M | . | . | M | M |
-+---+---+---+---+---+---+
-| . | . | . | . | . = . |
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟦🟦🟦🟧🟧🟦🟦🟨
-🟦🟩🟦🟧🟧🟦🟥🟨
-🟦🟦🟦🟧🟧🟦🟥🟨
-🟦🟦🟦🟦🟦🟦🟨🟨
-🟦🟪🟪🟦🟦🟦🟨🟨
-🟦🟪🟪🟦🟦🟦🟦🟦
-🟦🟦🟦🟦🟫🟫🟫🟦
-🟦⬛⬛⬛⬛⬛🟦🟦
+🟦🟦🟦🟦🟦🟦🟦🟦
+🟦🟦⬛⬛⬛⬛⬛🟦
+🟦🟦🟦🟨🟨🟦🟦🟦
+🟦🟦🟦🟨🟨🟪🟪🟦
+🟧🟧🟧🟨🟥🟪🟪🟦
+🟧🟧🟧🟨🟥🟦🟦🟦
+🟫🟫🟫🟨🟦🟦🟦🟦
+🟩🟦🟦🟦🟦🟦🟦🟦
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃ 1 │ 2 │   ┃   │   │ 5 ┃
+┃ 1 │   │   ┃   │   │ 2 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 3 │ 4 │   ┃   │ 6 │   ┃
+┃ 2 │   │   ┃   │   │ 3 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃ 1 │   │   ┃
+┃   │ 1 │   ┃   │ 4 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 2 ┃   │   │   ┃
+┃   │ 2 │   ┃   │ 1 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 3 │   ┃   │ 4 │ 6 ┃
+┃ 4 │   │   ┃   │   │ 1 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 5 │   │   ┃   │ 1 │ 2 ┃
+┃ 5 │   │   ┃   │   │ 4 ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+
+| .. | -6 | .. | .. | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | -6 | .. | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | .. | +9 | .. | .. |
++----+----+----+----+----+----+
 | .. | .. | +6 | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | |  | +5 | .. | .. | .. |
+| .. | .. | .. | -3 | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | |  | +8 | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | -  | .. | .. |
+| .. | .. | .. | .. | -6 | .. |
 +----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+
-| T | C | B | O | J |
+| E | R | E | R | E |
 +---+---+---+---+---+
-| J | E | P | M | # |
+| T | U | T | A | T |
 +---+---+---+---+---+
-| E | D | A | U | # |
+| X | # | I | # | R |
 +---+---+---+---+---+
-| U | J | # | J | # |
+| E | # | L | # | I |
 +---+---+---+---+---+
-| S | T | # | # | # |
+| T | E | L | I | X |
 +---+---+---+---+---+
 
 Words:
-  JOB
-  JUMP
-  EJECT
-  ADJUST
+  ELIXIR
+  TEXTURE
+  LITERATE
 ```
 
 ### pinpoint
 ```
-  1. Pole
-  2. Kiwi
-  3. Dane
-  4. Thai
-  5. Chilean
+  1. Bacon
+  2. Locke
+  3. Confucius
+  4. Plato and Socrates
+  5. Descartes: “I think, therefore I am”
 
-  answer: Common national demonyms (i.e., names for people from a specific country)!
+  answer: Famous philosophers!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 874
-date      : 2026-09-21
+number    : 875
+date      : 2026-09-22
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  rope : The top + bottom rows = Two things attached to a boat's mast.
-  role : ___-playing game
-  roll : Do a somersault
-  toll : Cost to drive on some roadways
-  toil : Work very hard
-  tail : Wagging appendage
-  sail : The top + bottom rows = Two things attached to a boat's mast.
+  wide : The top + bottom rows = A word meaning "long from top to bottom," and a word meaning "long from side to side." Keep in mind: The first word may be at the bottom.
+  wade : Walk in knee-deep water
+  wage : Living ___ (fair salary)
+  page : Either side of a sheet in a book
+  pale : Drained of color
+  tale : Fairy ___ (bedtime story)
+  tall : The top + bottom rows = A word meaning "long from top to bottom," and a word meaning "long from side to side." Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
