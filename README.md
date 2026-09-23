@@ -11,133 +11,135 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-09-22)
+## Today's games (2026-09-23)
 
 ### zip
 ```
 +----+----+----+----+----+----+
-| ..   .. | ..   ..   ..   .. |
-+         +                   +
-| ..    1 | ..   ..    5   .. |
-+         +                   +
-| ..    3   ..   .. |  6   .. |
-+                   +         +
-| ..    2 | ..   ..    8   .. |
-+         +                   +
-| ..    4   ..   .. |  7   .. |
-+                   +         +
-| ..   ..   ..   .. | ..   .. |
-+---- ---- ---- ----+---- ----+
+| ..   ..   ..    3   ..   .. |
++     ----      ----          +
+| .. |  2   ..   .. | ..   .. |
++    +              +         +
+| .. | ..   ..   .. | ..   .. |
++    +----          +----     +
+| ..   .. | ..   ..   .. | .. |
++         +              +    +
+| ..   .. | ..   ..    1 | .. |
++         +----      ----+    +
+| ..   ..    4   ..   ..   .. |
++---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . | . | . | . | . |
+| . x . | . | M | M | S |
++---+---+-x-+---+---+---+
+| . | . | . | M | . | . |
++---+---+-x-+---+---+---+
+| . | . | . | S | . | . |
 +---+---+---+---+---+---+
-| . | M | M | S | S | . |
-+---+---+---+---+---+---+
-| . | . x . | . | . | . |
-+---+-=-+---+---+-x-+---+
-| . | . | . | . x . | . |
-+---+---+---+---+---+---+
-| . | M | S | S | M | . |
-+---+---+---+---+---+---+
-| . | . | . | . | . | . |
+| . | . | S | . | . | . |
++---+---+---+-x-+---+---+
+| . | . | M | . | . | . |
++---+---+---+-=-+---+---+
+| S | S | M | . | . = . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟦🟦🟦🟦🟦🟦🟦🟦
-🟦🟦⬛⬛⬛⬛⬛🟦
-🟦🟦🟦🟨🟨🟦🟦🟦
-🟦🟦🟦🟨🟨🟪🟪🟦
-🟧🟧🟧🟨🟥🟪🟪🟦
-🟧🟧🟧🟨🟥🟦🟦🟦
-🟫🟫🟫🟨🟦🟦🟦🟦
-🟩🟦🟦🟦🟦🟦🟦🟦
+🟩🟩🟩🟧🟧🟧🟦
+🟩🟩🟥🟧🟨🟧🟦
+🟩🟥🟥🟥🟨🟨🟦
+🟩🟩🟥🟥🟥🟪🟪
+🟫🟥🟥🟥🟥🟥🟪
+🟫🟫🟥🟫🟥🟪🟪
+🟫🟫🟫🟫🟫🟫🟪
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃ 1 │   │   ┃   │   │ 2 ┃
+┃   │   │ 1 ┃ 2 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 2 │   │   ┃   │   │ 3 ┃
+┃   │ 3 │ 4 ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 1 │   ┃   │ 4 │   ┃
+┃ 3 │ 1 │ 2 ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 2 │   ┃   │ 1 │   ┃
+┃ 4 │   │   ┃ 3 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 4 │   │   ┃   │   │ 1 ┃
+┃   │   │   ┃   │ 1 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 5 │   │   ┃   │   │ 4 ┃
+┃   │   │   ┃   │   │ 5 ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+
-| .. | -6 | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | -6 | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | +9 | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | +6 | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | -3 | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | -6 | .. |
-+----+----+----+----+----+----+
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | +  | +2 | -  | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | +  | +2 | +2 | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | +2 | +3 | +  | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | =  | +2 | +  | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+
-| E | R | E | R | E |
+| V | A | R | C | H |
 +---+---+---+---+---+
-| T | U | T | A | T |
+| I | R | O | # | K |
 +---+---+---+---+---+
-| X | # | I | # | R |
+| A | S | C | I | C |
 +---+---+---+---+---+
-| E | # | L | # | I |
+| B | # | T | H | O |
 +---+---+---+---+---+
-| T | E | L | I | X |
+| L | E | N | E | P |
 +---+---+---+---+---+
 
 Words:
-  ELIXIR
-  TEXTURE
-  LITERATE
+  OPEN
+  THICK
+  SCORCH
+  VARIABLE
 ```
 
 ### pinpoint
 ```
-  1. Bacon
-  2. Locke
-  3. Confucius
-  4. Plato and Socrates
-  5. Descartes: “I think, therefore I am”
+  1. Delta
+  2. Doritos
+  3. “Give way” or “Yield” sign
+  4. Rack (for 8-Ball or Snooker)
+  5. Pennant (like this one: 🚩)
 
-  answer: Famous philosophers!
+  answer: Things shaped like triangles!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 875
-date      : 2026-09-22
+number    : 876
+date      : 2026-09-23
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  wide : The top + bottom rows = A word meaning "long from top to bottom," and a word meaning "long from side to side." Keep in mind: The first word may be at the bottom.
-  wade : Walk in knee-deep water
-  wage : Living ___ (fair salary)
-  page : Either side of a sheet in a book
-  pale : Drained of color
-  tale : Fairy ___ (bedtime story)
-  tall : The top + bottom rows = A word meaning "long from top to bottom," and a word meaning "long from side to side." Keep in mind: The first word may be at the bottom.
+  hand : The top + bottom rows = Compound word that describes drawing without the help of mechanical devices. Keep in mind: The first word may be at the bottom.
+  band : Musical group
+  bend : Flex, like an elbow or knee
+  fend : ___ for yourself (get what you need without help)
+  feed : Serve a meal to
+  fred : Cartoon Flintstone who said "Yabba-dabba-doo!"
+  free : The top + bottom rows = Compound word that describes drawing without the help of mechanical devices. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
