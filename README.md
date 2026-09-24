@@ -11,135 +11,139 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-09-23)
+## Today's games (2026-09-24)
 
 ### zip
 ```
 +----+----+----+----+----+----+
-| ..   ..   ..    3   ..   .. |
-+     ----      ----          +
-| .. |  2   ..   .. | ..   .. |
-+    +              +         +
-| .. | ..   ..   .. | ..   .. |
-+    +----          +----     +
-| ..   .. | ..   ..   .. | .. |
-+         +              +    +
-| ..   .. | ..   ..    1 | .. |
-+         +----      ----+    +
-| ..   ..    4   ..   ..   .. |
+| ..    5   ..   ..    4   .. |
++                             +
+| ..    6   ..   ..    9   .. |
++                             +
+| ..    1   ..   ..   10   .. |
++                             +
+| ..    7   ..   ..    8   .. |
++                             +
+| ..   ..   ..   ..   ..   .. |
++                             +
+| ..    2   ..   ..    3   .. |
 +---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . x . | . | M | M | S |
-+---+---+-x-+---+---+---+
-| . | . | . | M | . | . |
-+---+---+-x-+---+---+---+
-| . | . | . | S | . | . |
-+---+---+---+---+---+---+
 | . | . | S | . | . | . |
-+---+---+---+-x-+---+---+
-| . | . | M | . | . | . |
++---+---+---+---+---+---+
+| . | S | S | . | . | . |
++---+---+---+---+-=-+---+
+| . | S | . | . | . | . |
++---+---+---+---+-x-+---+
+| . | M | . | . | . | . |
++---+---+---+---+-=-+---+
+| . | S | . | . x . | . |
 +---+---+---+-=-+---+---+
-| S | S | M | . | . = . |
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟩🟩🟩🟧🟧🟧🟦
-🟩🟩🟥🟧🟨🟧🟦
-🟩🟥🟥🟥🟨🟨🟦
-🟩🟩🟥🟥🟥🟪🟪
-🟫🟥🟥🟥🟥🟥🟪
-🟫🟫🟥🟫🟥🟪🟪
-🟫🟫🟫🟫🟫🟫🟪
+🟥🟥🟥🟥🟥🟥🟥🟥🟥
+🟥🟧🟧🟩🟩🟨🟨🟨🟥
+🟥🟧🟩🟩🟩🟩🟩🟨🟥
+🟥🟧🟩🟩🟩🟩🟩🟨⬜
+🟥🟥🟥🟩🟪🟩⬜⬜⬜
+🟥🟫🟩🟩🟩🟩🟩⬛⬜
+🟥🟫🟩🟩🟩🟩🟩⬛🟦
+🟥🟫🟫🟫🟩🟩⬛⬛🟦
+🟥🟥🟥🟥🟥🟥🟦🟦🟦
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │ 1 ┃ 2 │   │   ┃
+┃   │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 3 │ 4 ┃   │   │   ┃
+┃   │ 1 │   ┃   │   │ 2 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 3 │ 1 │ 2 ┃   │   │   ┃
+┃ 3 │ 2 │   ┃   │   │ 1 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 4 │   │   ┃ 3 │   │   ┃
+┃ 4 │   │   ┃   │ 2 │ 3 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃   │ 1 │   ┃
+┃ 5 │   │   ┃   │ 4 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │   │ 5 ┃
+┃   │   │   ┃   │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
+| .. | .. | |6 | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | +  | +2 | -  | .. | .. | .. |
+| .. | .. | .. | .. | .. | +10 | .. |
 +----+----+----+----+----+----+----+
-| .. | +  | +2 | +2 | .. | .. | .. |
+| +3 | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
+| .. | .. | .. | +7 | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | +2 | +3 | +  | .. |
+| .. | .. | .. | .. | .. | .. | +5 |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | =  | +2 | +  | .. |
+| .. | +12 | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
+| .. | .. | .. | .. | -6 | .. | .. |
 +----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+
-| V | A | R | C | H |
-+---+---+---+---+---+
-| I | R | O | # | K |
-+---+---+---+---+---+
-| A | S | C | I | C |
-+---+---+---+---+---+
-| B | # | T | H | O |
-+---+---+---+---+---+
-| L | E | N | E | P |
-+---+---+---+---+---+
++---+---+---+---+---+---+
+| Q | E | # | # | S | L |
++---+---+---+---+---+---+
+| U | S | P | A | N | E |
++---+---+---+---+---+---+
+| E | N | # | # | A | L |
++---+---+---+---+---+---+
+| E | C | # | # | B | L |
++---+---+---+---+---+---+
+| C | S | P | A | N | E |
++---+---+---+---+---+---+
+| R | I | # | # | I | R |
++---+---+---+---+---+---+
 
 Words:
-  OPEN
-  THICK
-  SCORCH
-  VARIABLE
+  CRISP
+  PANELS
+  SEQUENCE
+  BALLERINA
 ```
 
 ### pinpoint
 ```
-  1. Delta
-  2. Doritos
-  3. “Give way” or “Yield” sign
-  4. Rack (for 8-Ball or Snooker)
-  5. Pennant (like this one: 🚩)
+  1. Iron
+  2. Iron horse (old-style train)
+  3. Sauna
+  4. Pressure cooker
+  5. Tea kettle (when whistling)
 
-  answer: Things shaped like triangles!
+  answer: Things associated with steam!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 876
-date      : 2026-09-23
+number    : 877
+date      : 2026-09-24
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  hand : The top + bottom rows = Compound word that describes drawing without the help of mechanical devices. Keep in mind: The first word may be at the bottom.
-  band : Musical group
-  bend : Flex, like an elbow or knee
-  fend : ___ for yourself (get what you need without help)
-  feed : Serve a meal to
-  fred : Cartoon Flintstone who said "Yabba-dabba-doo!"
-  free : The top + bottom rows = Compound word that describes drawing without the help of mechanical devices. Keep in mind: The first word may be at the bottom.
+  bona : The top + bottom rows = A two-word Latin phrase meaning "genuine" or "authentic." Keep in mind: The first word may be at the bottom.
+  bone : Part of a skeleton
+  bane : ___ of one's existence (nemesis)
+  mane : Hair on a horse's neck
+  made : Created
+  fade : Gradually become invisible
+  fide : The top + bottom rows = A two-word Latin phrase meaning "genuine" or "authentic." Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
