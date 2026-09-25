@@ -11,53 +11,54 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-09-24)
+## Today's games (2026-09-25)
 
 ### zip
 ```
-+----+----+----+----+----+----+
-| ..    5   ..   ..    4   .. |
-+                             +
-| ..    6   ..   ..    9   .. |
-+                             +
-| ..    1   ..   ..   10   .. |
-+                             +
-| ..    7   ..   ..    8   .. |
-+                             +
-| ..   ..   ..   ..   ..   .. |
-+                             +
-| ..    2   ..   ..    3   .. |
-+---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+----+
+| ..   ..   ..   ..   ..   ..   .. |
++     ----                         +
+| .. |  5   ..    4    9   ..   .. |
++    +          ---- ----          +
+| ..   ..   ..   ..    7 | ..   .. |
++                        +         +
+| ..    1 | ..   ..   .. | 10   .. |
++         +              +         +
+| ..   .. |  6   ..   ..   ..   .. |
++         +---- ----               +
+| ..   ..    2    3   ..    8 | .. |
++                         ----+    +
+| ..   ..   ..   ..   ..   ..   .. |
++---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . | S | . | . | . |
+| . x . | M | . | . | . |
++---+-x-+---+-x-+---+---+
+| . | . | M | . x . | . |
 +---+---+---+---+---+---+
-| . | S | S | . | . | . |
-+---+---+---+---+-=-+---+
-| . | S | . | . | . | . |
-+---+---+---+---+-x-+---+
-| . | M | . | . | . | . |
-+---+---+---+---+-=-+---+
-| . | S | . | . x . | . |
-+---+---+---+-=-+---+---+
 | . | . | . | . | . | . |
++---+---+---+---+---+---+
+| . | . | . | . | . | . |
++---+---+---+---+---+---+
+| . | . = . | S | . | . |
++---+---+-x-+---+-x-+---+
+| . | . | . | S | . = . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟥🟥🟥🟥🟥🟥
-🟥🟧🟧🟩🟩🟨🟨🟨🟥
-🟥🟧🟩🟩🟩🟩🟩🟨🟥
-🟥🟧🟩🟩🟩🟩🟩🟨⬜
-🟥🟥🟥🟩🟪🟩⬜⬜⬜
-🟥🟫🟩🟩🟩🟩🟩⬛⬜
-🟥🟫🟩🟩🟩🟩🟩⬛🟦
-🟥🟫🟫🟫🟩🟩⬛⬛🟦
-🟥🟥🟥🟥🟥🟥🟦🟦🟦
+🟥🟧🟧🟧🟨🟨🟨🟨
+🟥🟧🟧🟧🟨🟩🟩🟨
+🟥🟧🟧🟧🟦🟩🟧🟧
+🟥🟧🟧🟦🟦🟧🟧🟧
+🟧🟧🟪🟪🟧🟧🟫🟫
+🟧🟧🟪🟧🟧🟧🟫🟫
+🟧🟧🟧🟧🟧🟧🟧🟧
+🟧🟧⬛⬛⬛⬛🟧🟧
 ```
 
 ### minisudoku
@@ -65,13 +66,13 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
 ┃   │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 1 │   ┃   │   │ 2 ┃
+┃   │ 1 │ 2 ┃ 3 │ 4 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 3 │ 2 │   ┃   │   │ 1 ┃
+┃   │ 2 │   ┃   │ 1 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 4 │   │   ┃   │ 2 │ 3 ┃
+┃   │ 3 │   ┃   │ 2 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 5 │   │   ┃   │ 4 │   ┃
+┃   │ 4 │ 3 ┃ 2 │ 5 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
 ┃   │   │   ┃   │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -80,70 +81,73 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 ### patches
 ```
 +----+----+----+----+----+----+----+
-| .. | .. | |6 | .. | .. | .. | .. |
+| +14 | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | +10 | .. |
+| .. | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| +3 | .. | .. | .. | .. | .. | .. |
+| .. | .. | |  | .. | +9 | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | +7 | .. | .. | .. |
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | +6 | .. | =  | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
 | .. | .. | .. | .. | .. | .. | +5 |
-+----+----+----+----+----+----+----+
-| .. | +12 | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | -6 | .. | .. |
 +----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+---+
-| Q | E | # | # | S | L |
-+---+---+---+---+---+---+
-| U | S | P | A | N | E |
-+---+---+---+---+---+---+
-| E | N | # | # | A | L |
-+---+---+---+---+---+---+
-| E | C | # | # | B | L |
-+---+---+---+---+---+---+
-| C | S | P | A | N | E |
-+---+---+---+---+---+---+
-| R | I | # | # | I | R |
-+---+---+---+---+---+---+
++---+---+---+---+---+---+---+
+| W | E | # | # | # | N | D |
++---+---+---+---+---+---+---+
+| # | A | V | E | D | E | # |
++---+---+---+---+---+---+---+
+| # | N | T | O | I | V | # |
++---+---+---+---+---+---+---+
+| # | E | I | R | Y | I | # |
++---+---+---+---+---+---+---+
+| # | V | N | O | S | D | # |
++---+---+---+---+---+---+---+
+| # | I | N | C | T | U | # |
++---+---+---+---+---+---+---+
+| G | A | # | # | # | M | E |
++---+---+---+---+---+---+---+
 
 Words:
-  CRISP
-  PANELS
-  SEQUENCE
-  BALLERINA
+  GAIN
+  WEAVE
+  COSTUME
+  DIVIDEND
+  INVENTORY
 ```
 
 ### pinpoint
 ```
-  1. Iron
-  2. Iron horse (old-style train)
-  3. Sauna
-  4. Pressure cooker
-  5. Tea kettle (when whistling)
+  1. Media
+  2. Bag
+  3. Blessing
+  4. Metaphor
+  5. Messages (contradictory ideas)
 
-  answer: Things associated with steam!
+  answer: Words that come after “mixed”!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 877
-date      : 2026-09-24
+number    : 878
+date      : 2026-09-25
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  bona : The top + bottom rows = A two-word Latin phrase meaning "genuine" or "authentic." Keep in mind: The first word may be at the bottom.
-  bone : Part of a skeleton
-  bane : ___ of one's existence (nemesis)
-  mane : Hair on a horse's neck
-  made : Created
-  fade : Gradually become invisible
-  fide : The top + bottom rows = A two-word Latin phrase meaning "genuine" or "authentic." Keep in mind: The first word may be at the bottom.
+  beds : The top + bottom rows = A two-word phrase for pieces of furniture that fold out for sleeping. Keep in mind: The first word may be at the bottom.
+  bods : Physiques, colloquially
+  bode : Be an omen
+  code : Do a programmer's job
+  coda : Element at the end of a song
+  soda : Carbonated water
+  sofa : The top + bottom rows = A two-word phrase for pieces of furniture that fold out for sleeping. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
