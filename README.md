@@ -11,54 +11,55 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-09-25)
+## Today's games (2026-09-26)
 
 ### zip
 ```
 +----+----+----+----+----+----+----+
-| ..   ..   ..   ..   ..   ..   .. |
-+     ----                         +
-| .. |  5   ..    4    9   ..   .. |
-+    +          ---- ----          +
-| ..   ..   ..   ..    7 | ..   .. |
-+                        +         +
-| ..    1 | ..   ..   .. | 10   .. |
-+         +              +         +
-| ..   .. |  6   ..   ..   ..   .. |
-+         +---- ----               +
-| ..   ..    2    3   ..    8 | .. |
-+                         ----+    +
-| ..   ..   ..   ..   ..   ..   .. |
+| ..   ..   ..   ..    2   ..   .. |
++                                  +
+| ..    7   ..    6   ..   ..   .. |
++                                  +
+|  1   ..   ..   ..   ..    3   .. |
++                                  +
+| ..   ..   10   ..    5   ..   .. |
++                                  +
+| ..   11   ..   ..   ..   ..    4 |
++                                  +
+| ..   ..   ..   12   ..    8   .. |
++                                  +
+| ..   ..    9   ..   ..   ..   .. |
 +---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . x . | M | . | . | . |
-+---+-x-+---+-x-+---+---+
-| . | . | M | . x . | . |
-+---+---+---+---+---+---+
+| . | S | S | . = . | . |
++-x-+---+---+---+---+-x-+
 | . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . | . | . | . | . | . |
+| M | . | . | . | . | S |
 +---+---+---+---+---+---+
-| . | . = . | S | . | . |
-+---+---+-x-+---+-x-+---+
-| . | . | . | S | . = . |
+| S | . | . | . | . | S |
++---+---+---+---+---+---+
+| . | . | . | . | . | . |
++-x-+---+---+---+---+-=-+
+| . | . x . | S | M | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟧🟧🟧🟨🟨🟨🟨
-🟥🟧🟧🟧🟨🟩🟩🟨
-🟥🟧🟧🟧🟦🟩🟧🟧
-🟥🟧🟧🟦🟦🟧🟧🟧
-🟧🟧🟪🟪🟧🟧🟫🟫
-🟧🟧🟪🟧🟧🟧🟫🟫
-🟧🟧🟧🟧🟧🟧🟧🟧
-🟧🟧⬛⬛⬛⬛🟧🟧
+🟦🟦🟦🟦🟦🟦🟦🟦🟦
+🟦🟥🟥🟥🟦🟦🟩🟦🟦
+🟦🟦🟥🟫🟫🟫🟩🟦🟦
+🟦🟦🟥🟨🟫🟩🟩🟩🟦
+🟧🟧🟧🟨🟨🟨⬛⬛🟦
+⬛🟧🟪🟨⬜⬜⬜⬛🟦
+⬛🟧🟪🟪🟪⬜⬛⬛🟦
+⬛⬛🟪⬛⬛⬜⬛⬛🟦
+⬛⬛⬛⬛⬛⬛⬛🟦🟦
 ```
 
 ### minisudoku
@@ -66,13 +67,13 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
 ┃   │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 1 │ 2 ┃ 3 │ 4 │   ┃
+┃ 1 │   │ 2 ┃ 3 │   │ 4 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 2 │   ┃   │ 1 │   ┃
+┃ 4 │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 3 │   ┃   │ 2 │   ┃
+┃   │   │   ┃   │   │ 2 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 4 │ 3 ┃ 2 │ 5 │   ┃
+┃ 3 │   │ 1 ┃ 4 │   │ 5 ┃
 ┃───┼───┼───┃───┼───┼───┃
 ┃   │   │   ┃   │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -80,74 +81,76 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 ### patches
 ```
-+----+----+----+----+----+----+----+
-| +14 | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | |  | .. | +9 | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | +6 | .. | =  | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | +5 |
-+----+----+----+----+----+----+----+
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | =  | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | =  | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| =  | .. | .. | .. | =  | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | =  | .. | .. | .. | =  |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | +  | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | +  | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+---+---+
-| W | E | # | # | # | N | D |
+| E | M | I | # | C | P | I |
 +---+---+---+---+---+---+---+
-| # | A | V | E | D | E | # |
+| P | O | C | # | I | T | C |
 +---+---+---+---+---+---+---+
-| # | N | T | O | I | V | # |
+| G | C | R | # | T | U | C |
 +---+---+---+---+---+---+---+
-| # | E | I | R | Y | I | # |
+| R | S | O | O | P | R | I |
 +---+---+---+---+---+---+---+
-| # | V | N | O | S | D | # |
+| A | P | # | # | # | E | N |
 +---+---+---+---+---+---+---+
-| # | I | N | C | T | U | # |
+| S | H | # | C | I | T | E |
 +---+---+---+---+---+---+---+
-| G | A | # | # | # | M | E |
+| C | I | # | # | # | A | M |
 +---+---+---+---+---+---+---+
 
 Words:
-  GAIN
-  WEAVE
-  COSTUME
-  DIVIDEND
-  INVENTORY
+  OPTIC
+  PICTURE
+  GRAPHICS
+  CINEMATIC
+  MICROSCOPE
 ```
 
 ### pinpoint
 ```
-  1. Media
-  2. Bag
-  3. Blessing
-  4. Metaphor
-  5. Messages (contradictory ideas)
+  1. Tip
+  2. Dot
+  3. Exact location
+  4. Main idea
+  5. Scoring unit in a game
 
-  answer: Words that come after “mixed”!
+  answer: Different definitions of “point”!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 878
-date      : 2026-09-25
+number    : 879
+date      : 2026-09-26
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  beds : The top + bottom rows = A two-word phrase for pieces of furniture that fold out for sleeping. Keep in mind: The first word may be at the bottom.
-  bods : Physiques, colloquially
-  bode : Be an omen
-  code : Do a programmer's job
-  coda : Element at the end of a song
-  soda : Carbonated water
-  sofa : The top + bottom rows = A two-word phrase for pieces of furniture that fold out for sleeping. Keep in mind: The first word may be at the bottom.
+  sweep : The top + bottom rows = A two-word phrase for victory in every part of a competition. Keep in mind: The first word may be at the bottom.
+  sheep : Animals often herded by dogs
+  cheep : Little sound from a nest
+  cheap : Crude and unimaginative, as a trick
+  cheat : Peek at a classmate's test, say
+  cleat : Spike in a World Cup player's footwear
+  clean : The top + bottom rows = A two-word phrase for victory in every part of a competition. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
