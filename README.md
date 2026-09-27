@@ -11,146 +11,148 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-09-26)
+## Today's games (2026-09-27)
 
 ### zip
 ```
-+----+----+----+----+----+----+----+
-| ..   ..   ..   ..    2   ..   .. |
-+                                  +
-| ..    7   ..    6   ..   ..   .. |
-+                                  +
-|  1   ..   ..   ..   ..    3   .. |
-+                                  +
-| ..   ..   10   ..    5   ..   .. |
-+                                  +
-| ..   11   ..   ..   ..   ..    4 |
-+                                  +
-| ..   ..   ..   12   ..    8   .. |
-+                                  +
-| ..   ..    9   ..   ..   ..   .. |
-+---- ---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+----+----+
+| ..   ..   ..   10    7   ..   ..   .. |
++                                       +
+| ..   ..    9   ..   ..    4   ..   .. |
++               ----                    +
+| ..   11   ..   ..   .. | ..    5   .. |
++          ----          +              +
+| 12   ..   ..   ..   ..   .. | ..    6 |
++                             +         +
+| 14   .. | ..   ..   ..   ..   ..    3 |
++         +               ----          +
+| ..   13   .. | ..   ..   ..    2   .. |
++              +     ----               +
+| ..   ..   15   ..   ..    8   ..   .. |
++                                       +
+| ..   ..   ..   16    1   ..   ..   .. |
++---- ---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | S | S | . = . | . |
-+-x-+---+---+---+---+-x-+
 | . | . | . | . | . | . |
++---+---+-x-+---+---+---+
+| . = . | . | . | . | . |
 +---+---+---+---+---+---+
-| M | . | . | . | . | S |
+| . | . | . | . | . | M |
++-=-+---+---+---+---+---+
+| . | . | . | . | . | S |
 +---+---+---+---+---+---+
-| S | . | . | . | . | S |
+| . | . | . | S | M | M |
 +---+---+---+---+---+---+
-| . | . | . | . | . | . |
-+-x-+---+---+---+---+-=-+
-| . | . x . | S | M | . |
+| . | . | . | S | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟦🟦🟦🟦🟦🟦🟦🟦🟦
-🟦🟥🟥🟥🟦🟦🟩🟦🟦
-🟦🟦🟥🟫🟫🟫🟩🟦🟦
-🟦🟦🟥🟨🟫🟩🟩🟩🟦
-🟧🟧🟧🟨🟨🟨⬛⬛🟦
-⬛🟧🟪🟨⬜⬜⬜⬛🟦
-⬛🟧🟪🟪🟪⬜⬛⬛🟦
-⬛⬛🟪⬛⬛⬜⬛⬛🟦
-⬛⬛⬛⬛⬛⬛⬛🟦🟦
+🟦🟦🟦🟦🟫🟩🟩🟩🟩
+🟪🟦🟦🟫🟫🟫🟨🟨🟩
+🟪🟪🟫🟫🟫🟫🟫🟨🟨
+🟪🟫🟫🟫🟫🟫🟫🟫🟨
+🟥🟥🟥🟧🟫⬜⬜⬜🟨
+🟥🟧🟧🟧🟫⬜⬜⬜⬜
+🟥🟧🟧🟧🟫⬜⬜⬜⬜
+🟥🟧⬛⬛🟫⬛⬛⬜⬜
+🟧🟧⬛⬛⬛⬛⬛⬜⬜
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │   ┃   │   │   ┃
+┃   │   │ 1 ┃   │ 2 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 1 │   │ 2 ┃ 3 │   │ 4 ┃
+┃   │ 2 │   ┃   │   │ 1 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 4 │   │   ┃   │   │   ┃
+┃ 6 │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │   │ 2 ┃
+┃   │   │   ┃   │   │ 3 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 3 │   │ 1 ┃ 4 │   │ 5 ┃
+┃ 4 │   │   ┃   │ 3 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │   │   ┃
+┃   │ 5 │   ┃ 6 │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | =  | .. |
+| +  | .. | .. | .. | .. | .. | +2 | .. |
 +----+----+----+----+----+----+----+----+
-| .. | .. | .. | =  | .. | .. | .. | .. |
+| .. | .. | +6 | .. | .. | .. | .. | +  |
 +----+----+----+----+----+----+----+----+
-| =  | .. | .. | .. | =  | .. | .. | .. |
+| .. | +3 | .. | .. | .. | |3 | .. | .. |
 +----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. | .. |
+| .. | .. | .. | =4 | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. | .. |
+| .. | .. | .. | .. | -3 | .. | .. | .. |
 +----+----+----+----+----+----+----+----+
-| .. | .. | .. | =  | .. | .. | .. | =  |
+| .. | .. | |4 | .. | .. | .. | +5 | .. |
 +----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | +  | .. | .. | .. |
+| +  | .. | .. | .. | .. | +6 | .. | .. |
 +----+----+----+----+----+----+----+----+
-| .. | +  | .. | .. | .. | .. | .. | .. |
+| .. | +6 | .. | .. | .. | .. | .. | +  |
 +----+----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+---+---+
-| E | M | I | # | C | P | I |
+| # | I | R | M | R | H | # |
 +---+---+---+---+---+---+---+
-| P | O | C | # | I | T | C |
+| Q | U | E | M | O | C | O |
 +---+---+---+---+---+---+---+
-| G | C | R | # | T | U | C |
+| S | U | M | # | M | O | N |
 +---+---+---+---+---+---+---+
-| R | S | O | O | P | R | I |
+| I | M | # | # | # | M | E |
 +---+---+---+---+---+---+---+
-| A | P | # | # | # | E | N |
+| X | A | M | # | M | E | N |
 +---+---+---+---+---+---+---+
-| S | H | # | C | I | T | E |
+| Y | T | U | M | B | R | A |
 +---+---+---+---+---+---+---+
-| C | I | # | # | # | A | M |
+| # | I | N | M | O | C | # |
 +---+---+---+---+---+---+---+
 
 Words:
-  OPTIC
-  PICTURE
-  GRAPHICS
-  CINEMATIC
-  MICROSCOPE
+  SQUIRM
+  MAXIMUM
+  MEMBRANE
+  COMMUNITY
+  MONOCHROME
 ```
 
 ### pinpoint
 ```
-  1. Tip
-  2. Dot
-  3. Exact location
-  4. Main idea
-  5. Scoring unit in a game
+  1. Fair
+  2. Market
+  3. Mind
+  4. Earnings per
+  5. The lion’s (the largest part)
 
-  answer: Different definitions of “point”!
+  answer: Words that come before “share”!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 879
-date      : 2026-09-26
+number    : 880
+date      : 2026-09-27
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  sweep : The top + bottom rows = A two-word phrase for victory in every part of a competition. Keep in mind: The first word may be at the bottom.
-  sheep : Animals often herded by dogs
-  cheep : Little sound from a nest
-  cheap : Crude and unimaginative, as a trick
-  cheat : Peek at a classmate's test, say
-  cleat : Spike in a World Cup player's footwear
-  clean : The top + bottom rows = A two-word phrase for victory in every part of a competition. Keep in mind: The first word may be at the bottom.
+  ships : The top + bottom rows = Ocean vessels, and a word for a group of them. Keep in mind: The first word may be at the bottom.
+  chips : Small squares containing circuits
+  clips : Short segments from longer videos
+  flips : Turns over, as a playing card
+  flies : Plays with, as a kite
+  flees : Runs away from danger
+  fleet : The top + bottom rows = Ocean vessels, and a word for a group of them. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
