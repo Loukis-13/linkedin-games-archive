@@ -11,133 +11,138 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-09-28)
+## Today's games (2026-09-29)
 
 ### zip
 ```
-+----+----+----+----+----+----+
-| ..    2   ..   ..   ..    1 |
-+                             +
-|  3   ..   ..   ..    4   .. |
-+                             +
-| 10   ..   ..   ..    6   .. |
-+                             +
-| ..   12   ..   ..   ..    5 |
-+                             +
-| ..   11   ..   ..   ..    7 |
-+                             +
-|  9   ..   ..   ..    8   .. |
-+---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+----+
+|  2   ..   ..   ..   ..   ..    9 |
++                                  +
+| .. |  1   .. |  7 | ..   .. | .. |
++    +         +    +         +    +
+| .. | ..   .. | .. | ..    8 | .. |
++    +         +    +         +    +
+| .. | ..   .. | .. | ..   .. | .. |
++    +---- ----+    +---- ----+    +
+| ..    4   .. | ..   ..   .. | .. |
++              +              +    +
+| ..   ..   .. |  6   ..    5 | .. |
++              +              +    +
+|  3   ..   ..   ..   ..   ..   10 |
++---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . | . | . | . | . |
+| . | S | . | . | . | . |
 +---+---+---+---+---+---+
-| . | . | M | M | . | . |
-+-=-+---+---+---+---+-=-+
-| . | . | M | S | . | . |
-+-x-+-=-+---+---+-x-+-x-+
-| . | . | S | S | . | . |
-+-=-+---+---+---+---+-=-+
-| . | . | M | M | . | . |
+| . | S | S | . | . | . |
 +---+---+---+---+---+---+
+| . | M | S | . | . | . |
++---+---+---+---+-=-+---+
+| . | M | . | . x . | . |
++---+---+---+---+---+---+
+| . | . | . | . = . | . |
++---+---+---+---+-x-+---+
 | . | . | . | . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟧🟧🟧🟧🟧🟧
-🟥🟧🟧🟧🟨🟨🟧
-🟧🟧🟧🟨🟨🟨🟨
-🟧🟧🟧🟩🟨🟨🟦
-🟪🟪🟪🟩🟩🟦🟦
-🟪🟪🟪🟩🟩🟦🟦
-🟪🟪🟪🟪🟩🟦🟫
+🟥🟥🟥🟧🟧🟧🟧🟧
+🟥🟥🟥🟧🟧🟧🟧🟧
+🟥🟥🟥🟧🟧🟧🟨🟨
+🟥🟥🟥🟧🟧🟩🟨🟨
+🟥🟥🟥🟦🟩🟩🟩🟨
+🟥🟪🟦🟦🟦🟩🟨🟨
+🟪🟪🟪🟦🟫🟫🟨🟨
+⬛🟪🟫🟫🟫🟫🟨🟨
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃ 2 │   │   ┃   │   │   ┃
+┃───┼───┼───┃───┼───┼───┃
 ┃   │   │ 1 ┃ 2 │   │   ┃
-┃───┼───┼───┃───┼───┼───┃
-┃ 6 │ 2 │   ┃   │ 3 │ 4 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 1 │   │   ┃   │   │ 5 ┃
+┃   │ 3 │ 4 ┃ 5 │ 6 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 2 │   │   ┃   │   │ 3 ┃
+┃   │ 2 │ 6 ┃ 1 │ 3 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 5 │ 6 │   ┃   │ 4 │ 1 ┃
+┃   │   │ 5 ┃ 4 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 4 ┃ 5 │   │   ┃
+┃   │   │   ┃   │   │ 1 ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| |  | +  | +  | =  | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | +12 | +  | +  | +6 |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+
++----+----+----+----+----+----+----+
+| .. | .. | .. | -10 | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| +15 | .. | .. | .. | .. | .. | +10 |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | -14 | .. | .. | .. |
++----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+
-| T | # | E | # | A |
+| E | E | R | T | I |
 +---+---+---+---+---+
-| S | E | L | I | G |
+| P | # | # | # | E |
 +---+---+---+---+---+
-| # | T | E | E | # |
+| F | O | R | M | E |
 +---+---+---+---+---+
-| O | N | S | S | O |
+| I | # | # | # | K |
 +---+---+---+---+---+
-| C | # | U | # | P |
+| N | U | A | L | I |
 +---+---+---+---+---+
 
 Words:
-  USE
-  POSE
-  AGILE
-  CONTEST
+  TIE
+  PEER
+  ALIKE
+  UNIFORM
 ```
 
 ### pinpoint
 ```
-  1. Subway
-  2. Domino’s
-  3. Jollibee
-  4. KFC
-  5. McDonald’s
+  1. Help
+  2. View
+  3. Window
+  4. File
+  5. Edit (where you can copy and paste)
 
-  answer: Restaurant chains!
+  answer: Software menus!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 881
-date      : 2026-09-28
+number    : 882
+date      : 2026-09-29
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  toes : The top + bottom rows = The uppermost and lowermost body parts, as in "from my ___ to my ___." Keep in mind: The first word may be at the bottom.
-  tees : Casual shirts named for the 20th letter of the alphabet
-  bees : Creatures who live in hives
-  beer : Stout, porter, or pale ale
-  bear : Word following "brown," "black," or "polar"
-  bead : Necklace part, or drop of sweat
-  head : The top + bottom rows = The uppermost and lowermost body parts, as in "from my ___ to my ___." Keep in mind: The first word may be at the bottom.
+  flip : The top + bottom rows = A hyphenated word for an open-toed item of footwear. Keep in mind: The first word may be at the bottom.
+  slip : Lose one's footing
+  slit : Extremely narrow opening
+  slot : Narrow opening
+  slow : Lacking speed
+  flow : Movement of water or air
+  flop : The top + bottom rows = A hyphenated word for an open-toed item of footwear. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
