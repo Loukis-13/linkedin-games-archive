@@ -11,138 +11,136 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-09-29)
+## Today's games (2026-09-30)
 
 ### zip
 ```
-+----+----+----+----+----+----+----+
-|  2   ..   ..   ..   ..   ..    9 |
-+                                  +
-| .. |  1   .. |  7 | ..   .. | .. |
-+    +         +    +         +    +
-| .. | ..   .. | .. | ..    8 | .. |
-+    +         +    +         +    +
-| .. | ..   .. | .. | ..   .. | .. |
-+    +---- ----+    +---- ----+    +
-| ..    4   .. | ..   ..   .. | .. |
-+              +              +    +
-| ..   ..   .. |  6   ..    5 | .. |
-+              +              +    +
-|  3   ..   ..   ..   ..   ..   10 |
-+---- ---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+
+| ..   ..   ..   ..   ..   .. |
++          ---- ----          +
+| ..    1   ..   ..    2   .. |
++          ---- ----          +
+| ..    4   ..   ..    3   .. |
++          ---- ----          +
+| ..    6   ..   ..    5   .. |
++          ---- ----          +
+| ..    8   ..   ..    7   .. |
++          ---- ----          +
+| ..   ..   ..   ..   ..   .. |
++---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | S | . | . | . | . |
+| . | . | . | . | M | M |
++-x-+-=-+---+---+---+---+
+| . | . | . | . | M | S |
 +---+---+---+---+---+---+
-| . | S | S | . | . | . |
-+---+---+---+---+---+---+
-| . | M | S | . | . | . |
-+---+---+---+---+-=-+---+
-| . | M | . | . x . | . |
-+---+---+---+---+---+---+
-| . | . | . | . = . | . |
-+---+---+---+---+-x-+---+
 | . | . | . | . | . | . |
++---+---+---+---+---+---+
+| . | . | . | . | . | . |
++---+---+---+---+---+---+
+| M | S | . | . | . | . |
++---+---+---+---+-=-+-=-+
+| M | S | . | . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟧🟧🟧🟧🟧
-🟥🟥🟥🟧🟧🟧🟧🟧
-🟥🟥🟥🟧🟧🟧🟨🟨
-🟥🟥🟥🟧🟧🟩🟨🟨
-🟥🟥🟥🟦🟩🟩🟩🟨
-🟥🟪🟦🟦🟦🟩🟨🟨
-🟪🟪🟪🟦🟫🟫🟨🟨
-⬛🟪🟫🟫🟫🟫🟨🟨
+🟥🟧🟨🟩🟩🟩🟩🟩
+🟥🟥🟨🟨🟩🟩🟩🟦
+🟥🟥🟥🟨🟪🟩🟨🟦
+🟥🟥🟨🟨🟪🟨🟨🟫
+🟥🟨🟨🟨🟨🟨🟫🟫
+🟨🟨⬛🟨🟨🟫🟫🟫
+🟨⬛⬛⬛🟨🟨🟫🟫
+⬛⬛⬛⬛⬛🟨🟨🟫
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃ 2 │   │   ┃   │   │   ┃
+┃   │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 1 ┃ 2 │   │   ┃
+┃ 1 │ 2 │   ┃ 3 │ 4 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 3 │ 4 ┃ 5 │ 6 │   ┃
+┃   │ 1 │   ┃   │ 2 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 2 │ 6 ┃ 1 │ 3 │   ┃
+┃   │ 3 │   ┃   │ 1 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │ 5 ┃ 4 │   │   ┃
+┃   │ 4 │ 2 ┃   │ 3 │ 5 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │   │ 1 ┃
+┃   │   │   ┃   │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+----+
-| .. | .. | .. | -10 | .. | .. | .. |
+| -  | .. | .. | .. | .. | .. | +4 |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | -3 | .. | .. |
 +----+----+----+----+----+----+----+
 | .. | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| +15 | .. | .. | .. | .. | .. | +10 |
+| .. | .. | +16 | .. | +9 | .. | .. |
 +----+----+----+----+----+----+----+
 | .. | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
+| .. | .. | -8 | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | -14 | .. | .. | .. |
+| +2 | .. | .. | .. | .. | .. | =  |
 +----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+
-| E | E | R | T | I |
+| E | L | # | E | G |
 +---+---+---+---+---+
-| P | # | # | # | E |
+| O | D | V | # | A |
 +---+---+---+---+---+
-| F | O | R | M | E |
+| O | N | O | L | T |
 +---+---+---+---+---+
-| I | # | # | # | K |
+| T | # | H | C | M |
 +---+---+---+---+---+
-| N | U | A | L | I |
+| R | Y | # | R | A |
 +---+---+---+---+---+
 
 Words:
-  TIE
-  PEER
-  ALIKE
-  UNIFORM
+  TRY
+  MARCH
+  NOODLE
+  VOLTAGE
 ```
 
 ### pinpoint
 ```
-  1. Help
-  2. View
-  3. Window
-  4. File
-  5. Edit (where you can copy and paste)
+  1. Nose
+  2. Napkin
+  3. Mood
+  4. Boxing
+  5. Wedding (worn after “I dos”)
 
-  answer: Software menus!
+  answer: Types of rings!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 882
-date      : 2026-09-29
+number    : 883
+date      : 2026-09-30
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  flip : The top + bottom rows = A hyphenated word for an open-toed item of footwear. Keep in mind: The first word may be at the bottom.
-  slip : Lose one's footing
-  slit : Extremely narrow opening
-  slot : Narrow opening
-  slow : Lacking speed
-  flow : Movement of water or air
-  flop : The top + bottom rows = A hyphenated word for an open-toed item of footwear. Keep in mind: The first word may be at the bottom.
+  free : The top + bottom rows = A two-word phrase for a person's ability to make their own choices. Keep in mind: The first word may be at the bottom.
+  fret : Constantly worry, or part of a guitar's neck
+  feet : Body parts with arches and soles
+  felt : Soft surface on a billiards table
+  fell : Went to the ground, most likely accidentally
+  fill : Pour liquid into, as a glass
+  will : The top + bottom rows = A two-word phrase for a person's ability to make their own choices. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
