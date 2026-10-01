@@ -1,0 +1,61 @@
+{
+  "game": "minisudoku",
+  "date": "2026-10-01",
+  "grid_size": [
+    6,
+    6
+  ],
+  "cells": [
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      3,
+      2,
+      null,
+      null
+    ],
+    [
+      null,
+      2,
+      null,
+      null,
+      1,
+      null
+    ],
+    [
+      6,
+      null,
+      null,
+      null,
+      null,
+      4
+    ],
+    [
+      null,
+      4,
+      null,
+      null,
+      6,
+      null
+    ],
+    [
+      null,
+      null,
+      5,
+      3,
+      null,
+      null
+    ]
+  ],
+  "number": "416",
+  "title": "Football",
+  "difficulty": null
+}
