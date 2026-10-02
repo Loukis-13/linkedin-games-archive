@@ -11,23 +11,23 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-10-01)
+## Today's games (2026-10-02)
 
 ### zip
 ```
 +----+----+----+----+----+----+----+
 | ..   ..   ..   ..   ..   ..   .. |
-+     ---- ----                    +
-| ..    5   ..   ..   ..    1   .. |
-+          ---- ----               +
-|  7   ..   ..   ..   ..   ..   .. |
-+               ---- ----          +
-| ..    8   ..   ..   ..    2   .. |
-+          ---- ----               +
-| ..   ..   ..   ..   ..   ..    6 |
-+               ---- ----          +
-| ..    4   ..   ..   ..    3   .. |
-+                    ---- ----     +
++                                  +
+|  9    5   ..   ..   ..   ..   .. |
++                                  +
+| ..    6   ..   ..    1    4   .. |
++                                  +
+| ..    8   ..   ..   ..    3   .. |
++                                  +
+| ..   11    7   ..   ..    2   .. |
++                                  +
+| ..   ..   ..   ..   ..   12   10 |
++                                  +
 | ..   ..   ..   ..   ..   ..   .. |
 +---- ---- ---- ---- ---- ---- ----+
 ```
@@ -35,116 +35,115 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 ### tango
 ```
 +---+---+---+---+---+---+
+| M | . | . | . | M | . |
++---+---+---+---+---+---+
+| M | M | S | M | S | . |
++---+---+---+---+---+---+
 | . | . | . | . | . | . |
-+---+---+---+---+-=-+---+
-| . | . | . | . | . x . |
-+---+---+---+-=-+---+---+
-| . | . | . | . = . | . |
 +---+---+---+---+---+---+
-| . | S | S | . | . | . |
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| S | S | M | . | . | . |
-+---+---+---+---+---+---+
-| . | M | . | . | . | . |
+| . | . x . x . = . x . |
++---+-=-+---+---+---+-=-+
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟧🟨🟥🟥🟥🟥🟨🟨
-🟧🟨🟨🟥🟥🟨🟨🟩
-🟧🟧🟨🟨🟨🟨🟩🟩
-🟨🟨🟨🟨🟨🟨🟩🟨
-🟨🟨🟨🟦🟦🟨🟨🟨
-🟨🟨🟪🟦🟦🟫🟨🟨
-🟨🟪🟪⬛🟦🟫🟫🟨
-🟪🟪⬛⬛🟦🟦🟫🟫
+🟥🟥🟥🟧🟧🟧🟨🟨
+🟥🟩🟩🟩🟩🟧🟧🟨
+🟦🟩🟩🟩🟩🟩🟧🟨
+🟦🟦🟦🟩🟩🟩🟩🟩
+🟦🟩🟩🟩🟩🟩🟩🟩
+🟪🟩🟩🟩🟫🟩🟩🟩
+🟪🟩🟩🟩🟫🟩🟩⬛
+🟪🟪🟫🟫🟫⬛⬛⬛
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │   ┃   │   │   ┃
+┃   │ 2 │ 3 ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 3 ┃ 2 │   │   ┃
+┃ 1 │   │   ┃ 2 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 2 │   ┃   │ 1 │   ┃
+┃   │ 1 │ 4 ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 6 │   │   ┃   │   │ 4 ┃
+┃   │   │   ┃ 1 │ 4 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 4 │   ┃   │ 6 │   ┃
+┃   │   │ 1 ┃   │   │ 6 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 5 ┃ 3 │   │   ┃
+┃   │   │   ┃ 4 │ 3 │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
+| .. | .. | +  | +2 | +2 | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | +4 | .. | +2 | .. | +4 | .. |
+| .. | -  | .. | .. | .. | +  | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | |3 | .. | +3 | .. | .. |
+| .. | .. | .. | .. | -2 | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | +4 | .. | |2 | .. | +6 | .. |
+| .. | .. | .. | -  | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | +4 | .. | |2 | .. | .. |
+| .. | .. | =  | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | +6 | .. | +3 | .. | +6 | .. |
+| .. | +  | .. | .. | .. | =  | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
+| .. | .. | +2 | +2 | +2 | .. | .. |
 +----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+---+
-| # | C | O | R | H | C |
+| # | # | E | R | # | # |
 +---+---+---+---+---+---+
-| # | K | E | # | # | A |
+| # | P | F | A | B | # |
 +---+---+---+---+---+---+
-| C | I | T | # | O | M |
+| L | I | O | O | B | L |
 +---+---+---+---+---+---+
-| O | G | # | D | T | S |
+| F | K | B | T | W | O |
 +---+---+---+---+---+---+
-| L | # | # | O | O | # |
+| # | C | A | I | F | # |
 +---+---+---+---+---+---+
-| B | O | N | K | R | # |
+| # | # | H | S | # | # |
 +---+---+---+---+---+---+
 
 Words:
-  LOGIC
-  ROCKET
-  STOMACH
-  DOORKNOB
+  BAREFOOT
+  BLOWFISH
+  BACKFLIP
 ```
 
 ### pinpoint
 ```
-  1. Ossicles
-  2. Cochlea
-  3. Semicircular canals
-  4. Tympanic membrane
-  5. Auditory nerve
+  1. Golf
+  2. Whiskey
+  3. Bagpipes
+  4. Haggis
+  5. The Loch Ness Monster
 
-  answer: Parts of the ear!
+  answer: Things associated with Scotland (🏴󠁧󠁢󠁳󠁣󠁴󠁿)!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 884
-date      : 2026-10-01
+number    : 885
+date      : 2026-10-02
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  well : The top + bottom rows = A two-word compliment meaning "You expressed that perfectly." Keep in mind: The first word may be at the bottom.
-  bell : Loud ringer at many churches
-  ball : Fancy party, or a sphere
-  bald : Lacking hair
-  band : Word following "rubber" or "rock"
-  sand : Substance found on a beach or in an hourglass
-  said : The top + bottom rows = A two-word compliment meaning "You expressed that perfectly." Keep in mind: The first word may be at the bottom.
+  coal : The top + bottom rows = Two sources of energy, one that's burned and one that blows. Keep in mind: The first word may be at the bottom.
+  cool : Trendy or acceptable
+  fool : Play the ___ (act like a court jester)
+  food : Necessary source of nutrients
+  fond : Having a warm, positive opinion (of)
+  find : Locate, as something lost
+  wind : The top + bottom rows = Two sources of energy, one that's burned and one that blows. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
