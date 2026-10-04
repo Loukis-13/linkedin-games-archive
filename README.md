@@ -11,25 +11,25 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-10-03)
+## Today's games (2026-10-04)
 
 ### zip
 ```
 +----+----+----+----+----+----+----+----+
 | ..   ..   ..   ..   ..   ..   ..   .. |
 +                                       +
-| ..   16   15   14    3    8    7   .. |
-+                                       +
-| ..    9   ..    1    2   ..    6   .. |
-+                                       +
-| ..   ..   ..   ..   ..   ..   ..   .. |
-+                                       +
-| ..   ..   ..   ..   ..   ..   ..   .. |
-+                                       +
-| ..   ..   11   ..   ..   12   ..   .. |
-+                                       +
-| ..   ..   10   13    4    5   ..   .. |
-+                                       +
+| .. |  7   .. | .. |  8   ..   ..   .. |
++    +         +    +                   +
+| ..   .. | ..   ..   ..   .. |  9   .. |
++         +     ---- ----     +         +
+| ..    2   ..   ..   ..   ..    6   .. |
++          ----           ----          +
+| ..    3   ..   ..   ..   ..    5   .. |
++               ---- ----               +
+| ..   10 | ..   ..   ..   .. | ..   .. |
++         +                   +         +
+| ..   ..   ..    1 | .. | ..    4 | .. |
++                   +    +         +    +
 | ..   ..   ..   ..   ..   ..   ..   .. |
 +---- ---- ---- ---- ---- ---- ---- ----+
 ```
@@ -37,122 +37,123 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 ### tango
 ```
 +---+---+---+---+---+---+
-| S | . | . | . | . | M |
+| . = . x . | . | . x . |
++-=-+---+---+---+---+-x-+
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . | M | . | . | S | . |
-+---+---+-=-+-x-+---+---+
-| . | . x . | . x . | . |
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . | . x . | . = . | . |
-+---+---+-=-+-x-+---+---+
-| . | S | . | . | S | . |
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| S | . | . | . | . | S |
+| . | . | . | . | . | M |
++-=-+---+---+---+---+---+
+| . x . | . | S | S | M |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟥🟥🟥🟧🟧🟧
-🟨🟨🟥🟨🟨🟩🟧🟩🟧
-🟨🟨🟨🟨🟨🟩🟩🟩🟧
-🟦🟨🟨🟨🟪🟪🟩🟪🟪
-🟦🟫🟨🟫🟪🟪🟪🟪🟪
-🟦🟫🟫🟫⬛🟪🟪🟪⬜
-⬛⬛🟫⬛⬛⬛🟪⬜⬜
-⬛⬛⬛⬛⬛⬛⬛⬛⬜
-⬛⬛⬛⬛⬛⬛⬛⬛⬛
+🟥🟥🟥🟥🟥🟥🟥🟥🟥
+🟥🟧🟥🟥🟥🟨🟨🟨🟥
+🟥🟧🟧🟧🟧🟧🟨🟥🟥
+🟥🟧🟩🟦🟦🟦🟨🟥🟦
+🟩🟩🟩🟪🟦🟥🟥🟥🟦
+🟫🟫🟩🟪🟦🟦🟦🟦🟦
+🟫⬜🟪🟪🟪🟦🟦🟦⬛
+🟫⬜⬜⬜🟦🟦🟦🟦⬛
+🟫🟦🟦🟦🟦🟦🟦⬛⬛
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │ 1 │   ┃   │   │   ┃
+┃   │   │   ┃ 1 │   │ 2 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 4 ┃   │   │ 3 ┃
+┃   │   │   ┃   │ 3 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │ 3 ┃   │ 1 │   ┃
+┃   │   │   ┃ 4 │   │ 5 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 4 │   ┃ 3 │   │   ┃
+┃ 4 │   │ 6 ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 6 │   │   ┃ 2 │   │   ┃
+┃   │ 6 │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │ 5 │   ┃
+┃ 2 │   │ 5 ┃   │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | +7 | .. |
+| +6 | .. | .. | .. | .. | .. | .. | +4 |
 +----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | +6 | .. | .. |
+| .. | -6 | .. | .. | .. | .. | |2 | .. |
 +----+----+----+----+----+----+----+----+
-| .. | .. | |  | .. | +5 | .. | .. | .. |
+| .. | .. | +2 | .. | .. | +4 | .. | .. |
 +----+----+----+----+----+----+----+----+
-| .. | |  | .. | .. | .. | .. | .. | +8 |
+| .. | .. | .. | .. | +2 | .. | .. | .. |
 +----+----+----+----+----+----+----+----+
-| |  | .. | .. | .. | .. | .. | +7 | .. |
+| .. | .. | .. | +4 | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+----+
-| .. | .. | .. | +3 | .. | +6 | .. | .. |
+| .. | .. | |6 | .. | .. | +6 | .. | .. |
 +----+----+----+----+----+----+----+----+
-| .. | .. | +4 | .. | .. | .. | .. | .. |
+| .. | -6 | .. | .. | .. | .. | |6 | .. |
 +----+----+----+----+----+----+----+----+
-| .. | +5 | .. | .. | .. | .. | .. | .. |
+| +6 | .. | .. | .. | .. | .. | .. | +4 |
 +----+----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+---+---+
-| # | # | # | # | D | V | A |
+| T | A | E | R | T | E | G |
 +---+---+---+---+---+---+---+
-| # | # | A | A | R | K | R |
+| S | C | I | G | F | A | R |
 +---+---+---+---+---+---+---+
-| # | G | M | E | E | T | S |
+| # | N | E | # | A | T | # |
 +---+---+---+---+---+---+---+
-| C | N | I | I | X | A | E |
+| # | C | O | # | O | L | # |
 +---+---+---+---+---+---+---+
-| O | A | Z | O | O | T | # |
+| # | E | P | # | I | C | # |
 +---+---+---+---+---+---+---+
-| N | K | U | U | M | # | # |
+| I | T | T | I | A | I | G |
 +---+---+---+---+---+---+---+
-| T | I | N | # | # | # | # |
+| C | S | I | M | N | M | A |
 +---+---+---+---+---+---+---+
 
 Words:
-  KAZOO
-  ESTEEM
-  TAXIING
-  AARDVARK
-  CONTINUUM
+  LOAF
+  GREAT
+  TARGET
+  SCIENCE
+  MAGICIAN
+  OPTIMISTIC
 ```
 
 ### pinpoint
 ```
-  1. Ground
-  2. Thread
-  3. Sense
-  4. Denominator
-  5. Knowledge (most people know it!)
+  1. George Lazenby
+  2. Pierce Brosnan
+  3. Roger Moore
+  4. Daniel Craig
+  5. Sean Connery (first in "Dr. No")
 
-  answer: Words that come after “common”!
+  answer: Actors who have played James Bond!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 886
-date      : 2026-10-03
+number    : 887
+date      : 2026-10-04
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  ribs : The top + bottom rows = Bone-in meat items often served at a barbecue. Keep in mind: The first word may be at the bottom.
-  rips : Damages, as a page in a book
-  ripe : Ready to be picked, as fruit
-  rope : Cord that may be climbed for exercise
-  pope : Leo XIV, for one
-  pore : Small skin opening
-  pork : The top + bottom rows = Bone-in meat items often served at a barbecue. Keep in mind: The first word may be at the bottom.
+  lima : The top + bottom rows = Two consecutive letters in the NATO phonetic alphabet. Keep in mind: The first word may be at the bottom.
+  lime : Green citrus fruit
+  time : "___ flies when you're having fun"
+  tile : Piece of material often used to cover a floor or wall
+  tilt : Lean over a little
+  kilt : Pleated garment associated with Scotland
+  kilo : The top + bottom rows = Two consecutive letters in the NATO phonetic alphabet. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
