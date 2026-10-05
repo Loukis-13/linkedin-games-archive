@@ -1,0 +1,61 @@
+{
+  "game": "minisudoku",
+  "date": "2026-10-05",
+  "grid_size": [
+    6,
+    6
+  ],
+  "cells": [
+    [
+      null,
+      1,
+      2,
+      3,
+      4,
+      6
+    ],
+    [
+      null,
+      3,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      2,
+      3,
+      4,
+      6,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      1
+    ],
+    [
+      null,
+      6,
+      null,
+      null,
+      null,
+      4
+    ],
+    [
+      null,
+      null,
+      4,
+      6,
+      1,
+      null
+    ]
+  ],
+  "number": "420",
+  "title": "Big Five",
+  "difficulty": null
+}

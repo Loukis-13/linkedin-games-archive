@@ -11,149 +11,133 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-10-04)
+## Today's games (2026-10-05)
 
 ### zip
 ```
-+----+----+----+----+----+----+----+----+
-| ..   ..   ..   ..   ..   ..   ..   .. |
-+                                       +
-| .. |  7   .. | .. |  8   ..   ..   .. |
-+    +         +    +                   +
-| ..   .. | ..   ..   ..   .. |  9   .. |
-+         +     ---- ----     +         +
-| ..    2   ..   ..   ..   ..    6   .. |
-+          ----           ----          +
-| ..    3   ..   ..   ..   ..    5   .. |
-+               ---- ----               +
-| ..   10 | ..   ..   ..   .. | ..   .. |
-+         +                   +         +
-| ..   ..   ..    1 | .. | ..    4 | .. |
-+                   +    +         +    +
-| ..   ..   ..   ..   ..   ..   ..   .. |
-+---- ---- ---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+
+|  5   ..   ..   ..   ..   .. |
++               ---- ----     +
+| ..   ..   .. |  1    2    3 |
++              +              +
+| ..   ..   .. |  9   ..   .. |
++              +---- ----     +
+| ..   ..   ..   ..    4 | .. |
++                        +    +
+| ..   ..   ..   ..   .. |  8 |
++               ---- ----+    +
+| ..   ..   ..    6    7   .. |
++---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . = . x . | . | . x . |
-+-=-+---+---+---+---+-x-+
-| . | . | . | . | . | . |
+| . | . | . | M | . | . |
 +---+---+---+---+---+---+
-| . | . | . | . | . | . |
+| . | . | M | . | M | . |
++---+---+---+-x-+---+---+
+| . | M | . | . | . | M |
 +---+---+---+---+---+---+
-| . | . | . | . | . | . |
+| M | . | . | . | S | . |
++---+---+-x-+---+---+---+
+| . | S | . | M | . | . |
 +---+---+---+---+---+---+
-| . | . | . | . | . | M |
-+-=-+---+---+---+---+---+
-| . x . | . | S | S | M |
+| . | . | S | . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟥🟥🟥🟥🟥🟥
-🟥🟧🟥🟥🟥🟨🟨🟨🟥
-🟥🟧🟧🟧🟧🟧🟨🟥🟥
-🟥🟧🟩🟦🟦🟦🟨🟥🟦
-🟩🟩🟩🟪🟦🟥🟥🟥🟦
-🟫🟫🟩🟪🟦🟦🟦🟦🟦
-🟫⬜🟪🟪🟪🟦🟦🟦⬛
-🟫⬜⬜⬜🟦🟦🟦🟦⬛
-🟫🟦🟦🟦🟦🟦🟦⬛⬛
+🟥🟥🟧🟧🟧🟧🟧
+🟧🟧🟧🟨🟧🟧🟧
+🟧🟧🟨🟨🟧🟧🟧
+🟧🟧🟧🟨🟩🟩🟧
+🟧🟦🟦🟨🟩🟫🟪
+🟦🟦🟨🟨🟨🟫🟪
+🟦🟦🟦🟪🟪🟪🟪
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │   ┃ 1 │   │ 2 ┃
+┃   │ 1 │ 2 ┃ 3 │ 4 │ 6 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │ 3 │   ┃
+┃   │ 3 │   ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃ 4 │   │ 5 ┃
+┃   │ 2 │ 3 ┃ 4 │ 6 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 4 │   │ 6 ┃   │   │   ┃
+┃   │   │   ┃   │   │ 1 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 6 │   ┃   │   │   ┃
+┃   │ 6 │   ┃   │   │ 4 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 2 │   │ 5 ┃   │   │   ┃
+┃   │   │ 4 ┃ 6 │ 1 │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+----+----+
-| +6 | .. | .. | .. | .. | .. | .. | +4 |
-+----+----+----+----+----+----+----+----+
-| .. | -6 | .. | .. | .. | .. | |2 | .. |
-+----+----+----+----+----+----+----+----+
-| .. | .. | +2 | .. | .. | +4 | .. | .. |
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | +2 | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | +4 | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
-| .. | .. | |6 | .. | .. | +6 | .. | .. |
-+----+----+----+----+----+----+----+----+
-| .. | -6 | .. | .. | .. | .. | |6 | .. |
-+----+----+----+----+----+----+----+----+
-| +6 | .. | .. | .. | .. | .. | .. | +4 |
-+----+----+----+----+----+----+----+----+
++----+----+----+----+----+----+
+| |5 | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | .. | +6 | +3 | +3 |
++----+----+----+----+----+----+
+| .. | .. | .. | +3 | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | .. | .. | -5 | .. |
++----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | -5 |
++----+----+----+----+----+----+
+| .. | .. | .. | +4 | +2 | .. |
++----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+---+---+
-| T | A | E | R | T | E | G |
-+---+---+---+---+---+---+---+
-| S | C | I | G | F | A | R |
-+---+---+---+---+---+---+---+
-| # | N | E | # | A | T | # |
-+---+---+---+---+---+---+---+
-| # | C | O | # | O | L | # |
-+---+---+---+---+---+---+---+
-| # | E | P | # | I | C | # |
-+---+---+---+---+---+---+---+
-| I | T | T | I | A | I | G |
-+---+---+---+---+---+---+---+
-| C | S | I | M | N | M | A |
-+---+---+---+---+---+---+---+
++---+---+---+---+---+
+| D | E | L | G | I |
++---+---+---+---+---+
+| O | # | # | # | D |
++---+---+---+---+---+
+| M | # | C | # | M |
++---+---+---+---+---+
+| R | # | R | # | E |
++---+---+---+---+---+
+| E | T | A | I | T |
++---+---+---+---+---+
 
 Words:
-  LOAF
-  GREAT
-  TARGET
-  SCIENCE
-  MAGICIAN
-  OPTIMISTIC
+  DIG
+  ITEM
+  MODEL
+  CRATER
 ```
 
 ### pinpoint
 ```
-  1. George Lazenby
-  2. Pierce Brosnan
-  3. Roger Moore
-  4. Daniel Craig
-  5. Sean Connery (first in "Dr. No")
+  1. Recorder
+  2. Whistle
+  3. Piccolo
+  4. Flute
+  5. Clarinet
 
-  answer: Actors who have played James Bond!
+  answer: Wind instruments!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 887
-date      : 2026-10-04
+number    : 888
+date      : 2026-10-05
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  lima : The top + bottom rows = Two consecutive letters in the NATO phonetic alphabet. Keep in mind: The first word may be at the bottom.
-  lime : Green citrus fruit
-  time : "___ flies when you're having fun"
-  tile : Piece of material often used to cover a floor or wall
-  tilt : Lean over a little
-  kilt : Pleated garment associated with Scotland
-  kilo : The top + bottom rows = Two consecutive letters in the NATO phonetic alphabet. Keep in mind: The first word may be at the bottom.
+  work : The top + bottom rows = A compound word for how an organization might accomplish a challenging task. Keep in mind: The first word may be at the bottom.
+  worm : “The early bird catches the ___”
+  form : Something you might fill out with your name and address
+  foam : Type of cushioning or rubber
+  roam : Travel without a plan
+  ream : Package of 500 sheets of paper
+  team : The top + bottom rows = A compound word for how an organization might accomplish a challenging task. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
