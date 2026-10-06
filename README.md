@@ -11,133 +11,135 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-10-05)
+## Today's games (2026-10-06)
 
 ### zip
 ```
 +----+----+----+----+----+----+
-|  5   ..   ..   ..   ..   .. |
-+               ---- ----     +
-| ..   ..   .. |  1    2    3 |
-+              +              +
-| ..   ..   .. |  9   ..   .. |
-+              +---- ----     +
-| ..   ..   ..   ..    4 | .. |
-+                        +    +
-| ..   ..   ..   ..   .. |  8 |
-+               ---- ----+    +
-| ..   ..   ..    6    7   .. |
+| ..   ..   ..    5   ..    7 |
++                             +
+| ..    6   ..   ..   ..   .. |
++                             +
+| ..   ..   ..   ..   ..    8 |
++                             +
+|  4   ..   ..   ..   ..   .. |
++                             +
+| ..   ..   ..   ..    1   .. |
++                             +
+|  2   ..    3   ..   ..   .. |
 +---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . | . | M | . | . |
+| . | M | M | S | M | . |
 +---+---+---+---+---+---+
-| . | . | M | . | M | . |
-+---+---+---+-x-+---+---+
-| . | M | . | . | . | M |
+| . | M | M | S | S | . |
 +---+---+---+---+---+---+
-| M | . | . | . | S | . |
-+---+---+-x-+---+---+---+
-| . | S | . | M | . | . |
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . | . | S | . | . | . |
+| . | . | . | . | . | . |
++---+---+---+---+---+---+
+| . | . | . = . | . | . |
++---+-=-+---+---+-x-+---+
+| . | . | . x . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟧🟧🟧🟧🟧
-🟧🟧🟧🟨🟧🟧🟧
-🟧🟧🟨🟨🟧🟧🟧
-🟧🟧🟧🟨🟩🟩🟧
-🟧🟦🟦🟨🟩🟫🟪
-🟦🟦🟨🟨🟨🟫🟪
-🟦🟦🟦🟪🟪🟪🟪
+🟥🟥🟥🟥🟥🟥🟥
+🟧🟧🟧🟥🟨🟨🟨
+🟧🟩🟩🟥🟨🟥🟨
+🟧🟧🟧🟥🟥🟥🟨
+🟧🟦🟧🟪🟪🟥🟨
+🟧🟧🟧🟪🟪🟥🟨
+🟫🟫🟫🟫🟫🟫🟫
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │ 1 │ 2 ┃ 3 │ 4 │ 6 ┃
+┃   │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 3 │   ┃   │   │   ┃
+┃   │ 1 │   ┃   │ 2 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 2 │ 3 ┃ 4 │ 6 │   ┃
+┃ 6 │   │ 4 ┃ 3 │   │ 5 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │   │ 1 ┃
+┃ 1 │   │   ┃   │   │ 4 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 6 │   ┃   │   │ 4 ┃
+┃   │ 3 │   ┃   │ 5 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 4 ┃ 6 │ 1 │   ┃
+┃   │   │ 2 ┃ 1 │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+
-| |5 | .. | .. | .. | .. | .. |
+| +  | .. | .. | .. | .. | +  |
 +----+----+----+----+----+----+
-| .. | .. | .. | +6 | +3 | +3 |
+| .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | +3 | .. | .. |
+| .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | -5 | .. |
+| .. | .. | =4 | =9 | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | -5 |
+| +3 | .. | .. | .. | .. | +5 |
 +----+----+----+----+----+----+
-| .. | .. | .. | +4 | +2 | .. |
+| .. | .. | +3 | +3 | .. | .. |
 +----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+
-| D | E | L | G | I |
-+---+---+---+---+---+
-| O | # | # | # | D |
-+---+---+---+---+---+
-| M | # | C | # | M |
-+---+---+---+---+---+
-| R | # | R | # | E |
-+---+---+---+---+---+
-| E | T | A | I | T |
-+---+---+---+---+---+
++---+---+---+---+---+---+
+| M | # | # | # | # | D |
++---+---+---+---+---+---+
+| A | # | E | X | # | E |
++---+---+---+---+---+---+
+| X | E | T | T | U | R |
++---+---+---+---+---+---+
+| C | E | L | T | R | E |
++---+---+---+---+---+---+
+| X | # | E | X | # | M |
++---+---+---+---+---+---+
+| E | # | # | # | # | E |
++---+---+---+---+---+---+
 
 Words:
-  DIG
-  ITEM
-  MODEL
-  CRATER
+  EXAM
+  EXCEL
+  EXTREME
+  TEXTURED
 ```
 
 ### pinpoint
 ```
-  1. Recorder
-  2. Whistle
-  3. Piccolo
-  4. Flute
-  5. Clarinet
+  1. Hamlet
+  2. Conurbation
+  3. Village
+  4. Town
+  5. City
 
-  answer: Wind instruments!
+  answer: Settlements of different size!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 888
-date      : 2026-10-05
+number    : 889
+date      : 2026-10-06
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  work : The top + bottom rows = A compound word for how an organization might accomplish a challenging task. Keep in mind: The first word may be at the bottom.
-  worm : “The early bird catches the ___”
-  form : Something you might fill out with your name and address
-  foam : Type of cushioning or rubber
-  roam : Travel without a plan
-  ream : Package of 500 sheets of paper
-  team : The top + bottom rows = A compound word for how an organization might accomplish a challenging task. Keep in mind: The first word may be at the bottom.
+  cork : The top + bottom rows = A two-word term for the stopper in a bottle of Chardonnay or Chianti. Keep in mind: The first word may be at the bottom.
+  core : Uneaten part of an apple
+  care : Feel sympathy
+  cave : Where to find stalactites
+  wave : Arm gesture meaning "hello" or "goodbye"
+  wane : Become less visible, like the moon
+  wine : The top + bottom rows = A two-word term for the stopper in a bottle of Chardonnay or Chianti. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
