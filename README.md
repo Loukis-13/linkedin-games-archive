@@ -11,135 +11,137 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-10-06)
+## Today's games (2026-10-07)
 
 ### zip
 ```
 +----+----+----+----+----+----+
-| ..   ..   ..    5   ..    7 |
+| ..   ..   ..   ..   ..   .. |
 +                             +
-| ..    6   ..   ..   ..   .. |
+| ..    1    3    5    8   .. |
 +                             +
-| ..   ..   ..   ..   ..    8 |
+| ..    2    4    6    7   .. |
 +                             +
-|  4   ..   ..   ..   ..   .. |
-+                             +
-| ..   ..   ..   ..    1   .. |
-+                             +
-|  2   ..    3   ..   ..   .. |
+| ..   ..   .. | ..   ..   .. |
++     ---- ----+---- ----     +
+| ..   ..   .. | ..   ..   .. |
++              +              +
+| ..   ..   ..   ..   ..   .. |
 +---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | M | M | S | M | . |
+| M | M | . = . | M | . |
 +---+---+---+---+---+---+
-| . | M | M | S | S | . |
+| S | . = . | S | . | . |
++---+-x-+---+---+---+---+
+| . | . | M | . | . | . |
++-=-+---+---+---+---+---+
+| . | S | . | . | . | . |
++---+---+---+---+---+---+
+| S | . | . | . | . | . |
 +---+---+---+---+---+---+
 | . | . | . | . | . | . |
-+---+---+---+---+---+---+
-| . | . | . | . | . | . |
-+---+---+---+---+---+---+
-| . | . | . = . | . | . |
-+---+-=-+---+---+-x-+---+
-| . | . | . x . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟥🟥🟥🟥
-🟧🟧🟧🟥🟨🟨🟨
-🟧🟩🟩🟥🟨🟥🟨
-🟧🟧🟧🟥🟥🟥🟨
-🟧🟦🟧🟪🟪🟥🟨
-🟧🟧🟧🟪🟪🟥🟨
-🟫🟫🟫🟫🟫🟫🟫
+🟥🟥🟥🟧🟧🟧🟧🟧🟧
+🟨🟨🟥🟧🟧🟧🟧🟧🟧
+🟨🟩🟦🟦🟦🟦🟧🟧🟧
+🟩🟩🟪🟪🟪🟦🟫🟫🟫
+🟩🟪🟪🟪🟦🟦⬛⬛🟫
+🟪🟪🟪🟦🟦⬛⬛⬜🟪
+🟪🟪🟪🟦🟪⬛⬜⬜🟪
+🟪🟪🟪🟪🟪🟪⬜🟪🟪
+🟪🟪🟪🟪🟪🟪🟪🟪🟪
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │   ┃   │   │   ┃
+┃   │ 1 │   ┃ 2 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 1 │   ┃   │ 2 │   ┃
+┃   │ 2 │ 3 ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 6 │   │ 4 ┃ 3 │   │ 5 ┃
+┃   │   │   ┃ 1 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 1 │   │   ┃   │   │ 4 ┃
+┃   │   │ 4 ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 3 │   ┃   │ 5 │   ┃
+┃   │   │   ┃ 4 │ 5 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 2 ┃ 1 │   │   ┃
+┃   │   │ 5 ┃   │ 3 │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+
-| +  | .. | .. | .. | .. | +  |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | =4 | =9 | .. | .. |
-+----+----+----+----+----+----+
-| +3 | .. | .. | .. | .. | +5 |
-+----+----+----+----+----+----+
-| .. | .. | +3 | +3 | .. | .. |
-+----+----+----+----+----+----+
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| |  | |  | |  | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | =  | |  | |  | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | +9 | +2 | +2 | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | +4 | +4 | +7 |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+---+
-| M | # | # | # | # | D |
-+---+---+---+---+---+---+
-| A | # | E | X | # | E |
-+---+---+---+---+---+---+
-| X | E | T | T | U | R |
-+---+---+---+---+---+---+
-| C | E | L | T | R | E |
-+---+---+---+---+---+---+
-| X | # | E | X | # | M |
-+---+---+---+---+---+---+
-| E | # | # | # | # | E |
-+---+---+---+---+---+---+
++---+---+---+---+---+
+| H | # | R | # | E |
++---+---+---+---+---+
+| G | U | O | L | L |
++---+---+---+---+---+
+| R | D | O | E | H |
++---+---+---+---+---+
+| I | G | A | Z | I |
++---+---+---+---+---+
+| A | H | # | H | G |
++---+---+---+---+---+
 
 Words:
-  EXAM
-  EXCEL
-  EXTREME
-  TEXTURED
+  HIGH
+  ROUGH
+  HAIRDO
+  GAZELLE
 ```
 
 ### pinpoint
 ```
-  1. Hamlet
-  2. Conurbation
-  3. Village
-  4. Town
-  5. City
+  1. A+
+  2. B-
+  3. AB+
+  4. O+ (the most common)
+  5. O- (universal red cell donor)
 
-  answer: Settlements of different size!
+  answer: Blood types!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 889
-date      : 2026-10-06
+number    : 890
+date      : 2026-10-07
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  cork : The top + bottom rows = A two-word term for the stopper in a bottle of Chardonnay or Chianti. Keep in mind: The first word may be at the bottom.
-  core : Uneaten part of an apple
-  care : Feel sympathy
-  cave : Where to find stalactites
-  wave : Arm gesture meaning "hello" or "goodbye"
-  wane : Become less visible, like the moon
-  wine : The top + bottom rows = A two-word term for the stopper in a bottle of Chardonnay or Chianti. Keep in mind: The first word may be at the bottom.
+  mark : The top + bottom rows = A two-word phrase meaning to discount, as a product for sale. Keep in mind: The first word may be at the bottom.
+  bark : Sound that might come after you say "Who's a good dog? Is it you?"
+  barn : Where a calf may be raised on a farm
+  born : Brought into the world
+  morn : Early part of the day, poetically
+  mown : Like a well-trimmed yard
+  down : The top + bottom rows = A two-word phrase meaning to discount, as a product for sale. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
