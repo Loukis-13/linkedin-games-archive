@@ -1,0 +1,61 @@
+{
+  "game": "minisudoku",
+  "date": "2026-10-08",
+  "grid_size": [
+    6,
+    6
+  ],
+  "cells": [
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      3,
+      2,
+      null,
+      null,
+      1,
+      4
+    ],
+    [
+      null,
+      1,
+      3,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      1,
+      3,
+      null
+    ],
+    [
+      4,
+      5,
+      null,
+      null,
+      2,
+      3
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  ],
+  "number": "423",
+  "title": "Wings",
+  "difficulty": null
+}

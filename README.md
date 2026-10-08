@@ -11,137 +11,138 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-10-07)
+## Today's games (2026-10-08)
 
 ### zip
 ```
 +----+----+----+----+----+----+
-| ..   ..   ..   ..   ..   .. |
+| ..    2    3   ..   ..   .. |
 +                             +
-| ..    1    3    5    8   .. |
+|  1   ..   ..   ..    6   .. |
 +                             +
-| ..    2    4    6    7   .. |
+| ..   ..    9   ..   ..   .. |
 +                             +
-| ..   ..   .. | ..   ..   .. |
-+     ---- ----+---- ----     +
-| ..   ..   .. | ..   ..   .. |
-+              +              +
-| ..   ..   ..   ..   ..   .. |
+| ..   ..   ..   10   ..   .. |
++                             +
+| ..    8   ..   ..   ..    4 |
++                             +
+| ..   ..   ..    7    5   .. |
 +---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| M | M | . = . | M | . |
-+---+---+---+---+---+---+
-| S | . = . | S | . | . |
-+---+-x-+---+---+---+---+
-| . | . | M | . | . | . |
-+-=-+---+---+---+---+---+
-| . | S | . | . | . | . |
-+---+---+---+---+---+---+
-| S | . | . | . | . | . |
+| M | M | . | . | . = . |
 +---+---+---+---+---+---+
 | . | . | . | . | . | . |
++---+---+---+---+---+---+
+| . = . | . | . | M | M |
++---+---+---+---+---+---+
+| M | M | . | . | . x . |
++---+---+---+---+---+---+
+| . | . | . | . | . | . |
++---+---+---+---+---+---+
+| . = . | . | . | M | S |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟧🟧🟧🟧🟧🟧
-🟨🟨🟥🟧🟧🟧🟧🟧🟧
-🟨🟩🟦🟦🟦🟦🟧🟧🟧
-🟩🟩🟪🟪🟪🟦🟫🟫🟫
-🟩🟪🟪🟪🟦🟦⬛⬛🟫
-🟪🟪🟪🟦🟦⬛⬛⬜🟪
-🟪🟪🟪🟦🟪⬛⬜⬜🟪
-🟪🟪🟪🟪🟪🟪⬜🟪🟪
-🟪🟪🟪🟪🟪🟪🟪🟪🟪
+🟥🟥🟧🟧🟧🟧🟨🟨
+🟩🟥🟧🟧🟧🟧🟧🟧
+🟩🟥🟦🟦🟧🟧🟧🟧
+🟩🟩🟦🟪🟪🟪🟧🟧
+🟩🟩🟦🟦🟪🟪🟧🟧
+🟩🟩🟩🟩🟪🟪🟪🟧
+🟩🟩🟩🟩🟩🟩🟫🟧
+⬛⬛🟩🟩🟩🟩🟫🟫
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │ 1 │   ┃ 2 │   │   ┃
+┃   │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 2 │ 3 ┃   │   │   ┃
+┃ 3 │ 2 │   ┃   │ 1 │ 4 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃ 1 │   │   ┃
+┃   │ 1 │ 3 ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 4 ┃   │   │   ┃
+┃   │   │   ┃ 1 │ 3 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃ 4 │ 5 │   ┃
+┃ 4 │ 5 │   ┃   │ 2 │ 3 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 5 ┃   │ 3 │   ┃
+┃   │   │   ┃   │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
+| |  | .. | .. | .. | .. | .. | |  |
 +----+----+----+----+----+----+----+
-| |  | |  | |  | .. | .. | .. | .. |
+| .. | |  | .. | .. | .. | |  | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | =  | |  | |  | .. | .. |
+| .. | .. | |6 | .. | |5 | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
+| |  | .. | .. | |  | .. | .. | |  |
 +----+----+----+----+----+----+----+
-| .. | .. | +9 | +2 | +2 | .. | .. |
+| .. | |6 | .. | .. | .. | |6 | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | +4 | +4 | +7 |
+| .. | .. | |  | .. | |  | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
+| .. | .. | .. | |  | .. | .. | .. |
 +----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+
-| H | # | R | # | E |
-+---+---+---+---+---+
-| G | U | O | L | L |
-+---+---+---+---+---+
-| R | D | O | E | H |
-+---+---+---+---+---+
-| I | G | A | Z | I |
-+---+---+---+---+---+
-| A | H | # | H | G |
-+---+---+---+---+---+
++---+---+---+---+---+---+
+| B | A | T | T | E | # |
++---+---+---+---+---+---+
+| E | # | # | C | N | D |
++---+---+---+---+---+---+
+| T | # | # | I | M | O |
++---+---+---+---+---+---+
+| W | H | E | # | # | N |
++---+---+---+---+---+---+
+| E | E | R | # | # | O |
++---+---+---+---+---+---+
+| # | N | B | E | R | G |
++---+---+---+---+---+---+
 
 Words:
-  HIGH
-  ROUGH
-  HAIRDO
-  GAZELLE
+  HERB
+  ATTEND
+  BETWEEN
+  ERGONOMIC
 ```
 
 ### pinpoint
 ```
-  1. A+
-  2. B-
-  3. AB+
-  4. O+ (the most common)
-  5. O- (universal red cell donor)
+  1. Code
+  2. Circuit
+  3. Ice
+  4. Deal
+  5. Tie (used to avoid a draw)
 
-  answer: Blood types!
+  answer: Words that come before “breaker”!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 890
-date      : 2026-10-07
+number    : 891
+date      : 2026-10-08
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  mark : The top + bottom rows = A two-word phrase meaning to discount, as a product for sale. Keep in mind: The first word may be at the bottom.
-  bark : Sound that might come after you say "Who's a good dog? Is it you?"
-  barn : Where a calf may be raised on a farm
-  born : Brought into the world
-  morn : Early part of the day, poetically
-  mown : Like a well-trimmed yard
-  down : The top + bottom rows = A two-word phrase meaning to discount, as a product for sale. Keep in mind: The first word may be at the bottom.
+  mama : The top + bottom rows = Two of the very first words a baby might speak, or the people who might hear them.
+  maya : Mesoamerican civilization known for its calendar and pyramids, as at Chichén Itzá
+  mays : Months after Aprils
+  pays : Puts the money up, as for a meal
+  pars : Expected scores on a golf course
+  para : Prefix before "phrase," "medic," or "chute"
+  papa : The top + bottom rows = Two of the very first words a baby might speak, or the people who might hear them.
 ```
 <!-- DAILY-GAMES-END -->
