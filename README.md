@@ -11,138 +11,140 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-10-08)
+## Today's games (2026-10-09)
 
 ### zip
 ```
-+----+----+----+----+----+----+
-| ..    2    3   ..   ..   .. |
-+                             +
-|  1   ..   ..   ..    6   .. |
-+                             +
-| ..   ..    9   ..   ..   .. |
-+                             +
-| ..   ..   ..   10   ..   .. |
-+                             +
-| ..    8   ..   ..   ..    4 |
-+                             +
-| ..   ..   ..    7    5   .. |
-+---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+----+
+| ..   ..    7   ..   ..   ..   .. |
++                         ----     +
+| ..    4   ..    6   ..   ..   .. |
++                         ----     +
+| ..   ..    8   ..   ..   ..   .. |
++                    ----          +
+| ..   ..   ..   ..   ..   ..   .. |
++          ----                    +
+| ..   ..   ..   ..    1   ..   .. |
++     ----                         +
+| ..   ..   ..    2   ..    3   .. |
++     ----                         +
+| ..   ..   ..   ..    5   ..   .. |
++---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| M | M | . | . | . = . |
+| M | . | M | . | . | . |
++---+-=-+---+---+---+---+
+| M | . | S | . | . | . |
++---+-x-+---+---+---+---+
+| S | . | M | . | . | . |
 +---+---+---+---+---+---+
-| . | . | . | . | . | . |
-+---+---+---+---+---+---+
-| . = . | . | . | M | M |
-+---+---+---+---+---+---+
-| M | M | . | . | . x . |
-+---+---+---+---+---+---+
-| . | . | . | . | . | . |
-+---+---+---+---+---+---+
-| . = . | . | . | M | S |
+| . | . | . | . | S | . |
++---+---+---+-=-+---+-=-+
+| . | . | . | . | M | . |
++---+---+---+-x-+---+-x-+
+| . | . | . | . | M | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟧🟧🟧🟧🟨🟨
-🟩🟥🟧🟧🟧🟧🟧🟧
-🟩🟥🟦🟦🟧🟧🟧🟧
-🟩🟩🟦🟪🟪🟪🟧🟧
-🟩🟩🟦🟦🟪🟪🟧🟧
-🟩🟩🟩🟩🟪🟪🟪🟧
-🟩🟩🟩🟩🟩🟩🟫🟧
-⬛⬛🟩🟩🟩🟩🟫🟫
+🟥🟥🟥🟧🟧🟧🟧🟧
+🟥🟧🟧🟧🟧🟨🟨🟨
+🟩🟩🟩🟩🟧🟧🟧🟨
+🟩🟦🟦🟦🟪🟪🟪🟪
+🟦🟦🟦🟦🟦🟦🟦🟪
+🟦🟦🟦🟦🟦🟫🟫🟫
+⬛⬛⬛🟦🟦🟦🟦🟫
+⬛🟦🟦🟦🟦🟦🟦🟦
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │   ┃   │   │   ┃
+┃   │   │ 1 ┃ 6 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 3 │ 2 │   ┃   │ 1 │ 4 ┃
+┃   │ 6 │   ┃   │ 1 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 1 │ 3 ┃   │   │   ┃
+┃   │   │ 6 ┃ 5 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃ 1 │ 3 │   ┃
+┃   │   │ 3 ┃ 1 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 4 │ 5 │   ┃   │ 2 │ 3 ┃
+┃   │ 1 │   ┃   │ 4 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │   │   ┃
+┃   │   │ 4 ┃ 3 │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+----+
-| |  | .. | .. | .. | .. | .. | |  |
+| .. | .. | .. | .. | .. | .. | -  |
 +----+----+----+----+----+----+----+
-| .. | |  | .. | .. | .. | |  | .. |
+| .. | +9 | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | |6 | .. | |5 | .. | .. |
+| .. | .. | .. | .. | +9 | .. | .. |
 +----+----+----+----+----+----+----+
-| |  | .. | .. | |  | .. | .. | |  |
+| +  | .. | .. | .. | .. | .. | +  |
 +----+----+----+----+----+----+----+
-| .. | |6 | .. | .. | .. | |6 | .. |
+| .. | .. | +9 | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | |  | .. | |  | .. | .. |
+| .. | .. | .. | .. | .. | +9 | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | |  | .. | .. | .. |
+| |  | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+---+
-| B | A | T | T | E | # |
+| # | B | N | A | # | # |
 +---+---+---+---+---+---+
-| E | # | # | C | N | D |
+| N | A | G | R | E | M |
 +---+---+---+---+---+---+
-| T | # | # | I | M | O |
+| G | L | E | P | C | O |
 +---+---+---+---+---+---+
-| W | H | E | # | # | N |
+| U | Z | P | O | O | O |
 +---+---+---+---+---+---+
-| E | E | R | # | # | O |
+| B | Z | W | D | R | B |
 +---+---+---+---+---+---+
-| # | N | B | E | R | G |
+| # | # | O | R | N | # |
 +---+---+---+---+---+---+
 
 Words:
-  HERB
-  ATTEND
-  BETWEEN
-  ERGONOMIC
+  BANGLE
+  POPCORN
+  BUZZWORD
+  BOOMERANG
 ```
 
 ### pinpoint
 ```
-  1. Code
-  2. Circuit
-  3. Ice
-  4. Deal
-  5. Tie (used to avoid a draw)
+  1. Blue
+  2. Right
+  3. Bowhead
+  4. Humpback
+  5. Orca (aka “Killer”)
 
-  answer: Words that come before “breaker”!
+  answer: Types of whales!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 891
-date      : 2026-10-08
+number    : 892
+date      : 2026-10-09
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  mama : The top + bottom rows = Two of the very first words a baby might speak, or the people who might hear them.
-  maya : Mesoamerican civilization known for its calendar and pyramids, as at Chichén Itzá
-  mays : Months after Aprils
-  pays : Puts the money up, as for a meal
-  pars : Expected scores on a golf course
-  para : Prefix before "phrase," "medic," or "chute"
-  papa : The top + bottom rows = Two of the very first words a baby might speak, or the people who might hear them.
+  half : The top + bottom rows = A two-word phrase for something that lasts for two beats in a piece of music in 4/4 time. Keep in mind: The first word may be at the bottom.
+  hale : ___ and hearty (in good physical condition)
+  hare : Long-eared animal related to the rabbit
+  dare : Challenge to do something risky
+  date : 10/10/26, for example
+  dote : Lavish affection (on)
+  note : The top + bottom rows = A two-word phrase for something that lasts for two beats in a piece of music in 4/4 time. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
