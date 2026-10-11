@@ -1,0 +1,61 @@
+{
+  "game": "minisudoku",
+  "date": "2026-10-11",
+  "grid_size": [
+    6,
+    6
+  ],
+  "cells": [
+    [
+      null,
+      null,
+      1,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      2,
+      null,
+      6,
+      null,
+      null
+    ],
+    [
+      3,
+      null,
+      null,
+      null,
+      5,
+      null
+    ],
+    [
+      null,
+      4,
+      null,
+      null,
+      null,
+      6
+    ],
+    [
+      null,
+      null,
+      5,
+      null,
+      6,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      5,
+      null,
+      null
+    ]
+  ],
+  "number": "426",
+  "title": "Big Box",
+  "difficulty": "Hard"
+}
