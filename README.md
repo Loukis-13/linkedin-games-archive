@@ -11,65 +11,67 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-10-12)
+## Today's games (2026-10-13)
 
 ### zip
 ```
 +----+----+----+----+----+----+
-| ..   ..   10    1   ..   .. |
-+                             +
-| ..   12   ..   ..   11   .. |
-+                             +
-|  9   ..   ..   ..   ..    2 |
-+                             +
-|  8   ..   ..   ..   ..    3 |
-+                             +
-| ..    6   ..   ..    5   .. |
-+                             +
-| ..   ..    7    4   ..   .. |
+| ..   ..   ..   ..   ..   .. |
++     ---- ---- ---- ----     +
+| ..   ..    3 |  5   ..   .. |
++              +              +
+| ..    8   .. | ..    4   .. |
++              +              +
+| ..    1   .. | ..    7   .. |
++              +              +
+| ..   ..    2 |  6   ..   .. |
++     ---- ----+---- ----     +
+| ..   ..   ..   ..   ..   .. |
 +---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . x . | . = . | . |
-+-=-+---+---+---+---+-x-+
-| . | M | S | . | S | . |
+| . | . | . | . | . | . |
++-=-+-x-+-x-+---+---+---+
+| . | M | . | . | . | . |
++-x-+---+-=-+---+---+---+
+| . = . x . | . | . | . |
 +---+---+---+---+---+---+
+| . | . | . | . = . x . |
++---+---+---+-=-+---+-x-+
 | . | . | . | . | M | . |
-+-x-+---+---+---+---+-x-+
-| . | S | . | . | . | . |
-+---+---+---+---+---+---+
-| . | M | . | S | S | . |
-+-=-+---+---+---+---+-x-+
-| . | . x . | . = . | . |
++---+---+---+-x-+-=-+-=-+
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟥🟥🟥🟥
-🟥🟥🟥🟥🟥🟧🟧
-🟨🟧🟧🟧🟧🟧🟧
-🟨🟨🟨🟨🟨🟨🟩
-🟦🟦🟩🟩🟩🟩🟩
-🟦🟦🟦🟦🟪🟪🟪
-🟫🟫🟫🟫🟫🟪🟪
+🟥🟥🟨🟨🟨🟨🟨🟨🟨
+🟥🟥🟨🟨🟨🟨🟨🟧🟨
+🟨🟨🟩🟩🟨🟨🟨🟧🟧
+🟨🟨🟩🟨🟨🟦🟦🟨🟨
+🟪🟨🟨🟨🟨🟦🟫🟨🟨
+🟪🟨🟨🟨🟨🟨🟫🟫🟨
+🟨⬛⬛🟨⬜⬜🟨🟨🟨
+🟨⬛🟨🟨⬜⬜🟨🟨🟨
+🟨🟨🟨🟨🟨🟨🟨🟨🟨
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │   ┃   │   │   ┃
+┃   │   │   ┃ 2 │ 1 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 4 │   │ 5 ┃ 1 │   │ 6 ┃
+┃   │   │ 4 ┃ 3 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 2 │   │ 4 ┃ 6 │   │ 3 ┃
+┃ 6 │   │ 5 ┃   │   │ 2 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 1 │ 3 ┃ 2 │ 4 │   ┃
+┃ 1 │   │   ┃   │   │ 3 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │ 2 ┃ 5 │   │   ┃
+┃   │ 2 │   ┃   │ 3 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
 ┃   │   │ 1 ┃ 4 │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -78,66 +80,66 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 ### patches
 ```
 +----+----+----+----+----+----+
-| +6 | .. | .. | .. | =9 | .. |
+| +5 | .. | .. | .. | .. | |5 |
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
+| .. | .. | +6 | .. | .. | .. |
 +----+----+----+----+----+----+
-| |4 | .. | +6 | .. | .. | .. |
+| .. | .. | .. | +6 | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | +2 | .. | =4 |
+| .. | .. | +3 | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
+| .. | .. | .. | +3 | .. | .. |
 +----+----+----+----+----+----+
-| .. | -3 | .. | .. | .. | +2 |
+| =4 | .. | .. | .. | .. | +4 |
 +----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+
-| Y | # | N | E | B |
+| A | R | C | A | P |
 +---+---+---+---+---+
-| T | # | D | L | E |
+| M | Y | P | # | K |
 +---+---+---+---+---+
-| E | # | V | # | M |
+| I | D | # | # | C |
 +---+---+---+---+---+
-| I | R | A | # | O |
+| T | # | # | # | O |
 +---+---+---+---+---+
-| C | U | T | # | N |
+| I | E | R | B | L |
 +---+---+---+---+---+
 
 Words:
-  CUT
-  BEND
-  LEMON
-  VARIETY
+  CAP
+  TIER
+  BLOCK
+  PYRAMID
 ```
 
 ### pinpoint
 ```
-  1. General
-  2. Private
-  3. Major
-  4. Colonel
-  5. Lieutenant
+  1. Amethyst
+  2. Mauve
+  3. Lilac
+  4. Plum
+  5. Lavender (looks like 🪻)
 
-  answer: Military ranks!
+  answer: Shades of purple or violet!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 895
-date      : 2026-10-12
+number    : 896
+date      : 2026-10-13
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  spin : The top + bottom rows = Two words meaning to rotate.
-  shin : Part of the lower leg that might ache for a runner
-  chin : Central part of a jawline
-  coin : Metallic piece of currency
-  corn : Vegetable that may be served on or off the cob
-  torn : Ripped in half
-  turn : The top + bottom rows = Two words meaning to rotate.
+  post : The top + bottom rows = Two verbs meaning to drop in the mail.
+  most : Opposite of least
+  mist : Fine spray of water
+  mint : Herb name that often follows “pepper” or “spear”
+  mind : Keep in ___ (take into account)
+  mend : Repair, as a hole in a garment
+  send : The top + bottom rows = Two verbs meaning to drop in the mail.
 ```
 <!-- DAILY-GAMES-END -->

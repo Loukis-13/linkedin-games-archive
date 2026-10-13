@@ -1,0 +1,61 @@
+{
+  "game": "minisudoku",
+  "date": "2026-10-13",
+  "grid_size": [
+    6,
+    6
+  ],
+  "cells": [
+    [
+      null,
+      null,
+      null,
+      2,
+      1,
+      null
+    ],
+    [
+      null,
+      null,
+      4,
+      3,
+      null,
+      null
+    ],
+    [
+      6,
+      null,
+      5,
+      null,
+      null,
+      2
+    ],
+    [
+      1,
+      null,
+      null,
+      null,
+      null,
+      3
+    ],
+    [
+      null,
+      2,
+      null,
+      null,
+      3,
+      null
+    ],
+    [
+      null,
+      null,
+      1,
+      4,
+      null,
+      null
+    ]
+  ],
+  "number": "428",
+  "title": "Coffee Cup",
+  "difficulty": null
+}
