@@ -11,21 +11,21 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-10-13)
+## Today's games (2026-10-14)
 
 ### zip
 ```
 +----+----+----+----+----+----+
 | ..   ..   ..   ..   ..   .. |
-+     ---- ---- ---- ----     +
-| ..   ..    3 |  5   ..   .. |
-+              +              +
-| ..    8   .. | ..    4   .. |
-+              +              +
-| ..    1   .. | ..    7   .. |
-+              +              +
-| ..   ..    2 |  6   ..   .. |
-+     ---- ----+---- ----     +
++     ----           ----     +
+| ..    8   ..   ..   ..    7 |
++     ----           ----     +
+| ..    6   ..   ..   ..    2 |
++     ----           ----     +
+|  5   ..   ..   ..    1   .. |
++     ----           ----     +
+|  4   ..   ..   ..    3   .. |
++     ----           ----     +
 | ..   ..   ..   ..   ..   .. |
 +---- ---- ---- ---- ---- ----+
 ```
@@ -34,112 +34,110 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 ```
 +---+---+---+---+---+---+
 | . | . | . | . | . | . |
-+-=-+-x-+-x-+---+---+---+
-| . | M | . | . | . | . |
-+-x-+---+-=-+---+---+---+
-| . = . x . | . | . | . |
++---+---+---+-=-+---+---+
+| . | . | M | . | . | . |
 +---+---+---+---+---+---+
-| . | . | . | . = . x . |
-+---+---+---+-=-+---+-x-+
-| . | . | . | . | M | . |
-+---+---+---+-x-+-=-+-=-+
-| . | . | . | . | . | . |
+| . | . | M | . = . | . |
++---+-=-+---+---+---+---+
+| M | . | S | S | . | . |
++---+---+---+---+---+---+
+| S | . x . | . | . | . |
++---+---+---+---+---+---+
+| M | M | . | . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟨🟨🟨🟨🟨🟨🟨
-🟥🟥🟨🟨🟨🟨🟨🟧🟨
-🟨🟨🟩🟩🟨🟨🟨🟧🟧
-🟨🟨🟩🟨🟨🟦🟦🟨🟨
-🟪🟨🟨🟨🟨🟦🟫🟨🟨
-🟪🟨🟨🟨🟨🟨🟫🟫🟨
-🟨⬛⬛🟨⬜⬜🟨🟨🟨
-🟨⬛🟨🟨⬜⬜🟨🟨🟨
-🟨🟨🟨🟨🟨🟨🟨🟨🟨
+🟥🟥🟥🟪🟨🟨🟨
+🟥🟥🟩🟪🟩🟨🟨
+🟥🟥🟩🟩🟩🟨🟨
+🟦🟦🟦🟩🟨🟨🟨
+🟦🟦🟦🟧🟨🟨🟨
+🟦🟫🟦🟧🟧🟨🟨
+🟦🟫🟫🟫🟧🟧🟨
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │   ┃ 2 │ 1 │   ┃
+┃ 1 │ 2 │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 4 ┃ 3 │   │   ┃
+┃   │   │   ┃   │ 1 │ 3 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 6 │   │ 5 ┃   │   │ 2 ┃
+┃ 2 │ 4 │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 1 │   │   ┃   │   │ 3 ┃
+┃   │   │   ┃   │ 2 │ 5 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 2 │   ┃   │ 3 │   ┃
+┃ 3 │ 1 │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 1 ┃ 4 │   │   ┃
+┃   │   │   ┃   │ 3 │ 4 ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+
-| +5 | .. | .. | .. | .. | |5 |
+| .. | |2 | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | +6 | .. | .. | .. |
+| |  | .. | =9 | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | +6 | .. | .. |
+| .. | |4 | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | +3 | .. | .. | .. |
+| .. | .. | .. | .. | +2 | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | +3 | .. | .. |
+| .. | .. | .. | +6 | .. | +  |
 +----+----+----+----+----+----+
-| =4 | .. | .. | .. | .. | +4 |
+| .. | .. | .. | .. | +2 | .. |
 +----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+
-| A | R | C | A | P |
+| # | T | # | T | T |
 +---+---+---+---+---+
-| M | Y | P | # | K |
+| E | U | O | A | I |
 +---+---+---+---+---+
-| I | D | # | # | C |
+| G | C | G | D | R |
 +---+---+---+---+---+
-| T | # | # | # | O |
+| A | A | E | U | E |
 +---+---+---+---+---+
-| I | E | R | B | L |
+| B | B | # | B | # |
 +---+---+---+---+---+
 
 Words:
-  CAP
-  TIER
-  BLOCK
-  PYRAMID
+  OUT
+  BUDGE
+  ATTIRE
+  CABBAGE
 ```
 
 ### pinpoint
 ```
-  1. Amethyst
-  2. Mauve
-  3. Lilac
-  4. Plum
-  5. Lavender (looks like 🪻)
+  1. The dog
+  2. The streets
+  3. The line
+  4. The plank
+  5. A tightrope (take no false steps!)
 
-  answer: Shades of purple or violet!
+  answer: Things you can “walk”!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 896
-date      : 2026-10-13
+number    : 897
+date      : 2026-10-14
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  post : The top + bottom rows = Two verbs meaning to drop in the mail.
-  most : Opposite of least
-  mist : Fine spray of water
-  mint : Herb name that often follows “pepper” or “spear”
-  mind : Keep in ___ (take into account)
-  mend : Repair, as a hole in a garment
-  send : The top + bottom rows = Two verbs meaning to drop in the mail.
+  nine : The top + bottom rows = A hyphenated word describing a golf course that's half as long as usual. Keep in mind: The first word may be at the bottom.
+  nice : Pleasant, or the name of a city in France
+  mice : Computer peripherals used for clicking
+  mace : Medieval club, often with spiky bits
+  male : Like a bull or ram, but not a cow or ewe
+  mole : Critter that digs tunnels
+  hole : The top + bottom rows = A hyphenated word describing a golf course that's half as long as usual. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
