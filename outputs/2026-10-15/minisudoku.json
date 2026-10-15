@@ -1,0 +1,61 @@
+{
+  "game": "minisudoku",
+  "date": "2026-10-15",
+  "grid_size": [
+    6,
+    6
+  ],
+  "cells": [
+    [
+      1,
+      2,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      3,
+      4,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      1,
+      2,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      3,
+      4,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      5,
+      4
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      3
+    ]
+  ],
+  "number": "430",
+  "title": "Divider",
+  "difficulty": null
+}
