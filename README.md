@@ -11,142 +11,140 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-10-15)
+## Today's games (2026-10-16)
 
 ### zip
 ```
 +----+----+----+----+----+----+----+
-| ..   ..   ..   ..   ..   ..   .. |
-+     ---- ----                    +
-| .. |  2   ..   ..    6    7   .. |
-+    +                             +
-| .. | ..   ..   ..    1    8   .. |
-+    +---- ----                    +
-| ..   ..   ..   ..   ..   ..   .. |
-+                    ---- ----     +
-| ..    9    4   ..   ..   .. | .. |
-+                             +    +
-| ..   10    3   ..   ..    5 | .. |
-+                    ---- ----+    +
-| ..   ..   ..   ..   ..   ..   .. |
+| ..   ..   ..    2   14   ..   .. |
++                                  +
+| ..   ..    4   ..   ..    1   .. |
++                                  +
+| ..    3   ..   ..   ..   ..   13 |
++                                  +
+|  7   ..   ..   ..   ..   ..   12 |
++                                  +
+|  8   ..   ..   ..   ..    5   .. |
++                                  +
+| ..   10   ..   ..    6   ..   .. |
++                                  +
+| ..   ..    9   11   ..   ..   .. |
 +---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | M | M | . | . | . |
-+---+---+---+---+---+---+
-| . | S | M | . | . | . |
-+---+---+---+---+---+---+
-| . | M | . | . | . | . |
-+---+---+---+-x-+---+---+
-| . | S | . | . | . | . |
-+---+---+---+-=-+---+---+
 | . | . | . | . | . | . |
++---+---+---+---+---+---+
+| S | . | M | . | M | . |
++---+---+---+---+---+---+
+| . | . | . = . | . | . |
++---+-=-+---+---+---+---+
+| M | . | S | . | M | . |
 +---+---+---+-x-+---+---+
-| . | . | . | . = . | . |
+| . | . x . | . | . | . |
++---+---+---+---+---+---+
+| M | . | M | . | S | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟥🟥🟥🟥🟥
-🟥🟧🟧🟧🟨🟨🟨🟥
-🟥🟧🟧🟧🟩🟩🟩🟥
-🟥🟧🟧🟥🟥🟥🟥🟥
-🟥🟥🟥🟥🟥🟦🟦🟥
-🟪🟫🟫🟫🟦🟦🟦🟥
-🟪🟫⬛⬛🟦🟦🟦🟥
-🟪🟪🟪🟪🟪🟥🟥🟥
+🟥🟥🟥🟥🟥🟥🟧🟧
+🟥🟥🟥🟨🟩🟥🟥🟧
+🟥🟥🟨🟨🟩🟩🟥🟧
+🟥🟥🟨🟦🟦🟩🟥🟪
+🟥🟥🟥🟦🟦🟥🟥🟪
+🟫🟥⬛⬛⬛⬛🟥🟥
+🟫🟫⬛⬛⬛⬛🟥🟥
+🟫🟫🟫⬛⬛🟥🟥🟥
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃ 1 │ 2 │   ┃   │   │   ┃
+┃   │ 1 │   ┃   │ 2 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 3 │ 4 ┃   │   │   ┃
+┃   │   │ 3 ┃ 4 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
+┃   │   │ 2 ┃ 5 │   │   ┃
+┃───┼───┼───┃───┼───┼───┃
 ┃   │   │ 1 ┃ 2 │   │   ┃
-┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃ 3 │ 4 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃   │ 5 │ 4 ┃
+┃   │   │ 4 ┃ 3 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │   │ 3 ┃
+┃   │ 2 │   ┃   │ 4 │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | +5 | .. | +3 | .. | .. |
-+----+----+----+----+----+----+----+----+
-| .. | +4 | .. | .. | .. | .. | .. | +4 |
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | -5 | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
-| +6 | .. | |5 | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | |5 | .. | +4 |
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | |5 | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
-| +4 | .. | .. | .. | .. | .. | +6 | .. |
-+----+----+----+----+----+----+----+----+
-| .. | .. | +3 | .. | +5 | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
++----+----+----+----+----+----+----+
+| .. | .. | +3 | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | +6 | .. | =  | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | |  | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | |  | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | =  | .. | +12 | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | +3 | .. | .. |
++----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+---+
-| # | # | # | M | U | M |
+| # | S | E | L | A | C |
 +---+---+---+---+---+---+
-| M | A | X | I | L | E |
+| T | I | H | T | T | I |
 +---+---+---+---+---+---+
-| # | # | E | T | S | A |
+| E | S | # | # | C | A |
 +---+---+---+---+---+---+
-| A | G | L | B | # | # |
+| K | N | # | # | S | R |
 +---+---+---+---+---+---+
-| N | I | G | M | I | N |
+| O | A | L | B | C | P |
 +---+---+---+---+---+---+
-| T | I | C | # | # | # |
+| I | R | A | N | E | # |
 +---+---+---+---+---+---+
 
 Words:
-  LEAST
-  NIMBLE
-  MAXIMUM
-  GIGANTIC
+  THESIS
+  BLANKET
+  SCENARIO
+  PRACTICAL
 ```
 
 ### pinpoint
 ```
-  1. Drum
-  2. Bass
-  3. Sole
-  4. Perch
-  5. Flounder
+  1. Off
+  2. Cord
+  3. Tide
+  4. To pieces
+  5. -Roaring success
 
-  answer: Types of fish!
+  answer: Words that come after “rip”!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 898
-date      : 2026-10-15
+number    : 899
+date      : 2026-10-16
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  folk : The top + bottom rows = A two-word phrase for a music genre that often features acoustic guitars and socially conscious lyrics. Keep in mind: The first word may be at the bottom.
-  fold : Drop out of a poker hand
-  food : What many farms generate
-  hood : Robin ___ (legendary outlaw)
-  hook : It's at the end of a fishing line
-  rook : Game piece that moves up and down and side to side, but not diagonally
-  rock : The top + bottom rows = A two-word phrase for a music genre that often features acoustic guitars and socially conscious lyrics. Keep in mind: The first word may be at the bottom.
+  sled : The top + bottom rows = A two-word phrase for animals that may work in snowy conditions. Keep in mind: The first word may be at the bottom.
+  seed : A tree may grow from it
+  feed : Give a supply of nutrients
+  fees : Charges for professional services
+  foes : Opposing forces
+  fogs : Weather patterns that may be described as "pea soup"
+  dogs : The top + bottom rows = A two-word phrase for animals that may work in snowy conditions. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
