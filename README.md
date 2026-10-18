@@ -11,143 +11,149 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-10-17)
+## Today's games (2026-10-18)
 
 ### zip
 ```
-+----+----+----+----+----+----+----+
-| ..   ..   ..   ..   ..   ..   .. |
-+                                  +
-| ..   16    4   ..   ..    3    2 |
-+                                  +
-| ..   15   14   ..   ..   13    1 |
-+                                  +
-| ..   ..   ..   ..   ..   ..   .. |
-+                                  +
-|  8    7   ..   ..    5   12   .. |
-+                                  +
-|  9    6   ..   ..   10   11   .. |
-+                                  +
-| ..   ..   ..   ..   ..   ..   .. |
-+---- ---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+----+----+
+| ..   ..   ..   ..   ..   ..   ..   .. |
++                                       +
+| .. | ..   ..   ..   .. | ..    3   .. |
++    +                   +              +
+| .. |  1   ..   .. |  2   .. | .. | .. |
++    +              +         +    +    +
+| ..    4   .. |  5   ..   .. | ..   .. |
++              +              +         +
+| ..   .. | ..   ..    8 | ..    7   .. |
++         +              +              +
+| .. | .. | ..   10 | ..   ..    9 | .. |
++    +    +         +              +    +
+| .. |  6   .. | ..   ..   ..   .. | .. |
++    +         +                   +    +
+| ..   ..   ..   ..   ..   ..   ..   .. |
++---- ---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . | . | S | M | S |
-+---+---+---+---+---+---+
-| . | . | . | . | M | M |
-+---+---+---+---+---+---+
-| . | . | . | . | . | M |
-+---+---+---+---+---+---+
+| S | M | M | . | . | . |
++---+---+---+---+-=-+---+
 | . | . | . | . | . | . |
-+-x-+---+---+---+---+---+
-| . = . | . | . | . | . |
-+-=-+-x-+---+---+---+---+
-| . x . = . | . | . | . |
++---+---+---+---+-x-+---+
+| . | . | . | . | . | . |
++---+-x-+---+---+-x-+---+
+| . | . | . | . | . | . |
++---+-x-+---+---+---+---+
+| . | . | . | . | . | . |
++---+-x-+---+---+---+---+
+| . | . | . | S | M | M |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟥🟥🟥🟥🟥🟥
-🟧🟧🟧🟥🟥🟥🟥🟥🟥
-🟧🟧🟨🟥🟥🟥🟥🟥🟥
-🟨🟨🟨🟩🟩🟩🟥🟥🟥
-⬜⬜⬜🟩🟦🟩🟫🟪🟪
-⬜⬜⬜🟩🟦🟦🟫🟫🟪
-⬜⬜⬜⬜⬜⬜🟫🟪🟪
-⬜⬜⬛⬛⬜⬜⬜⬜⬜
-⬜⬛⬛⬜⬜⬜⬜⬜⬜
+🟪🟪🟪🟪⬛⬛⬛⬛⬛
+🟪⬜⬜⬜⬜🟫🟫🟫⬛
+🟪⬜🟦🟦🟦🟦🟦🟫⬛
+🟪⬜🟦🟦🟦🟦🟦🟫⬛
+🟪🟨🟦🟦🟦🟦🟦🟫⬛
+🟪🟨🟦🟦🟦🟦🟦🟫🟧
+🟥🟨🟦🟦🟦🟦🟦🟩🟧
+🟥🟨🟨🟦🟦🟦🟩🟩🟧
+🟥🟥🟧🟧🟧🟧🟧🟧🟧
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │   ┃   │   │   ┃
-┃───┼───┼───┃───┼───┼───┃
-┃   │ 1 │ 2 ┃ 3 │ 4 │   ┃
-┣━━━━━━━━━━━╋━━━━━━━━━━━┫
 ┃   │   │   ┃   │ 1 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 3 │   ┃   │   │   ┃
+┃   │ 1 │   ┃ 2 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 5 │ 1 ┃ 4 │ 2 │   ┃
+┃ 1 │   │   ┃   │ 3 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │   │   ┃
+┃   │ 3 │   ┃   │   │ 4 ┃
+┣━━━━━━━━━━━╋━━━━━━━━━━━┫
+┃   │   │ 2 ┃   │ 5 │   ┃
+┃───┼───┼───┃───┼───┼───┃
+┃   │ 6 │   ┃   │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | +2 |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | |  | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | -  | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | |  | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | =  | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| +2 | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | +2 | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | -  | +2 | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | -  | =  | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| |  | |  | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | |  | |  |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | |  | -  | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | +8 | -  | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | +5 | .. | .. | .. |
++----+----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+---+---+
-| L | A | W | A | R | E | T |
+| W | E | L | L | K | S | T |
 +---+---+---+---+---+---+---+
-| L | # | F | L | L | L | I |
+| D | N | K | O | R | T | A |
 +---+---+---+---+---+---+---+
-| L | # | U | L | O | G | I |
+| T | O | # | W | # | I | K |
 +---+---+---+---+---+---+---+
-| I | # | # | L | # | T | S |
+| U | Q | E | # | N | O | C |
 +---+---+---+---+---+---+---+
-| F | D | N | A | # | I | C |
+| I | E | # | D | # | B | A |
 +---+---+---+---+---+---+---+
-| L | # | L | A | # | # | A |
+| N | C | N | R | A | W | E |
 +---+---+---+---+---+---+---+
-| U | L | L | C | O | L | L |
+| O | X | A | R | U | D | N |
 +---+---+---+---+---+---+---+
 
 Words:
-  LULL
-  LOCAL
-  LAWFUL
-  LITERAL
-  LANDFILL
-  LOGISTICAL
+  KNOT
+  DWELL
+  EQUINOX
+  DRAWBACK
+  ENDURANCE
+  WORKSTATION
 ```
 
 ### pinpoint
 ```
-  1. Defibrillator
-  2. Steamboat
-  3. Canoe
-  4. Atari 2600 (to play some Pong?)
-  5. Table tennis (to hit the ball!)
+  1. Mail
+  2. Assignment
+  3. Hang up
+  4. Fence pole
+  5. After/subsequent (as a prefix)
 
-  answer: Things with paddles!
+  answer: Different definitions of “post”!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 900
-date      : 2026-10-17
+number    : 901
+date      : 2026-10-18
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  song : The top + bottom rows = A compound word for a volume that holds lots of lyrics. Keep in mind: The first word may be at the bottom.
-  gong : Percussion instrument resembling a very large cymbal
-  gone : Missing
-  cone : Alternative to a cup in an ice cream parlor
-  conk : ___ out (break down or fall asleep)
-  cook : Their job might require an apron
-  book : The top + bottom rows = A compound word for a volume that holds lots of lyrics. Keep in mind: The first word may be at the bottom.
+  cries : The top + bottom rows = A two-word phrase for what a person sometimes does when receiving overwhelmingly good news. Keep in mind: The first word may be at the bottom.
+  cribs : Baby beds
+  crabs : Ten-legged creatures
+  crams : Studies hard right before a test
+  trams : Streetcars
+  teams : Microsoft's video messaging app, or groups of coworkers it might bring together
+  tears : The top + bottom rows = A two-word phrase for what a person sometimes does when receiving overwhelmingly good news. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
