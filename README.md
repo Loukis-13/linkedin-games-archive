@@ -11,149 +11,135 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-10-18)
+## Today's games (2026-10-19)
 
 ### zip
 ```
-+----+----+----+----+----+----+----+----+
-| ..   ..   ..   ..   ..   ..   ..   .. |
-+                                       +
-| .. | ..   ..   ..   .. | ..    3   .. |
-+    +                   +              +
-| .. |  1   ..   .. |  2   .. | .. | .. |
-+    +              +         +    +    +
-| ..    4   .. |  5   ..   .. | ..   .. |
-+              +              +         +
-| ..   .. | ..   ..    8 | ..    7   .. |
-+         +              +              +
-| .. | .. | ..   10 | ..   ..    9 | .. |
-+    +    +         +              +    +
-| .. |  6   .. | ..   ..   ..   .. | .. |
-+    +         +                   +    +
-| ..   ..   ..   ..   ..   ..   ..   .. |
-+---- ---- ---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+
+|  1   ..   ..   ..   ..    4 |
++                             +
+| ..   ..   ..   ..    6   .. |
++                             +
+| ..   ..   ..    8   ..   .. |
++                             +
+| ..   ..    7   ..   ..   .. |
++                             +
+| ..    5   ..   ..   ..   .. |
++                             +
+|  2   ..   ..   ..   ..    3 |
++---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| S | M | M | . | . | . |
-+---+---+---+---+-=-+---+
+| . | . | . | . = . | . |
++---+---+---+-=-+---+---+
+| . | . | . = . | . | . |
++---+---+-x-+---+---+---+
 | . | . | . | . | . | . |
-+---+---+---+---+-x-+---+
++---+---+---+---+---+---+
+| M | M | . | S | M | . |
++---+---+---+---+---+---+
+| M | S | . | M | M | . |
++---+---+---+---+---+---+
 | . | . | . | . | . | . |
-+---+-x-+---+---+-x-+---+
-| . | . | . | . | . | . |
-+---+-x-+---+---+---+---+
-| . | . | . | . | . | . |
-+---+-x-+---+---+---+---+
-| . | . | . | S | M | M |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟪🟪🟪🟪⬛⬛⬛⬛⬛
-🟪⬜⬜⬜⬜🟫🟫🟫⬛
-🟪⬜🟦🟦🟦🟦🟦🟫⬛
-🟪⬜🟦🟦🟦🟦🟦🟫⬛
-🟪🟨🟦🟦🟦🟦🟦🟫⬛
-🟪🟨🟦🟦🟦🟦🟦🟫🟧
-🟥🟨🟦🟦🟦🟦🟦🟩🟧
-🟥🟨🟨🟦🟦🟦🟩🟩🟧
-🟥🟥🟧🟧🟧🟧🟧🟧🟧
+🟫🟫🟧🟧🟧🟦🟦
+🟫🟫🟧🟥🟧🟦🟦
+🟫🟫🟧🟧🟧🟦🟦
+🟫🟪🟪🟧🟨🟨🟦
+🟫🟪🟧🟧🟧🟨🟦
+🟫🟪🟪🟧🟨🟨🟩
+🟫🟪🟪🟧🟩🟩🟩
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │   ┃   │ 1 │   ┃
+┃   │ 1 │ 2 ┃ 3 │ 4 │ 5 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 1 │   ┃ 2 │   │   ┃
+┃ 5 │   │   ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 1 │   │   ┃   │ 3 │   ┃
+┃ 4 │   │   ┃ 2 │ 5 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 3 │   ┃   │   │ 4 ┃
+┃ 3 │   │ 5 ┃   │ 6 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │ 2 ┃   │ 5 │   ┃
+┃ 2 │   │ 4 ┃ 1 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 6 │   ┃   │   │   ┃
+┃ 1 │   │   ┃   │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | +2 | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
-| .. | .. | -  | +2 | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
-| .. | -  | =  | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
-| |  | |  | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | |  | |  |
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | |  | -  | .. |
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | +8 | -  | .. | .. |
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | +5 | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | +6 | +2 | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | +4 | .. | .. | +9 | .. | .. |
++----+----+----+----+----+----+----+
+| .. | +8 | .. | .. | +6 | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | |  | |  | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | |2 | -8 | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+---+---+
-| W | E | L | L | K | S | T |
-+---+---+---+---+---+---+---+
-| D | N | K | O | R | T | A |
-+---+---+---+---+---+---+---+
-| T | O | # | W | # | I | K |
-+---+---+---+---+---+---+---+
-| U | Q | E | # | N | O | C |
-+---+---+---+---+---+---+---+
-| I | E | # | D | # | B | A |
-+---+---+---+---+---+---+---+
-| N | C | N | R | A | W | E |
-+---+---+---+---+---+---+---+
-| O | X | A | R | U | D | N |
-+---+---+---+---+---+---+---+
++---+---+---+---+---+
+| T | # | E | # | A |
++---+---+---+---+---+
+| S | E | L | I | G |
++---+---+---+---+---+
+| # | T | E | E | # |
++---+---+---+---+---+
+| O | N | S | S | O |
++---+---+---+---+---+
+| C | # | U | # | P |
++---+---+---+---+---+
 
 Words:
-  KNOT
-  DWELL
-  EQUINOX
-  DRAWBACK
-  ENDURANCE
-  WORKSTATION
+  USE
+  POSE
+  AGILE
+  CONTEST
 ```
 
 ### pinpoint
 ```
-  1. Mail
-  2. Assignment
-  3. Hang up
-  4. Fence pole
-  5. After/subsequent (as a prefix)
+  1. Acrobat
+  2. Clown
+  3. Ringmaster
+  4. Sword swallower
+  5. Lion tamer
 
-  answer: Different definitions of “post”!
+  answer: Professions seen at the circus!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 901
-date      : 2026-10-18
+number    : 902
+date      : 2026-10-19
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  cries : The top + bottom rows = A two-word phrase for what a person sometimes does when receiving overwhelmingly good news. Keep in mind: The first word may be at the bottom.
-  cribs : Baby beds
-  crabs : Ten-legged creatures
-  crams : Studies hard right before a test
-  trams : Streetcars
-  teams : Microsoft's video messaging app, or groups of coworkers it might bring together
-  tears : The top + bottom rows = A two-word phrase for what a person sometimes does when receiving overwhelmingly good news. Keep in mind: The first word may be at the bottom.
+  dice : The top + bottom rows = Objects rolled during some board games, and a common shape for them. Keep in mind: The first word may be at the bottom.
+  dire : Desperate, as a situation or a need
+  dare : Be boldly courageous
+  pare : Peel the skin off of, as fruit
+  pure : ___ and simple (no more, no less)
+  cure : Completely get rid of, as an illness
+  cube : The top + bottom rows = Objects rolled during some board games, and a common shape for them. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
