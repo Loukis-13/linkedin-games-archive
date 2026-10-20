@@ -11,135 +11,135 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-10-19)
+## Today's games (2026-10-20)
 
 ### zip
 ```
 +----+----+----+----+----+----+
-|  1   ..   ..   ..   ..    4 |
+|  1   ..   ..   ..   ..    9 |
 +                             +
-| ..   ..   ..   ..    6   .. |
+| ..   ..    2   ..    4   .. |
 +                             +
-| ..   ..   ..    8   ..   .. |
+| ..    6   ..    8   ..   .. |
 +                             +
 | ..   ..    7   ..   ..   .. |
 +                             +
 | ..    5   ..   ..   ..   .. |
 +                             +
-|  2   ..   ..   ..   ..    3 |
+|  3   ..   ..   ..   ..   .. |
 +---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . | . | . = . | . |
+| . | . | . = . | . | S |
++---+---+---+---+---+---+
+| . | . | . | . | . | M |
++---+---+-=-+---+---+---+
+| . | . | . | . | M | M |
++---+---+---+---+---+---+
+| M | M | . | . | . | . |
 +---+---+---+-=-+---+---+
-| . | . | . = . | . | . |
-+---+---+-x-+---+---+---+
-| . | . | . | . | . | . |
+| S | . | . | . | . | . |
 +---+---+---+---+---+---+
-| M | M | . | S | M | . |
-+---+---+---+---+---+---+
-| M | S | . | M | M | . |
-+---+---+---+---+---+---+
-| . | . | . | . | . | . |
+| M | . | . = . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟫🟫🟧🟧🟧🟦🟦
-🟫🟫🟧🟥🟧🟦🟦
-🟫🟫🟧🟧🟧🟦🟦
-🟫🟪🟪🟧🟨🟨🟦
-🟫🟪🟧🟧🟧🟨🟦
-🟫🟪🟪🟧🟨🟨🟩
-🟫🟪🟪🟧🟩🟩🟩
+🟥🟥🟥🟥🟥🟧🟥🟨
+🟥🟥🟥🟥🟥🟧🟥🟨
+🟥🟥🟥🟥🟥🟥🟥🟥
+🟥🟩🟥🟦🟥🟥🟥🟥
+🟥🟩🟥🟦🟥🟥🟥🟥
+🟪🟪🟪🟪🟥🟥🟥🟥
+🟪🟫🟫🟪🟥🟥🟥🟥
+🟪🟪🟪🟪🟥⬛⬛⬛
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │ 1 │ 2 ┃ 3 │ 4 │ 5 ┃
+┃   │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 5 │   │   ┃   │   │   ┃
+┃   │ 1 │   ┃ 2 │   │ 3 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 4 │   │   ┃ 2 │ 5 │   ┃
+┃   │   │ 1 ┃   │ 3 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 3 │   │ 5 ┃   │ 6 │   ┃
+┃   │ 2 │   ┃ 5 │   │ 4 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 2 │   │ 4 ┃ 1 │   │   ┃
+┃   │   │ 2 ┃   │ 5 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 1 │   │   ┃   │   │   ┃
+┃   │ 4 │   ┃ 3 │   │ 1 ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
+| +3 | .. | .. | .. | .. | +5 | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | +6 | +2 | .. | .. | .. |
+| .. | |  | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | +4 | .. | .. | +9 | .. | .. |
+| .. | .. | +5 | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | +8 | .. | .. | +6 | .. | .. |
+| .. | .. | .. | +7 | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | |  | |  | .. | .. | .. |
+| .. | .. | .. | .. | +7 | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | |2 | -8 | .. | .. | .. |
+| .. | .. | .. | .. | .. | |  | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
+| .. | +3 | .. | .. | .. | .. | +7 |
 +----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+
-| T | # | E | # | A |
+| E | D | I | S | T |
 +---+---+---+---+---+
-| S | E | L | I | G |
+| E | N | T | O | U |
 +---+---+---+---+---+
-| # | T | E | E | # |
+| # | # | R | # | # |
 +---+---+---+---+---+
-| O | N | S | S | O |
+| C | N | A | O | F |
 +---+---+---+---+---+
-| C | # | U | # | P |
+| E | E | C | I | F |
 +---+---+---+---+---+
 
 Words:
-  USE
-  POSE
-  AGILE
-  CONTEST
+  OFFICE
+  OUTSIDE
+  ENTRANCE
 ```
 
 ### pinpoint
 ```
-  1. Acrobat
-  2. Clown
-  3. Ringmaster
-  4. Sword swallower
-  5. Lion tamer
+  1. Spelt
+  2. Sorghum
+  3. Millet
+  4. Rye
+  5. Rice
 
-  answer: Professions seen at the circus!
+  answer: Types of grain!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 902
-date      : 2026-10-19
+number    : 903
+date      : 2026-10-20
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  dice : The top + bottom rows = Objects rolled during some board games, and a common shape for them. Keep in mind: The first word may be at the bottom.
-  dire : Desperate, as a situation or a need
-  dare : Be boldly courageous
-  pare : Peel the skin off of, as fruit
-  pure : ___ and simple (no more, no less)
-  cure : Completely get rid of, as an illness
-  cube : The top + bottom rows = Objects rolled during some board games, and a common shape for them. Keep in mind: The first word may be at the bottom.
+  leak : The top + bottom rows = Two ways data might become public when it shouldn't be.
+  lead : Be in the front of, as a race
+  head : Where a hat usually sits
+  herd : Collective noun for bison or elephants
+  hard : Difficult
+  hark : "___! The Herald Angels Sing"
+  hack : The top + bottom rows = Two ways data might become public when it shouldn't be.
 ```
 <!-- DAILY-GAMES-END -->
