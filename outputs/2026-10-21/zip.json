@@ -1,0 +1,53 @@
+{
+  "game": "zip",
+  "number": 583,
+  "date": "2026-10-21",
+  "grid_size": [
+    6,
+    6
+  ],
+  "nodes": [
+    {
+      "id": 3,
+      "row": 1,
+      "col": 2
+    },
+    {
+      "id": 5,
+      "row": 1,
+      "col": 3
+    },
+    {
+      "id": 8,
+      "row": 2,
+      "col": 3
+    },
+    {
+      "id": 6,
+      "row": 2,
+      "col": 4
+    },
+    {
+      "id": 2,
+      "row": 3,
+      "col": 1
+    },
+    {
+      "id": 7,
+      "row": 3,
+      "col": 2
+    },
+    {
+      "id": 1,
+      "row": 4,
+      "col": 2
+    },
+    {
+      "id": 4,
+      "row": 4,
+      "col": 3
+    }
+  ],
+  "walls": [],
+  "difficulty": null
+}

@@ -11,135 +11,135 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-10-20)
+## Today's games (2026-10-21)
 
 ### zip
 ```
 +----+----+----+----+----+----+
-|  1   ..   ..   ..   ..    9 |
+| ..   ..   ..   ..   ..   .. |
 +                             +
-| ..   ..    2   ..    4   .. |
+| ..   ..    3    5   ..   .. |
 +                             +
-| ..    6   ..    8   ..   .. |
+| ..   ..   ..    8    6   .. |
 +                             +
-| ..   ..    7   ..   ..   .. |
+| ..    2    7   ..   ..   .. |
 +                             +
-| ..    5   ..   ..   ..   .. |
+| ..   ..    1    4   ..   .. |
 +                             +
-|  3   ..   ..   ..   ..   .. |
+| ..   ..   ..   ..   ..   .. |
 +---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . | . = . | . | S |
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . | . | . | . | . | M |
-+---+---+-=-+---+---+---+
-| . | . | . | . | M | M |
+| . | M | M | S | M | . |
 +---+---+---+---+---+---+
-| M | M | . | . | . | . |
-+---+---+---+-=-+---+---+
-| S | . | . | . | . | . |
+| . | . | . | M | M | . |
++---+-x-+---+---+---+---+
+| . | . = . | . | S | . |
++---+-=-+-=-+---+---+---+
+| . | . = . x . | M | . |
 +---+---+---+---+---+---+
-| M | . | . = . | . | . |
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟥🟥🟧🟥🟨
-🟥🟥🟥🟥🟥🟧🟥🟨
-🟥🟥🟥🟥🟥🟥🟥🟥
-🟥🟩🟥🟦🟥🟥🟥🟥
-🟥🟩🟥🟦🟥🟥🟥🟥
-🟪🟪🟪🟪🟥🟥🟥🟥
-🟪🟫🟫🟪🟥🟥🟥🟥
-🟪🟪🟪🟪🟥⬛⬛⬛
+🟥🟧🟧🟧🟧🟧🟧
+🟥🟨🟨🟨🟧🟩🟧
+🟥🟥🟥🟨🟧🟦🟧
+🟥🟪🟥🟨🟧🟦🟧
+🟪🟪🟪🟫🟧🟦🟧
+🟫🟫🟫🟫🟧🟦🟧
+🟫🟫🟫🟫🟧🟦🟦
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │   ┃   │   │   ┃
+┃   │ 1 │ 2 ┃ 3 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 1 │   ┃ 2 │   │ 3 ┃
+┃   │   │   ┃   │   │ 4 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │ 1 ┃   │ 3 │   ┃
+┃ 2 │   │   ┃   │   │ 1 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 2 │   ┃ 5 │   │ 4 ┃
+┃ 3 │   │   ┃   │   │ 2 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │ 2 ┃   │ 5 │   ┃
+┃ 5 │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 4 │   ┃ 3 │   │ 1 ┃
+┃   │   │ 3 ┃ 4 │ 2 │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+----+
-| +3 | .. | .. | .. | .. | +5 | .. |
+| .. | .. | +8 | .. | .. | .. | +7 |
 +----+----+----+----+----+----+----+
-| .. | |  | .. | .. | .. | .. | .. |
+| .. | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | +5 | .. | .. | .. | .. |
+| .. | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | +7 | .. | .. | .. |
+| .. | |6 | .. | |6 | .. | |8 | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | +7 | .. | .. |
+| .. | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | |  | .. |
+| .. | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | +3 | .. | .. | .. | .. | +7 |
+| +8 | .. | .. | .. | +6 | .. | .. |
 +----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+
-| E | D | I | S | T |
+| M | E | O | M | # |
 +---+---+---+---+---+
-| E | N | T | O | U |
+| O | A | T | H | Y |
 +---+---+---+---+---+
-| # | # | R | # | # |
+| I | S | # | R | B |
 +---+---+---+---+---+
-| C | N | A | O | F |
+| B | C | D | I | P |
 +---+---+---+---+---+
-| E | E | C | I | F |
+| # | I | S | Y | H |
 +---+---+---+---+---+
 
 Words:
-  OFFICE
-  OUTSIDE
-  ENTRANCE
+  ATOM
+  BIOME
+  HYBRID
+  PHYSICS
 ```
 
 ### pinpoint
 ```
-  1. Spelt
-  2. Sorghum
-  3. Millet
-  4. Rye
-  5. Rice
+  1. Gallery
+  2. Bar
+  3. Bench
+  4. Witness box
+  5. Judge’s chambers
 
-  answer: Types of grain!
+  answer: Things seen at a court!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 903
-date      : 2026-10-20
+number    : 904
+date      : 2026-10-21
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  leak : The top + bottom rows = Two ways data might become public when it shouldn't be.
-  lead : Be in the front of, as a race
-  head : Where a hat usually sits
-  herd : Collective noun for bison or elephants
-  hard : Difficult
-  hark : "___! The Herald Angels Sing"
-  hack : The top + bottom rows = Two ways data might become public when it shouldn't be.
+  fair : The top + bottom rows = A two-word phrase for a legitimate target for criticism, or an unbiased sporting competition. Keep in mind: The first word may be at the bottom.
+  fail : Opposite of "succeed"
+  fall : Tumble to the ground
+  ball : What gets hit in golf or tennis
+  bale : Bundle of hay or straw
+  gale : Strong wind
+  game : The top + bottom rows = A two-word phrase for a legitimate target for criticism, or an unbiased sporting competition. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
