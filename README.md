@@ -11,20 +11,20 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-10-21)
+## Today's games (2026-10-22)
 
 ### zip
 ```
 +----+----+----+----+----+----+
 | ..   ..   ..   ..   ..   .. |
 +                             +
-| ..   ..    3    5   ..   .. |
+| 11    9   ..   ..    4   12 |
 +                             +
-| ..   ..   ..    8    6   .. |
+| ..   10   ..   ..   ..    5 |
 +                             +
-| ..    2    7   ..   ..   .. |
+|  8   ..   ..   ..    3   .. |
 +                             +
-| ..   ..    1    4   ..   .. |
+|  7    1   ..   ..    2    6 |
 +                             +
 | ..   ..   ..   ..   ..   .. |
 +---- ---- ---- ---- ---- ----+
@@ -33,113 +33,116 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 ### tango
 ```
 +---+---+---+---+---+---+
+| . | . | . | M | . | M |
++---+---+---+---+---+---+
+| . | . | . | M | . | S |
++---+---+---+---+---+---+
+| . | . | . | S | M | M |
++---+---+---+---+---+---+
+| . x . = . | . | . | . |
++-=-+---+-=-+---+---+---+
 | . | . | . | . | . | . |
-+---+---+---+---+---+---+
-| . | M | M | S | M | . |
-+---+---+---+---+---+---+
-| . | . | . | M | M | . |
-+---+-x-+---+---+---+---+
-| . | . = . | . | S | . |
-+---+-=-+-=-+---+---+---+
-| . | . = . x . | M | . |
-+---+---+---+---+---+---+
++-x-+---+-x-+---+---+---+
 | . | . | . | . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟧🟧🟧🟧🟧🟧
-🟥🟨🟨🟨🟧🟩🟧
-🟥🟥🟥🟨🟧🟦🟧
-🟥🟪🟥🟨🟧🟦🟧
-🟪🟪🟪🟫🟧🟦🟧
-🟫🟫🟫🟫🟧🟦🟧
-🟫🟫🟫🟫🟧🟦🟦
+🟥🟥🟥🟥🟥🟥🟥🟥
+🟥🟥🟥🟥🟧🟧🟧🟥
+🟥🟨🟨🟨🟩🟩🟧🟧
+🟥🟥🟨🟨🟦🟧🟧🟧
+🟪🟪🟫🟨🟦🟦🟧🟧
+🟪🟫🟫🟫🟦🟦🟦🟪
+🟪🟪⬛⬛⬛⬛⬛🟪
+🟪🟪🟪🟪🟪🟪🟪🟪
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │ 1 │ 2 ┃ 3 │   │   ┃
+┃   │   │   ┃   │ 1 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │   │ 4 ┃
+┃ 2 │   │ 3 ┃ 4 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 2 │   │   ┃   │   │ 1 ┃
+┃   │ 5 │   ┃   │ 6 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 3 │   │   ┃   │   │ 2 ┃
+┃   │ 3 │   ┃   │ 2 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 5 │   │   ┃   │   │   ┃
+┃   │   │ 4 ┃ 2 │   │ 1 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 3 ┃ 4 │ 2 │   ┃
+┃   │ 2 │   ┃   │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+----+
-| .. | .. | +8 | .. | .. | .. | +7 |
+| +3 | .. | .. | .. | |6 | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
+| .. | +3 | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
+| .. | .. | +3 | .. | .. | .. | |6 |
 +----+----+----+----+----+----+----+
-| .. | |6 | .. | |6 | .. | |8 | .. |
+| .. | .. | .. | |5 | .. | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
+| |6 | .. | .. | .. | +4 | .. | .. |
 +----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
+| .. | .. | .. | .. | .. | +3 | .. |
 +----+----+----+----+----+----+----+
-| +8 | .. | .. | .. | +6 | .. | .. |
+| .. | .. | -6 | .. | .. | .. | +4 |
 +----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+
-| M | E | O | M | # |
-+---+---+---+---+---+
-| O | A | T | H | Y |
-+---+---+---+---+---+
-| I | S | # | R | B |
-+---+---+---+---+---+
-| B | C | D | I | P |
-+---+---+---+---+---+
-| # | I | S | Y | H |
-+---+---+---+---+---+
++---+---+---+---+---+---+
+| # | # | P | M | O | C |
++---+---+---+---+---+---+
+| # | # | I | L | R | Y |
++---+---+---+---+---+---+
+| # | P | R | E | D | # |
++---+---+---+---+---+---+
+| # | P | O | E | D | # |
++---+---+---+---+---+---+
+| S | O | E | F | # | # |
++---+---+---+---+---+---+
+| A | L | N | D | # | # |
++---+---+---+---+---+---+
 
 Words:
-  ATOM
-  BIOME
-  HYBRID
-  PHYSICS
+  DRY
+  DEFEND
+  COMPILE
+  PROPOSAL
 ```
 
 ### pinpoint
 ```
-  1. Gallery
-  2. Bar
-  3. Bench
-  4. Witness box
-  5. Judge’s chambers
+  1. Game
+  2. Poker
+  3. Baby
+  4. Clock
+  5. Smiley (😊)
 
-  answer: Things seen at a court!
+  answer: Types of “face”!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 904
-date      : 2026-10-21
+number    : 905
+date      : 2026-10-22
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  fair : The top + bottom rows = A two-word phrase for a legitimate target for criticism, or an unbiased sporting competition. Keep in mind: The first word may be at the bottom.
-  fail : Opposite of "succeed"
-  fall : Tumble to the ground
-  ball : What gets hit in golf or tennis
-  bale : Bundle of hay or straw
-  gale : Strong wind
-  game : The top + bottom rows = A two-word phrase for a legitimate target for criticism, or an unbiased sporting competition. Keep in mind: The first word may be at the bottom.
+  worm : The top + bottom rows = A compound word for a wriggly creature that many birds eat. Keep in mind: The first word may be at the bottom.
+  work : What you might do from home or in an office
+  pork : Pig meat
+  perk : Part of an incentive package
+  peak : Top of a mountain
+  peal : Ring, like a bell
+  meal : The top + bottom rows = A compound word for a wriggly creature that many birds eat. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
