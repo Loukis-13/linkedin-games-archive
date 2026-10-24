@@ -11,140 +11,146 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-10-23)
+## Today's games (2026-10-24)
 
 ### zip
 ```
-+----+----+----+----+----+----+----+----+
-| ..   ..   ..   ..   ..   ..   ..   .. |
-+                                       +
-| ..    1    2   ..   ..    3   18   .. |
-+                                       +
-| ..    8    9   ..   ..   10   17   .. |
-+                                       +
-| ..   ..   ..   12   11   ..   ..   .. |
-+                                       +
-| ..   ..   ..   14   15   ..   ..   .. |
-+                                       +
-| ..    7   13   ..   ..   16   20   .. |
-+                                       +
-| ..    6    5   ..   ..    4   19   .. |
-+                                       +
-| ..   ..   ..   ..   ..   ..   ..   .. |
-+---- ---- ---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+----+
+| ..   ..   ..   ..   ..   ..   .. |
++                                  +
+| ..    3    9   10   ..   ..   .. |
++                                  +
+| ..    4   ..   ..   12   ..   .. |
++                                  +
+| ..    7   ..   ..   11   ..   .. |
++                                  +
+| ..   ..    6    5    8   ..   .. |
++                                  +
+| ..   ..   ..   ..   ..    1   .. |
++                                  +
+| ..   ..   ..   ..   ..   ..    2 |
++---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . | . | . | S | S |
-+---+-x-+---+---+---+---+
-| . x . x . | . | . | S |
-+---+-x-+---+---+---+---+
+| M | M | . | . | . | . |
++---+---+-=-+---+---+---+
 | . | . | . | . | . | . |
-+---+---+---+---+---+---+
++-=-+---+---+-=-+---+---+
 | . | . | . | . | . | . |
-+---+---+---+---+-x-+---+
-| S | . | . | . x . x . |
-+---+---+---+---+-=-+---+
-| S | M | . | . | . | . |
++---+-=-+---+---+-x-+---+
+| . | . | . | . | . | . |
++---+---+-x-+---+---+-x-+
+| . | . | . | . | . | . |
++---+---+---+-x-+---+---+
+| . | . | . | . | S | M |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟫🟫🟦🟦🟦⬛⬛⬛
-🟫🟦🟦🟩🟩⬛⬛⬛
-🟫🟦🟥🟥🟩🟩⬛⬛
-🟫🟦🟥🟧🟧🟩⬛⬛
-🟫🟫🟥🟧🟧🟩🟪⬛
-🟫🟫🟨🟨🟨🟩🟪⬛
-🟫🟫🟫🟨🟨🟪🟪⬛
-🟫🟫🟫🟪🟪🟪⬛⬛
+⬛⬛⬛⬛⬛⬛⬛⬛⬛
+🟥🟥🟥⬛⬛🟫🟫⬛⬛
+🟧🟧🟥🟩⬛🟩🟫🟫⬛
+🟥🟥🟥🟩⬛🟩🟦⬛⬛
+🟥🟨🟨🟩🟩🟩🟦⬛⬛
+🟥🟥🟥🟪🟪🟩🟦🟦🟦
+⬜⬜⬜⬜🟪🟩🟦🟪🟦
+⬜⬜⬜⬜🟪🟪🟦🟪🟦
+⬜⬜⬜⬜⬜🟪🟪🟪🟪
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃   │ 5 │   ┃   │ 6 │   ┃
+┃───┼───┼───┃───┼───┼───┃
+┃ 2 │   │   ┃   │   │ 5 ┃
+┣━━━━━━━━━━━╋━━━━━━━━━━━┫
 ┃   │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 1 │   │ 2 ┃   │ 3 │   ┃
+┃   │   │ 6 ┃ 4 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 4 │   │ 5 ┃   │ 6 │   ┃
+┃   │ 2 │   ┃   │ 1 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 1 │   ┃ 2 │   │ 4 ┃
-┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 3 │   ┃ 4 │   │ 5 ┃
-┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │   │   ┃
+┃ 1 │   │   ┃   │   │ 3 ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | +6 | .. |
-+----+----+----+----+----+----+
-| .. | +4 | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | -  | .. |
-+----+----+----+----+----+----+
-| .. | =  | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | +8 | .. |
-+----+----+----+----+----+----+
-| .. | +6 | .. | .. | .. | .. |
-+----+----+----+----+----+----+
++----+----+----+----+----+----+----+----+
+| .. | .. | -  | =  | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | |  | =4 | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| +2 | .. | .. | .. | .. | .. | .. | -  |
++----+----+----+----+----+----+----+----+
+| =  | .. | .. | .. | .. | .. | .. | +4 |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | -2 | =  | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | -  | |  | .. | .. |
++----+----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+---+
-| # | # | # | # | # | T |
-+---+---+---+---+---+---+
-| T | T | # | T | A | R |
-+---+---+---+---+---+---+
-| O | E | R | O | N | S |
-+---+---+---+---+---+---+
-| N | O | I | T | E | M |
-+---+---+---+---+---+---+
-| U | I | T | # | T | I |
-+---+---+---+---+---+---+
-| T | # | # | # | # | # |
-+---+---+---+---+---+---+
++---+---+---+---+---+---+---+
+| E | O | R | E | O | R | E |
++---+---+---+---+---+---+---+
+| H | # | I | T | L | # | S |
++---+---+---+---+---+---+---+
+| T | # | C | A | P | # | C |
++---+---+---+---+---+---+---+
+| S | T | E | L | X | E | O |
++---+---+---+---+---+---+---+
+| A | # | R | G | I | # | R |
++---+---+---+---+---+---+---+
+| C | # | O | N | S | # | E |
++---+---+---+---+---+---+---+
+| E | R | O | F | S | E | L |
++---+---+---+---+---+---+---+
 
 Words:
-  TOTE
-  OTTER
-  TUITION
-  TRANSMIT
+  IGNORE
+  EXPLORE
+  FORECAST
+  SCORELESS
+  THEORETICAL
 ```
 
 ### pinpoint
 ```
-  1. Yellow
-  2. Ob
-  3. Indus
-  4. Tigris
-  5. Yangtze (continent’s longest)
+  1. Friends
+  2. Quarters
+  3. Attention
+  4. To home
+  5. Call / shave (near miss)
 
-  answer: Rivers in Asia!
+  answer: Words that come after “close”!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 906
-date      : 2026-10-23
+number    : 907
+date      : 2026-10-24
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  fest : The top + bottom rows = A compound word for a gathering where people praise and appreciate each other. Keep in mind: The first word may be at the bottom.
-  pest : Irritating child or insect
-  post : Put online, like a LinkedIn update
-  pose : Something a fashion model "strikes"
-  dose : Amount of medicine
-  dove : Peaceful bird on a United Nations postage stamp
-  love : The top + bottom rows = A compound word for a gathering where people praise and appreciate each other. Keep in mind: The first word may be at the bottom.
+  menu : The top + bottom rows = Something you read at a restaurant, and what you choose from it. Keep in mind: The first word may be at the bottom.
+  mend : On the ___ (recovering from an injury)
+  bend : Make curved or angled, as a straight object
+  bond : Join together permanently
+  bold : Word-processing option that makes the letters thicker
+  fold : Verb often seen in origami instructions
+  food : The top + bottom rows = Something you read at a restaurant, and what you choose from it. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
