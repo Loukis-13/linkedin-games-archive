@@ -11,24 +11,24 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-10-24)
+## Today's games (2026-10-25)
 
 ### zip
 ```
 +----+----+----+----+----+----+----+
-| ..   ..   ..   ..   ..   ..   .. |
+| ..   ..   ..    7   ..   ..   .. |
++               ----               +
+| .. |  2   ..   ..   ..    6 | .. |
++    +                        +    +
+| .. | ..   ..    8   ..   ..   .. |
++    +                             +
+| ..    1   ..   ..   ..    5   .. |
 +                                  +
-| ..    3    9   10   ..   ..   .. |
-+                                  +
-| ..    4   ..   ..   12   ..   .. |
-+                                  +
-| ..    7   ..   ..   11   ..   .. |
-+                                  +
-| ..   ..    6    5    8   ..   .. |
-+                                  +
-| ..   ..   ..   ..   ..    1   .. |
-+                                  +
-| ..   ..   ..   ..   ..   ..    2 |
+| ..   ..   ..    3   ..   .. | .. |
++                             +    +
+| .. | 10   ..   ..   ..    9 | .. |
++    +          ----          +    +
+| ..   ..   ..    4   ..   ..   .. |
 +---- ---- ---- ---- ---- ---- ----+
 ```
 
@@ -36,121 +36,121 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 ```
 +---+---+---+---+---+---+
 | M | M | . | . | . | . |
-+---+---+-=-+---+---+---+
++---+---+---+---+---+---+
+| M | . = . | . | . | . |
++---+-=-+---+---+---+---+
 | . | . | . | . | . | . |
-+-=-+---+---+-=-+---+---+
-| . | . | . | . | . | . |
-+---+-=-+---+---+-x-+---+
-| . | . | . | . | . | . |
-+---+---+-x-+---+---+-x-+
-| . | . | . | . | . | . |
-+---+---+---+-x-+---+---+
-| . | . | . | . | S | M |
++---+---+---+---+---+---+
+| . | . | . | . | S | . |
++---+---+---+---+---+---+
+| . | . | . | S | M | . |
++---+---+---+---+---+-x-+
+| . | . | . | . | . = . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-⬛⬛⬛⬛⬛⬛⬛⬛⬛
-🟥🟥🟥⬛⬛🟫🟫⬛⬛
-🟧🟧🟥🟩⬛🟩🟫🟫⬛
-🟥🟥🟥🟩⬛🟩🟦⬛⬛
-🟥🟨🟨🟩🟩🟩🟦⬛⬛
-🟥🟥🟥🟪🟪🟩🟦🟦🟦
-⬜⬜⬜⬜🟪🟩🟦🟪🟦
-⬜⬜⬜⬜🟪🟪🟦🟪🟦
-⬜⬜⬜⬜⬜🟪🟪🟪🟪
+🟥🟥🟧🟨🟨🟨🟨🟨🟨
+🟥🟥🟧🟧🟧🟨🟩🟩🟨
+🟥🟥🟫🟧🟩🟩🟩🟨🟨
+🟥🟫🟫🟫🟪🟦🟦🟨🟨
+🟥🟫🟥🟪🟪🟪🟦🟦🟨
+🟥🟥🟥🟥🟪⬛🟦🟨🟨
+🟥🟥🟥⬛⬛⬛🟨🟨🟨
+🟥🟥🟥🟥⬛🟨🟨🟨🟨
+🟥🟥⬜⬜⬜⬜⬜🟨🟨
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │ 5 │   ┃   │ 6 │   ┃
-┃───┼───┼───┃───┼───┼───┃
-┃ 2 │   │   ┃   │   │ 5 ┃
-┣━━━━━━━━━━━╋━━━━━━━━━━━┫
 ┃   │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 6 ┃ 4 │   │   ┃
+┃   │ 2 │ 3 ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 2 │   ┃   │ 1 │   ┃
+┃   │ 3 │ 4 ┃ 2 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 1 │   │   ┃   │   │ 3 ┃
+┃   │   │ 5 ┃ 4 │ 1 │   ┃
+┣━━━━━━━━━━━╋━━━━━━━━━━━┫
+┃   │   │   ┃ 1 │ 4 │   ┃
+┃───┼───┼───┃───┼───┼───┃
+┃   │   │   ┃   │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+----+----+
-| .. | .. | -  | =  | .. | .. | .. | .. |
+| .. | .. | .. | .. | .. | +3 | .. | =4 |
 +----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | |  | =4 | .. |
+| .. | =  | .. | -3 | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. | .. |
+| .. | .. | .. | .. | .. | +3 | .. | -  |
 +----+----+----+----+----+----+----+----+
-| +2 | .. | .. | .. | .. | .. | .. | -  |
+| .. | =  | .. | +5 | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+----+
-| =  | .. | .. | .. | .. | .. | .. | +4 |
+| .. | .. | .. | .. | +6 | .. | -  | .. |
 +----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. | .. |
+| |  | .. | +6 | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+----+
-| .. | -2 | =  | .. | .. | .. | .. | .. |
+| .. | .. | .. | .. | -6 | .. | |  | .. |
 +----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | -  | |  | .. | .. |
+| -2 | .. | +2 | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+---+---+
-| E | O | R | E | O | R | E |
+| G | N | C | S | U | # | # |
 +---+---+---+---+---+---+---+
-| H | # | I | T | L | # | S |
+| T | E | H | O | R | # | # |
 +---+---+---+---+---+---+---+
-| T | # | C | A | P | # | C |
+| H | L | I | R | G | B | U |
 +---+---+---+---+---+---+---+
-| S | T | E | L | X | E | O |
+| V | E | M | # | L | O | S |
 +---+---+---+---+---+---+---+
-| A | # | R | G | I | # | R |
+| A | W | F | P | I | R | T |
 +---+---+---+---+---+---+---+
-| C | # | O | N | S | # | E |
+| # | # | R | E | W | O | L |
 +---+---+---+---+---+---+---+
-| E | R | O | F | S | E | L |
+| # | # | A | M | K | R | Y |
 +---+---+---+---+---+---+---+
 
 Words:
-  IGNORE
-  EXPLORE
-  FORECAST
-  SCORELESS
-  THEORETICAL
+  CHORUS
+  PILGRIM
+  ROBUSTLY
+  FRAMEWORK
+  WAVELENGTH
 ```
 
 ### pinpoint
 ```
-  1. Friends
-  2. Quarters
-  3. Attention
-  4. To home
-  5. Call / shave (near miss)
+  1. Teeth
+  2. Words
+  3. Polynomial functions
+  4. Family history
+  5. Trees (below the ground)
 
-  answer: Words that come after “close”!
+  answer: Things with roots!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 907
-date      : 2026-10-24
+number    : 908
+date      : 2026-10-25
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  menu : The top + bottom rows = Something you read at a restaurant, and what you choose from it. Keep in mind: The first word may be at the bottom.
-  mend : On the ___ (recovering from an injury)
-  bend : Make curved or angled, as a straight object
-  bond : Join together permanently
-  bold : Word-processing option that makes the letters thicker
-  fold : Verb often seen in origami instructions
-  food : The top + bottom rows = Something you read at a restaurant, and what you choose from it. Keep in mind: The first word may be at the bottom.
+  palm : The top + bottom rows = A two-word phrase for a type of tree cultivated for its sweet fruit. Keep in mind: The first word may be at the bottom.
+  pale : Lacking color
+  sale : Transaction at a shop
+  sake : Alcoholic drink made from rice
+  rake : Tool in a Zen garden
+  rate : Give a score from 1 to 10, say
+  date : The top + bottom rows = A two-word phrase for a type of tree cultivated for its sweet fruit. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
