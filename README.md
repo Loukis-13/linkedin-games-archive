@@ -11,146 +11,134 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-10-25)
+## Today's games (2026-10-26)
 
 ### zip
 ```
-+----+----+----+----+----+----+----+
-| ..   ..   ..    7   ..   ..   .. |
-+               ----               +
-| .. |  2   ..   ..   ..    6 | .. |
-+    +                        +    +
-| .. | ..   ..    8   ..   ..   .. |
-+    +                             +
-| ..    1   ..   ..   ..    5   .. |
-+                                  +
-| ..   ..   ..    3   ..   .. | .. |
-+                             +    +
-| .. | 10   ..   ..   ..    9 | .. |
-+    +          ----          +    +
-| ..   ..   ..    4   ..   ..   .. |
-+---- ---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+
+| ..    1   ..   ..    7   .. |
++                             +
+| ..    8   ..   ..    9   .. |
++                             +
+| ..   ..   ..   ..   ..   .. |
++                             +
+|  2   ..   ..   ..   ..    6 |
++                             +
+| ..    4   ..   ..   10   .. |
++                             +
+| ..   ..    3    5   ..   .. |
++---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| M | M | . | . | . | . |
-+---+---+---+---+---+---+
-| M | . = . | . | . | . |
-+---+-=-+---+---+---+---+
 | . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . | . | . | . | S | . |
+| . | S | . | . = . | . |
++---+---+---+---+-=-+---+
+| . | . | M | M | . | . |
 +---+---+---+---+---+---+
-| . | . | . | S | M | . |
-+---+---+---+---+---+-x-+
-| . | . | . | . | . = . |
+| . | . | S | M | . | . |
++---+-=-+---+---+---+---+
+| . | . = . | . | S | . |
++---+---+---+---+---+---+
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟧🟨🟨🟨🟨🟨🟨
-🟥🟥🟧🟧🟧🟨🟩🟩🟨
-🟥🟥🟫🟧🟩🟩🟩🟨🟨
-🟥🟫🟫🟫🟪🟦🟦🟨🟨
-🟥🟫🟥🟪🟪🟪🟦🟦🟨
-🟥🟥🟥🟥🟪⬛🟦🟨🟨
-🟥🟥🟥⬛⬛⬛🟨🟨🟨
-🟥🟥🟥🟥⬛🟨🟨🟨🟨
-🟥🟥⬜⬜⬜⬜⬜🟨🟨
+🟫🟫🟦🟦🟦🟦🟦🟦
+🟦🟦🟦🟦🟦🟥🟥🟦
+🟦🟦⬛⬛🟦🟦🟦🟦
+🟦🟦🟦🟦🟨🟨🟦🟦
+🟦🟪🟪🟦🟦🟦🟦🟦
+🟦🟦🟦🟦🟦🟧🟧🟦
+🟦🟦🟦🟦🟦🟦🟦🟦
+🟦🟦🟦🟩🟩🟦🟦🟦
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │   ┃   │   │   ┃
+┃   │   │ 1 ┃   │   │ 3 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 2 │ 3 ┃   │   │   ┃
+┃   │   │ 2 ┃   │   │ 5 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 3 │ 4 ┃ 2 │   │   ┃
+┃ 1 │   │ 3 ┃ 5 │   │ 2 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 5 ┃ 4 │ 1 │   ┃
+┃ 2 │   │ 4 ┃ 6 │   │ 1 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃ 1 │ 4 │   ┃
+┃ 3 │   │   ┃ 1 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │   │   ┃
+┃ 4 │   │   ┃ 3 │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | +3 | .. | =4 |
-+----+----+----+----+----+----+----+----+
-| .. | =  | .. | -3 | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | +3 | .. | -  |
-+----+----+----+----+----+----+----+----+
-| .. | =  | .. | +5 | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | +6 | .. | -  | .. |
-+----+----+----+----+----+----+----+----+
-| |  | .. | +6 | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | -6 | .. | |  | .. |
-+----+----+----+----+----+----+----+----+
-| -2 | .. | +2 | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
++----+----+----+----+----+----+
+| +2 | +6 | .. | .. | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | .. | .. | |4 | .. |
++----+----+----+----+----+----+
+| .. | .. | +2 | .. | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | .. | +6 | .. | .. |
++----+----+----+----+----+----+
+| .. | |8 | .. | .. | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | .. | .. | +2 | +6 |
++----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+---+---+
-| G | N | C | S | U | # | # |
-+---+---+---+---+---+---+---+
-| T | E | H | O | R | # | # |
-+---+---+---+---+---+---+---+
-| H | L | I | R | G | B | U |
-+---+---+---+---+---+---+---+
-| V | E | M | # | L | O | S |
-+---+---+---+---+---+---+---+
-| A | W | F | P | I | R | T |
-+---+---+---+---+---+---+---+
-| # | # | R | E | W | O | L |
-+---+---+---+---+---+---+---+
-| # | # | A | M | K | R | Y |
-+---+---+---+---+---+---+---+
++---+---+---+---+---+
+| P | P | E | P | P |
++---+---+---+---+---+
+| U | # | # | # | E |
++---+---+---+---+---+
+| P | # | # | # | R |
++---+---+---+---+---+
+| P | # | P | P | O |
++---+---+---+---+---+
+| Y | T | E | Y | T |
++---+---+---+---+---+
 
 Words:
-  CHORUS
-  PILGRIM
-  ROBUSTLY
-  FRAMEWORK
-  WAVELENGTH
+  PET
+  TYPO
+  PUPPY
+  PEPPER
 ```
 
 ### pinpoint
 ```
-  1. Teeth
-  2. Words
-  3. Polynomial functions
-  4. Family history
-  5. Trees (below the ground)
+  1. Pewter
+  2. Solder
+  3. Brass
+  4. Bronze
+  5. Stainless steel (Fe + Cr + Ni)
 
-  answer: Things with roots!
+  answer: Metal alloys!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 908
-date      : 2026-10-25
+number    : 909
+date      : 2026-10-26
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  palm : The top + bottom rows = A two-word phrase for a type of tree cultivated for its sweet fruit. Keep in mind: The first word may be at the bottom.
-  pale : Lacking color
-  sale : Transaction at a shop
-  sake : Alcoholic drink made from rice
-  rake : Tool in a Zen garden
-  rate : Give a score from 1 to 10, say
-  date : The top + bottom rows = A two-word phrase for a type of tree cultivated for its sweet fruit. Keep in mind: The first word may be at the bottom.
+  deal : The top + bottom rows = A word meaning to distribute playing cards, and a word for what each player then has. Keep in mind: The first word may be at the bottom.
+  real : Actually existing
+  read : Enjoy literature
+  lead : Heavy metallic element that can block X-rays
+  lend : ___ an ear (listen)
+  land : Terrestrial animals live on it
+  hand : The top + bottom rows = A word meaning to distribute playing cards, and a word for what each player then has. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
