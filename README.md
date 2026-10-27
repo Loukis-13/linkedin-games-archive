@@ -11,134 +11,135 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-10-26)
+## Today's games (2026-10-27)
 
 ### zip
 ```
 +----+----+----+----+----+----+
-| ..    1   ..   ..    7   .. |
-+                             +
-| ..    8   ..   ..    9   .. |
-+                             +
 | ..   ..   ..   ..   ..   .. |
 +                             +
-|  2   ..   ..   ..   ..    6 |
+|  1   ..    6   ..   ..    2 |
 +                             +
-| ..    4   ..   ..   10   .. |
+| ..   ..   ..   ..    4   .. |
 +                             +
-| ..   ..    3    5   ..   .. |
+| ..    8   ..   ..   ..   .. |
++                             +
+|  7   ..   ..    3   ..    5 |
++                             +
+| ..   ..   ..   ..   ..   .. |
 +---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . | . | . | . | . |
+| . | M | . | . | . | . |
++---+---+-x-+---+---+---+
+| . | M | . | . | . | . |
 +---+---+---+---+---+---+
-| . | S | . | . = . | . |
+| . | S | . | M | . | . |
++---+---+-=-+---+-=-+---+
+| . | M | . | S | . | . |
++---+---+---+---+---+---+
+| . | . | . | S | . | . |
 +---+---+---+---+-=-+---+
-| . | . | M | M | . | . |
-+---+---+---+---+---+---+
-| . | . | S | M | . | . |
-+---+-=-+---+---+---+---+
-| . | . = . | . | S | . |
-+---+---+---+---+---+---+
-| . | . | . | . | . | . |
+| . | . | . | M | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟫🟫🟦🟦🟦🟦🟦🟦
-🟦🟦🟦🟦🟦🟥🟥🟦
-🟦🟦⬛⬛🟦🟦🟦🟦
-🟦🟦🟦🟦🟨🟨🟦🟦
-🟦🟪🟪🟦🟦🟦🟦🟦
-🟦🟦🟦🟦🟦🟧🟧🟦
-🟦🟦🟦🟦🟦🟦🟦🟦
-🟦🟦🟦🟩🟩🟦🟦🟦
+🟥🟥🟥🟥🟥🟥🟧
+🟥🟨🟩🟩🟦🟦🟧
+🟥🟨🟩🟪🟪🟦🟧
+🟥🟨🟪🟪🟪🟫🟧
+🟥🟨🟨🟨🟫🟫🟧
+🟥🟨🟨🟨🟨🟨🟧
+🟥🟧🟧🟧🟧🟧🟧
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │ 1 ┃   │   │ 3 ┃
+┃ 1 │ 2 │ 3 ┃ 4 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 2 ┃   │   │ 5 ┃
+┃   │   │   ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 1 │   │ 3 ┃ 5 │   │ 2 ┃
+┃   │   │ 2 ┃ 3 │ 4 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 2 │   │ 4 ┃ 6 │   │ 1 ┃
+┃   │ 4 │ 5 ┃ 6 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 3 │   │   ┃ 1 │   │   ┃
+┃   │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 4 │   │   ┃ 3 │   │   ┃
+┃   │   │ 4 ┃ 2 │ 3 │ 1 ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+
-| +2 | +6 | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | |4 | .. |
-+----+----+----+----+----+----+
-| .. | .. | +2 | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | +6 | .. | .. |
-+----+----+----+----+----+----+
-| .. | |8 | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | +2 | +6 |
-+----+----+----+----+----+----+
++----+----+----+----+----+----+----+
+| .. | -  | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | =  | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| +2 | .. | .. | .. | +15 | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | +12 | .. | .. | .. | +7 |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | |  | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | =  | .. | .. |
++----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+
-| P | P | E | P | P |
+| E | E | R | T | I |
 +---+---+---+---+---+
-| U | # | # | # | E |
+| P | # | # | # | E |
 +---+---+---+---+---+
-| P | # | # | # | R |
+| F | O | R | M | E |
 +---+---+---+---+---+
-| P | # | P | P | O |
+| I | # | # | # | K |
 +---+---+---+---+---+
-| Y | T | E | Y | T |
+| N | U | A | L | I |
 +---+---+---+---+---+
 
 Words:
-  PET
-  TYPO
-  PUPPY
-  PEPPER
+  TIE
+  PEER
+  ALIKE
+  UNIFORM
 ```
 
 ### pinpoint
 ```
-  1. Pewter
-  2. Solder
-  3. Brass
-  4. Bronze
-  5. Stainless steel (Fe + Cr + Ni)
+  1. Port
+  2. Shiraz
+  3. Merlot
+  4. Chardonnay
+  5. Pinot noir (from dark grapes)
 
-  answer: Metal alloys!
+  answer: Types of wine!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 909
-date      : 2026-10-26
+number    : 910
+date      : 2026-10-27
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  deal : The top + bottom rows = A word meaning to distribute playing cards, and a word for what each player then has. Keep in mind: The first word may be at the bottom.
-  real : Actually existing
-  read : Enjoy literature
-  lead : Heavy metallic element that can block X-rays
-  lend : ___ an ear (listen)
-  land : Terrestrial animals live on it
-  hand : The top + bottom rows = A word meaning to distribute playing cards, and a word for what each player then has. Keep in mind: The first word may be at the bottom.
+  bald : The top + bottom rows = Something often found on top of the head, and a word for someone who lacks it. Keep in mind: The first word may be at the bottom.
+  band : Word that can follow "rubber" or "marching"
+  sand : Beach surface
+  said : Spoke aloud
+  sail : Travel using wind power
+  hail : Solid precipitation
+  hair : The top + bottom rows = Something often found on top of the head, and a word for someone who lacks it. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->

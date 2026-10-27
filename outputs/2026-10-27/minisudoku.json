@@ -1,0 +1,61 @@
+{
+  "game": "minisudoku",
+  "date": "2026-10-27",
+  "grid_size": [
+    6,
+    6
+  ],
+  "cells": [
+    [
+      1,
+      2,
+      3,
+      4,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      2,
+      3,
+      4,
+      null
+    ],
+    [
+      null,
+      4,
+      5,
+      6,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      4,
+      2,
+      3,
+      1
+    ]
+  ],
+  "number": "442",
+  "title": "Offsets II",
+  "difficulty": null
+}
