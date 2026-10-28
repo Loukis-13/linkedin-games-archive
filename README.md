@@ -11,135 +11,134 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-10-27)
+## Today's games (2026-10-28)
 
 ### zip
 ```
-+----+----+----+----+----+----+
-| ..   ..   ..   ..   ..   .. |
-+                             +
-|  1   ..    6   ..   ..    2 |
-+                             +
-| ..   ..   ..   ..    4   .. |
-+                             +
-| ..    8   ..   ..   ..   .. |
-+                             +
-|  7   ..   ..    3   ..    5 |
-+                             +
-| ..   ..   ..   ..   ..   .. |
-+---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+----+
+| ..   ..   ..   ..    1    8   .. |
++                                  +
+|  2   12 | ..   ..   ..   ..   .. |
++         +                        +
+| ..   .. | ..    9   10 | ..   .. |
++         +              +         +
+| ..   .. | ..   ..   .. | ..   .. |
++         +              +         +
+| ..   .. | 11    5   .. | ..   .. |
++         +              +         +
+| ..   ..   ..   ..   .. |  7    6 |
++                        +         +
+| ..    3    4   ..   ..   ..   .. |
++---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | M | . | . | . | . |
-+---+---+-x-+---+---+---+
-| . | M | . | . | . | . |
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . | S | . | M | . | . |
-+---+---+-=-+---+-=-+---+
-| . | M | . | S | . | . |
+| M | M | . | . | . | . |
++---+---+-=-+---+---+---+
+| M | S | . | . | . | . |
 +---+---+---+---+---+---+
-| . | . | . | S | . | . |
-+---+---+---+---+-=-+---+
 | . | . | . | M | . | . |
++---+---+---+---+-x-+-=-+
+| . | . | . | S | . | . |
++---+---+---+---+---+---+
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟥🟥🟥🟧
-🟥🟨🟩🟩🟦🟦🟧
-🟥🟨🟩🟪🟪🟦🟧
-🟥🟨🟪🟪🟪🟫🟧
-🟥🟨🟨🟨🟫🟫🟧
-🟥🟨🟨🟨🟨🟨🟧
-🟥🟧🟧🟧🟧🟧🟧
+🟥🟥🟧🟧🟨🟩🟩
+🟥🟥🟧🟧🟨🟨🟨
+🟥🟥🟧🟧🟨🟦🟦
+🟪🟧🟧🟧🟨🟨🟨
+🟪🟫🟫🟧🟧🟧🟧
+🟪🟪🟫🟫🟧🟧🟧
+🟧🟧🟧🟧🟧🟧🟧
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃ 1 │ 2 │ 3 ┃ 4 │   │   ┃
-┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │   │   ┃
-┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │ 2 ┃ 3 │ 4 │   ┃
-┃───┼───┼───┃───┼───┼───┃
-┃   │ 4 │ 5 ┃ 6 │   │   ┃
-┣━━━━━━━━━━━╋━━━━━━━━━━━┫
 ┃   │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 4 ┃ 2 │ 3 │ 1 ┃
+┃   │ 4 │   ┃   │ 2 │   ┃
+┣━━━━━━━━━━━╋━━━━━━━━━━━┫
+┃ 3 │   │   ┃   │   │ 6 ┃
+┃───┼───┼───┃───┼───┼───┃
+┃   │   │ 1 ┃ 2 │   │   ┃
+┣━━━━━━━━━━━╋━━━━━━━━━━━┫
+┃   │ 2 │   ┃   │ 3 │   ┃
+┃───┼───┼───┃───┼───┼───┃
+┃   │ 3 │ 4 ┃ 1 │ 6 │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+----+
-| .. | -  | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | =  | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| +2 | .. | .. | .. | +15 | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | +12 | .. | .. | .. | +7 |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | |  | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | =  | .. | .. |
-+----+----+----+----+----+----+----+
++----+----+----+----+----+----+
+| .. | .. | +5 | +  | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+
+| .. | |  | .. | .. | |  | .. |
++----+----+----+----+----+----+
+| .. | =  | .. | .. | |  | .. |
++----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | +  | +3 | .. | .. |
++----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+
-| E | E | R | T | I |
+| # | A | D | O | # |
 +---+---+---+---+---+
-| P | # | # | # | E |
+| O | C | T | H | G |
 +---+---+---+---+---+
-| F | O | R | M | E |
+| V | N | E | F | I |
 +---+---+---+---+---+
-| I | # | # | # | K |
+| A | S | P | R | E |
 +---+---+---+---+---+
-| N | U | A | L | I |
+| # | E | X | E | # |
 +---+---+---+---+---+
 
 Words:
-  TIE
-  PEER
-  ALIKE
-  UNIFORM
+  FREIGHT
+  AVOCADO
+  EXPENSE
 ```
 
 ### pinpoint
 ```
-  1. Port
-  2. Shiraz
-  3. Merlot
-  4. Chardonnay
-  5. Pinot noir (from dark grapes)
+  1. Grate
+  2. Damper
+  3. Mantel
+  4. Hearth
+  5. Chimney (to vent the smoke)
 
-  answer: Types of wine!
+  answer: Parts of a fireplace!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 910
-date      : 2026-10-27
+number    : 911
+date      : 2026-10-28
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  bald : The top + bottom rows = Something often found on top of the head, and a word for someone who lacks it. Keep in mind: The first word may be at the bottom.
-  band : Word that can follow "rubber" or "marching"
-  sand : Beach surface
-  said : Spoke aloud
-  sail : Travel using wind power
-  hail : Solid precipitation
-  hair : The top + bottom rows = Something often found on top of the head, and a word for someone who lacks it. Keep in mind: The first word may be at the bottom.
+  shot : The top + bottom rows = An attempt to score in soccer/football, and the target of that attempt. Keep in mind: The first word may be at the bottom.
+  slot : Time ___ (when to book a meeting)
+  blot : Blemish that ink often causes
+  boot : Item of footwear worn in soccer/football
+  boat : Something that floats and rhymes with "float"
+  goat : Farm animal that bleats
+  goal : The top + bottom rows = An attempt to score in soccer/football, and the target of that attempt. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
