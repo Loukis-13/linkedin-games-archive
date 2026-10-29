@@ -11,25 +11,23 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-10-28)
+## Today's games (2026-10-29)
 
 ### zip
 ```
-+----+----+----+----+----+----+----+
-| ..   ..   ..   ..    1    8   .. |
-+                                  +
-|  2   12 | ..   ..   ..   ..   .. |
-+         +                        +
-| ..   .. | ..    9   10 | ..   .. |
-+         +              +         +
-| ..   .. | ..   ..   .. | ..   .. |
-+         +              +         +
-| ..   .. | 11    5   .. | ..   .. |
-+         +              +         +
-| ..   ..   ..   ..   .. |  7    6 |
-+                        +         +
-| ..    3    4   ..   ..   ..   .. |
-+---- ---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+
+| ..   ..   ..    6   ..   .. |
++                             +
+| ..    1    2    4   ..   .. |
++                             +
+| ..   ..   ..   ..   ..   .. |
++                             +
+| ..   ..   ..   ..   ..   .. |
++                             +
+| ..   ..    3    8    5   .. |
++                             +
+| ..   ..    7   ..   ..   .. |
++---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
@@ -37,13 +35,13 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 +---+---+---+---+---+---+
 | . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| M | M | . | . | . | . |
-+---+---+-=-+---+---+---+
-| M | S | . | . | . | . |
+| . | M | M | S | M | . |
 +---+---+---+---+---+---+
-| . | . | . | M | . | . |
-+---+---+---+---+-x-+-=-+
-| . | . | . | S | . | . |
+| . | S | . | . | M | . |
++---+---+---+---+---+---+
+| . | . | . = . | . | . |
++---+---+-=-+-x-+---+---+
+| . | . | . x . | . | . |
 +---+---+---+---+---+---+
 | . | . | . | . | . | . |
 +---+---+---+---+---+---+
@@ -51,94 +49,99 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 ### queens
 ```
-🟥🟥🟧🟧🟨🟩🟩
-🟥🟥🟧🟧🟨🟨🟨
-🟥🟥🟧🟧🟨🟦🟦
-🟪🟧🟧🟧🟨🟨🟨
-🟪🟫🟫🟧🟧🟧🟧
-🟪🟪🟫🟫🟧🟧🟧
-🟧🟧🟧🟧🟧🟧🟧
+🟦🟦🟦🟦🟦🟦🟦🟦
+🟦🟦🟦🟧🟧🟦🟦🟦
+🟦🟦🟨🟧🟧🟩🟦🟦
+🟦🟨🟨🟨🟩🟩🟥🟦
+🟦🟪🟪🟪🟩🟥🟥🟦
+🟦⬛🟪🟫🟫🟥🟦🟦
+🟦⬛🟦🟫🟫🟦🟦🟦
+⬛⬛🟦🟦🟦🟦🟦🟦
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │   ┃   │   │   ┃
+┃   │ 1 │   ┃   │   │ 2 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 4 │   ┃   │ 2 │   ┃
+┃ 2 │   │ 3 ┃   │ 1 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 3 │   │   ┃   │   │ 6 ┃
+┃   │   │   ┃   │   │ 1 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 1 ┃ 2 │   │   ┃
+┃ 5 │   │   ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 2 │   ┃   │ 3 │   ┃
+┃   │ 2 │   ┃ 4 │   │ 3 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 3 │ 4 ┃ 1 │ 6 │   ┃
+┃ 4 │   │   ┃   │ 2 │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+
-| .. | .. | +5 | +  | .. | .. |
+| |  | .. | +4 | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
+| .. | +3 | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | |  | .. | .. | |  | .. |
+| +4 | .. | =  | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | =  | .. | .. | |  | .. |
+| .. | .. | .. | .. | +3 | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
+| .. | .. | .. | =  | .. | |  |
 +----+----+----+----+----+----+
-| .. | .. | +  | +3 | .. | .. |
+| .. | .. | .. | .. | +2 | .. |
 +----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+
-| # | A | D | O | # |
-+---+---+---+---+---+
-| O | C | T | H | G |
-+---+---+---+---+---+
-| V | N | E | F | I |
-+---+---+---+---+---+
-| A | S | P | R | E |
-+---+---+---+---+---+
-| # | E | X | E | # |
-+---+---+---+---+---+
++---+---+---+---+---+---+
+| W | O | F | L | O | O |
++---+---+---+---+---+---+
+| T | R | K | I | M | R |
++---+---+---+---+---+---+
+| O | # | # | R | # | # |
++---+---+---+---+---+---+
+| O | # | # | R | # | O |
++---+---+---+---+---+---+
+| F | R | O | O | R | R |
++---+---+---+---+---+---+
+| O | A | N | A | G | E |
++---+---+---+---+---+---+
 
 Words:
-  FREIGHT
-  AVOCADO
-  EXPENSE
+  OAR
+  FLOOR
+  MIRROR
+  OREGANO
+  FOOTWORK
 ```
 
 ### pinpoint
 ```
-  1. Grate
-  2. Damper
-  3. Mantel
-  4. Hearth
-  5. Chimney (to vent the smoke)
+  1. Jet
+  2. Gulf
+  3. Blood
+  4. Live (on Twitch)
+  5. Swimming up-
 
-  answer: Parts of a fireplace!
+  answer: Words that come before “stream”!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 911
-date      : 2026-10-28
+number    : 912
+date      : 2026-10-29
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  shot : The top + bottom rows = An attempt to score in soccer/football, and the target of that attempt. Keep in mind: The first word may be at the bottom.
-  slot : Time ___ (when to book a meeting)
-  blot : Blemish that ink often causes
-  boot : Item of footwear worn in soccer/football
-  boat : Something that floats and rhymes with "float"
-  goat : Farm animal that bleats
-  goal : The top + bottom rows = An attempt to score in soccer/football, and the target of that attempt. Keep in mind: The first word may be at the bottom.
+  save : The top + bottom rows = Two verbs associated with computer files: one to store and one to retrieve. Keep in mind: The first word may be at the bottom.
+  cave : Often explorable underground space
+  cove : Small coastal area with a narrow entrance
+  core : Center of an apple
+  cord : Flexible accessory used for charging electronics
+  lord : Someone who rules over a domain
+  load : The top + bottom rows = Two verbs associated with computer files: one to store and one to retrieve. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->

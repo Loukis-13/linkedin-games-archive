@@ -1,0 +1,66 @@
+{
+  "game": "patches",
+  "number": 226,
+  "date": "2026-10-29",
+  "grid_size": [
+    6,
+    6
+  ],
+  "clues": [
+    {
+      "x": 0,
+      "y": 0,
+      "type": "V_rect",
+      "size": null
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "type": "free",
+      "size": 4
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "type": "free",
+      "size": 3
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "type": "free",
+      "size": 4
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "type": "square",
+      "size": null
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "type": "free",
+      "size": 3
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "type": "square",
+      "size": null
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "type": "V_rect",
+      "size": null
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "type": "free",
+      "size": 2
+    }
+  ],
+  "difficulty": null
+}
