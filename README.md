@@ -11,137 +11,139 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-10-29)
+## Today's games (2026-10-30)
 
 ### zip
 ```
 +----+----+----+----+----+----+
-| ..   ..   ..    6   ..   .. |
-+                             +
-| ..    1    2    4   ..   .. |
-+                             +
 | ..   ..   ..   ..   ..   .. |
 +                             +
+| ..   ..   .. | ..    1    4 |
++          ----+              +
+| ..   ..   ..   ..    6   .. |
++                             +
+|  3    2   ..   ..   ..   .. |
++               ----          +
+| ..    5   .. | ..   ..   .. |
++              +              +
 | ..   ..   ..   ..   ..   .. |
-+                             +
-| ..   ..    3    8    5   .. |
-+                             +
-| ..   ..    7   ..   ..   .. |
 +---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . | . | . | . | . |
+| S | S | . | . | . | . |
 +---+---+---+---+---+---+
-| . | M | M | S | M | . |
-+---+---+---+---+---+---+
-| . | S | . | . | M | . |
-+---+---+---+---+---+---+
-| . | . | . = . | . | . |
-+---+---+-=-+-x-+---+---+
-| . | . | . x . | . | . |
-+---+---+---+---+---+---+
+| S | . | . | . | . = . |
++---+---+---+---+-=-+---+
+| M | S | . | . | . | . |
++---+---+---+---+-x-+---+
+| . | S | . | . | . = . |
++---+---+---+---+-x-+---+
+| S | M | . | . | . | . |
++---+---+---+---+-x-+---+
 | . | . | . | . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟦🟦🟦🟦🟦🟦🟦🟦
-🟦🟦🟦🟧🟧🟦🟦🟦
-🟦🟦🟨🟧🟧🟩🟦🟦
-🟦🟨🟨🟨🟩🟩🟥🟦
-🟦🟪🟪🟪🟩🟥🟥🟦
-🟦⬛🟪🟫🟫🟥🟦🟦
-🟦⬛🟦🟫🟫🟦🟦🟦
-⬛⬛🟦🟦🟦🟦🟦🟦
+🟥🟥🟥🟥🟧🟧⬛⬛
+🟥🟨🟨🟧🟧⬛⬛⬛
+🟨🟨🟧🟧⬛⬛⬛🟫
+🟨🟧🟧⬛⬛⬛🟫🟫
+🟨🟧⬛⬛⬛🟫🟫🟫
+🟨⬛⬛⬛🟫🟫🟦🟦
+⬛⬛⬛🟪🟪🟦🟦🟩
+⬛⬛🟪🟪🟦🟦🟩🟩
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │ 1 │   ┃   │   │ 2 ┃
+┃   │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 2 │   │ 3 ┃   │ 1 │   ┃
+┃   │   │ 1 ┃ 2 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃   │   │ 1 ┃
+┃   │ 1 │ 2 ┃ 6 │ 3 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 5 │   │   ┃   │   │   ┃
+┃ 4 │   │ 3 ┃ 1 │   │ 2 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 2 │   ┃ 4 │   │ 3 ┃
+┃   │   │ 4 ┃ 3 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 4 │   │   ┃   │ 2 │   ┃
+┃   │   │ 5 ┃ 4 │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+
-| |  | .. | +4 | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | +3 | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| +4 | .. | =  | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | +3 | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | =  | .. | |  |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | +2 | .. |
-+----+----+----+----+----+----+
++----+----+----+----+----+----+----+
+| .. | .. | .. | +6 | .. | .. | +4 |
++----+----+----+----+----+----+----+
+| .. | -4 | .. | .. | |  | .. | .. |
++----+----+----+----+----+----+----+
+| +4 | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | -  | .. | -  | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | +3 |
++----+----+----+----+----+----+----+
+| .. | .. | -  | .. | .. | |6 | .. |
++----+----+----+----+----+----+----+
+| +6 | .. | .. | +3 | .. | .. | .. |
++----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+---+
-| W | O | F | L | O | O |
+| L | A | S | T | U | R |
 +---+---+---+---+---+---+
-| T | R | K | I | M | R |
+| E | # | C | I | M | O |
 +---+---+---+---+---+---+
-| O | # | # | R | # | # |
+| S | U | C | # | # | F |
 +---+---+---+---+---+---+
-| O | # | # | R | # | O |
+| T | # | # | C | U | S |
 +---+---+---+---+---+---+
-| F | R | O | O | R | R |
+| O | M | I | C | # | N |
 +---+---+---+---+---+---+
-| O | A | N | A | G | E |
+| T | C | N | J | O | I |
 +---+---+---+---+---+---+
 
 Words:
-  OAR
-  FLOOR
-  MIRROR
-  OREGANO
-  FOOTWORK
+  JOIN
+  FORUM
+  CUSTOM
+  ELASTIC
+  SUCCINCT
 ```
 
 ### pinpoint
 ```
-  1. Jet
-  2. Gulf
-  3. Blood
-  4. Live (on Twitch)
-  5. Swimming up-
+  1. Wings
+  2. House
+  3. Pit
+  4. Green room
+  5. Stage (where the action is)
 
-  answer: Words that come before “stream”!
+  answer: Parts of a theatre!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 912
-date      : 2026-10-29
+number    : 913
+date      : 2026-10-30
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  save : The top + bottom rows = Two verbs associated with computer files: one to store and one to retrieve. Keep in mind: The first word may be at the bottom.
-  cave : Often explorable underground space
-  cove : Small coastal area with a narrow entrance
-  core : Center of an apple
-  cord : Flexible accessory used for charging electronics
-  lord : Someone who rules over a domain
-  load : The top + bottom rows = Two verbs associated with computer files: one to store and one to retrieve. Keep in mind: The first word may be at the bottom.
+  deck : The top + bottom rows = A two-word phrase for a popular device for playing music in the 1980s. Keep in mind: The first word may be at the bottom.
+  peck : Little kiss, as on the forehead
+  pack : Get ready for a business trip
+  pace : Average speed at which a runner runs
+  pale : Definitely not bold, as a hue
+  tale : Story often presented orally
+  tape : The top + bottom rows = A two-word phrase for a popular device for playing music in the 1980s. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->

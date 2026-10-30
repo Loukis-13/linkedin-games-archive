@@ -1,0 +1,61 @@
+{
+  "game": "minisudoku",
+  "date": "2026-10-30",
+  "grid_size": [
+    6,
+    6
+  ],
+  "cells": [
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      1,
+      2,
+      null,
+      null
+    ],
+    [
+      null,
+      1,
+      2,
+      6,
+      3,
+      null
+    ],
+    [
+      4,
+      null,
+      3,
+      1,
+      null,
+      2
+    ],
+    [
+      null,
+      null,
+      4,
+      3,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      5,
+      4,
+      null,
+      null
+    ]
+  ],
+  "number": "445",
+  "title": "Look Up",
+  "difficulty": "Hard"
+}
