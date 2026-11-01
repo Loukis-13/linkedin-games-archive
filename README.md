@@ -11,144 +11,149 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-10-31)
+## Today's games (2026-11-01)
 
 ### zip
 ```
-+----+----+----+----+----+----+----+
-| ..   ..   ..   ..   ..   ..   .. |
-+     ---- ----                    +
-| .. | ..   ..   ..    2    1   .. |
-+    +                             +
-| .. | ..   12   11   ..    4   .. |
-+    +                             +
-| ..   ..    9   ..   10   ..   .. |
-+                                  +
-| ..    3   ..    8    7   .. | .. |
-+                             +    +
-| ..    5    6   ..   ..   .. | .. |
-+                    ---- ----+    +
-| ..   ..   ..   ..   ..   ..   .. |
-+---- ---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+----+----+
+| ..   ..   ..   ..   ..   ..   11   .. |
++                                       +
+| ..    4    5   ..   ..   ..   12   .. |
++                                       +
+| ..   ..   ..   ..    6   ..   ..   .. |
++                                       +
+|  7    1   ..   ..    3   ..   ..   .. |
++                                       +
+| ..   ..   ..   16   ..   ..   13   10 |
++                                       +
+| ..   ..   ..    9   ..   ..   ..   .. |
++                                       +
+| ..    2   ..   ..   ..   15   14   .. |
++                                       +
+| ..    8   ..   ..   ..   ..   ..   .. |
++---- ---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
+| M | M | S | . | . x . |
++---+---+---+---+---+-x-+
+| M | . | . | . | . | . |
++---+---+---+---+---+---+
 | S | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . | M | . x . = . | . |
-+---+---+---+---+-x-+---+
 | . | . | . | . | . | . |
-+---+-x-+---+---+-=-+---+
++---+---+---+---+---+-=-+
 | . | . | . | . | . | . |
-+---+-=-+---+---+---+---+
-| . | . = . x . | M | . |
-+---+---+---+---+---+---+
-| . | . | . | . | . | M |
++-=-+---+---+---+---+-x-+
+| . x . | . | . = . x . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟦🟦🟩🟩⬛⬛⬛⬛⬛
-🟦🟦🟦🟩🟩⬜⬜⬜⬛
-🟦🟦🟧🟧🟧🟧🟧⬜⬜
-🟦🟧🟧🟫🟧🟧🟥🟧⬜
-🟦🟧🟫🟫🟧🟥🟥🟧⬜
-🟦🟧🟧🟧🟧🟧🟧🟧⬜
-🟦🟧🟪🟪🟧🟪🟪🟧🟨
-🟦🟧🟧🟪🟪🟪🟧🟧🟨
-🟦🟦🟧🟧🟧🟧🟧🟨🟨
+⬜⬜⬜⬜⬜⬜⬜⬜⬜
+⬜🟥🟫⬛⬛⬛⬜⬜⬜
+🟥🟥🟫⬛🟧⬛⬜⬜⬜
+🟪🟥🟫🟧🟧⬛⬛🟨⬜
+🟪🟥🟫🟫🟧⬛🟨🟨⬜
+🟥🟥🟥🟫🟧⬛⬛🟨⬜
+🟩🟩🟩🟧🟧🟧⬛🟨⬜
+🟦🟦🟩🟩🟩🟩🟨🟨🟨
+🟦🟦🟦🟦🟦🟩🟩🟩🟩
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │ 2 │   ┃   │   │   ┃
+┃   │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 3 │   │ 1 ┃   │   │   ┃
+┃   │ 1 │   ┃   │ 2 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 4 │   │   ┃ 2 │   │   ┃
+┃   │   │ 3 ┃ 5 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 3 ┃   │   │ 1 ┃
+┃   │   │ 5 ┃ 4 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃ 4 │   │ 3 ┃
+┃   │ 2 │ 1 ┃ 3 │ 4 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │ 5 │   ┃
+┃   │   │   ┃   │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+----+
-| .. | .. | .. | +15 | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | =  |
-+----+----+----+----+----+----+----+
-| +3 | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | +6 |
-+----+----+----+----+----+----+----+
-| |  | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | +12 | .. | .. | .. |
-+----+----+----+----+----+----+----+
++----+----+----+----+----+----+----+----+
+| +4 | .. | .. | .. | .. | .. | .. | -  |
++----+----+----+----+----+----+----+----+
+| .. | |4 | .. | .. | .. | .. | +  | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | +6 | .. | .. | .. | +3 | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | -6 | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | =4 | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | +4 | .. | .. | .. | +5 | .. | .. |
++----+----+----+----+----+----+----+----+
+| .. | +  | .. | .. | .. | .. | -6 | .. |
++----+----+----+----+----+----+----+----+
+| |  | .. | .. | .. | .. | .. | .. | +7 |
++----+----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+---+---+
-| # | S | K | I | M | T | # |
+| N | O | V | N | V | O | N |
 +---+---+---+---+---+---+---+
-| # | A | # | S | # | H | # |
+| N | # | A | O | E | # | R |
 +---+---+---+---+---+---+---+
-| # | M | # | C | # | G | # |
+| I | V | T | I | R | S | U |
 +---+---+---+---+---+---+---+
-| C | O | H | H | I | I | L |
+| L | O | N | O | V | U | T |
 +---+---+---+---+---+---+---+
-| O | L | C | F | E | S | H |
+| C | N | O | L | E | P | E |
 +---+---+---+---+---+---+---+
-| T | A | H | O | S | A | L |
+| A | # | I | S | A | # | R |
 +---+---+---+---+---+---+---+
-| E | # | G | # | T | # | F |
+| N | O | V | I | V | O | N |
 +---+---+---+---+---+---+---+
 
 Words:
-  MASK
-  GHOST
-  MISCHIEF
-  CHOCOLATE
-  FLASHLIGHT
+  NOVEL
+  VISION
+  VOLCANO
+  TURNOVER
+  SUPERNOVA
+  INNOVATION
 ```
 
 ### pinpoint
 ```
-  1. Books
-  2. Cacti
-  3. Sea urchins
-  4. Vertebrates (by definition)
-  5. Porcupines (they're sharp!)
+  1. Hard
+  2. Digital
+  3. Advance
+  4. Backup
+  5. Carbon (the second c of cc)
 
-  answer: Things with spines!
+  answer: Words that come before “copy”!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 914
-date      : 2026-10-31
+number    : 915
+date      : 2026-11-01
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  poke : The top + bottom rows = A two-word phrase for a sphere for catching creatures in a massively popular game series. Keep in mind: The first word may be at the bottom.
-  pole : What a gondolier uses for propulsion
-  pile : Heap
-  file : You might use it on your nails
-  fill : ___-in-the-blank
-  bill : What someone must pay before leaving the restaurant
-  ball : The top + bottom rows = A two-word phrase for a sphere for catching creatures in a massively popular game series. Keep in mind: The first word may be at the bottom.
+  fall : The top + bottom rows = A two-word phrase for what some people do when Daylight Saving Time ends. Keep in mind: The first word may be at the bottom.
+  call : ___ and response
+  cull : Remove, as the least useful part
+  bull : Male elephant
+  bulk : Majority portion
+  buck : Attempt to throw a rider off
+  back : The top + bottom rows = A two-word phrase for what some people do when Daylight Saving Time ends. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
