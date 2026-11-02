@@ -11,57 +11,51 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-11-01)
+## Today's games (2026-11-02)
 
 ### zip
 ```
-+----+----+----+----+----+----+----+----+
-| ..   ..   ..   ..   ..   ..   11   .. |
-+                                       +
-| ..    4    5   ..   ..   ..   12   .. |
-+                                       +
-| ..   ..   ..   ..    6   ..   ..   .. |
-+                                       +
-|  7    1   ..   ..    3   ..   ..   .. |
-+                                       +
-| ..   ..   ..   16   ..   ..   13   10 |
-+                                       +
-| ..   ..   ..    9   ..   ..   ..   .. |
-+                                       +
-| ..    2   ..   ..   ..   15   14   .. |
-+                                       +
-| ..    8   ..   ..   ..   ..   ..   .. |
-+---- ---- ---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+
+|  1    7    6    2   ..   .. |
++                             +
+| ..   ..   ..   ..    3   .. |
++                             +
+| ..   ..    5   ..    4   .. |
++                             +
+| ..    8   ..   ..   10   .. |
++                             +
+| ..   ..    9   11   ..   .. |
++                             +
+| ..   ..   ..   ..   ..   .. |
++---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| M | M | S | . | . x . |
-+---+---+---+---+---+-x-+
-| M | . | . | . | . | . |
+| . | M | S | . | . | . |
 +---+---+---+---+---+---+
-| S | . | . | . | . | . |
+| . | . | . | . = . | . |
 +---+---+---+---+---+---+
-| . | . | . | . | . | . |
-+---+---+---+---+---+-=-+
-| . | . | . | . | . | . |
-+-=-+---+---+---+---+-x-+
-| . x . | . | . = . x . |
+| . | . | . | . | . | M |
++-=-+---+---+---+---+---+
+| . | . | . | . | . | M |
++---+---+---+---+---+---+
+| . | M | M | . | . | . |
++---+---+---+---+---+---+
+| . | . | . | . = . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-⬜⬜⬜⬜⬜⬜⬜⬜⬜
-⬜🟥🟫⬛⬛⬛⬜⬜⬜
-🟥🟥🟫⬛🟧⬛⬜⬜⬜
-🟪🟥🟫🟧🟧⬛⬛🟨⬜
-🟪🟥🟫🟫🟧⬛🟨🟨⬜
-🟥🟥🟥🟫🟧⬛⬛🟨⬜
-🟩🟩🟩🟧🟧🟧⬛🟨⬜
-🟦🟦🟩🟩🟩🟩🟨🟨🟨
-🟦🟦🟦🟦🟦🟩🟩🟩🟩
+🟩🟩🟫🟫🟫🟫🟥
+🟩🟩🟦🟦🟫🟫🟫
+🟫🟫🟦🟦🟪🟪🟫
+🟫🟫🟫🟫🟪🟪🟫
+🟫🟫🟫🟨🟨🟫🟫
+🟧🟫🟫🟨🟨🟫🟫
+🟧🟫🟫🟫🟫🟫🟫
 ```
 
 ### minisudoku
@@ -69,13 +63,13 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
 ┃   │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 1 │   ┃   │ 2 │   ┃
+┃ 1 │   │ 5 ┃ 4 │   │ 3 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │ 3 ┃ 5 │   │   ┃
+┃ 2 │   │ 6 ┃ 5 │   │ 4 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 5 ┃ 4 │   │   ┃
+┃ 3 │   │ 4 ┃ 6 │   │ 1 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 2 │ 1 ┃ 3 │ 4 │   ┃
+┃ 4 │   │ 2 ┃ 1 │   │ 6 ┃
 ┃───┼───┼───┃───┼───┼───┃
 ┃   │   │   ┃   │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -83,77 +77,67 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 ### patches
 ```
-+----+----+----+----+----+----+----+----+
-| +4 | .. | .. | .. | .. | .. | .. | -  |
-+----+----+----+----+----+----+----+----+
-| .. | |4 | .. | .. | .. | .. | +  | .. |
-+----+----+----+----+----+----+----+----+
-| .. | .. | +6 | .. | .. | .. | +3 | .. |
-+----+----+----+----+----+----+----+----+
-| .. | .. | -6 | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | =4 | .. | .. |
-+----+----+----+----+----+----+----+----+
-| .. | +4 | .. | .. | .. | +5 | .. | .. |
-+----+----+----+----+----+----+----+----+
-| .. | +  | .. | .. | .. | .. | -6 | .. |
-+----+----+----+----+----+----+----+----+
-| |  | .. | .. | .. | .. | .. | .. | +7 |
-+----+----+----+----+----+----+----+----+
++----+----+----+----+----+----+
+| .. | .. | |2 | |2 | .. | .. |
++----+----+----+----+----+----+
+| .. | =  | .. | .. | |  | .. |
++----+----+----+----+----+----+
+| .. | .. | .. | -2 | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | -2 | .. | .. | .. |
++----+----+----+----+----+----+
+| .. | |  | .. | .. | .. | .. |
++----+----+----+----+----+----+
+| .. | +2 | +2 | +2 | +2 | .. |
++----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+---+---+
-| N | O | V | N | V | O | N |
-+---+---+---+---+---+---+---+
-| N | # | A | O | E | # | R |
-+---+---+---+---+---+---+---+
-| I | V | T | I | R | S | U |
-+---+---+---+---+---+---+---+
-| L | O | N | O | V | U | T |
-+---+---+---+---+---+---+---+
-| C | N | O | L | E | P | E |
-+---+---+---+---+---+---+---+
-| A | # | I | S | A | # | R |
-+---+---+---+---+---+---+---+
-| N | O | V | I | V | O | N |
-+---+---+---+---+---+---+---+
++---+---+---+---+---+
+| E | A | S | # | T |
++---+---+---+---+---+
+| M | # | U | # | S |
++---+---+---+---+---+
+| A | E | R | E | A |
++---+---+---+---+---+
+| E | # | H | # | T |
++---+---+---+---+---+
+| P | # | C | A | E |
++---+---+---+---+---+
 
 Words:
-  NOVEL
-  VISION
-  VOLCANO
-  TURNOVER
-  SUPERNOVA
-  INNOVATION
+  PEA
+  EAST
+  TEACH
+  MEASURE
 ```
 
 ### pinpoint
 ```
-  1. Hard
-  2. Digital
-  3. Advance
-  4. Backup
-  5. Carbon (the second c of cc)
+  1. Body
+  2. Greeting
+  3. Address
+  4. Signature
+  5. P.S. (after the main text)
 
-  answer: Words that come before “copy”!
+  answer: Parts of written correspondence (letter or email)!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 915
-date      : 2026-11-01
+number    : 916
+date      : 2026-11-02
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  fall : The top + bottom rows = A two-word phrase for what some people do when Daylight Saving Time ends. Keep in mind: The first word may be at the bottom.
-  call : ___ and response
-  cull : Remove, as the least useful part
-  bull : Male elephant
-  bulk : Majority portion
-  buck : Attempt to throw a rider off
-  back : The top + bottom rows = A two-word phrase for what some people do when Daylight Saving Time ends. Keep in mind: The first word may be at the bottom.
+  lead : The top + bottom rows = Two words for the most prominent actor in a play or film.
+  leak : A broken pipe or faucet may have one
+  beak : What a bird eats with
+  bear : Animal whose name also means "to tolerate"
+  boar : Type of wild pig
+  soar : Fly high and majestically
+  star : The top + bottom rows = Two words for the most prominent actor in a play or film.
 ```
 <!-- DAILY-GAMES-END -->
