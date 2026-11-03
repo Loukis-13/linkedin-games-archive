@@ -11,133 +11,133 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-11-02)
+## Today's games (2026-11-03)
 
 ### zip
 ```
 +----+----+----+----+----+----+
-|  1    7    6    2   ..   .. |
-+                             +
-| ..   ..   ..   ..    3   .. |
-+                             +
-| ..   ..    5   ..    4   .. |
-+                             +
-| ..    8   ..   ..   10   .. |
-+                             +
-| ..   ..    9   11   ..   .. |
-+                             +
-| ..   ..   ..   ..   ..   .. |
-+---- ---- ---- ---- ---- ----+
+| ..   ..   ..    7 |  3   .. |
++                   +         +
+| ..   ..   ..   .. | ..   .. |
++                   +         +
+| ..    6 |  8   ..   ..   .. |
++         +                   +
+| ..   ..   ..    2 |  1   .. |
++                   +         +
+| ..   .. | ..   ..   ..   .. |
++         +                   +
+| ..    5 |  4   ..   ..   .. |
++---- ----+---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | M | S | . | . | . |
+| . | . | . | M | . | . |
++---+---+---+---+-=-+---+
+| . | . | . | S | . | . |
 +---+---+---+---+---+---+
-| . | . | . | . = . | . |
+| . | . | . = . | . | . |
++---+---+-x-+-=-+---+---+
+| . | . | . x . | . | . |
 +---+---+---+---+---+---+
-| . | . | . | . | . | M |
-+-=-+---+---+---+---+---+
-| . | . | . | . | . | M |
-+---+---+---+---+---+---+
-| . | M | M | . | . | . |
-+---+---+---+---+---+---+
-| . | . | . | . = . | . |
+| . | . | S | . | . | . |
++---+-=-+---+---+---+---+
+| . | . | M | . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟩🟩🟫🟫🟫🟫🟥
-🟩🟩🟦🟦🟫🟫🟫
-🟫🟫🟦🟦🟪🟪🟫
-🟫🟫🟫🟫🟪🟪🟫
-🟫🟫🟫🟨🟨🟫🟫
-🟧🟫🟫🟨🟨🟫🟫
-🟧🟫🟫🟫🟫🟫🟫
+🟥🟥🟧🟧🟧🟨🟨
+🟧🟧🟧🟩🟧🟧🟨
+🟧🟧🟩🟩🟧🟧🟧
+🟦🟧🟧🟧🟧🟪🟧
+🟦🟧🟧🟧🟪🟪🟧
+🟦🟦🟦🟧🟧🟧🟧
+🟦🟦🟦🟧🟧🟫🟫
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │   ┃   │   │   ┃
+┃   │ 2 │ 4 ┃ 5 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 1 │   │ 5 ┃ 4 │   │ 3 ┃
+┃ 1 │   │   ┃   │ 6 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 2 │   │ 6 ┃ 5 │   │ 4 ┃
+┃   │   │ 1 ┃ 2 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 3 │   │ 4 ┃ 6 │   │ 1 ┃
+┃   │   │ 6 ┃ 1 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 4 │   │ 2 ┃ 1 │   │ 6 ┃
+┃ 4 │   │   ┃   │ 1 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │   │   ┃
+┃   │ 1 │ 5 ┃ 6 │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+
-| .. | .. | |2 | |2 | .. | .. |
+| .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | =  | .. | .. | |  | .. |
+| .. | +4 | .. | .. | -  | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | -2 | .. | .. |
+| .. | +3 | .. | .. | -  | .. |
 +----+----+----+----+----+----+
-| .. | .. | -2 | .. | .. | .. |
+| .. | +2 | .. | .. | -  | .. |
 +----+----+----+----+----+----+
-| .. | |  | .. | .. | .. | .. |
+| .. | +6 | .. | .. | -  | .. |
 +----+----+----+----+----+----+
-| .. | +2 | +2 | +2 | +2 | .. |
+| .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+
-| E | A | S | # | T |
+| S | E | G | U | S |
 +---+---+---+---+---+
-| M | # | U | # | S |
+| N | E | G | # | # |
 +---+---+---+---+---+
-| A | E | R | E | A |
+| # | S | E | S | # |
 +---+---+---+---+---+
-| E | # | H | # | T |
+| # | # | T | T | P |
 +---+---+---+---+---+
-| P | # | C | A | E |
+| S | A | L | A | S |
 +---+---+---+---+---+
 
 Words:
-  PEA
-  EAST
-  TEACH
-  MEASURE
+  ASP
+  SALT
+  SENSE
+  SUGGEST
 ```
 
 ### pinpoint
 ```
-  1. Body
-  2. Greeting
-  3. Address
-  4. Signature
-  5. P.S. (after the main text)
+  1. Taiga
+  2. Tundra
+  3. Savanna
+  4. Desert
+  5. Rainforest
 
-  answer: Parts of written correspondence (letter or email)!
+  answer: Types of biome!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 916
-date      : 2026-11-02
+number    : 917
+date      : 2026-11-03
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  lead : The top + bottom rows = Two words for the most prominent actor in a play or film.
-  leak : A broken pipe or faucet may have one
-  beak : What a bird eats with
-  bear : Animal whose name also means "to tolerate"
-  boar : Type of wild pig
-  soar : Fly high and majestically
-  star : The top + bottom rows = Two words for the most prominent actor in a play or film.
+  cone : The top + bottom rows = A two-word phrase for a certain evergreen tree's seed-bearing organ. Keep in mind: The first word may be at the bottom.
+  tone : ___ of voice (indicator of emotion)
+  tore : Accidentally did damage to, as a page of a book
+  fore : Warning a golfer yells
+  fire : Source of warmth in cold weather
+  fine : High-quality, like some dining
+  pine : The top + bottom rows = A two-word phrase for a certain evergreen tree's seed-bearing organ. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
