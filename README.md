@@ -11,133 +11,135 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-11-03)
+## Today's games (2026-11-04)
 
 ### zip
 ```
-+----+----+----+----+----+----+
-| ..   ..   ..    7 |  3   .. |
-+                   +         +
-| ..   ..   ..   .. | ..   .. |
-+                   +         +
-| ..    6 |  8   ..   ..   .. |
-+         +                   +
-| ..   ..   ..    2 |  1   .. |
-+                   +         +
-| ..   .. | ..   ..   ..   .. |
-+         +                   +
-| ..    5 |  4   ..   ..   .. |
-+---- ----+---- ---- ---- ----+
++----+----+----+----+----+----+----+
+|  1   ..   ..    7   ..   ..    9 |
++                                  +
+| .. | .. | ..   ..   .. | .. | .. |
++    +    +              +    +    +
+| .. | ..    6   ..   ..    8 | .. |
++    +     ---- ---- ----     +    +
+| .. | ..   ..   ..   ..   .. | .. |
++    +---- ---- ---- ----     +    +
+| ..    4   ..   ..    5 | .. | .. |
++                        +    +    +
+| ..   ..   ..   ..   .. | .. | .. |
++                        +    +    +
+|  2   ..   ..    3   ..   ..   10 |
++---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . | . | M | . | . |
-+---+---+---+---+-=-+---+
-| . | . | . | S | . | . |
+| M | M | S | S | M | S |
 +---+---+---+---+---+---+
-| . | . | . = . | . | . |
-+---+---+-x-+-=-+---+---+
-| . | . | . x . | . | . |
+| M | S | S | M | S | M |
 +---+---+---+---+---+---+
-| . | . | S | . | . | . |
-+---+-=-+---+---+---+---+
-| . | . | M | . | . | . |
+| . | . | . | . | . | . |
++---+---+---+---+---+---+
+| . | . | . | . | . | . |
++---+---+---+---+---+---+
+| . = . | . = . | . x . |
++---+---+---+---+---+---+
+| . = . | . x . | . = . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟧🟧🟧🟨🟨
-🟧🟧🟧🟩🟧🟧🟨
-🟧🟧🟩🟩🟧🟧🟧
-🟦🟧🟧🟧🟧🟪🟧
-🟦🟧🟧🟧🟪🟪🟧
-🟦🟦🟦🟧🟧🟧🟧
-🟦🟦🟦🟧🟧🟫🟫
+🟥🟥🟥🟥🟧🟧🟧
+🟥🟥🟥🟨🟩🟩🟧
+🟥🟥🟦🟨🟩🟩🟩
+🟥🟪🟦🟨🟨🟩🟩
+🟫🟪🟦🟦🟩🟩🟩
+🟫🟪🟪🟩🟩🟩🟩
+🟫🟫🟩🟩🟩🟩🟩
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │ 2 │ 4 ┃ 5 │   │   ┃
+┃   │   │ 3 ┃   │ 5 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 1 │   │   ┃   │ 6 │   ┃
+┃   │ 2 │   ┃ 4 │   │ 6 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │ 1 ┃ 2 │   │   ┃
+┃ 1 │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 6 ┃ 1 │   │   ┃
+┃   │   │   ┃   │   │ 2 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 4 │   │   ┃   │ 1 │   ┃
+┃ 2 │   │ 4 ┃   │ 1 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 1 │ 5 ┃ 6 │   │   ┃
+┃   │ 1 │   ┃ 3 │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
+| .. | .. | -6 | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | +4 | .. | .. | -  | .. |
+| .. | .. | .. | +3 | .. | .. |
 +----+----+----+----+----+----+
-| .. | +3 | .. | .. | -  | .. |
+| .. | .. | -6 | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | +2 | .. | .. | -  | .. |
+| .. | .. | .. | =  | .. | .. |
 +----+----+----+----+----+----+
-| .. | +6 | .. | .. | -  | .. |
+| .. | .. | +  | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
+| .. | .. | .. | -3 | .. | .. |
 +----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+
-| S | E | G | U | S |
+| R | E | E | L | B |
 +---+---+---+---+---+
-| N | E | G | # | # |
+| A | G | # | N | O |
 +---+---+---+---+---+
-| # | S | E | S | # |
+| E | # | # | # | L |
 +---+---+---+---+---+
-| # | # | T | T | P |
+| R | A | # | Y | O |
 +---+---+---+---+---+
-| S | A | L | A | S |
+| B | V | E | A | L |
 +---+---+---+---+---+
 
 Words:
-  ASP
-  SALT
-  SENSE
-  SUGGEST
+  NOBLE
+  EAGER
+  LOYAL
+  BRAVE
 ```
 
 ### pinpoint
 ```
-  1. Taiga
-  2. Tundra
-  3. Savanna
-  4. Desert
-  5. Rainforest
+  1. Haddock
+  2. Sparrow
+  3. Hook
+  4. Nemo
+  5. Ahab (from Moby-Dick)
 
-  answer: Types of biome!
+  answer: Fictional sea captains!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 917
-date      : 2026-11-03
+number    : 918
+date      : 2026-11-04
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  cone : The top + bottom rows = A two-word phrase for a certain evergreen tree's seed-bearing organ. Keep in mind: The first word may be at the bottom.
-  tone : ___ of voice (indicator of emotion)
-  tore : Accidentally did damage to, as a page of a book
-  fore : Warning a golfer yells
-  fire : Source of warmth in cold weather
-  fine : High-quality, like some dining
-  pine : The top + bottom rows = A two-word phrase for a certain evergreen tree's seed-bearing organ. Keep in mind: The first word may be at the bottom.
+  tank : The top + bottom rows = A two-word phrase for a container that an engine draws from in order to run. Keep in mind: The first word may be at the bottom.
+  bank : Place to deposit or withdraw money
+  balk : Show reluctance about an idea
+  ball : Formal dance, like the one Cinderella attended
+  fall : Opposite of "rise," as a noun or a verb
+  full : Half-___ (like an optimist's water glass)
+  fuel : The top + bottom rows = A two-word phrase for a container that an engine draws from in order to run. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->

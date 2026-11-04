@@ -1,0 +1,61 @@
+{
+  "game": "minisudoku",
+  "date": "2026-11-04",
+  "grid_size": [
+    6,
+    6
+  ],
+  "cells": [
+    [
+      null,
+      null,
+      3,
+      null,
+      5,
+      null
+    ],
+    [
+      null,
+      2,
+      null,
+      4,
+      null,
+      6
+    ],
+    [
+      1,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      2
+    ],
+    [
+      2,
+      null,
+      4,
+      null,
+      1,
+      null
+    ],
+    [
+      null,
+      1,
+      null,
+      3,
+      null,
+      null
+    ]
+  ],
+  "number": "450",
+  "title": "Peanut",
+  "difficulty": null
+}
