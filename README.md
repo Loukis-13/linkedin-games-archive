@@ -11,135 +11,139 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-11-04)
+## Today's games (2026-11-05)
 
 ### zip
 ```
 +----+----+----+----+----+----+----+
-|  1   ..   ..    7   ..   ..    9 |
+|  1   ..   ..   ..   ..   ..   .. |
++          ---- ---- ----          +
+| ..   ..   ..    6   ..   ..   .. |
 +                                  +
-| .. | .. | ..   ..   .. | .. | .. |
-+    +    +              +    +    +
-| .. | ..    6   ..   ..    8 | .. |
-+    +     ---- ---- ----     +    +
-| .. | ..   ..   ..   ..   .. | .. |
-+    +---- ---- ---- ----     +    +
-| ..    4   ..   ..    5 | .. | .. |
-+                        +    +    +
-| ..   ..   ..   ..   .. | .. | .. |
-+                        +    +    +
-|  2   ..   ..    3   ..   ..   10 |
+| .. |  9   .. | .. | ..    4   .. |
++    +         +    +              +
+|  7 | ..   .. | .. | ..   .. |  2 |
++    +         +    +         +    +
+| ..    8   .. | .. | ..    3 | .. |
++              +    +         +    +
+| ..   ..   ..    5   ..   ..   .. |
++          ---- ---- ----          +
+| ..   ..   ..   ..   ..   ..   10 |
 +---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| M | M | S | S | M | S |
-+---+---+---+---+---+---+
-| M | S | S | M | S | M |
-+---+---+---+---+---+---+
-| . | . | . | . | . | . |
+| S | S | M | . x . x . |
++---+---+---+---+-x-+---+
+| . | S | . | . | . | . |
 +---+---+---+---+---+---+
 | . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . = . | . = . | . x . |
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . = . | . x . | . = . |
+| . | M | . | . | . | . |
++---+---+---+---+-x-+---+
+| S | M | M | . x . x . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟥🟧🟧🟧
-🟥🟥🟥🟨🟩🟩🟧
-🟥🟥🟦🟨🟩🟩🟩
-🟥🟪🟦🟨🟨🟩🟩
-🟫🟪🟦🟦🟩🟩🟩
-🟫🟪🟪🟩🟩🟩🟩
-🟫🟫🟩🟩🟩🟩🟩
+🟥🟥🟥🟥🟥🟧🟧🟧🟧
+🟥🟥🟨🟨🟨🟨🟨🟨🟧
+🟥🟥🟥🟩🟨🟨🟦🟦🟦
+🟪🟪🟥🟩🟨🟨🟦🟦🟦
+🟪🟫🟥🟩⬛⬛⬛⬛⬛
+🟪🟫🟥🟩⬛⬛⬛⬛⬛
+⬜🟫🟥🟩⬛⬛⬛⬛⬛
+⬜🟫🟫🟩⬛⬛⬛⬛⬛
+⬜⬜⬜🟩⬛⬛⬛⬛⬛
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │ 3 ┃   │ 5 │   ┃
+┃   │   │ 5 ┃ 4 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 2 │   ┃ 4 │   │ 6 ┃
+┃ 3 │   │   ┃   │   │ 1 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 1 │   │   ┃   │   │   ┃
+┃ 6 │   │   ┃   │   │ 2 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │   │ 2 ┃
+┃ 2 │   │   ┃   │   │ 4 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 2 │   │ 4 ┃   │ 1 │   ┃
+┃ 5 │   │   ┃   │   │ 6 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 1 │   ┃ 3 │   │   ┃
+┃   │   │ 3 ┃ 1 │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+
-| .. | .. | -6 | .. | .. | .. |
+| -6 | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | +3 | .. | .. |
+| .. | .. | .. | -8 | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | -6 | .. | .. | .. |
+| +8 | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | =  | .. | .. |
+| .. | .. | .. | .. | .. | +4 |
 +----+----+----+----+----+----+
-| .. | .. | +  | .. | .. | .. |
+| .. | .. | -4 | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | -3 | .. | .. |
+| .. | .. | .. | .. | .. | -6 |
 +----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+
-| R | E | E | L | B |
-+---+---+---+---+---+
-| A | G | # | N | O |
-+---+---+---+---+---+
-| E | # | # | # | L |
-+---+---+---+---+---+
-| R | A | # | Y | O |
-+---+---+---+---+---+
-| B | V | E | A | L |
-+---+---+---+---+---+
++---+---+---+---+---+---+
+| # | T | H | # | # | # |
++---+---+---+---+---+---+
+| # | B | G | J | O | U |
++---+---+---+---+---+---+
+| # | U | I | M | N | R |
++---+---+---+---+---+---+
+| Y | O | Y | L | A | # |
++---+---+---+---+---+---+
+| A | N | C | D | O | # |
++---+---+---+---+---+---+
+| # | # | # | D | S | # |
++---+---+---+---+---+---+
 
 Words:
-  NOBLE
-  EAGER
-  LOYAL
-  BRAVE
+  ODDS
+  MIGHT
+  JOURNAL
+  BUOYANCY
 ```
 
 ### pinpoint
 ```
-  1. Haddock
-  2. Sparrow
-  3. Hook
-  4. Nemo
-  5. Ahab (from Moby-Dick)
+  1. Cold
+  2. Age
+  3. Mason
+  4. Henge
+  5. ’s throw away
 
-  answer: Fictional sea captains!
+  answer: Terms that come after “stone”!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 918
-date      : 2026-11-04
+number    : 919
+date      : 2026-11-05
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  tank : The top + bottom rows = A two-word phrase for a container that an engine draws from in order to run. Keep in mind: The first word may be at the bottom.
-  bank : Place to deposit or withdraw money
-  balk : Show reluctance about an idea
-  ball : Formal dance, like the one Cinderella attended
-  fall : Opposite of "rise," as a noun or a verb
-  full : Half-___ (like an optimist's water glass)
-  fuel : The top + bottom rows = A two-word phrase for a container that an engine draws from in order to run. Keep in mind: The first word may be at the bottom.
+  gale : The top + bottom rows = Air movement, and a strong form of it. Keep in mind: The first word may be at the bottom.
+  sale : Occasion when prices are lowered
+  sane : Capable of thinking rationally
+  sand : Grains plentiful in the Sahara
+  hand : Human body part with knuckles
+  hind : At the back, as two legs of many animals
+  wind : The top + bottom rows = Air movement, and a strong form of it. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
