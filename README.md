@@ -11,139 +11,140 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-11-05)
+## Today's games (2026-11-06)
 
 ### zip
 ```
 +----+----+----+----+----+----+----+
-|  1   ..   ..   ..   ..   ..   .. |
-+          ---- ---- ----          +
-| ..   ..   ..    6   ..   ..   .. |
+| ..   ..   ..   ..   ..   ..    7 |
 +                                  +
-| .. |  9   .. | .. | ..    4   .. |
-+    +         +    +              +
-|  7 | ..   .. | .. | ..   .. |  2 |
-+    +         +    +         +    +
-| ..    8   .. | .. | ..    3 | .. |
-+              +    +         +    +
-| ..   ..   ..    5   ..   ..   .. |
-+          ---- ---- ----          +
-| ..   ..   ..   ..   ..   ..   10 |
+| ..   ..   ..   ..    5    6   .. |
++                                  +
+| ..   ..   12   ..   ..   ..   .. |
++                                  +
+|  8    4   ..   ..   ..    1   11 |
++                                  +
+| ..   ..   ..   ..    3   ..   .. |
++                                  +
+| ..    9    2   ..   ..   ..   .. |
++                                  +
+| 10   ..   ..   ..   ..   ..   .. |
 +---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| S | S | M | . x . x . |
-+---+---+---+---+-x-+---+
-| . | S | . | . | . | . |
+| . | S | S | . x . x . |
++-x-+---+---+---+---+---+
+| . | . | . | . | . | M |
 +---+---+---+---+---+---+
-| . | . | . | . | . | . |
+| M | . | . | . | . | S |
 +---+---+---+---+---+---+
-| . | . | . | . | . | . |
+| S | . | . | . | . | S |
 +---+---+---+---+---+---+
-| . | M | . | . | . | . |
-+---+---+---+---+-x-+---+
-| S | M | M | . x . x . |
+| S | . | . | . | . | . |
++---+---+---+---+---+-x-+
+| . x . x . | M | S | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟥🟥🟧🟧🟧🟧
-🟥🟥🟨🟨🟨🟨🟨🟨🟧
-🟥🟥🟥🟩🟨🟨🟦🟦🟦
-🟪🟪🟥🟩🟨🟨🟦🟦🟦
-🟪🟫🟥🟩⬛⬛⬛⬛⬛
-🟪🟫🟥🟩⬛⬛⬛⬛⬛
-⬜🟫🟥🟩⬛⬛⬛⬛⬛
-⬜🟫🟫🟩⬛⬛⬛⬛⬛
-⬜⬜⬜🟩⬛⬛⬛⬛⬛
+🟪🟪🟪🟪🟦🟦🟦🟦
+🟪🟪🟫🟪🟦🟨🟨🟨
+🟪🟪🟫🟫🟦🟨🟩🟩
+🟪🟧🟥🟥🟥🟨🟨🟩
+🟪🟧🟥🟧🟥🟩🟩🟩
+🟪🟧🟧🟧🟥🟪🟪⬛
+🟪🟪🟪🟪🟪🟪🟪⬛
+🟪🟪🟪🟪🟪🟪⬛⬛
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │ 5 ┃ 4 │   │   ┃
+┃ 1 │   │   ┃ 2 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 3 │   │   ┃   │   │ 1 ┃
+┃   │ 2 │   ┃   │ 1 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 6 │   │   ┃   │   │ 2 ┃
+┃   │   │ 3 ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 2 │   │   ┃   │   │ 4 ┃
+┃   │   │   ┃ 4 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 5 │   │   ┃   │   │ 6 ┃
+┃   │ 1 │   ┃   │ 5 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 3 ┃ 1 │   │   ┃
+┃   │   │ 5 ┃   │   │ 6 ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+
-| -6 | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | -8 | .. | .. |
-+----+----+----+----+----+----+
-| +8 | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | +4 |
-+----+----+----+----+----+----+
-| .. | .. | -4 | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | -6 |
-+----+----+----+----+----+----+
++----+----+----+----+----+----+----+
+| |6 | .. | -6 | .. | .. | .. | |6 |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | |6 | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | -6 | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | |6 | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | -6 | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| +2 | .. | .. | .. | +3 | .. | +2 |
++----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+---+
-| # | T | H | # | # | # |
+| E | E | E | N | S | I |
 +---+---+---+---+---+---+
-| # | B | G | J | O | U |
+| # | T | T | # | G | L |
 +---+---+---+---+---+---+
-| # | U | I | M | N | R |
+| I | N | U | # | O | O |
 +---+---+---+---+---+---+
-| Y | O | Y | L | A | # |
+| O | A | # | D | W | D |
 +---+---+---+---+---+---+
-| A | N | C | D | O | # |
+| P | P | # | I | I | # |
 +---+---+---+---+---+---+
-| # | # | # | D | S | # |
+| E | T | U | L | L | L |
 +---+---+---+---+---+---+
 
 Words:
-  ODDS
-  MIGHT
-  JOURNAL
-  BUOYANCY
+  DILUTE
+  UTENSIL
+  GOODWILL
+  APPOINTEE
 ```
 
 ### pinpoint
 ```
-  1. Cold
-  2. Age
-  3. Mason
-  4. Henge
-  5. ’s throw away
+  1. Argument
+  2. Street
+  3. Vinyl record
+  4. Sheet of paper
+  5. Coin (heads and tails)
 
-  answer: Terms that come after “stone”!
+  answer: Things that have two sides!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 919
-date      : 2026-11-05
+number    : 920
+date      : 2026-11-06
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  gale : The top + bottom rows = Air movement, and a strong form of it. Keep in mind: The first word may be at the bottom.
-  sale : Occasion when prices are lowered
-  sane : Capable of thinking rationally
-  sand : Grains plentiful in the Sahara
-  hand : Human body part with knuckles
-  hind : At the back, as two legs of many animals
-  wind : The top + bottom rows = Air movement, and a strong form of it. Keep in mind: The first word may be at the bottom.
+  wood : The top + bottom rows = A two-word phrase for what someone working in forestry might do with an axe. Keep in mind: The first word may be at the bottom.
+  hood : It's attached to some jackets
+  hoot : Sound an owl makes
+  soot : Black stuff in a chimney
+  shot : Opportunity
+  shop : Place to make a purchase
+  chop : The top + bottom rows = A two-word phrase for what someone working in forestry might do with an axe. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
