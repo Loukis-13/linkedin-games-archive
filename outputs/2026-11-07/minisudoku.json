@@ -1,0 +1,61 @@
+{
+  "game": "minisudoku",
+  "date": "2026-11-07",
+  "grid_size": [
+    6,
+    6
+  ],
+  "cells": [
+    [
+      1,
+      2,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      3,
+      4,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      2,
+      1,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      1,
+      2
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      2,
+      6
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      5,
+      3
+    ]
+  ],
+  "number": "453",
+  "title": "Two Tall",
+  "difficulty": "Hard"
+}
