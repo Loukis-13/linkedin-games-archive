@@ -11,25 +11,25 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-11-07)
+## Today's games (2026-11-08)
 
 ### zip
 ```
 +----+----+----+----+----+----+----+----+
 | ..   ..   ..   ..   ..   ..   ..   .. |
 +                                       +
-| ..   10    8   ..   ..   ..   ..   .. |
+|  1 |  2   ..   10   ..   ..    9   .. |
++    +                                  +
+| ..   ..   ..   ..   ..   ..   ..   .. |
 +                                       +
-| ..   ..   12   13   ..   14    7   .. |
+| ..    7   ..   ..    4   ..   ..    8 |
 +                                       +
-| ..   ..   ..   ..    2   15   ..   .. |
+|  3   ..   ..    5   ..   ..   14   .. |
 +                                       +
-| ..   ..   11    3   ..   ..   ..   .. |
+| ..   ..   ..   ..   ..   ..   ..   .. |
 +                                       +
-| ..    9    4   ..    1   16   ..   .. |
-+                                       +
-| ..   ..   ..   ..   ..    5    6   .. |
-+                                       +
+| ..    6   ..   ..   12   ..   11 | 13 |
++                                  +    +
 | ..   ..   ..   ..   ..   ..   ..   .. |
 +---- ---- ---- ---- ---- ---- ---- ----+
 ```
@@ -37,122 +37,123 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 ### tango
 ```
 +---+---+---+---+---+---+
-| M | . | . x . = . | . |
-+---+-=-+-x-+---+---+---+
 | . = . | . | . | . | . |
++---+---+---+---+---+-=-+
+| . | . x . | . | . | . |
++---+---+---+---+-=-+---+
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . = . | S | . | . | . |
-+-=-+---+---+---+---+---+
-| . | . | . | M | . | . |
+| . | . | . | . | . | . |
++---+-x-+---+---+---+---+
+| . | . | . | M | M | . |
 +-x-+---+---+---+---+---+
-| . | . | . | . | S | . |
-+---+---+---+---+---+---+
-| . | . | . | . | . | S |
+| . | . | . | . | S | S |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟥🟥🟨🟨🟧🟧
-⬜⬜⬜🟩🟥🟦🟦🟦🟧
-⬜⬜🟩🟩🟥🟥🟦🟦🟧
-⬜🟩🟩🟩🟥🟥🟥🟦🟧
-⬜⬜⬜🟫🟫🟥🟥🟥🟧
-⬜⬛⬜⬜🟫🟪🟪🟪🟫
-⬜⬛⬛🟫🟫🟪🟪🟫🟫
-⬜⬛⬛⬛🟫🟪🟫🟫🟫
-⬜⬜⬜⬜🟫🟫🟫🟫🟫
+🟩🟩🟩🟩🟩🟩⬛⬛⬛
+🟩🟦🟦🟦🟦🟩🟩🟩⬛
+🟩🟦🟦🟥🟦🟩🟩🟩⬛
+🟩🟦🟥🟥🟦🟪🟪🟪🟪
+🟩🟦🟦🟦🟦🟦🟦🟦🟪
+🟩🟩🟩🟩🟦🟦🟧🟦🟪
+⬜🟩🟩🟨🟦🟧🟧🟦🟫
+⬜🟩🟨🟨🟦🟦🟦🟦🟫
+⬜⬜⬜🟨🟨🟨🟫🟫🟫
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃ 1 │ 2 │   ┃   │   │   ┃
+┃   │   │ 1 ┃ 2 │   │ 3 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 3 │ 4 │   ┃   │   │   ┃
+┃   │   │   ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 2 │ 1 │   ┃   │   │   ┃
+┃   │   │ 2 ┃   │   │ 4 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │ 1 │ 2 ┃
+┃ 5 │   │   ┃ 1 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃   │ 2 │ 6 ┃
+┃   │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │ 5 │ 3 ┃
+┃ 1 │   │ 6 ┃ 5 │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+----+----+
-| +3 | .. | .. | +3 | +3 | .. | .. | +  |
+| .. | .. | =  | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | +3 | .. |
+| .. | .. | .. | .. | |  | .. | .. | .. |
 +----+----+----+----+----+----+----+----+
-| .. | |3 | .. | .. | .. | .. | +3 | .. |
+| .. | .. | .. | .. | .. | .. | =  | .. |
 +----+----+----+----+----+----+----+----+
-| +3 | .. | +3 | .. | -3 | .. | .. | .. |
+| -  | .. | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+----+
-| .. | .. | .. | =4 | .. | +4 | .. | +4 |
+| .. | .. | .. | .. | .. | .. | .. | |8 |
 +----+----+----+----+----+----+----+----+
-| .. | +4 | .. | .. | .. | .. | |  | .. |
+| .. | -8 | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+----+
-| .. | +  | .. | .. | .. | .. | .. | .. |
+| .. | .. | .. | -8 | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+----+
-| +4 | .. | .. | +4 | +  | .. | .. | +4 |
+| .. | .. | .. | .. | .. | |8 | .. | .. |
 +----+----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+---+---+
-| J | R | # | R | O | N | Z |
+| # | H | I | D | E | # | # |
 +---+---+---+---+---+---+---+
-| E | E | T | B | # | C | E |
+| T | C | N | G | S | I | U |
 +---+---+---+---+---+---+---+
-| C | # | N | I | S | I | # |
+| E | F | E | C | I | S | G |
 +---+---+---+---+---+---+---+
-| T | A | L | # | S | T | N |
+| # | # | A | N | D | # | # |
 +---+---+---+---+---+---+---+
-| # | S | C | L | A | # | E |
+| C | H | L | O | F | S | N |
 +---+---+---+---+---+---+---+
-| E | R | # | U | B | S | U |
+| R | A | E | C | L | A | E |
 +---+---+---+---+---+---+---+
-| V | E | R | S | # | E | Q |
+| # | # | S | E | E | K | # |
 +---+---+---+---+---+---+---+
 
 Words:
-  BRONZE
-  CLASSIC
-  REVERSAL
-  INTERJECT
-  SUBSEQUENT
+  FLEE
+  SNEAK
+  SEARCH
+  CONCEAL
+  FETCHING
+  DISGUISED
 ```
 
 ### pinpoint
 ```
-  1. Guide
-  2. Carriage
-  3. Handbag brand
-  4. Airplane section
-  5. Sports team leader
+  1. Rules
+  2. Control
+  3. Water
+  4. Floor
+  5. -breaking (new and innovative)
 
-  answer: Different definitions of "coach"!
+  answer: Words that come after “ground”!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 921
-date      : 2026-11-07
+number    : 922
+date      : 2026-11-08
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  good : The top + bottom rows = A two-word phrase in the name of a cape on the coast of South Africa. Keep in mind: The first word may be at the bottom.
-  gold : Metal for a first-place medal
-  sold : Gave away in exchange for money
-  sole : Bottom of a person's foot
-  some : Vaguely defined amount between none and all
-  home : Where many people go after work
-  hope : The top + bottom rows = A two-word phrase in the name of a cape on the coast of South Africa. Keep in mind: The first word may be at the bottom.
+  port : The top + bottom rows = The opposite of "right," and what it's called on a ship. Keep in mind: The first word may be at the bottom.
+  part : Distinct section of something
+  wart : Skin blemish, or a small flaw
+  waft : Float gently through the air, as an aroma might
+  daft : ___ Punk (French electronic music duo)
+  deft : Nimble and skilled
+  left : The top + bottom rows = The opposite of "right," and what it's called on a ship. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->

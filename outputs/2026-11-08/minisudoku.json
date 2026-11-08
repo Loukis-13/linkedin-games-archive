@@ -1,0 +1,61 @@
+{
+  "game": "minisudoku",
+  "date": "2026-11-08",
+  "grid_size": [
+    6,
+    6
+  ],
+  "cells": [
+    [
+      null,
+      null,
+      1,
+      2,
+      null,
+      3
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      2,
+      null,
+      null,
+      4
+    ],
+    [
+      5,
+      null,
+      null,
+      1,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      1,
+      null,
+      6,
+      5,
+      null,
+      null
+    ]
+  ],
+  "number": "454",
+  "title": "Figure 8",
+  "difficulty": "Hard"
+}
