@@ -1,0 +1,13 @@
+{
+  "game": "pinpoint",
+  "number": 602,
+  "date": "2026-11-09",
+  "answer": "Parts of a weather forecast!",
+  "clues": [
+    "Temperature",
+    "Humidity",
+    "Atmospheric pressure",
+    "Wind speed and direction",
+    "Chance of precipitation"
+  ]
+}
