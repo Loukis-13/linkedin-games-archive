@@ -1,0 +1,13 @@
+{
+  "game": "pinpoint",
+  "number": 604,
+  "date": "2026-11-11",
+  "answer": "Things represented by the letter \"N\"!",
+  "clues": [
+    "{1, 2, 3, ...}",
+    "Knight (in chess)",
+    "Newton (SI unit of force)",
+    "North",
+    "No (if Yes = Y)"
+  ]
+}

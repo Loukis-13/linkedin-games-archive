@@ -11,133 +11,136 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-11-09)
+## Today's games (2026-11-11)
 
 ### zip
 ```
 +----+----+----+----+----+----+
 | ..   ..   ..   ..   ..   .. |
-+          ---- ----          +
++               ----          +
 | ..   ..   .. | ..   ..   .. |
-+              +              +
-| .. | .. |  3    6 | .. | .. |
-+    +    +         +    +    +
-| ..    4   ..   ..    5   .. |
++          ----+              +
+| ..   .. | ..   ..   ..   .. |
++         +                   +
+| ..    3   ..   ..    6    4 |
 +                             +
-| ..   .. |  1 |  2 | ..   .. |
-+         +    +    +         +
-| ..   ..   ..   ..   ..   .. |
+| ..    1   ..   ..    7   .. |
++                             +
+| ..   ..    2    5   ..   .. |
 +---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| M | . | . | . | . | . |
-+---+---+-x-+---+---+---+
-| M | . | . | . | . | . |
+| . | . | M | . | . | . |
++---+---+---+---+-=-+---+
+| . | . | M | . | . | . |
 +---+---+---+---+---+---+
-| S | S | . x . | . | . |
-+---+---+---+---+---+---+
-| . | . | M | M | . x . |
+| . | . | S | M | . | . |
++---+-=-+---+---+-x-+---+
+| . | . | M | S | . | . |
 +---+---+---+---+---+---+
 | . | . | . | S | . | . |
-+---+---+---+---+---+-x-+
-| . | . | . | S | . | . |
++---+-=-+---+---+---+---+
+| . | . | . | M | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟨🟩🟫🟧🟧🟧🟧
-🟨🟩🟫🟫🟧🟪🟧
-🟨🟩🟫🟫🟧🟧🟧
-🟨🟩🟩🟩🟩🟦🟧
-🟨🟨🟨🟩🟩🟦🟦
-🟨🟨🟨🟩🟩🟩🟩
-🟨🟥🟥🟥🟥🟥🟥
+🟥🟥🟧🟧🟧🟨🟨🟨
+🟥🟧🟧🟩🟧🟧🟧🟨
+🟥🟧🟧🟩🟩🟩🟧🟧
+🟦🟦🟦🟧🟧🟧🟧🟧
+🟧🟧🟦🟧🟪🟧🟧🟫
+🟧🟧🟧🟧🟪🟧🟧🟫
+⬛🟧🟧🟧🟪🟪🟫🟫
+⬛🟧🟧🟧🟧🟧🟧🟧
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │   ┃   │   │   ┃
+┃ 1 │ 2 │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 1 │ 2 ┃ 3 │ 4 │   ┃
+┃   │ 3 │   ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 1 │ 2 │   ┃   │ 3 │ 4 ┃
+┃ 3 │ 1 │ 4 ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 5 │ 4 │   ┃   │ 2 │ 1 ┃
+┃   │   │   ┃ 1 │ 3 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 3 │ 5 ┃ 1 │ 6 │   ┃
+┃   │   │   ┃   │ 1 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │   │   ┃
+┃   │   │   ┃ 5 │ 2 │ 3 ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+
-| .. | .. | =9 | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | =  | .. |
-+----+----+----+----+----+----+
-| |  | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | |  |
-+----+----+----+----+----+----+
-| .. | =9 | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | |  | .. | .. |
-+----+----+----+----+----+----+
++----+----+----+----+----+----+----+
+| .. | .. | .. | +6 | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | +8 | +  | .. | .. |
++----+----+----+----+----+----+----+
+| +3 | +2 | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| =4 | .. | .. | .. | .. | .. | -3 |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | +2 | +2 |
++----+----+----+----+----+----+----+
+| .. | .. | +  | +3 | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | +4 | .. | .. | .. |
++----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+
-| A | # | R | E | C |
+| Q | # | # | # | A |
 +---+---+---+---+---+
-| C | P | T | # | E |
+| U | E | C | E | U |
 +---+---+---+---+---+
-| C | E | T | P | I |
+| T | S | C | S | T |
 +---+---+---+---+---+
-| D | # | T | P | A |
+| H | S | U | S | H |
 +---+---+---+---+---+
-| N | E | R | # | Z |
+| O | R | N | R | O |
 +---+---+---+---+---+
 
 Words:
-  ZAP
-  TREND
-  ACCEPT
-  RECEIPT
+  HORN
+  QUEST
+  AUTHOR
+  SUCCESS
 ```
 
 ### pinpoint
 ```
-  1. Temperature
-  2. Humidity
-  3. Atmospheric pressure
-  4. Wind speed and direction
-  5. Chance of precipitation
+  1. {1, 2, 3, ...}
+  2. Knight (in chess)
+  3. Newton (SI unit of force)
+  4. North
+  5. No (if Yes = Y)
 
-  answer: Parts of a weather forecast!
+  answer: Things represented by the letter "N"!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 923
-date      : 2026-11-09
+number    : 925
+date      : 2026-11-11
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  dogs : The top + bottom rows = Two groups of animals commonly adopted as pets.
-  dots : Polka ___ (fabric pattern)
-  dote : Excessively bestow affection (on)
-  date : Romantically involved couple's outing
-  mate : Either half of a romantically involved couple
-  mats : Soft platforms in a yoga studio
-  cats : The top + bottom rows = Two groups of animals commonly adopted as pets.
+  back : The top + bottom rows = A two-word phrase for the second half of a golf course. Keep in mind: The first word may be at the bottom.
+  lack : Inadequate amount
+  lick : Enjoy, as a lollipop
+  link : Word following "missing" or "cuff"
+  mink : Animal related to the weasel
+  mine : Not yours
+  nine : The top + bottom rows = A two-word phrase for the second half of a golf course. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
