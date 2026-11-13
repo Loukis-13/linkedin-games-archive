@@ -11,141 +11,139 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-11-12)
+## Today's games (2026-11-13)
 
 ### zip
 ```
 +----+----+----+----+----+----+----+
-| ..   ..   12    5   ..   ..   .. |
+| ..    9   ..    8   ..    3   .. |
 +                                  +
-| ..   13   ..   ..    4   ..   .. |
+| ..   10   ..    7   ..    1   .. |
 +                                  +
-| ..   ..    8   ..   ..    3   .. |
+| ..   ..   ..   ..   ..   ..   .. |
++     ----           ----          +
+| ..   ..   ..   ..   ..   ..   .. |
++          ----           ----     +
+| ..   ..   ..   ..   ..   ..   .. |
 +                                  +
-| ..   ..   ..    2   ..   ..   .. |
+| ..   12   ..    2   ..    4   .. |
 +                                  +
-| ..    9   ..   ..    7   ..   .. |
-+                                  +
-| ..   ..   10   ..   ..    1   .. |
-+                                  +
-| ..   ..   ..   11    6   ..   .. |
+| ..   11   ..    6   ..    5   .. |
 +---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . | . | . | . x . |
+| . | M | M | S | M | . |
 +---+---+---+---+---+---+
-| . | . | . | . | M | S |
-+---+---+---+-x-+---+---+
-| . x . | . | . | M | M |
+| . | . = . x . = . | . |
 +---+---+---+---+---+---+
-| S | M | . | . | . x . |
-+---+---+-x-+---+---+---+
-| M | S | . | . | . | . |
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . x . | . | . | . | . |
+| . | . | . | . | . | . |
++---+---+---+---+---+---+
+| . | M | S | M | S | . |
++---+---+---+---+---+---+
+| . | . x . = . x . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟨🟨🟨🟦🟦
-🟥🟨🟨🟨🟨🟦🟦🟩
-🟥🟨🟥🟨🟦🟦🟩🟩
-🟥🟥🟥🟦🟦🟩🟩🟩
-🟥🟥🟦🟦🟧🟩🟩🟩
-🟥🟦🟦🟪🟧🟧🟫🟩
-🟦🟦⬛🟪🟪🟧🟫🟫
-🟦⬛⬛⬛🟪🟫🟫🟫
+🟥🟥🟥⬛⬛⬛⬛⬛
+🟥🟦🟦🟦⬛⬛⬛⬛
+🟥🟥🟪🟦🟪⬛⬛⬛
+🟥🟧🟪🟦🟪⬛⬛⬛
+🟧🟧🟪🟦🟪🟨🟨🟨
+🟧🟧🟪🟪🟪🟨🟩🟨
+🟧🟧🟧🟧🟧🟨🟩🟨
+🟫🟫🟧🟧🟧🟨🟩🟨
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │ 1 │ 2 ┃ 3 │   │   ┃
+┃   │   │ 1 ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 4 │ 5 │   ┃   │   │   ┃
+┃   │   │ 2 ┃ 3 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 1 │   │   ┃   │   │ 5 ┃
+┃   │ 1 │   ┃   │ 4 │ 5 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 2 │   │   ┃   │   │ 3 ┃
+┃ 4 │ 2 │   ┃   │ 6 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃   │ 4 │ 1 ┃
+┃   │   │ 3 ┃ 4 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 1 ┃ 6 │ 3 │   ┃
+┃   │   │   ┃ 5 │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+----+
-| .. | +8 | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | +5 | .. |
-+----+----+----+----+----+----+----+
-| +6 | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | |6 | +  | |3 | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | +5 |
-+----+----+----+----+----+----+----+
-| .. | +6 | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | +7 | .. |
-+----+----+----+----+----+----+----+
++----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | -  |
++----+----+----+----+----+----+
+| .. | .. | .. | .. | |  | .. |
++----+----+----+----+----+----+
+| .. | .. | .. | |  | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | =  | .. | .. | .. |
++----+----+----+----+----+----+
+| .. | =  | .. | .. | .. | .. |
++----+----+----+----+----+----+
+| |  | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+---+
-| L | I | C | O | E | N |
+| A | B | C | # | # | # |
 +---+---+---+---+---+---+
-| A | C | # | # | L | C |
+| Z | U | R | Y | P | C |
 +---+---+---+---+---+---+
-| R | # | H | C | C | H |
+| Z | E | N | T | T | I |
 +---+---+---+---+---+---+
-| U | # | A | N | C | E |
+| M | U | Q | E | R | L |
 +---+---+---+---+---+---+
-| C | C | # | # | R | I |
+| A | T | R | I | F | A |
 +---+---+---+---+---+---+
-| N | O | S | U | C | C |
+| # | # | # | X | Y | Z |
 +---+---+---+---+---+---+
 
 Words:
-  CALICO
-  CHANCE
-  CLENCH
-  CONCUR
-  CIRCUS
+  LAZY
+  ABUZZ
+  MATRIX
+  CRYPTIC
+  FREQUENT
 ```
 
 ### pinpoint
 ```
-  1. Red
-  2. Stars
-  3. The light
-  4. The big picture
-  5. Eye to eye (agree fully)
+  1. Cook
+  2. Canary
+  3. Marshall
+  4. Falkland
+  5. Galápagos
 
-  answer: Words that come after “see” in common idioms!
+  answer: Names of island groups / archipelagoes (when followed by “Islands”)!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 926
-date      : 2026-11-12
+number    : 927
+date      : 2026-11-13
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  book : The top + bottom rows = A compound word for a collection of instructions and strategies for a business. Keep in mind: The first word may be at the bottom.
-  cook : Prepare a hot meal
-  coop : Place for chickens on a farm
-  clop : Sound from a trotting horse's hoof
-  clap : Noisily put your hands together
-  clay : Moldable material in an art class
-  play : The top + bottom rows = A compound word for a collection of instructions and strategies for a business. Keep in mind: The first word may be at the bottom.
+  duck : The top + bottom rows = A certain waterfowl, and a body of water where you might see one. Keep in mind: The first word may be at the bottom.
+  puck : Rubber disc used in ice hockey
+  punk : ___ rock (brash music subgenre)
+  puns : Wordplay jokes often met with groans
+  pens : Writing implements that may dry out if left uncapped
+  pend : Be unresolved
+  pond : The top + bottom rows = A certain waterfowl, and a body of water where you might see one. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
