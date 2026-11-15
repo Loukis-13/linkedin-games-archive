@@ -11,148 +11,148 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-11-14)
+## Today's games (2026-11-15)
 
 ### zip
 ```
 +----+----+----+----+----+----+----+----+
-| ..   11 | 10   .. | ..   .. | ..   .. |
-+         +         +         +         +
-| ..   ..   ..   ..   ..   ..   ..   .. |
+| ..   ..   ..   ..   ..   ..   ..    5 |
 +                                       +
-| ..   ..    3 |  1   .. | ..   ..    9 |
-+              +         +          ----+
-| ..   ..   ..   ..   ..   ..   ..    8 |
-+          ----           ----          +
-| 12   ..   ..   ..   ..   ..   ..   .. |
-+----                                   +
-|  4   ..   .. | ..    2 |  6   ..   .. |
-+              +         +              +
-| ..   ..   ..   ..   ..   ..   ..   .. |
-+                                       +
-| ..   .. | ..   .. | ..    5 |  7   .. |
-+---- ----+---- ----+---- ----+---- ----+
+| ..   ..   ..   ..   .. |  8   ..   .. |
++                    ----+----          +
+| ..    7 | ..   ..   .. | ..   ..   .. |
++     ----+----          +              +
+| ..   .. |  2   ..   ..   ..   ..   .. |
++         +                             +
+| ..   ..   ..   ..   ..    6 | ..   .. |
++                         ----+----     +
+| ..   ..   .. | ..   ..   .. |  1   .. |
++          ----+----          +         +
+| ..   ..    4 | ..   ..   ..   ..   .. |
++              +                        +
+|  3   ..   ..   ..   ..   ..   ..   .. |
++---- ---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . = . | M | M | . | . |
-+-=-+---+---+---+---+---+
-| . | . | . | . | . | . |
+| S | M | S | . | . | . |
 +---+---+---+---+---+---+
-| M | . | . | . | . | M |
+| M | M | S | . | . | . |
 +---+---+---+---+---+---+
-| S | . | . | . | . | S |
+| M | S | M | . | . | . |
 +---+---+---+---+---+---+
-| . | . | . | . | . | . |
-+---+---+---+---+---+-x-+
-| . | . | M | S | . x . |
+| . | . | . | . = . x . |
++---+---+---+---+---+---+
+| . | . | . | . x . = . |
++---+---+---+---+---+---+
+| . | . | . | . = . x . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥⬜⬜⬜⬜⬜⬜
-🟦🟥🟧🟧🟧⬜⬜⬜⬜
-🟥🟥🟥🟧🟨🟨🟨⬜⬜
-⬛⬛🟧🟧🟧🟨⬜⬜⬜
-⬛⬛⬛⬛🟨🟨🟨⬜⬜
-🟫🟪🟪🟪🟫🟩🟩🟩⬜
-🟫🟫🟪🟫🟫🟫🟩⬜⬜
-🟫🟪🟪🟪🟫🟩🟩🟩⬜
-🟫🟫🟫🟫🟫🟫🟫⬜⬜
+🟩🟩⬛⬛⬛⬛🟨🟨🟨
+🟩⬛⬛⬜⬛⬛⬛⬛🟨
+⬛⬛⬛⬜⬜⬛⬛⬛🟨
+⬛⬛🟦🟦⬜🟦🟦🟦🟦
+⬛⬛🟦🟦🟥🟧🟧🟧🟦
+⬛🟦🟦🟦🟥🟦🟦🟦🟦
+🟪🟦🟦🟦🟥🟦🟦🟦🟦
+🟪🟦🟦🟦🟥🟦🟦🟦🟫
+🟪🟪🟪🟦🟦🟦🟦🟫🟫
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │ 6 │   ┃ 4 │   │   ┃
+┃   │   │ 1 ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │ 5 │   ┃
+┃   │ 2 │   ┃ 1 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 5 │   │   ┃ 2 │   │   ┃
+┃ 3 │   │   ┃   │ 2 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 2 ┃   │   │ 3 ┃
+┃   │ 1 │   ┃   │   │ 4 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 4 │   ┃   │   │   ┃
+┃   │   │ 5 ┃   │ 1 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 3 ┃   │ 1 │   ┃
+┃   │   │   ┃ 6 │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+----+----+
-| +4 | .. | .. | .. | .. | .. | .. | .. |
+| .. | .. | .. | +4 | .. | .. | .. | +  |
 +----+----+----+----+----+----+----+----+
-| .. | .. | +6 | .. | .. | +6 | .. | .. |
+| .. | +6 | .. | .. | +3 | .. | .. | .. |
 +----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. | -8 |
+| .. | .. | .. | .. | .. | .. | |  | .. |
 +----+----+----+----+----+----+----+----+
-| .. | -4 | .. | .. | .. | .. | .. | .. |
+| .. | +3 | -  | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | -8 | .. |
+| .. | .. | .. | .. | .. | -  | +4 | .. |
 +----+----+----+----+----+----+----+----+
-| |6 | .. | .. | .. | .. | .. | .. | .. |
+| .. | -  | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+----+
-| .. | .. | +6 | .. | .. | +8 | .. | .. |
+| .. | .. | .. | +6 | .. | .. | +9 | .. |
 +----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | .. | +8 |
+| +  | .. | .. | .. | +3 | .. | .. | .. |
 +----+----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+---+---+
-| P | O | R | O | P | I | E |
+| # | Y | R | E | L | N | # |
 +---+---+---+---+---+---+---+
-| S | # | D | C | E | T | R |
+| S | R | U | L | A | O | I |
 +---+---+---+---+---+---+---+
-| S | # | N | # | H | A | C |
+| S | U | X | # | X | A | T |
 +---+---+---+---+---+---+---+
-| S | # | I | # | C | # | I |
+| E | R | # | # | # | L | I |
 +---+---+---+---+---+---+---+
-| E | N | A | # | T | # | L |
+| K | P | X | # | X | I | A |
 +---+---+---+---+---+---+---+
-| K | E | R | R | A | # | P |
+| O | O | E | A | U | Y | R |
 +---+---+---+---+---+---+---+
-| I | L | S | C | T | R | I |
+| # | B | T | X | E | T | # |
 +---+---+---+---+---+---+---+
 
 Words:
-  COPIER
-  SCRATCH
-  LIKENESS
-  RAINDROPS
-  TRIPLICATE
+  LUXURY
+  EXPRESS
+  TEXTBOOK
+  AUXILIARY
+  RELAXATION
 ```
 
 ### pinpoint
 ```
-  1. Story
-  2. Cut
-  3. List
-  4. Circuit
-  5. And sweet (to the point)
+  1. Doors
+  2. Canals
+  3. Hair
+  4. Wrestling (e.g., arm or head)
+  5. Safes (open with the right #s)
 
-  answer: Words that can follow “short”!
+  answer: Things with locks!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 928
-date      : 2026-11-14
+number    : 929
+date      : 2026-11-15
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  case : The top + bottom rows = A compound word for something you pack for a trip. Keep in mind: The first word may be at the bottom.
-  cast : Performers in a play, collectively
-  fast : Like a Formula 1 car, when racing
-  fait : ___ accompli (something already done)
-  flit : Move swiftly, like a bee or butterfly
-  slit : Long, very thin opening
-  suit : The top + bottom rows = A compound word for something you pack for a trip. Keep in mind: The first word may be at the bottom.
+  flats : The top + bottom rows = Musical notes that are a half-step lower than naturals, and a word describing their opposite. Keep in mind: The first word may be at the bottom.
+  slats : Parts of Venetian blinds
+  stats : Data used in analysis of athletes, for short
+  state : Express clearly, as a case in court
+  stare : Look without blinking
+  share : Don't keep all to yourself
+  sharp : The top + bottom rows = Musical notes that are a half-step lower than naturals, and a word describing their opposite. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
