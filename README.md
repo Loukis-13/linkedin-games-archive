@@ -11,148 +11,133 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-11-15)
+## Today's games (2026-11-16)
 
 ### zip
 ```
-+----+----+----+----+----+----+----+----+
-| ..   ..   ..   ..   ..   ..   ..    5 |
-+                                       +
-| ..   ..   ..   ..   .. |  8   ..   .. |
-+                    ----+----          +
-| ..    7 | ..   ..   .. | ..   ..   .. |
-+     ----+----          +              +
-| ..   .. |  2   ..   ..   ..   ..   .. |
-+         +                             +
-| ..   ..   ..   ..   ..    6 | ..   .. |
-+                         ----+----     +
-| ..   ..   .. | ..   ..   .. |  1   .. |
-+          ----+----          +         +
-| ..   ..    4 | ..   ..   ..   ..   .. |
-+              +                        +
-|  3   ..   ..   ..   ..   ..   ..   .. |
-+---- ---- ---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+
+|  4   ..   ..   ..   ..    9 |
++                             +
+| .. |  1   ..   ..   10 | .. |
++    +----           ----+    +
+| ..   .. | ..   .. | ..   .. |
++         +         +         +
+| ..   .. |  2    3 | ..   .. |
++     ----+         +----     +
+| .. |  6   ..   ..    7 | .. |
++    +                   +    +
+|  5   ..   ..   ..   ..    8 |
++---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| S | M | S | . | . | . |
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| M | M | S | . | . | . |
+| S | . | . | . | . | . |
++---+---+---+---+---+-=-+
+| S | M | M | . = . x . |
 +---+---+---+---+---+---+
-| M | S | M | . | . | . |
+| . x . x . | M | S | S |
++-x-+---+---+---+---+---+
+| . | . | . | . | . | S |
 +---+---+---+---+---+---+
-| . | . | . | . = . x . |
-+---+---+---+---+---+---+
-| . | . | . | . x . = . |
-+---+---+---+---+---+---+
-| . | . | . | . = . x . |
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟩🟩⬛⬛⬛⬛🟨🟨🟨
-🟩⬛⬛⬜⬛⬛⬛⬛🟨
-⬛⬛⬛⬜⬜⬛⬛⬛🟨
-⬛⬛🟦🟦⬜🟦🟦🟦🟦
-⬛⬛🟦🟦🟥🟧🟧🟧🟦
-⬛🟦🟦🟦🟥🟦🟦🟦🟦
-🟪🟦🟦🟦🟥🟦🟦🟦🟦
-🟪🟦🟦🟦🟥🟦🟦🟦🟫
-🟪🟪🟪🟦🟦🟦🟦🟫🟫
+🟦🟧🟥🟥🟨🟨🟨
+🟦🟦🟩🟥🟥🟨🟨
+🟦🟦🟩🟪🟥🟥🟨
+🟦🟦🟦🟪🟫🟥🟨
+🟦🟦🟦🟪🟫🟥🟨
+🟦🟦🟦🟦🟫🟥🟨
+🟦🟦🟦🟦🟫🟥🟨
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │ 1 ┃   │   │   ┃
+┃ 1 │   │ 6 ┃ 3 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 2 │   ┃ 1 │   │   ┃
+┃   │ 2 │   ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 3 │   │   ┃   │ 2 │   ┃
+┃ 4 │   │ 3 ┃   │   │ 2 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 1 │   ┃   │   │ 4 ┃
+┃ 2 │   │   ┃ 4 │   │ 1 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │ 5 ┃   │ 1 │   ┃
+┃   │   │   ┃   │ 5 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃ 6 │   │   ┃
+┃   │   │ 1 ┃ 2 │   │ 6 ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | +4 | .. | .. | .. | +  |
-+----+----+----+----+----+----+----+----+
-| .. | +6 | .. | .. | +3 | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. | |  | .. |
-+----+----+----+----+----+----+----+----+
-| .. | +3 | -  | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | -  | +4 | .. |
-+----+----+----+----+----+----+----+----+
-| .. | -  | .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
-| .. | .. | .. | +6 | .. | .. | +9 | .. |
-+----+----+----+----+----+----+----+----+
-| +  | .. | .. | .. | +3 | .. | .. | .. |
-+----+----+----+----+----+----+----+----+
++----+----+----+----+----+----+
+| +6 | =4 | .. | .. | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | .. | .. | +9 | .. |
++----+----+----+----+----+----+
+| .. | .. | -2 | .. | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | .. | -3 | .. | .. |
++----+----+----+----+----+----+
+| .. | +6 | .. | .. | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | .. | .. | |3 | +3 |
++----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+---+---+
-| # | Y | R | E | L | N | # |
-+---+---+---+---+---+---+---+
-| S | R | U | L | A | O | I |
-+---+---+---+---+---+---+---+
-| S | U | X | # | X | A | T |
-+---+---+---+---+---+---+---+
-| E | R | # | # | # | L | I |
-+---+---+---+---+---+---+---+
-| K | P | X | # | X | I | A |
-+---+---+---+---+---+---+---+
-| O | O | E | A | U | Y | R |
-+---+---+---+---+---+---+---+
-| # | B | T | X | E | T | # |
-+---+---+---+---+---+---+---+
++---+---+---+---+---+
+| I | # | # | # | I |
++---+---+---+---+---+
+| R | A | S | D | N |
++---+---+---+---+---+
+| A | F | # | E | X |
++---+---+---+---+---+
+| N | K | K | I | W |
++---+---+---+---+---+
+| I | # | # | # | I |
++---+---+---+---+---+
 
 Words:
-  LUXURY
-  EXPRESS
-  TEXTBOOK
-  AUXILIARY
-  RELAXATION
+  INK
+  KIWI
+  INDEX
+  SAFARI
 ```
 
 ### pinpoint
 ```
-  1. Doors
-  2. Canals
-  3. Hair
-  4. Wrestling (e.g., arm or head)
-  5. Safes (open with the right #s)
+  1. Foundation
+  2. Concealer
+  3. Blush
+  4. Eyeliner
+  5. Mascara
 
-  answer: Things with locks!
+  answer: Types of makeup!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 929
-date      : 2026-11-15
+number    : 930
+date      : 2026-11-16
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  flats : The top + bottom rows = Musical notes that are a half-step lower than naturals, and a word describing their opposite. Keep in mind: The first word may be at the bottom.
-  slats : Parts of Venetian blinds
-  stats : Data used in analysis of athletes, for short
-  state : Express clearly, as a case in court
-  stare : Look without blinking
-  share : Don't keep all to yourself
-  sharp : The top + bottom rows = Musical notes that are a half-step lower than naturals, and a word describing their opposite. Keep in mind: The first word may be at the bottom.
+  help : The top + bottom rows = A compound word for a telephone service that provides assistance. Keep in mind: The first word may be at the bottom.
+  held : Gripped in the hands
+  meld : Fuse into one
+  mild : Pleasant and not extreme, as weather
+  mind : "My ___ is made up" ("I've decided")
+  mine : Place for extracting valuable material from the earth
+  line : The top + bottom rows = A compound word for a telephone service that provides assistance. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
