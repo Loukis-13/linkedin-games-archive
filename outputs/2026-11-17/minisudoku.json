@@ -1,0 +1,61 @@
+{
+  "game": "minisudoku",
+  "date": "2026-11-17",
+  "grid_size": [
+    6,
+    6
+  ],
+  "cells": [
+    [
+      null,
+      null,
+      1,
+      2,
+      null,
+      null
+    ],
+    [
+      null,
+      6,
+      2,
+      3,
+      5,
+      null
+    ],
+    [
+      1,
+      null,
+      3,
+      4,
+      null,
+      6
+    ],
+    [
+      null,
+      null,
+      4,
+      5,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      5,
+      6,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  ],
+  "number": "463",
+  "title": "Get Up",
+  "difficulty": null
+}
