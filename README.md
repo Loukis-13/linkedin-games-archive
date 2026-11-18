@@ -11,20 +11,20 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-11-17)
+## Today's games (2026-11-18)
 
 ### zip
 ```
 +----+----+----+----+----+----+
 | ..   ..   ..   ..   ..   .. |
 +                             +
-| ..    1    2   ..   ..   .. |
+| ..    7   ..   ..    3   .. |
 +                             +
-| ..    8   .. | .. |  4   .. |
-+     ----     +    +----     +
-| ..    5 | .. | ..    3   .. |
-+         +    +              +
-| ..   ..   ..    7    6   .. |
+| ..   ..    6    8   ..   .. |
++                             +
+| ..   ..    4    1   ..   .. |
++                             +
+| ..    5   ..   ..    2   .. |
 +                             +
 | ..   ..   ..   ..   ..   .. |
 +---- ---- ---- ---- ---- ----+
@@ -33,44 +33,43 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . | . | . | . | . |
+| . = . | . | . | . | . |
++-=-+-=-+---+---+---+---+
+| . = . | . | . | . | . |
 +---+---+---+---+---+---+
-| . | S | . | . | . | . |
-+---+---+---+---+-=-+---+
-| M | S | M | . = . x . |
+| . | . | . = . | . | . |
++---+---+-=-+-=-+---+---+
+| . | . | . = . | . | . |
 +---+---+---+---+---+---+
-| . = . x . | S | M | S |
-+---+-=-+---+---+---+---+
-| . | . | . | . | S | . |
+| . | . | . | . | M | M |
 +---+---+---+---+---+---+
-| . | . | . | . | . | . |
+| . | . | . | . | S | M |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟨🟨🟨🟨🟨🟨🟨🟨
-🟨🟨🟨🟨🟨🟧🟥🟨
-🟦🟦🟦🟦🟩🟧🟥🟨
-🟦🟦🟦🟪🟩🟧🟥🟨
-🟦🟫⬛🟪🟩🟧🟥🟨
-🟦🟫⬛🟪🟩🟧🟥🟨
-🟦🟦⬛🟪🟩🟧🟥🟨
-🟦🟦🟦🟦🟦🟦🟥🟨
+🟥🟧🟨🟨🟩🟩🟩
+🟥🟧🟨🟨🟩🟦🟦
+🟥🟧🟨🟨🟨🟦🟪
+🟥🟧🟨🟨🟨🟪🟪
+🟥🟧🟧🟫🟫🟫🟫
+🟥🟧🟧🟫🟫🟫🟫
+🟥🟥🟥🟥🟥🟫🟫
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │ 1 ┃ 2 │   │   ┃
+┃   │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 6 │ 2 ┃ 3 │ 5 │   ┃
+┃ 5 │ 1 │   ┃   │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 1 │   │ 3 ┃ 4 │   │ 6 ┃
+┃ 3 │ 5 │ 6 ┃ 4 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 4 ┃ 5 │   │   ┃
+┃   │   │ 2 ┃ 6 │ 3 │ 5 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │ 5 ┃ 6 │   │   ┃
+┃   │   │   ┃   │ 1 │ 3 ┃
 ┃───┼───┼───┃───┼───┼───┃
 ┃   │   │   ┃   │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -79,66 +78,66 @@ local Telegram-posting cron, conventions, how to use, and how to add a new game.
 ### patches
 ```
 +----+----+----+----+----+----+
-| .. | +3 | +6 | .. | .. | .. |
+| -6 | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| +2 | .. | .. | .. | .. | .. |
+| .. | |  | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| +4 | .. | .. | .. | .. | .. |
+| .. | .. | -6 | .. | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | .. | -  | .. | .. |
++----+----+----+----+----+----+
+| .. | .. | .. | .. | -6 | .. |
 +----+----+----+----+----+----+
 | .. | .. | .. | .. | .. | |  |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | -  |
-+----+----+----+----+----+----+
-| .. | .. | .. | =  | -  | .. |
 +----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+
-| # | # | T | # | # |
+| N | E | # | U | N |
 +---+---+---+---+---+
-| G | E | T | I | M |
+| E | W | L | A | C |
 +---+---+---+---+---+
-| A | S | T | U | N |
+| M | A | # | T | H |
 +---+---+---+---+---+
-| T | C | # | E | T |
+| # | G | # | O | # |
 +---+---+---+---+---+
-| T | O | # | O | T |
+| # | Y | A | D | # |
 +---+---+---+---+---+
 
 Words:
-  TOE
-  MITT
-  STUNT
-  COTTAGE
+  NEW
+  GAME
+  LAUNCH
+  TODAY
 ```
 
 ### pinpoint
 ```
-  1. Mandible
-  2. Patella
-  3. Coccyx
-  4. Sternum
-  5. Humerus ("the funny ___")
+  1. 500
+  2. 21
+  3. Uno
+  4. Crazy Eights
+  5. 52 Pickup (using a scattered deck)
 
-  answer: Names of bones!
+  answer: Names of card games!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 931
-date      : 2026-11-17
+number    : 932
+date      : 2026-11-18
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  kite : The top + bottom rows = A flying toy, and a long part of it that provides decoration and stability. Keep in mind: The first word may be at the bottom.
-  rite : ___ of passage (important life event)
-  rile : Make angry or agitated
-  tile : Square piece in many board games
-  till : Cash drawer in a store
-  tall : Having great height
-  tail : The top + bottom rows = A flying toy, and a long part of it that provides decoration and stability. Keep in mind: The first word may be at the bottom.
+  soap : The top + bottom rows = Two items you use when washing your hands.
+  soak : Spend a long time in a bath
+  sock : Item between a shoe and a foot
+  suck : What young children might do on their thumbs
+  sulk : Pout and be resentful
+  silk : Smooth material often used to make neckties
+  sink : The top + bottom rows = Two items you use when washing your hands.
 ```
 <!-- DAILY-GAMES-END -->
