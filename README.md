@@ -11,133 +11,138 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-11-18)
+## Today's games (2026-11-19)
 
 ### zip
 ```
-+----+----+----+----+----+----+
-| ..   ..   ..   ..   ..   .. |
-+                             +
-| ..    7   ..   ..    3   .. |
-+                             +
-| ..   ..    6    8   ..   .. |
-+                             +
-| ..   ..    4    1   ..   .. |
-+                             +
-| ..    5   ..   ..    2   .. |
-+                             +
-| ..   ..   ..   ..   ..   .. |
-+---- ---- ---- ---- ---- ----+
++----+----+----+----+----+----+----+
+| ..   ..   ..    3   ..   ..   .. |
++     ----                ----     +
+| .. | ..   ..    1   ..   .. | .. |
++    +                        +    +
+| ..   ..   ..    4   ..   ..   .. |
++                                  +
+| ..    7   10   11    5    2   .. |
++                                  +
+| ..   ..   ..    9   ..   ..   .. |
++                                  +
+| .. | ..   ..    8   ..   .. | .. |
++    +----                ----+    +
+| ..   ..   ..    6   ..   ..   .. |
++---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . = . | . | . | . | . |
-+-=-+-=-+---+---+---+---+
-| . = . | . | . | . | . |
+| . | M | M | S | M | . |
 +---+---+---+---+---+---+
-| . | . | . = . | . | . |
+| M | . | . | . | . | M |
++---+---+---+---+---+---+
+| M | . | . x . | . | M |
 +---+---+-=-+-=-+---+---+
-| . | . | . = . | . | . |
+| S | . | . x . | . | S |
 +---+---+---+---+---+---+
-| . | . | . | . | M | M |
+| S | . | . | . | . | M |
 +---+---+---+---+---+---+
-| . | . | . | . | S | M |
+| . | M | S | M | S | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟧🟨🟨🟩🟩🟩
-🟥🟧🟨🟨🟩🟦🟦
-🟥🟧🟨🟨🟨🟦🟪
-🟥🟧🟨🟨🟨🟪🟪
-🟥🟧🟧🟫🟫🟫🟫
-🟥🟧🟧🟫🟫🟫🟫
-🟥🟥🟥🟥🟥🟫🟫
+🟥🟥🟥🟧🟧🟧🟧🟧
+🟨🟩🟩🟦🟧🟧🟧🟧
+🟨🟩🟦🟦🟦🟪🟧🟧
+🟨🟩🟫⬛⬛🟪🟪🟧
+🟨🟫🟫⬛⬛🟪🟧🟧
+🟨🟨🟫⬛⬛⬛🟧🟧
+🟨🟨🟨🟨⬛🟧🟧🟧
+🟨🟨🟨🟧🟧🟧🟧🟧
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │   ┃   │   │   ┃
+┃ 3 │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 5 │ 1 │   ┃   │   │   ┃
+┃   │ 1 │   ┃   │   │ 4 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 3 │ 5 │ 6 ┃ 4 │   │   ┃
+┃   │ 2 │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 2 ┃ 6 │ 3 │ 5 ┃
+┃   │ 3 │   ┃   │   │ 5 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │   ┃   │ 1 │ 3 ┃
+┃   │ 4 │   ┃   │   │ 2 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │   ┃   │   │   ┃
+┃   │ 5 │ 6 ┃ 1 │   │ 3 ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+
-| -6 | .. | .. | .. | .. | .. |
+| .. | .. | +3 | .. | +3 | .. |
 +----+----+----+----+----+----+
-| .. | |  | .. | .. | .. | .. |
+| .. | =  | .. | +3 | .. | +3 |
 +----+----+----+----+----+----+
-| .. | .. | -6 | .. | .. | .. |
+| .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | -  | .. | .. |
+| .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | -6 | .. |
+| +4 | .. | +4 | .. | =  | .. |
 +----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | |  |
+| .. | +4 | .. | +4 | .. | .. |
 +----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+
-| N | E | # | U | N |
-+---+---+---+---+---+
-| E | W | L | A | C |
-+---+---+---+---+---+
-| M | A | # | T | H |
-+---+---+---+---+---+
-| # | G | # | O | # |
-+---+---+---+---+---+
-| # | Y | A | D | # |
-+---+---+---+---+---+
++---+---+---+---+---+---+
+| M | B | I | T | E | R |
++---+---+---+---+---+---+
+| O | # | N | # | N | # |
++---+---+---+---+---+---+
+| C | Y | A | D | O | G |
++---+---+---+---+---+---+
+| # | E | # | E | # | A |
++---+---+---+---+---+---+
+| O | N | S | N | E | X |
++---+---+---+---+---+---+
+| H | # | E | # | H | # |
++---+---+---+---+---+---+
 
 Words:
-  NEW
-  GAME
-  LAUNCH
-  TODAY
+  DENSE
+  RETINA
+  HEXAGON
+  HONEYCOMB
 ```
 
 ### pinpoint
 ```
-  1. 500
-  2. 21
-  3. Uno
-  4. Crazy Eights
-  5. 52 Pickup (using a scattered deck)
+  1. House
+  2. Mind
+  3. Secret
+  4. Mic
+  5. Sesame (it’s a magical phrase)
 
-  answer: Names of card games!
+  answer: Words that come after “open”!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 932
-date      : 2026-11-18
+number    : 933
+date      : 2026-11-19
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  soap : The top + bottom rows = Two items you use when washing your hands.
-  soak : Spend a long time in a bath
-  sock : Item between a shoe and a foot
-  suck : What young children might do on their thumbs
-  sulk : Pout and be resentful
-  silk : Smooth material often used to make neckties
-  sink : The top + bottom rows = Two items you use when washing your hands.
+  care : The top + bottom rows = A hyphenated word for looking after your own well-being. Keep in mind: The first word may be at the bottom.
+  cure : Medicine to eliminate a disease
+  curl : Lock of hair that isn't straight
+  cull : Gather, as from a larger set
+  cell : One box in a spreadsheet
+  sell : Opposite of "buy"
+  self : The top + bottom rows = A hyphenated word for looking after your own well-being. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
