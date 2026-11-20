@@ -1,0 +1,61 @@
+{
+  "game": "minisudoku",
+  "date": "2026-11-20",
+  "grid_size": [
+    6,
+    6
+  ],
+  "cells": [
+    [
+      null,
+      1,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      5,
+      null,
+      3,
+      null,
+      null,
+      null
+    ],
+    [
+      1,
+      null,
+      5,
+      null,
+      3,
+      null
+    ],
+    [
+      null,
+      3,
+      null,
+      1,
+      null,
+      4
+    ],
+    [
+      null,
+      null,
+      null,
+      5,
+      null,
+      2
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      4,
+      null
+    ]
+  ],
+  "number": "466",
+  "title": "Double 0",
+  "difficulty": "Hard"
+}
