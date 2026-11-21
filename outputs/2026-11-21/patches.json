@@ -1,0 +1,108 @@
+{
+  "game": "patches",
+  "number": 249,
+  "date": "2026-11-21",
+  "grid_size": [
+    8,
+    8
+  ],
+  "clues": [
+    {
+      "x": 0,
+      "y": 0,
+      "type": "H_rect",
+      "size": 3
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "type": "free",
+      "size": 7
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "type": "H_rect",
+      "size": 3
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "type": "free",
+      "size": null
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "type": "free",
+      "size": 3
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "type": "square",
+      "size": null
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "type": "free",
+      "size": 3
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "type": "V_rect",
+      "size": null
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "type": "free",
+      "size": 3
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "type": "V_rect",
+      "size": null
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "type": "free",
+      "size": 3
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "type": "H_rect",
+      "size": null
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "type": "H_rect",
+      "size": 3
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "type": "free",
+      "size": null
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "type": "V_rect",
+      "size": 3
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "type": "free",
+      "size": 7
+    }
+  ],
+  "difficulty": "HARD"
+}
