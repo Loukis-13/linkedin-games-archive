@@ -11,143 +11,148 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-11-21)
+## Today's games (2026-11-22)
 
 ### zip
 ```
-+----+----+----+----+----+----+----+
-| ..   ..   .. | ..   ..   ..   .. |
-+              +     ---- ----     +
-| ..    6   ..   ..   ..    5 | .. |
-+               ----          +    +
-| .. | ..   ..   .. | ..   .. | .. |
-+    +              +         +    +
-| .. |  2   .. | .. | ..    4 | .. |
-+    +         +    +         +    +
-| .. | ..   .. | ..   ..   .. | .. |
-+    +         +----          +    +
-| .. |  1   ..   ..   ..    3   .. |
-+    +---- ----                    +
-| ..   ..   ..   .. | ..   ..   .. |
-+---- ---- ---- ----+---- ---- ----+
++----+----+----+----+----+----+----+----+
+| ..   ..   ..   ..   ..   ..   ..   .. |
++                                       +
+| .. | ..   10    9    6    1   .. | .. |
++    +     ----           ----     +    +
+| ..   ..   11    8    7    2   ..   .. |
++                                       +
+| ..   ..   ..   ..   ..   ..   ..   .. |
++----      ----           ----      ----+
+| ..   ..   ..   ..   ..   ..   ..   .. |
++                                       +
+| ..   ..   12   15   16    3   ..   .. |
++          ----           ----          +
+| .. | ..   13   14    5    4   .. | .. |
++    +                             +    +
+| ..   ..   ..   ..   ..   ..   ..   .. |
++---- ---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | . | . | . | . | S |
+| M | . | . | . = . x . |
++---+---+---+---+---+-=-+
+| . | M | . | . | . | . |
++---+---+---+---+---+-x-+
+| . | . | M | . | . | . |
 +---+---+---+---+---+---+
-| . = . x . = . x . | M |
-+---+---+---+---+---+---+
-| . | . | . | . | . | M |
-+---+---+---+---+---+---+
-| S | . | . | . | . | . |
-+---+---+---+---+---+---+
-| M | . = . x . x . x . |
-+---+---+---+---+---+---+
-| M | . | . | . | . | . |
+| . | . | . | M | . | . |
++-=-+---+---+---+---+---+
+| . | . | . | . | S | . |
++-x-+---+---+---+---+---+
+| . = . x . | . | . | S |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟪🟪🟪🟩🟩🟩
-⬜🟥🟫🟪🟨🟪🟩🟦🟩
-⬜🟥🟫🟪🟨🟪🟩🟩🟩
-⬜🟥🟫🟪🟨🟪🟩🟧⬜
-⬜🟥🟫🟪🟪🟪🟩🟧⬜
-⬜🟫🟫🟧🟧🟧🟧🟧⬜
-⬜🟫⬛⬛⬛🟧🟧🟧⬜
-⬜⬛⬛⬛⬛⬛⬛⬛⬜
-⬜⬜⬜⬜⬜⬜⬜⬜⬜
+🟥🟧🟧🟨🟨🟨🟦🟦
+🟥🟥🟧🟧🟧🟨🟨🟦
+⬛🟥⬛⬛⬛🟩🟦🟦
+⬛🟥⬛🟫🟪🟩🟩🟦
+⬛⬛⬛🟫🟪🟪🟩🟦
+⬛⬛⬛🟫🟫🟪🟩🟦
+⬛⬛⬛⬛🟫🟪🟦🟦
+🟦🟦🟦🟦🟦🟦🟦🟦
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │   ┃   │   │ 1 ┃
+┃   │   │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 3 │   │   ┃   │ 2 │   ┃
+┃ 4 │   │ 6 ┃   │   │ 3 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 1 │   ┃ 3 │   │   ┃
+┃   │ 4 │   ┃   │ 5 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 4 ┃   │ 1 │   ┃
+┃   │ 6 │   ┃   │ 3 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 5 │   ┃   │   │ 2 ┃
+┃ 2 │   │   ┃ 5 │   │ 1 ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 6 │   │   ┃   │   │   ┃
+┃   │   │   ┃   │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+----+----+
-| -3 | .. | .. | .. | .. | .. | .. | +7 |
+| .. | .. | +4 | .. | .. | +4 | .. | .. |
 +----+----+----+----+----+----+----+----+
-| .. | -3 | .. | .. | .. | .. | +  | .. |
+| .. | =  | .. | .. | .. | .. | .. | +5 |
 +----+----+----+----+----+----+----+----+
-| .. | .. | +3 | .. | .. | =  | .. | .. |
+| +4 | .. | .. | .. | |  | .. | .. | .. |
 +----+----+----+----+----+----+----+----+
-| .. | +3 | .. | .. | .. | .. | |  | .. |
+| .. | .. | .. | .. | .. | .. | -  | .. |
 +----+----+----+----+----+----+----+----+
-| .. | +3 | .. | .. | .. | .. | |  | .. |
+| .. | |  | .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+----+----+
-| .. | .. | +3 | .. | .. | -  | .. | .. |
+| .. | .. | .. | =  | .. | .. | .. | +4 |
 +----+----+----+----+----+----+----+----+
-| .. | -3 | .. | .. | .. | .. | +  | .. |
+| +3 | .. | .. | .. | .. | .. | |  | .. |
 +----+----+----+----+----+----+----+----+
-| |3 | .. | .. | .. | .. | .. | .. | +7 |
+| .. | .. | +4 | .. | .. | +2 | .. | .. |
 +----+----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
-+---+---+---+---+---+---+
-| # | Z | I | N | G | R |
-+---+---+---+---+---+---+
-| T | E | E | # | # | E |
-+---+---+---+---+---+---+
-| N | E | R | F | I | D |
-+---+---+---+---+---+---+
-| D | I | B | R | V | I |
-+---+---+---+---+---+---+
-| E | # | # | I | E | D |
-+---+---+---+---+---+---+
-| R | G | N | I | F | # |
-+---+---+---+---+---+---+
++---+---+---+---+---+---+---+
+| T | O | # | D | # | E | H |
++---+---+---+---+---+---+---+
+| # | P | W | O | T | A | # |
++---+---+---+---+---+---+---+
+| L | P | N | A | N | V | D |
++---+---+---+---+---+---+---+
+| E | E | H | D | N | Y | E |
++---+---+---+---+---+---+---+
+| N | C | I | L | E | C | S |
++---+---+---+---+---+---+---+
+| A | L | A | L | N | D | I |
++---+---+---+---+---+---+---+
+| I | M | B | L | A | G | N |
++---+---+---+---+---+---+---+
 
 Words:
-  BRIEF
-  DIVIDER
-  FREEZING
-  INGREDIENT
+  HEAVY
+  TOPPLE
+  LANDING
+  DOWNHILL
+  IMBALANCE
+  DESCENDANT
 ```
 
 ### pinpoint
 ```
-  1. Full
-  2. Blue
-  3. Harvest
-  4. Crescent
-  5. Dark side of the
+  1. Contest
+  2. Peer
+  3. Fire starter
+  4. Double (as funds to charity)
+  5. Visual pairing (as of socks)
 
-  answer: Words that come before "moon"!
+  answer: Different definitions of “match”!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 935
-date      : 2026-11-21
+number    : 936
+date      : 2026-11-22
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  scot : The top + bottom rows = A hyphenated word meaning "without being punished." Keep in mind: The first word may be at the bottom.
-  slot : Small opening for a coin
-  slow : Not quick
-  flow : Move freely, like water
-  floe : Sheet of ice on the water's surface
-  flee : Run far away from
-  free : The top + bottom rows = A hyphenated word meaning "without being punished." Keep in mind: The first word may be at the bottom.
+  moves : The top + bottom rows = A two-word phrase for aggressive tactics in business. Keep in mind: The first word may be at the bottom.
+  doves : White birds that represent peace
+  dover : British town known for its white cliffs
+  lover : Romantic partner
+  loser : Someone who is defeated
+  poser : Difficult question, or an insincere person
+  power : The top + bottom rows = A two-word phrase for aggressive tactics in business. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
