@@ -11,134 +11,133 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-11-23)
+## Today's games (2026-11-24)
 
 ### zip
 ```
 +----+----+----+----+----+----+
-|  1   ..   .. | ..   ..    4 |
-+              +              +
-|  2   .. | .. | ..   ..    5 |
-+         +    +              +
-| ..   .. | ..   .. | ..   .. |
-+         +         +         +
-| ..   .. | ..   .. | ..   .. |
-+         +         +         +
-|  3   ..   .. | .. | ..    6 |
-+              +    +         +
-|  8   ..   .. | ..   ..    7 |
-+---- ---- ----+---- ---- ----+
+| ..    4   ..   .. | ..   .. |
++                   +         +
+| ..    6   ..   .. | ..   .. |
++                   +         +
+| .. | ..    5   ..   .. | .. |
++    +                   +    +
+| .. | ..   ..    2   .. | .. |
++    +                   +    +
+| ..   .. | ..   ..    3   .. |
++         +                   +
+| ..   .. | ..   ..    1   .. |
++---- ----+---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| S | S | . | . | . | . |
+| . | M | . | . | M | . |
 +---+---+---+---+---+---+
-| M | . | . | . | . | . |
-+---+---+-=-+---+---+---+
-| . | . = . | . | . | . |
+| . | M | . | . | S | . |
 +---+---+---+---+---+---+
-| . | . | . | . = . | . |
-+---+---+---+-x-+---+---+
-| . | . | . | . | . | S |
+| . | S | . = . | S | . |
++---+---+-=-+-x-+---+---+
+| . | M | . x . | M | . |
 +---+---+---+---+---+---+
-| . | . | . | . | S | S |
+| . | S | . | . | M | . |
++---+---+---+---+---+---+
+| . | S | . | . | S | . |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
-🟥🟥🟥🟥🟥🟥🟥🟥
-🟥🟧🟥🟨🟥🟥🟥🟥
-🟥🟧🟧🟨🟨🟥🟥🟥
-🟥🟥🟩🟩🟥🟥🟥🟥
-🟥🟥🟥🟩🟦🟥🟪🟥
-🟥🟥🟥🟦🟦🟪🟪🟥
-🟫🟥🟥🟥⬛⬛🟥🟥
-🟫🟫🟥🟥⬛🟥🟥🟥
+🟥🟥🟥🟥🟥🟥🟥
+🟥🟧🟧🟧🟥🟥🟥
+🟥🟨🟦🟩🟩🟩🟩
+🟥🟨🟦🟩🟩🟩🟩
+🟥🟨🟨🟪🟪🟪🟩
+🟥🟨🟨🟨🟫🟩🟩
+🟨🟨🟨🟨🟫🟩🟩
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │ 5 ┃   │   │   ┃
+┃   │   │   ┃ 1 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 6 ┃ 1 │ 3 │ 5 ┃
+┃   │   │ 2 ┃ 3 │ 4 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 1 │   ┃   │   │   ┃
+┃   │   │ 3 ┃ 4 │ 5 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 2 │ 3 ┃ 4 │ 5 │   ┃
+┃   │ 4 │ 5 ┃ 6 │   │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃ 3 │   │   ┃   │   │   ┃
+┃   │ 6 │ 1 ┃ 2 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃ 4 │ 5 │ 1 ┃ 2 │   │   ┃
+┃   │   │ 4 ┃   │   │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
 +----+----+----+----+----+----+
-| -2 | .. | .. | .. | .. | +  |
+| .. | |2 | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | |2 | .. | .. | =  | .. |
+| +2 | .. | =4 | .. | +4 | .. |
 +----+----+----+----+----+----+
-| .. | .. | |2 | |2 | .. | .. |
+| .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | .. | |3 | |3 | .. | .. |
+| .. | .. | .. | .. | .. | .. |
 +----+----+----+----+----+----+
-| .. | |  | .. | .. | |3 | .. |
+| .. | +6 | .. | |6 | .. | +6 |
 +----+----+----+----+----+----+
-| +  | .. | .. | .. | .. | |3 |
+| .. | .. | .. | .. | -6 | .. |
 +----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+
-| U | O | A | D | E |
+| D | D | # | # | D |
 +---+---+---+---+---+
-| B | D | # | D | R |
+| I | U | P | T | U |
 +---+---+---+---+---+
-| L | # | # | # | O |
+| N | G | # | Y | B |
 +---+---+---+---+---+
-| E | M | # | E | M |
+| I | T | R | E | U |
 +---+---+---+---+---+
-| # | E | R | G | # |
+| F | # | # | F | F |
 +---+---+---+---+---+
 
 Words:
-  ADD
-  MORE
-  MERGE
-  DOUBLE
+  FIT
+  DUTY
+  BUFFER
+  PUDDING
 ```
 
 ### pinpoint
 ```
-  1. Rail
-  2. Swift
-  3. Quail
-  4. Owl
-  5. Eagle
+  1. Timon
+  2. Cressida
+  3. Cleopatra
+  4. Othello
+  5. Romeo and Juliet
 
-  answer: Types of birds!
+  answer: Title characters from Shakespeare’s plays!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 937
-date      : 2026-11-23
+number    : 938
+date      : 2026-11-24
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  hand : The top + bottom rows = What the 👋 emoji depicts, and the gesture it represents. Keep in mind: The first word may be at the bottom.
-  land : Touch down, as a plane
-  lane : Division of a wide roadway
-  lake : Body of water such as Erie, Victoria, or Ladoga
-  sake : "Oh, for goodness' ___!"
-  save : Success for a goalkeeper
-  wave : The top + bottom rows = What the 👋 emoji depicts, and the gesture it represents. Keep in mind: The first word may be at the bottom.
+  page : The top + bottom rows = A compound word for the part of a website that many users see first. Keep in mind: The first word may be at the bottom.
+  pale : Without much color
+  pile : Disorderly stack
+  pipe : Long object that water flows through
+  pope : The current one is Leo XIV
+  hope : Feeling that things could work out well
+  home : The top + bottom rows = A compound word for the part of a website that many users see first. Keep in mind: The first word may be at the bottom.
 ```
 <!-- DAILY-GAMES-END -->
