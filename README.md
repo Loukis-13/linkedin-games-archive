@@ -11,133 +11,137 @@ See [`AGENTS.md`](./AGENTS.md) for the full architecture, the CI pipeline, the
 local Telegram-posting cron, conventions, how to use, and how to add a new game.
 
 <!-- DAILY-GAMES-START -->
-## Today's games (2026-11-24)
+## Today's games (2026-11-25)
 
 ### zip
 ```
-+----+----+----+----+----+----+
-| ..    4   ..   .. | ..   .. |
-+                   +         +
-| ..    6   ..   .. | ..   .. |
-+                   +         +
-| .. | ..    5   ..   .. | .. |
-+    +                   +    +
-| .. | ..   ..    2   .. | .. |
-+    +                   +    +
-| ..   .. | ..   ..    3   .. |
-+         +                   +
-| ..   .. | ..   ..    1   .. |
-+---- ----+---- ---- ---- ----+
++----+----+----+----+----+----+----+
+| ..   11   ..   ..   ..   ..   .. |
++                                  +
+| 10   ..   14   ..   ..   ..   .. |
++                                  +
+|  9   ..   ..    4   ..   12   .. |
++                                  +
+| ..   15   ..    3   ..   13   .. |
++                                  +
+| ..    5   ..    2   ..   ..    1 |
++                                  +
+| ..   ..   ..   ..    6   ..    7 |
++                                  +
+| ..   ..   ..   ..   ..    8   .. |
++---- ---- ---- ---- ---- ---- ----+
 ```
 
 ### tango
 ```
 +---+---+---+---+---+---+
-| . | M | . | . | M | . |
+| M | . | S | . | M | . |
 +---+---+---+---+---+---+
-| . | M | . | . | S | . |
+| . | . | . | . | . | . |
++-=-+---+-=-+---+-x-+---+
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . | S | . = . | S | . |
-+---+---+-=-+-x-+---+---+
-| . | M | . x . | M | . |
+| . | . | . | . | . | . |
++---+-x-+---+-=-+---+-x-+
+| . | . | . | . | . | . |
 +---+---+---+---+---+---+
-| . | S | . | . | M | . |
-+---+---+---+---+---+---+
-| . | S | . | . | S | . |
+| . | M | . | M | . | M |
 +---+---+---+---+---+---+
 ```
 
 ### queens
 ```
+🟥🟧🟧🟧🟧🟧🟧
+🟥🟧🟨🟩🟦🟧🟧
+🟥🟨🟨🟨🟦🟦🟧
+🟥🟨🟪🟦🟦🟫🟧
+🟥🟪🟪🟫🟫🟫🟧
+🟥🟥🟪🟪🟫🟧🟧
 🟥🟥🟥🟥🟥🟥🟥
-🟥🟧🟧🟧🟥🟥🟥
-🟥🟨🟦🟩🟩🟩🟩
-🟥🟨🟦🟩🟩🟩🟩
-🟥🟨🟨🟪🟪🟪🟩
-🟥🟨🟨🟨🟫🟩🟩
-🟨🟨🟨🟨🟫🟩🟩
 ```
 
 ### minisudoku
 ```
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃   │   │   ┃ 1 │   │   ┃
+┃   │ 3 │ 4 ┃ 2 │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 2 ┃ 3 │ 4 │   ┃
+┃   │ 5 │   ┃   │   │ 1 ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │   │ 3 ┃ 4 │ 5 │   ┃
+┃   │ 1 │   ┃   │   │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │ 4 │ 5 ┃ 6 │   │   ┃
+┃   │   │   ┃   │ 6 │   ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━┫
-┃   │ 6 │ 1 ┃ 2 │   │   ┃
+┃ 3 │   │   ┃   │ 2 │   ┃
 ┃───┼───┼───┃───┼───┼───┃
-┃   │   │ 4 ┃   │   │   ┃
+┃   │   │ 2 ┃ 3 │ 1 │   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ### patches
 ```
-+----+----+----+----+----+----+
-| .. | |2 | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| +2 | .. | =4 | .. | +4 | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | .. | .. |
-+----+----+----+----+----+----+
-| .. | +6 | .. | |6 | .. | +6 |
-+----+----+----+----+----+----+
-| .. | .. | .. | .. | -6 | .. |
-+----+----+----+----+----+----+
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | -  | .. |
++----+----+----+----+----+----+----+
+| .. | +4 | =  | .. | .. | +6 | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | -  | .. | .. | =  | +6 | .. |
++----+----+----+----+----+----+----+
+| .. | +4 | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
+| .. | .. | .. | .. | .. | .. | .. |
++----+----+----+----+----+----+----+
 ```
 
 ### wend
 ```
 +---+---+---+---+---+
-| D | D | # | # | D |
+| N | O | B | P | I |
 +---+---+---+---+---+
-| I | U | P | T | U |
+| B | # | R | A | H |
 +---+---+---+---+---+
-| N | G | # | Y | B |
+| L | U | # | C | S |
 +---+---+---+---+---+
-| I | T | R | E | U |
+| P | R | A | # | R |
 +---+---+---+---+---+
-| F | # | # | F | F |
+| O | L | K | W | O |
 +---+---+---+---+---+
 
 Words:
-  FIT
-  DUTY
-  BUFFER
-  PUDDING
+  BLUR
+  POLKA
+  CARBON
+  WORSHIP
 ```
 
 ### pinpoint
 ```
-  1. Timon
-  2. Cressida
-  3. Cleopatra
-  4. Othello
-  5. Romeo and Juliet
+  1. Chain
+  2. Cuff
+  3. Missing
+  4. Weakest
+  5. Click the (online call to action)
 
-  answer: Title characters from Shakespeare’s plays!
+  answer: Words that come before “link”!
 ```
 
 ### crossclimb
 ```
 game      : crossclimb
-number    : 938
-date      : 2026-11-24
+number    : 939
+date      : 2026-11-25
 difficulty: None
 
 Ladder (word : clue, top -> bottom):
-  page : The top + bottom rows = A compound word for the part of a website that many users see first. Keep in mind: The first word may be at the bottom.
-  pale : Without much color
-  pile : Disorderly stack
-  pipe : Long object that water flows through
-  pope : The current one is Leo XIV
-  hope : Feeling that things could work out well
-  home : The top + bottom rows = A compound word for the part of a website that many users see first. Keep in mind: The first word may be at the bottom.
+  yarn : The top + bottom rows = Two words for a story to be told.
+  yard : Imperial measurement that's just short of a meter
+  bard : Renaissance Faire entertainer
+  bald : Without hair on the head
+  balk : Stop or hesitate when doing something
+  talk : Have a conversation
+  tale : The top + bottom rows = Two words for a story to be told.
 ```
 <!-- DAILY-GAMES-END -->
